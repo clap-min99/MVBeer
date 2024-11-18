@@ -8,17 +8,52 @@ import requests
 
 # Create your views here.
 
+# @api_view(['GET'])
+# def index(request):
+#     api_key = settings.API_KEY
+
+#     url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+
+#     headers = {
+#         "accept": "application/json",
+#         "Authorization": f"Bearer {api_key}"
+#     }
+
+#     response = requests.get(url, headers=headers)
+
+#     return Response(response)
+
+
 @api_view(['GET'])
 def index(request):
     api_key = settings.API_KEY
-
-    url = "https://api.themoviedb.org/3/trending/movie/day?language=en-US"
+    url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYzQ3OWE3OWYxMmI0MzIxMDJiMWNkYTA2ZjY5NWY4NiIsIm5iZiI6MTczMTg5OTQxNC4zODg3NjEzLCJzdWIiOiI2NzJkYmVkODliN2UwOWNmZGNjNDQ4ZjMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.n3kNqTXyXaOSDePDuje8haUvwaDhgzh9O6weI061pQQ"
+        "Authorization": f"Bearer {api_key}"
     }
 
-    response = requests.get(url, headers=headers)
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # HTTP 에러 발생 시 예외 처리
+        data = response.json()  # JSON 데이터를 파싱
+    except requests.exceptions.RequestException as e:
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    except ValueError as e:  # JSON 파싱 실패
+        return Response({"error": "Invalid JSON response from TMDB API"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    return Response(response)
+
+    for rslt in response.get('results'):
+        print('id=', rslt)
+    
+        # id = rslt.get('id')
+        # title = rslt.get('title')
+
+        # save_data = {
+        #     'id': id,
+        #     'title': title,
+        # }
+        
+
+    return Response(data, status=response.status_code)
