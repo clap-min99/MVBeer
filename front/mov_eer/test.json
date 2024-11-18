@@ -121,6 +121,155 @@
           "Dewar's White Label"
         ]
       }
-    ]
+    ],
+
+    "wines": [
+    {
+      "type": "Red",
+      "description": "적포도 품종으로 양조되어 깊고 풍부한 맛이 특징입니다. 일반적으로 체리, 블랙베리, 자두와 같은 과일 향과 함께 스파이스, 초콜릿 등의 풍미를 느낄 수 있습니다.",
+      "examples": [
+        "Cabernet Sauvignon (Robert Mondavi Napa Valley)",
+        "Merlot (Château Petrus)",
+        "Pinot Noir (Domaine de la Romanée-Conti)"
+      ]
+    },
+    {
+      "type": "White",
+      "description": "청포도 품종으로 양조되며 상쾌하고 가벼운 맛이 특징입니다. 감귤, 사과, 배와 같은 과일 향과 꽃, 미네랄 풍미가 느껴질 수 있습니다.",
+      "examples": [
+        "Chardonnay (Louis Latour Pouilly-Fuissé)",
+        "Sauvignon Blanc (Cloudy Bay Marlborough)",
+        "Riesling (Dr. Loosen Mosel)"
+      ]
+    },
+    {
+      "type": "Rosé",
+      "description": "적포도를 짧게 발효하여 핑크색을 띠며, 레드와인과 화이트와인의 특성을 모두 가집니다. 가볍고 신선하며 과일 향이 돋보입니다.",
+      "examples": [
+        "Whispering Angel Rosé (Côtes de Provence)",
+        "Château d'Esclans Garrus Rosé",
+        "Miraval Rosé (Provence)"
+      ]
+    },
+    {
+      "type": "Sparkling",
+      "description": "발포성 와인으로, 샴페인 방식 또는 다른 탄산화 과정을 통해 탄산이 포함됩니다. 축하 자리에서 자주 사용됩니다.",
+      "examples": [
+        "Champagne (Moët & Chandon Brut Impérial)",
+        "Prosecco (La Marca Prosecco)",
+        "Cava (Freixenet Cordon Negro Brut)"
+      ]
+    },
+    {
+      "type": "Natural Wine",
+      "description": "화학 첨가물 없이 유기농 재배된 포도로 전통적인 방식으로 양조된 와인으로, 자연스러운 맛과 향이 특징입니다.",
+      "examples": [
+        "Domaine Lapierre Morgon (Beaujolais, France)",
+        "Radikon Ribolla Gialla (Italy)",
+        "Gut Oggau Josephine (Austria)"
+      ]
+    }
+  ],
+
+  "cocktails": [
+    {
+      "name": "Hendrick's Gin & Tonic",
+      "description": "핸드릭스 진과 토닉 워터를 기본으로 한 클래식 칵테일로, 오이와 라임을 곁들여 상쾌한 맛을 제공합니다.",
+      "ingredients": [
+        "50ml Hendrick's Gin",
+        "150ml Tonic Water",
+        "Slices of cucumber",
+        "Wedge of lime"
+      ]
+    },
+    {
+      "name": "Mojito",
+      "description": "럼, 라임, 민트를 기본으로 한 상쾌한 칵테일로, 여름에 인기가 많습니다.",
+      "ingredients": [
+        "50ml White Rum",
+        "30ml Fresh Lime Juice",
+        "2 tsp Sugar",
+        "Mint leaves",
+        "Soda Water"
+      ]
+    },
+    {
+      "name": "Margarita",
+      "description": "데킬라, 라임 주스, 트리플 섹을 섞어 만든 클래식 칵테일로, 소금 테두리가 특징입니다.",
+      "ingredients": [
+        "50ml Tequila",
+        "25ml Triple Sec",
+        "25ml Fresh Lime Juice",
+        "Salt (for the rim)"
+      ]
+    },
+    {
+      "name": "Old Fashioned",
+      "description": "위스키를 베이스로 설탕과 비터스를 섞어 만든 클래식 칵테일로, 오렌지 껍질로 장식합니다.",
+      "ingredients": [
+        "50ml Bourbon or Rye Whiskey",
+        "1 Sugar Cube",
+        "2 dashes Angostura Bitters",
+        "Orange Peel"
+      ]
+    },
+    {
+      "name": "Negroni",
+      "description": "진, 캄파리, 스위트 베르무트를 1:1:1 비율로 섞은 이탈리아 스타일 칵테일입니다.",
+      "ingredients": [
+        "30ml Gin",
+        "30ml Campari",
+        "30ml Sweet Vermouth",
+        "Orange Peel"
+      ]
+    },
+    {
+      "name": "Whiskey Sour",
+      "description": "위스키, 레몬 주스, 설탕, 그리고 때로는 계란 흰자를 섞어 만든 새콤달콤한 칵테일입니다.",
+      "ingredients": [
+        "50ml Bourbon",
+        "25ml Fresh Lemon Juice",
+        "20ml Sugar Syrup",
+        "Egg White (optional)"
+      ]
+    },
+    {
+      "name": "Martini",
+      "description": "진과 드라이 베르무트를 섞어 만든 심플하면서도 우아한 칵테일로, 올리브 또는 레몬 트위스트로 장식합니다.",
+      "ingredients": [
+        "60ml Gin",
+        "10ml Dry Vermouth",
+        "Olive or Lemon Twist"
+      ]
+    },
+    {
+      "name": "Daiquiri",
+      "description": "럼, 라임 주스, 설탕 시럽을 섞어 만든 간단하고 상쾌한 칵테일입니다.",
+      "ingredients": [
+        "50ml White Rum",
+        "25ml Fresh Lime Juice",
+        "15ml Sugar Syrup"
+      ]
+    },
+    {
+      "name": "Pina Colada",
+      "description": "럼, 파인애플 주스, 코코넛 크림을 섞어 만든 열대 느낌의 달콤한 칵테일입니다.",
+      "ingredients": [
+        "50ml White Rum",
+        "75ml Pineapple Juice",
+        "25ml Coconut Cream"
+      ]
+    },
+    {
+      "name": "Cosmopolitan",
+      "description": "보드카, 트리플 섹, 크랜베리 주스, 라임 주스를 섞어 만든 현대적인 칵테일입니다.",
+      "ingredients": [
+        "45ml Vodka",
+        "15ml Triple Sec",
+        "30ml Cranberry Juice",
+        "10ml Fresh Lime Juice"
+      ]
+    }
+  ]
   }
   
