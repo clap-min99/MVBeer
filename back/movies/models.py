@@ -26,18 +26,18 @@ class MovieGenre(models.Model):
 
 
 class Movie(models.Model):
+    movie_id = models.IntegerField()
     title = models.CharField(max_length=200)  # 영화 제목
     summary = models.TextField()  # 줄거리
     release_date = models.DateField()  # 개봉일
     director = models.CharField(max_length=100)  # 감독 이름
-    main_actor = models.CharField(max_length=100)  # 주연 배우 이름
-    genre = models.ForeignKey(
+    actors = models.CharField(max_length=100)  # 주연 배우 이름
+    genres = models.ManyToManyField(
         MovieGenre, 
-        on_delete=models.CASCADE, 
         related_name="movies"
     )  # 장르 (N:1 관계)
     rating = models.CharField(max_length=20)  # 연령 등급 (예: PG-13, R 등)
     star_rating = models.DecimalField(max_digits=3, decimal_places=1)  # 별점 (예: 4.5)
-
+    poster_url = models.TextField()
     def __str__(self):
         return self.title
