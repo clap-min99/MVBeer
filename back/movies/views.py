@@ -44,16 +44,17 @@ def index(request):
         return Response({"error": "Invalid JSON response from TMDB API"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-    for rslt in response.get('results'):
-        print('id=', rslt)
+    for rslt in data.get('results', []):
+        print('id=', rslt.get('id'))
+        print('title=', rslt.get('title'))
     
-        # id = rslt.get('id')
-        # title = rslt.get('title')
+        id = rslt.get('id')
+        title = rslt.get('title')
 
-        # save_data = {
-        #     'id': id,
-        #     'title': title,
-        # }
+        save_data = {
+            'id': id,
+            'title': title,
+        }
         
 
     return Response(data, status=response.status_code)
