@@ -126,6 +126,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Imgur API Key
+IMGUR_CLIENT_ID = env('IMGUR_CLIENT_ID')
+IMGUR_CLIENT_SECRET = env('IMGUR_CLIENT_SECRET')
+IMGUR_API_URL = "https://api.imgur.com/3/upload"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

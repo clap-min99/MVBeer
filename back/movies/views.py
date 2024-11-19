@@ -8,7 +8,38 @@ from .serializers import MovieSerializer, MovieListSerializer
 import requests
 
 
+import os
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+
 # Create your views here.
+@csrf_exempt
+def upload_image(request):
+    if request.method == "POST":
+        image = request.FILES.get("image")
+        if not image:
+            return JsonResponse({"success": False, "message": "No image provided."}, status=400)
+        
+        try:
+            # Imgur API 호출
+            headers = {"Authorization": f"Client-ID {settings.IMGUR_CLIENT_ID}"}
+            response = requests.post(
+                settings.IMGUR_API_URL,
+                headers=headers,
+                files={"image": image}
+            )
+            if response.status_code == 200:
+                image_url = response.json()["data"]["link"]
+                return JsonResponse({"success": True, "url": image_url})
+            else:
+                return JsonResponse({"success": False, "message": "Failed to upload image to Imgur."}, status=response.status_code)
+        except Exception as e:
+            return JsonResponse({"success": False, "message": str(e)}, status=500)
+    return JsonResponse({"success": False, "message": "Invalid request method."}, status=400)
+
+
+
 
 # @api_view(['GET'])
 # def index(request):
