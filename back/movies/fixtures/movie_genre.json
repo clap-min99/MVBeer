@@ -1,0 +1,135 @@
+[
+    {
+        "model": "movies.moviegenre",
+        "pk": 28,
+        "fields": {
+            "name": "Action"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 12,
+        "fields": {
+            "name": "Adventure"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 16,
+        "fields": {
+            "name": "Animation"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 35,
+        "fields": {
+            "name": "Comedy"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 80,
+        "fields": {
+            "name": "Crime"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 99,
+        "fields": {
+            "name": "Documentary"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 18,
+        "fields": {
+            "name": "Drama"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10751,
+        "fields": {
+            "name": "Family"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 14,
+        "fields": {
+            "name": "Fantasy"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 36,
+        "fields": {
+            "name": "History"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 27,
+        "fields": {
+            "name": "Horror"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10402,
+        "fields": {
+            "name": "Music"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 9648,
+        "fields": {
+            "name": "Mystery"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10749,
+        "fields": {
+            "name": "Romance"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 878,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10770,
+        "fields": {
+            "name": "TV Movie"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 53,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10752,
+        "fields": {
+            "name": "War"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 37,
+        "fields": {
+            "name": "Western"
+        }
+    }
+]
