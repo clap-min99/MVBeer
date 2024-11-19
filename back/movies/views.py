@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 from django.conf import settings
-from .models import Movie
-from .serializers import MovieSerializer, MovieListSerializer
+from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol
+from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer
 import requests
 
 
@@ -79,3 +79,20 @@ def movie_detail(request, movie_pk):
         serializer = MovieSerializer(movie)
         
         return Response(serializer.data)
+    
+
+@api_view(['GET'])
+def beverage_main(request):
+    beverages = get_list_or_404(Beverage)  
+    if request.method == 'GET':
+        serializer = BeverageSerializer(beverages, many=True)
+        return Response(serializer.data)
+    
+@api_view(['GET'])
+def beer_list(request):
+    beers = get_list_or_404(Beer)  # Beer 모델의 모든 객체를 가져옴
+    if request.method == 'GET':
+        serializer = BeerSerializer(beers, many=True)  # many=True를 사용하여 쿼리셋 직렬화
+        return Response(serializer.data)
+    
+
