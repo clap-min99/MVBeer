@@ -3,133 +3,171 @@
         "model": "movies.moviegenre",
         "pk": 28,
         "fields": {
-            "name": "Action"
+            "name": "Action",
+            "beverage": 1,
+            "subtype": "Ale"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 12,
         "fields": {
-            "name": "Adventure"
+            "name": "Adventure",
+            "beverage": 1,
+            "subtype": "Lager"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 16,
         "fields": {
-            "name": "Animation"
+            "name": "Animation",
+            "beverage": 2,
+            "subtype": "Bourbon"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 35,
         "fields": {
-            "name": "Comedy"
+            "name": "Comedy",
+            "beverage": 1,
+            "subtype": "Pilsner"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 80,
         "fields": {
-            "name": "Crime"
+            "name": "Crime",
+            "beverage": 2,
+            "subtype": "Scotch"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 99,
         "fields": {
-            "name": "Documentary"
+            "name": "Documentary",
+            "beverage": 3,
+            "subtype": "Natural Wine"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 18,
         "fields": {
-            "name": "Drama"
+            "name": "Drama",
+            "beverage": 3,
+            "subtype": "Red"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 10751,
         "fields": {
-            "name": "Family"
+            "name": "Family",
+            "beverage": 4,
+            "subtype": "NonAlcohol"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 14,
         "fields": {
-            "name": "Fantasy"
+            "name": "Fantasy",
+            "beverage": 3,
+            "subtype": "Sparkling Wine"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 36,
         "fields": {
-            "name": "History"
+            "name": "History",
+            "beverage": 2,
+            "subtype": "Blended"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 27,
         "fields": {
-            "name": "Horror"
+            "name": "Horror",
+            "beverage": 1,
+            "subtype": "Stout"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 10402,
         "fields": {
-            "name": "Music"
+            "name": "Music",
+            "beverage": 3,
+            "subtype": "White"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 9648,
         "fields": {
-            "name": "Mystery"
+            "name": "Mystery",
+            "beverage": 2,
+            "subtype": "Rye"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 10749,
         "fields": {
-            "name": "Romance"
+            "name": "Romance",
+            "beverage": 3,
+            "subtype": "Rosé"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 878,
         "fields": {
-            "name": "Science Fiction"
+            "name": "Science Fiction",
+            "beverage": 2,
+            "subtype": "Tennessee"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 10770,
         "fields": {
-            "name": "TV Movie"
+            "name": "TV Movie",
+            "beverage": 1,
+            "subtype": "Wheat"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 53,
         "fields": {
-            "name": "Thriller"
+            "name": "Thriller",
+            "beverage": 2,
+            "subtype": "Single Malt"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 10752,
         "fields": {
-            "name": "War"
+            "name": "War",
+            "beverage": 2,
+            "subtype": "Japanese"
         }
     },
     {
         "model": "movies.moviegenre",
         "pk": 37,
         "fields": {
-            "name": "Western"
+            "name": "Western",
+            "beverage": 2,
+            "subtype": "Irish"
         }
     }
 ]

@@ -41,12 +41,12 @@ class NonAlcohol(models.Model):
 
 class MovieGenre(models.Model):
     name = models.CharField(max_length=100)  # 영화 장르 이름
-    # beverage = models.OneToOneField(
-    #     Beverage, 
-    #     on_delete=models.CASCADE, 
-    #     related_name="paired_genre"
-    # )  # 1:1 매칭된 주류
-
+    beverage = models.OneToOneField(
+        Beverage, 
+        on_delete=models.CASCADE, 
+        related_name="paired_genre"
+    )  # 1:1 매칭된 주류
+    
     def __str__(self):
         return self.name
 
