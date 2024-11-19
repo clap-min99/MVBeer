@@ -269,6 +269,110 @@
         "30ml Cranberry Juice",
         "10ml Fresh Lime Juice"
       ]
+    },
+    {
+      "name": "Bloody Mary",
+      "description": "보드카와 토마토 주스를 기반으로 한 칵테일로, 핫소스와 우스터 소스로 풍미를 더합니다.",
+      "ingredients": [
+        "45ml Vodka",
+        "90ml Tomato Juice",
+        "15ml Lemon Juice",
+        "2 dashes Worcestershire Sauce",
+        "Tabasco Sauce (to taste)",
+        "Salt and Pepper"
+      ]
+    },
+    {
+      "name": "Mai Tai",
+      "description": "럼과 오렌지 큐라소를 혼합한 트로피컬 칵테일로, 신선한 라임 주스와 아몬드 시럽이 특징입니다.",
+      "ingredients": [
+        "30ml Dark Rum",
+        "30ml White Rum",
+        "15ml Orange Curacao",
+        "10ml Orgeat Syrup",
+        "25ml Fresh Lime Juice"
+      ]
+    },
+    {
+      "name": "Manhattan",
+      "description": "라이 위스키 또는 버번과 스위트 베르무트를 섞어 만든 클래식 칵테일로, 체리로 장식합니다.",
+      "ingredients": [
+        "50ml Rye Whiskey or Bourbon",
+        "25ml Sweet Vermouth",
+        "2 dashes Angostura Bitters",
+        "Maraschino Cherry"
+      ]
+    },
+    {
+      "name": "Mint Julep",
+      "description": "버번과 신선한 민트를 사용하는 남부 스타일의 클래식 칵테일입니다.",
+      "ingredients": [
+        "60ml Bourbon",
+        "4 Mint Leaves",
+        "2 tsp Sugar",
+        "Crushed Ice"
+      ]
+    },
+    {
+      "name": "Espresso Martini",
+      "description": "보드카, 커피 리큐어, 에스프레소로 만들어진 달콤하면서 쌉쌀한 칵테일입니다.",
+      "ingredients": [
+        "50ml Vodka",
+        "30ml Kahlua",
+        "30ml Freshly Brewed Espresso",
+        "Simple Syrup (to taste)"
+      ]
+    },
+    {
+      "name": "Long Island Iced Tea",
+      "description": "다양한 리큐어를 혼합한 강렬한 칵테일로, 콜라를 추가해 마치 아이스티 같은 색상을 냅니다.",
+      "ingredients": [
+        "15ml Vodka",
+        "15ml Gin",
+        "15ml Rum",
+        "15ml Tequila",
+        "15ml Triple Sec",
+        "25ml Lemon Juice",
+        "Splash of Cola"
+      ]
+    },
+    {
+      "name": "Aperol Spritz",
+      "description": "아페롤, 프로세코, 탄산수를 혼합한 상쾌한 이탈리아 스타일 칵테일입니다.",
+      "ingredients": [
+        "60ml Aperol",
+        "90ml Prosecco",
+        "Splash of Soda Water",
+        "Orange Slice"
+      ]
+    },
+    {
+      "name": "Dark 'n' Stormy",
+      "description": "다크 럼과 진저 비어를 섞어 만든 칵테일로, 풍미가 강렬하고 독특합니다.",
+      "ingredients": [
+        "60ml Dark Rum",
+        "90ml Ginger Beer",
+        "15ml Fresh Lime Juice"
+      ]
+    },
+    {
+      "name": "Caipirinha",
+      "description": "브라질의 대표 칵테일로, 카샤사와 라임, 설탕을 섞어 만듭니다.",
+      "ingredients": [
+        "50ml Cachaça",
+        "1 Lime (quartered)",
+        "2 tsp Sugar"
+      ]
+    },
+    {
+      "name": "Amaretto Sour",
+      "description": "아마레토 리큐어와 레몬 주스를 섞어 만든 달콤하고 새콤한 칵테일입니다.",
+      "ingredients": [
+        "50ml Amaretto",
+        "25ml Fresh Lemon Juice",
+        "10ml Sugar Syrup",
+        "Egg White (optional)"
+      ]
     }
   ]
   }
