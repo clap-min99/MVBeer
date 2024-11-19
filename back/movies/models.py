@@ -4,17 +4,44 @@ from django.db import models
 
 
 class Beverage(models.Model):
+    type = models.CharField(max_length=50)  # 주류 유형 (Beer, Whiskey 등)
     name = models.CharField(max_length=100)  # 주류 이름
-    type = models.CharField(max_length=50)  # 주류 유형 (예: Beer, Wine, Whiskey 등)
-    description = models.TextField(blank=True, null=True)  # 주류 설명 (선택)
 
     def __str__(self):
         return self.name
 
+class Beer(models.Model):
+    beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='beer')
+    subtype = models.CharField(max_length=50)  # 에일, 라거 등
+    description = models.TextField(blank=True, null=True)
+    examples = models.TextField()
+
+class Whiskey(models.Model):
+    beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='whiskey')
+    subtype = models.CharField(max_length=50)  # 버번, 스카치 등
+    description = models.TextField(blank=True, null=True)
+    examples = models.TextField()
+
+class Wine(models.Model):
+    beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='wine')
+    subtype = models.CharField(max_length=50)  # 레드, 화이트
+    description = models.TextField(blank=True, null=True)
+    examples = models.TextField()
+
+class Cocktail(models.Model): 
+    beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='cocktail')
+    subtype = models.CharField(max_length=50) # sweet, unsweet
+    description = models.TextField(blank=True, null=True)
+    examples = models.TextField()
+
+class NonAlcohol(models.Model):
+    beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='nonalcohol')
+    subtype = models.CharField(max_length=50)  # 콜라, 사이다, 뽀로로
+    description = models.TextField(blank=True, null=True)
+    examples = models.TextField()
 
 class MovieGenre(models.Model):
     name = models.CharField(max_length=100)  # 영화 장르 이름
-    description = models.TextField(blank=True, null=True)  # 장르 설명 (선택)
     beverage = models.OneToOneField(
         Beverage, 
         on_delete=models.CASCADE, 
