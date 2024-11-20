@@ -3,10 +3,7 @@
     <img src="@/assets/image.png" alt="MVBeer Logo" class="logo-image" />
     <h1 class="logo-title">MVBEER</h1>
     <input type="text" placeholder="영화를 검색하세요" class="search-bar" />
-    <div class="auth-buttons">
-    <button class="login-btn">로그인</button>
-    <button class="signup-btn">회원가입</button>
-  </div>
+    
   </div>
 </template>
 
