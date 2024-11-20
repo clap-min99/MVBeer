@@ -1,10 +1,12 @@
 <template>
-    <div>
+    <div class="card h-100">
         <h4>{{ movie.title }}</h4>
     <div class="movie-poster">
-      <img :src="getImageUrl(movie.poster_url)" alt="..." />
+      <img :src="getImageUrl(movie.poster_url)" 
+      class="card-img-top" alt="..." 
+      />
     </div>
-        <h5>{{ movie.summary }}</h5>
+        <!-- <h5 class="card-title">{{ movie.summary }}</h5> -->
     </div>
 </template>
 
