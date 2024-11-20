@@ -8,7 +8,13 @@ from .serializers import MovieSerializer, MovieListSerializer, BeverageSerialize
 import requests
 
 
+
+
+
 # Create your views here.
+
+
+
 
 # @api_view(['GET'])
 # def index(request):
