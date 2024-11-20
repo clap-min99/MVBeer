@@ -2,6 +2,8 @@
   <div>
     <nav>
       <RouterLink :to="{name:'MainView'}">Main</RouterLink>
+      <br>
+      <RouterLink :to="{name:'AlcoholView'}">Alcohol</RouterLink>
     </nav>
     
     <RouterView />
