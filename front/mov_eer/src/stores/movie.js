@@ -10,7 +10,7 @@ export const useMovieStore = defineStore('movie', () => {
   const getMovies = function() {
     axios({
       method: 'get',
-      url: `${API_URL}/api/v1/movies`
+      url: `${API_URL}/api/v1/movies/`
     })
     .then((res) => {
       movies.value = res.data
@@ -20,5 +20,5 @@ export const useMovieStore = defineStore('movie', () => {
     })
   }
 
-  return { getMovies, API_URL }
-},{ persist: true})
+  return { movies, getMovies, API_URL }
+},{ persist: true })
