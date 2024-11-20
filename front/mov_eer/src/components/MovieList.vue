@@ -8,16 +8,12 @@
         :movie="movie"
         class="scroll-item" />
         </div>
-       
-      
 </div>
 </template>
 
 <script setup>
 import { useMovieStore } from '@/stores/movie';
 import MovieMainInfo from './MovieMainInfo.vue';
-
-
 
 const store = useMovieStore()
 </script>

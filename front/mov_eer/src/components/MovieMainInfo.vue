@@ -1,28 +1,27 @@
 <template>
-  <div class="card">
-    <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="movieposter" />
-    <div class="card-body">
-      <h5 class="card-title">{{ movie.title }}</h5>
-      <!-- <p class="card-summary">{{ movie.summary }}</p> -->
+  <RouterLink
+    :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }"
+  >
+    <div class="card">
+      <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="movieposter" />
+      <div class="card-body">
+        <h5 class="card-title">{{ movie.title }}</h5>
+      </div>
     </div>
-  </div>
-  </template>
+  </RouterLink>
+</template>
 
 <script setup>
 defineProps({
-    movie:Object
-})
+  movie: Object
+});
 
 const getImageUrl = (path) => {
-    if (!path) {
-        return
-    }
-    return `https://image.tmdb.org/t/p/w500${path}`;
-}
-// onMounted(() => {
-//   getImageUrl();
-// })
-
+  if (!path) {
+    return;
+  }
+  return `https://image.tmdb.org/t/p/w500${path}`;
+};
 </script>
 
 <style scoped>
@@ -49,10 +48,5 @@ const getImageUrl = (path) => {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-}
-
-.card-summary {
-  font-size: 0.875rem;
-  color: #666;
 }
 </style>

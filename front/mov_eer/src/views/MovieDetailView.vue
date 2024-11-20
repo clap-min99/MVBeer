@@ -1,10 +1,9 @@
 <template>
     <div>
     <nav>
-       <h1>Detail</h1>
-       <div v-if="movie">
-            <MovieDetailInfo :movie="movie" />
-       </div>
+    <div v-if="movie_detail">
+        <MovieDetailInfo :movie="movie_detail" />
+      </div>
     </nav>   
     </div>
 
@@ -14,21 +13,20 @@
 <script setup>
 import axios from 'axios'
 import { RouterView, RouterLink } from 'vue-router'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import { useRoute } from 'vue-router';
 import { useMovieStore } from '@/stores/movie';
-
+import MovieDetailInfo from '@/components/MovieDetailInfo.vue';
 const store = useMovieStore()
 const route = useRoute()
-const movie = ref({})
-const prop = defineProps(["movie"])
-// onMounted(() => {
-//     axios({
-//         method:'get',
-//         url: `${store.API_URL}/api/v1/movies/${route.}`
-//     })
-    
-// })
+
+const movie_detail = computed(() => store.movie_detail);
+onMounted(() => {
+  const moviePk = route.params.moviePk; // 라우트에서 moviePk 가져오기
+  store.getMovie(moviePk); // Pinia의 getMovie 함수 호출로 상세 데이터 로드
+});
+
+
 </script>
 
 <style scoped>

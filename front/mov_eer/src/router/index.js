@@ -13,8 +13,8 @@ const router = createRouter({
       component: MainView
     },
     {
-      path: '/movies/:id',
-      name: 'MovieDetail',
+      path: '/movies/:moviePk/',
+      name: 'MovieDetailView',
       component: MovieDetailView
     },
     {
