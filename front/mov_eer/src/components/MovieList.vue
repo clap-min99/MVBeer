@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>MovieList</h2>
-        <MovieListItem
+        <MovieDetailInfo
         v-for="movie in store.movies"
         :key="movie.id"
         :movie="movie"/>
@@ -10,7 +10,7 @@
 
 <script setup>
 import { useMovieStore } from '@/stores/movie';
-import MovieListItem from './MovieDetailInfo.vue';
+import MovieDetailInfo from './MovieDetailInfo.vue';
 
 const store = useMovieStore()
 </script>
