@@ -1,7 +1,6 @@
 <template>
     <div>
         <HeaderComponent />
-        
         <MovieList />
     </div>
 </template>
