@@ -2,8 +2,6 @@
     <div>
         <HeaderComponent />
         <MovieList />
-        <MovieCard />
-        
     </div>
 </template>
 
@@ -12,7 +10,7 @@ import MovieList from '@/components/MovieList.vue'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import { onMounted } from 'vue'
 import { useMovieStore } from '@/stores/movie'
-import MovieCard from '@/components/MovieCard.vue'
+
 
 
 const store = useMovieStore()
