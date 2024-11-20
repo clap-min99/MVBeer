@@ -3,7 +3,7 @@
     <nav>
        <h1>Detail</h1>
        <div v-if="movie">
-
+            <MovieDetailInfo :movie="movie" />
        </div>
     </nav>   
     </div>
@@ -21,7 +21,7 @@ import { useMovieStore } from '@/stores/movie';
 const store = useMovieStore()
 const route = useRoute()
 const movie = ref({})
-
+const prop = defineProps(["movie"])
 // onMounted(() => {
 //     axios({
 //         method:'get',
