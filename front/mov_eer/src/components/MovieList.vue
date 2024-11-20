@@ -10,7 +10,7 @@
 
 <script setup>
 import { useMovieStore } from '@/stores/movie';
-import MovieListItem from './MovieListItem.vue';
+import MovieListItem from './MovieDetailInfo.vue';
 
 const store = useMovieStore()
 </script>
