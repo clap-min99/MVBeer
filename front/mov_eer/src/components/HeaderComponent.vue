@@ -1,46 +1,43 @@
 <template>
-    <header class="header">
-      <div class="logo-container">
-        <img src="@/assets/MVBeer.png" alt="MVBeer 로고" class="logo" />
-        <h1 class="logo-text">MVBeer</h1>
-      </div>
-    </header>
-  </template>
-  
-  <script>
-  export default {
-    name: "Header",
-  };
+  <div class="logo-container">
+    <img src="@/assets/image.png" alt="MVBeer Logo" class="logo-image" />
+    <h1 class="logo-title">MVBEER</h1>
+  </div>
+</template>
 
-  
-  </script>
-  
-  <style scoped>
-.header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f5f5f5; /* 부드러운 배경 색상 */
-  color: #333; /* 텍스트 색상 */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
-}
+<script>
+export default {
+  name: "Logo",
+};
+</script>
 
+<style scoped>
 .logo-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.logo {
-  width: 80px; /* 로고 크기 */
-  height: 80px; /* 정사각형 */
-  border-radius: 50%; /* 동그랗게 */
-  margin-right: 15px; /* 텍스트와의 간격 */
+.logo-image {
+  width: 150px; /* 원하는 크기로 조정 */
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.logo-text {
-  font-size: 1.5rem; /* 글자 크기 */
-  font-weight: bold; /* 굵게 */
-  color: #333; /* 글자 색상 */
+.logo-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #5a3c29; /* 로고와 어울리는 색상 */
+  margin: 0;
 }
-  </style>
-  
+
+.logo-subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #8b6b5e;
+  margin: 5px 0 0;
+}
+</style>

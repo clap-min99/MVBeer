@@ -5,7 +5,6 @@ import axios from 'axios'
 export const useMovieStore = defineStore('movie', () => {
 
   const movies = ref([ ])
-
   const API_URL = 'http://127.0.0.1:8000'
 
   const getMovies = function() {
