@@ -5,5 +5,6 @@ from .views import upload_image
 urlpatterns = [
     path('movies/', views.movie_all),
     path('movies/<int:movie_pk>/', views.movie_detail),
-    path('api/upload/', upload_image, name='upload_image')
+    path('beverages/', views.beverage_main),
+    path('beers/', views.beer_list)
 ]
