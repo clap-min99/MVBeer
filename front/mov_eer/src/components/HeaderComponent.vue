@@ -1,7 +1,7 @@
 <template>
   <div class="logo-container">
     <img src="@/assets/image.png" alt="MVBeer Logo" class="logo-image" />
-    <h1 class="logo-title">MVBEER</h1>
+    <!-- <h1 class="logo-title">MVBEER</h1> -->
     <input type="text" placeholder="영화를 검색하세요" class="search-bar" />
     
   </div>
