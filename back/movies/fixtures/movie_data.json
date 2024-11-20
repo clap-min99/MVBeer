@@ -1882,35 +1882,6 @@
       }
    },
    {
-      "pk": 173705,
-      "model": "movies.movie",
-      "fields": {
-         "movie_id": 173705,
-         "title": "여교사: 학생의 눈앞에서",
-         "summary": "사랑스러운 레이코는 소름 끼치는 오래된 고등학교에서 새로운 교직을 얻었습니다. 그녀는 매우 매력적인 여성이며 같은 반의 어린 학생들은 그녀에게 반했습니다. 어느 날 밤, 테니스 연습을 마친 그녀는 탈의실 샤워실에서 얼굴에 스타킹을 가린 남자에게 잔인하게 폭행을 당합니다. 알몸으로 충격에 빠진 채 바닥에 남겨진 그녀는 미친 남자가 남긴 퍼즐 조각 하나를 발견합니다. 며칠 후, 한 쌍의 학생이 테니스 팀에서 누군가를 쫓아낸 레이코에게 변태적인 성적 복수를 합니다. 이 학생들 중 한 명이 탈의실에서 그녀를 잔인하게 만든 남자일까요? 이상한 퍼즐 조각의 주인은 누구입니까? 수수께끼가 풀리면서 레이코는 자신의 성적 충동과 운명을 받아들여야 합니다.",
-         "release_date": "1982-04-09",
-         "director": "Akira Miura",
-         "actors": [
-            "Rushia Santô",
-            "Rina Oka",
-            "Kyôko Sagami",
-            "Toshiyuki Kitami",
-            "Toru Nakane",
-            "Hiromichi Hori",
-            "Masaaki Kishi",
-            "Toshio Yoshikawa"
-         ],
-         "genres": [
-            18,
-            9648,
-            27
-         ],
-         "adult": false,
-         "star_rating": 7.0,
-         "poster_url": "/rwGW7zhFKaojtJiSMnoLyVkKZnx.jpg"
-      }
-   },
-   {
       "pk": 748783,
       "model": "movies.movie",
       "fields": {
@@ -1941,55 +1912,6 @@
          "adult": false,
          "star_rating": 7.111,
          "poster_url": "/57g3pHYi3p0JNVO1LkcyYbeMDBf.jpg"
-      }
-   },
-   {
-      "pk": 464026,
-      "model": "movies.movie",
-      "fields": {
-         "movie_id": 464026,
-         "title": "가자! 장미여관으로",
-         "summary": "사귄 지 6개월 된 여자친구 민애와 아직까지 육체적인 관계를 가져본 적 없는 성수는 그녀와의 만남이 늘 흥분된다. 그러던 어느 날, 민애를 설득해 장미여관으로 끌어들이는데 성공한 성수. 샤워를 하기 위해 들어간 욕실에서 작은 구멍을 발견하게 되고 그 구멍을 통해 옆방을 우연히 엿보게 되고, 거기서 남녀의 성행위 장면을 목격하게 된다. 호기심이 발동한 성수는 더욱 숨죽여 그 장면을 엿보던 중 여자 연예인 사라가 거물급 정치인에게 성 상납을 하는 현장임을 알고 충격을 받게 되는데...",
-         "release_date": "2013-08-14",
-         "director": "Sin Jeong-gyoon",
-         "actors": [
-            "Sung Eun-chae",
-            "Jang Sung-won",
-            "Woo Do-hwan",
-            "Yeo Min-jeong"
-         ],
-         "genres": [
-            18,
-            10749
-         ],
-         "adult": false,
-         "star_rating": 4.0,
-         "poster_url": "/8ogCczLG6EhQEnSWoqs6092bGm3.jpg"
-      }
-   },
-   {
-      "pk": 482600,
-      "model": "movies.movie",
-      "fields": {
-         "movie_id": 482600,
-         "title": "일본 엄마",
-         "summary": "얼굴은 청순, 가슴은 D컵, 밤 기술은 퍼펙트! \"\"아들아, 이제부터 네 여친이 아니라 엄마다.\"\r 아들 기호가 결혼하겠다며 일본에서 데려온 그녀, 유키. 그러나 기호는 한국에 오자 전 여친을 만나며 바람을 피우기 시작한다. 처음에는 예비 며느리를 달래는 마음으로 유키를 위로하던 민철은 어느 순간부터 자신이 유키를 여자로 보고 있다는 사실을 깨닫는다. 결국, 기호 몰래 민철과 유키의 뜨거운 정사가 펼쳐지는데...",
-         "release_date": "2017-02-09",
-         "director": "Kim Moo-won",
-         "actors": [
-            "Jeon Ji-hak",
-            "Choi Min-ho",
-            "Saki Mizumi",
-            "Ha Roo",
-            "Ahn So-hee"
-         ],
-         "genres": [
-            10749,
-            18
-         ],
-         "adult": false,
-         "star_rating": 6.0,
-         "poster_url": "/hq1EaYIqUNrPM3QFYAbnH2UHoX8.jpg"
       }
    },
    {
