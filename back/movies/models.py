@@ -44,7 +44,6 @@ class MovieGenre(models.Model):
     beverage = models.ForeignKey(Beverage, on_delete=models.CASCADE)  # 큰 범주 연결
     subtype = models.CharField(max_length=50)
  
-
     def __str__(self):
         return self.name
 
