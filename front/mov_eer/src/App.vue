@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav>
+    <nav >
       <RouterLink :to="{name:'MainView'}">Main</RouterLink>
       <span> | </span>
       <RouterLink :to="{name:'AlcoholView'}">Alcohol</RouterLink>
