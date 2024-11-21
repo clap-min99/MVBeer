@@ -14,9 +14,7 @@ export const useLogStore = defineStore('log', () => {
     })
     // 회원가입 요청 액션
     const signUp = function (payload) {
-    // const username = payload.username
-    // const password1 = payload.password1
-    // const password2 = payload.password2
+
     const { username, password1, password2 } = payload
 
     axios({
@@ -39,8 +37,7 @@ export const useLogStore = defineStore('log', () => {
 
   // 로그인 요청 액션
   const logIn = function (payload) {
-    // const username = payload.username
-    // const password1 = payload.password
+
     const { username, password } = payload
 
     axios({
