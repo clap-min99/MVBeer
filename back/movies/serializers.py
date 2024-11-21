@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment
+from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol, BeerImage, WineImage, WhiskeyImage, NonAlcoholImage, Comment
 
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
@@ -32,7 +32,14 @@ class BeverageSerializer(serializers.ModelSerializer):
         model = Beverage
         fields = '__all__'
 
+class BeerImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BeerImage
+        fields = ['image', 'description']
+
 class BeerSerializer(serializers.ModelSerializer):
+    images = BeerImageSerializer(many=True, read_only=True)
+
     class Meta:
         model = Beer
         fields = '__all__'

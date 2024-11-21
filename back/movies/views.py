@@ -8,27 +8,7 @@ from .serializers import MovieSerializer, MovieListSerializer, BeverageSerialize
 import requests
 
 
-
 # Create your views here.
-
-
-
-# @api_view(['GET'])
-# def index(request):
-#     api_key = settings.API_KEY
-
-#     url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
-
-#     headers = {
-#         "accept": "application/json",
-#         "Authorization": f"Bearer {api_key}"
-#     }
-
-#     response = requests.get(url, headers=headers)
-
-#     return Response(response)
-
-
 
 @api_view(['GET'])
 def movie_all(request):
@@ -56,10 +36,53 @@ def beverage_main(request):
 
 @api_view(['GET'])
 def beer_list(request):
-    beers = get_list_or_404(Beer)  # Beer 모델의 모든 객체를 가져옴
-    if request.method == 'GET':
-        serializer = BeerSerializer(beers, many=True)  # many=True를 사용하여 쿼리셋 직렬화
-        return Response(serializer.data)
+    beers = get_list_or_404(Beer)
+    serializer = BeerSerializer(beers, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def beer_detail(request, beer_id):
+    beer = get_object_or_404(Beer, id=beer_id)
+    serializer = BeerSerializer(beer)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def whiskey_list(request):
+    whiskies = get_list_or_404(Whiskey)
+    serializer = WhiskeySerializer(whiskies, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def whiskey_detail(request, whiskey_id):
+    whiskey = get_object_or_404(Whiskey, id=whiskey_id)
+    serializer = WhiskeySerializer(whiskey)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def wine_list(request):
+    wines = get_list_or_404(Wine)
+    serializer = WineSerializer(wines, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def wine_detail(request, wine_id):
+    wine = get_object_or_404(Wine, id=wine_id)
+    serializer = WineSerializer(wine)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def non_alcohol_list(request):
+    non_alcohols = get_list_or_404(NonAlcohol)
+    serializer = NonAlcoholSerializer(non_alcohols, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def non_alcohol_detail(request, non_alcohol_id):
+    non_alcohol = get_object_or_404(NonAlcohol, id=non_alcohol_id)
+    serializer = NonAlcoholSerializer(non_alcohol)
+    return Response(serializer.data)
+
+    
     
 
 @api_view(['GET'])

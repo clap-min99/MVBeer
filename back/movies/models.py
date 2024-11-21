@@ -1,12 +1,11 @@
 from django.db import models
 
-# Create your models here.
-
 class Beverage(models.Model):
     type = models.CharField(max_length=50)  # 주류 유형 (Beer, Whiskey 등)
-    
+
     def __str__(self):
-        return self.name
+        return self.type
+
 
 class Beer(models.Model):
     beverages = models.ManyToManyField(Beverage, related_name='beers')
@@ -14,29 +13,75 @@ class Beer(models.Model):
     description = models.TextField(blank=True, null=True)
     examples = models.TextField()
 
+    def __str__(self):
+        return self.subtype
+
+
+class BeerImage(models.Model):
+    beer = models.ForeignKey(Beer, related_name='images', on_delete=models.CASCADE)  # 다대일 관계
+    image = models.ImageField(upload_to='beer_images/')  # 이미지 저장 필드
+    description = models.CharField(max_length=255, blank=True, null=True)  # 이미지 설명 (선택)
+
+    def __str__(self):
+        return f"Image for {self.beer.subtype}"
+
+
 class Whiskey(models.Model):
     beverages = models.ManyToManyField(Beverage, related_name='whiskies')
     subtype = models.CharField(max_length=50)  # 버번, 스카치 등
     description = models.TextField(blank=True, null=True)
     examples = models.TextField()
 
+    def __str__(self):
+        return self.subtype
+
+
+class WhiskeyImage(models.Model):
+    whiskey = models.ForeignKey(Whiskey, related_name='images', on_delete=models.CASCADE)  # 다대일 관계
+    image = models.ImageField(upload_to='whiskey_images/')  # 이미지 저장 필드
+    description = models.CharField(max_length=255, blank=True, null=True)  # 이미지 설명 (선택)
+
+    def __str__(self):
+        return f"Image for {self.whiskey.subtype}"
+
+
 class Wine(models.Model):
     beverages = models.ManyToManyField(Beverage, related_name='wines')
-    subtype = models.CharField(max_length=50)  # 레드, 화이트
+    subtype = models.CharField(max_length=50)  # 레드, 화이트 등
     description = models.TextField(blank=True, null=True)
     examples = models.TextField()
+
+    def __str__(self):
+        return self.subtype
+
+
+class WineImage(models.Model):
+    wine = models.ForeignKey(Wine, related_name='images', on_delete=models.CASCADE)  # 다대일 관계
+    image = models.ImageField(upload_to='wine_images/')  # 이미지 저장 필드
+    description = models.CharField(max_length=255, blank=True, null=True)  # 이미지 설명 (선택)
+
+    def __str__(self):
+        return f"Image for {self.wine.subtype}"
+
 
 class NonAlcohol(models.Model):
     beverages = models.ManyToManyField(Beverage, related_name='nonalcohols')
-    subtype = models.CharField(max_length=50)  # 콜라, 사이다, 뽀로로
+    subtype = models.CharField(max_length=50)  # 콜라, 사이다 등
     description = models.TextField(blank=True, null=True)
     examples = models.TextField()
 
-# class Cocktail(models.Model): 
-#     beverage = models.OneToOneField(Beverage, on_delete=models.CASCADE, related_name='cocktail')
-#     subtype = models.CharField(max_length=50) # sweet, unsweet
-#     description = models.TextField(blank=True, null=True)
-#     examples = models.TextField()
+    def __str__(self):
+        return self.subtype
+
+
+class NonAlcoholImage(models.Model):
+    nonalcohol = models.ForeignKey(NonAlcohol, related_name='images', on_delete=models.CASCADE)  # 다대일 관계
+    image = models.ImageField(upload_to='nonalcohol_images/')  # 이미지 저장 필드
+    description = models.CharField(max_length=255, blank=True, null=True)  # 이미지 설명 (선택)
+
+    def __str__(self):
+        return f"Image for {self.nonalcohol.subtype}"
+
 
 
 class MovieGenre(models.Model):

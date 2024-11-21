@@ -2,13 +2,12 @@
   <div class="card">
     <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }">
       <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="movieposter" />
-      <div class="card-body">
+      <!-- <div class="card-body">
         <h5 class="card-title">{{ movie.title }}</h5>
-      </div>
+      </div> -->
     </RouterLink>
-
-
-  </div>
+    </div>
+ 
 </template>
 
 <script setup>
