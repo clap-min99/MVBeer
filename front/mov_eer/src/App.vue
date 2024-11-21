@@ -9,6 +9,9 @@
       <span> | </span>
       <RouterLink :to="{name:'SignUpView'}">회원가입</RouterLink>
     </nav>
+
+    <div class="demo">
+    </div>
     
     <RouterView />
   </div>
@@ -21,6 +24,8 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import LoginView from './views/LoginView.vue';
+
+// import Beer 
 
 const route = useRoute()
 const store = useMovieStore()
