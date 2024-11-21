@@ -1,10 +1,11 @@
 <template>
     <div>
         <HeaderComponent />
-        <!-- 오늘의 추천 주류 -->
         <MovieList />
         <!-- 주류별 영화 추천 -->
         <AlcoholMain />
+        <!-- 오늘의 추천 주류 -->
+        <Recommend />
     </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeaderComponent from '@/components/HeaderComponent.vue'
 import AlcoholMain from '@/components/AlcoholMain.vue'
 import { onMounted } from 'vue'
 import { useMovieStore } from '@/stores/movie'
+import Recommend from '@/components/Recommend.vue'
 
 
 const store = useMovieStore()
