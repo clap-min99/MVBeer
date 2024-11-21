@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 from django.conf import settings
-from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol
-from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, WhiskeySerializer, WineSerializer, NonAlcoholSerializer
+from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment
+from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer
 import requests
 
 
@@ -85,3 +85,8 @@ def non_alcohol_detail(request, non_alcohol_id):
     
     
 
+@api_view(['GET'])
+def comment_list(request):
+    comments = Comment.objects.all()
+    serializer = CommentSerializer(comments, many=True)
+    return Response(serializer.data)

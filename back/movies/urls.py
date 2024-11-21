@@ -5,6 +5,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('movies/', views.movie_all),
+    path('movies/<int:movie_pk>/', views.movie_detail),
+    path('beverages/', views.beverage_main),
+    path('beers/', views.beer_list),
+    path('movies/<int:comment_pk>/', views.comment_list),
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
     path('movies/<int:movie_pk>/', views.movie_detail, name='movie_detail'),

@@ -1,21 +1,25 @@
 <template>
-  <RouterLink
-    :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }"
-  >
-    <div class="card">
+  <div class="card">
+    <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }">
       <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="movieposter" />
       <!-- <div class="card-body">
         <h5 class="card-title">{{ movie.title }}</h5>
       </div> -->
+    </RouterLink>
     </div>
-  </RouterLink>
+ 
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
 defineProps({
-  movie: Object
+  movie: Object,
 });
 
+
+
+// 영화 포스터 URL 생성 함수
 const getImageUrl = (path) => {
   if (!path) {
     return;
@@ -26,7 +30,7 @@ const getImageUrl = (path) => {
 
 <style scoped>
 .card {
-  width: 100%; /* MovieList에서 지정한 고정 너비에 맞춤 */
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -49,4 +53,6 @@ const getImageUrl = (path) => {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
+
 </style>

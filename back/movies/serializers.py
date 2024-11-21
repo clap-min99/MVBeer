@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol, BeerImage, WineImage, WhiskeyImage, NonAlcoholImage
+from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol, BeerImage, WineImage, WhiskeyImage, NonAlcoholImage, Comment
 
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
@@ -42,43 +42,10 @@ class BeerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Beer
-        fields = ['id', 'subtype', 'description', 'examples', 'images']
+        fields = '__all__'
 
 
-class WhiskeyImageSerializer(serializers.ModelSerializer):
+class CommentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = WhiskeyImage
-        fields = ['image', 'description']
-
-class WhiskeySerializer(serializers.ModelSerializer):
-    images = WhiskeyImageSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = Whiskey
-        fields = ['id', 'subtype', 'description', 'examples', 'images']
-
-
-class WineImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = WineImage
-        fields = ['image', 'description']
-
-class WineSerializer(serializers.ModelSerializer):
-    images = WineImageSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = Wine
-        fields = ['id', 'subtype', 'description', 'examples', 'images']
-
-
-class NonAlcoholImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = NonAlcoholImage
-        fields = ['image', 'description']
-
-class NonAlcoholSerializer(serializers.ModelSerializer):
-    images = NonAlcoholImageSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = NonAlcohol
-        fields = ['id', 'subtype', 'description', 'examples', 'images']
+        model = Comment
+        fields = '__all__'
