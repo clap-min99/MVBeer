@@ -2,6 +2,7 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
 
 export const useMovieStore = defineStore('movie', () => {
