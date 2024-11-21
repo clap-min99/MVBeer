@@ -32,18 +32,59 @@ class BeverageSerializer(serializers.ModelSerializer):
         model = Beverage
         fields = '__all__'
 
+        
+# Beer Image Serializer
 class BeerImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = BeerImage
-        fields = ['image', 'description']
+        fields = ['id', 'image', 'description']
 
 class BeerSerializer(serializers.ModelSerializer):
-    images = BeerImageSerializer(many=True, read_only=True)
+    images = BeerImageSerializer(many=True)
 
     class Meta:
         model = Beer
-        fields = '__all__'
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+# Wine Image Serializer
+class WineImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WineImage
+        fields = ['id', 'image', 'description']  # 이미지 필드 포함
 
+class WineSerializer(serializers.ModelSerializer):
+    images = WineImageSerializer(many=True, read_only=True)  # 관련 이미지 추가
+
+    class Meta:
+        model = Wine
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+
+
+# Whiskey Image Serializer
+class WhiskeyImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WhiskeyImage
+        fields = ['id', 'image', 'description']
+
+class WhiskeySerializer(serializers.ModelSerializer):
+    images = WhiskeyImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Whiskey
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+
+
+# NonAlcohol Image Serializer
+class NonAlcoholImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NonAlcoholImage
+        fields = ['id', 'image', 'description']
+
+class NonAlcoholSerializer(serializers.ModelSerializer):
+    images = NonAlcoholImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = NonAlcohol
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
 
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
