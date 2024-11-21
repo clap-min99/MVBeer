@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 from django.conf import settings
 from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment
-from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer
+from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer, WhiskeySerializer, WineSerializer, NonAlcoholSerializer
 import requests
 
 
@@ -72,14 +72,14 @@ def wine_detail(request, wine_id):
 
 @api_view(['GET'])
 def non_alcohol_list(request):
-    non_alcohols = get_list_or_404(NonAlcohol)
-    serializer = NonAlcoholSerializer(non_alcohols, many=True)
+    nonalcohols = get_list_or_404(NonAlcohol)
+    serializer = NonAlcoholSerializer(nonalcohols, many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
 def non_alcohol_detail(request, non_alcohol_id):
-    non_alcohol = get_object_or_404(NonAlcohol, id=non_alcohol_id)
-    serializer = NonAlcoholSerializer(non_alcohol)
+    nonalcohol = get_object_or_404(NonAlcohol, id=non_alcohol_id)
+    serializer = NonAlcoholSerializer(nonalcohol)
     return Response(serializer.data)
 
     
