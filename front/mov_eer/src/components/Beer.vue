@@ -9,7 +9,7 @@
         >
           <h4>{{ beer.subtype }}</h4>
           <p>{{ beer.description }}</p>
-          <p><strong>Examples:</strong> {{ beer.examples }}</p>
+          <p>{{ beer.examples }}</p>
           <div class="beer-images">
             <img 
                 v-for="image in beer.images" 

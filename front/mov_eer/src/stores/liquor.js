@@ -74,6 +74,67 @@ export const useLiquorStore = defineStore('liquor', () => {
           console.log(err)
         })
       }
-      return{ beers, beer, whiskey, whiskeys, 
-        getBeer, getBeers, getWhiskey, getWhiskeys}
+       // Wine API functions
+  const getWines = function () {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/wines/`,
+    })
+      .then((res) => {
+        wines.value = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const getWine = function (winePk) {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/wines/${winePk}`,
+    })
+      .then((res) => {
+        wine.value = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  // Nonalcohol API functions
+  const getNonalcohols = function () {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/nonalcohols/`,
+    })
+      .then((res) => {
+        nonalcohols.value = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const getNonalcohol = function (nonalcoholPk) {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/nonalcohols/${nonalcoholPk}`,
+    })
+      .then((res) => {
+        nonalcohol.value = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+      return{ beers, beer, whiskey, whiskeys,  wines,
+        wine,
+        nonalcohols,
+        nonalcohol,
+        getBeer, getBeers, getWhiskey, getWhiskeys,
+        getWines,
+        getWine,
+        getNonalcohols,
+        getNonalcohol,}
 })
