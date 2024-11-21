@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol
+from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol, BeerImage, WineImage, WhiskeyImage, NonAlcoholImage
 
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
@@ -32,7 +32,53 @@ class BeverageSerializer(serializers.ModelSerializer):
         model = Beverage
         fields = '__all__'
 
+class BeerImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BeerImage
+        fields = ['image', 'description']
+
 class BeerSerializer(serializers.ModelSerializer):
+    images = BeerImageSerializer(many=True, read_only=True)
+
     class Meta:
         model = Beer
-        fields = '__all__'
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+
+
+class WhiskeyImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WhiskeyImage
+        fields = ['image', 'description']
+
+class WhiskeySerializer(serializers.ModelSerializer):
+    images = WhiskeyImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Whiskey
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+
+
+class WineImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WineImage
+        fields = ['image', 'description']
+
+class WineSerializer(serializers.ModelSerializer):
+    images = WineImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Wine
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
+
+
+class NonAlcoholImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NonAlcoholImage
+        fields = ['image', 'description']
+
+class NonAlcoholSerializer(serializers.ModelSerializer):
+    images = NonAlcoholImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = NonAlcohol
+        fields = ['id', 'subtype', 'description', 'examples', 'images']
