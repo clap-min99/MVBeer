@@ -22,8 +22,10 @@ import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import LoginView from './views/LoginView.vue';
 
+
 const route = useRoute()
 const store = useMovieStore()
+
 
 </script>
 

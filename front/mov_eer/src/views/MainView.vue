@@ -16,7 +16,6 @@ import { onMounted } from 'vue'
 import { useMovieStore } from '@/stores/movie'
 
 
-
 const store = useMovieStore()
 
 onMounted(() => {
