@@ -109,3 +109,4 @@ class Movie(models.Model):
     poster_url = models.TextField()
     def __str__(self):
         return self.title
+    

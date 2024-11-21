@@ -2,8 +2,8 @@
   <div>
     <nav >
       <RouterLink :to="{name:'MainView'}">Main</RouterLink>
-      <span> | </span>
-      <RouterLink :to="{name:'AlcoholView'}">Alcohol</RouterLink>
+      <!-- <span> | </span>
+      <RouterLink :to="{name:'AlcoholView'}">Alcohol</RouterLink> -->
       <span> | </span>
       <RouterLink :to="{name:'LoginView'}">로그인</RouterLink>
       <span> | </span>
