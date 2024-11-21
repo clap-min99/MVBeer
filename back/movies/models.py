@@ -64,3 +64,10 @@ class Movie(models.Model):
     poster_url = models.TextField()
     def __str__(self):
         return self.title
+    
+
+class Comment(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

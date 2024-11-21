@@ -24,9 +24,15 @@
         </div>
       </div>
     </div>
+    <div class="comments-container">
+      <Comment />
+    </div>
   </template>
   
   <script setup>
+
+  import Comment from '@/components/Comment.vue';
+
   defineProps({
     movie: {
       type: Object,
