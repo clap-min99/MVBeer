@@ -10,12 +10,12 @@
 </template>
 
 <script setup>
-import MovieList from '@/components/MovieList.vue'
-import HeaderComponent from '@/components/HeaderComponent.vue'
-import AlcoholMain from '@/components/AlcoholMain.vue'
+import MovieList from '@/components/movie/MovieList.vue'
+import HeaderComponent from '@/components/shared/HeaderComponent.vue'
+import AlcoholMain from '@/components/alcohol/AlcoholMain.vue'
 import { onMounted } from 'vue'
 import { useMovieStore } from '@/stores/movie'
-import Recommend from '@/components/Recommend.vue'
+import Recommend from '@/components/alcohol/Recommend.vue'
 
 
 const store = useMovieStore()

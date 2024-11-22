@@ -15,7 +15,7 @@
 <script setup>
 import { useMovieStore } from '@/stores/movie';
 import MovieMainInfo from './MovieMainInfo.vue';
-import AlcoholMain from './AlcoholMain.vue';
+import AlcoholMain from '@/components/alcohol/AlcoholMain.vue';
 
 const store = useMovieStore()
 </script>

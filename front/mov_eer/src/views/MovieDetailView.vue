@@ -16,7 +16,7 @@ import { RouterView, RouterLink } from 'vue-router'
 import { onMounted, ref, computed } from 'vue'
 import { useRoute } from 'vue-router';
 import { useMovieStore } from '@/stores/movie';
-import MovieDetailInfo from '@/components/MovieDetailInfo.vue';
+import MovieDetailInfo from '@/components/movie/MovieDetailInfo.vue';
 const store = useMovieStore()
 const route = useRoute()
 
