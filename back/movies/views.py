@@ -88,15 +88,15 @@ def non_alcohol_detail(request, non_alcohol_id):
 
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
-def comment_list(request):
+def comment_list(request, movie_pk):
     if request.method == 'GET':
-        comments = Comment.objects.filter(movie__isnull=False)  # 필터링 조건 예시
+        comments = Comment.objects.filter(movie_id=movie_pk)  # 필터링 조건 예시
         serializer = CommentSerializer(comments, many=True)
         return Response(serializer.data)
     
     elif request.method == 'POST':
         serializer = CommentSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save(user=request.user)
+        if serializer.is_valid():
+            serializer.save(user=request.user, movie_id=movie_pk)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
