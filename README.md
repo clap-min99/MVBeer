@@ -82,6 +82,11 @@
 
 
 ## 20241122
+* back 로그인 기능 구현
+  
+  `pip install dj-rest-auth`
+
+  `pip install 'dj-rest-auth[with-social]'`
 
 ## 20241123
 

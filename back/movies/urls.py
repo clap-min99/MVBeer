@@ -9,7 +9,9 @@ urlpatterns = [
     path('movies/<int:movie_pk>/', views.movie_detail),
     path('beverages/', views.beverage_main),
     path('beers/', views.beer_list),
+    # login, comment 관련
     path('movies/<int:comment_pk>/', views.comment_list),
+    
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
     path('movies/<int:movie_pk>/', views.movie_detail, name='movie_detail'),
