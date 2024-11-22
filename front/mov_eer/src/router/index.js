@@ -8,6 +8,8 @@ import BeerView from '@/views/BeerView.vue'
 import WhiskeyView from '@/views/WhiskeyView.vue'
 import WineView from '@/views/WineView.vue'
 
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

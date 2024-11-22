@@ -15,12 +15,12 @@
   
   <script setup>
   import { ref } from 'vue'
-  import { useMovieStore } from '@/stores/movie';
+  import { useLogStore } from '@/stores/log';
   
   const username = ref(null)
   const password = ref(null)
   
-  const store = useMovieStore()
+  const store = useLogStore()
   
   const logIn = function () {
     const payload = {
