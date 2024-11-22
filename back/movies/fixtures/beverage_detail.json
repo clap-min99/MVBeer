@@ -42,7 +42,7 @@
             "beverages": [
                 1
             ],
-            "subtype": "Wheat Beer",
+            "subtype": "Wheat",
             "description": "보리 대신 밀을 주요 재료로 사용하는 맥주로, 부드럽고 가벼운 질감과 은은한 과일 향이 특징입니다.",
             "examples": "weihenstephaner_hefeweissbier, paulaner_hefeweibier, hoegaarden"
         }
@@ -223,7 +223,7 @@
                 4
             ],
             "subtype": "nonalcohol",
-            "description": "알코올이 없는 음료입니다.",
+            "description": "애들은 가라",
             "examples": "coke, sprite, pororo, qoo, americano"
         }
     }

@@ -24,7 +24,13 @@
         `source venv/Scripts/activate`
 
     3. `pip install -r requirements.txt`
-    (전역에 `django-cors-headers`, `pillow` 설치 안되어 있으면 실행 안되는게 있을 수도 있다. 전역에도 설치하고 가상환경에도 install 하자! )
+    
+        (전역에 `django-cors-headers`, `pillow` 설치 안되어 있으면 실행 안되는게 있을 수도 있다. 전역에도 설치하고 가상환경에도 install 하자!)
+
+        `pip install django-cors-headers`
+        
+        `pip install pillow`    
+            
 
     4. `python manage.py makemigrations`
 
