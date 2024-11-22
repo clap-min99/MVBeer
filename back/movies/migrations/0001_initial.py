@@ -138,3 +138,4 @@ class Migration(migrations.Migration):
             field=models.ManyToManyField(related_name='beers', to='movies.beverage'),
         ),
     ]
+
