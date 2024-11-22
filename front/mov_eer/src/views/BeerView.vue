@@ -45,19 +45,23 @@
   // Computed properties
   const beers = computed(() => liquorStore.beers);
   const movies = computed(() => movieStore.movies);
-  const genres = computed(() => movieStore.id); // Assume genres are loaded in movie store
+  const genres = computed(() => movieStore.genres); // Assume genres are loaded in movie store
   const loading = computed(() => !liquorStore.beers.length || !movieStore.movies.length);
   
   // Match movies by beer subtype
   const getBeerMovies = (subtype) => {
-    return movies.value.filter((movie) => {
-      return movie.genres.some((genreId) => {
-        const genre = genres.value.find((g) => g.pk === genreId);
-        return genre && genre.subtype === subtype;
-      });
+  // 현재 맥주의 subtype에 맞는 영화를 필터링
+  return movies.value.filter((movie) => {
+    return movie.genres.some((genreId) => {
+      const genre = genres.value.find((g) => g.pk === genreId); // 장르 매칭
+      if (genre) {
+        console.log("Matched Genre:", genre.subtype, "Expected Subtype:", subtype); // 디버깅 로그
+        return genre.subtype === subtype; // 맥주의 subtype과 비교
+      }
+      return false;
     });
-  };
-  
+  });
+};
   // Generate image URL
   const getImageUrl = (path) => {
     if (!path) {

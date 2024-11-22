@@ -13,19 +13,28 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = '__all__'
-    
+
     def get_genres(self, obj):
-        return [
-            {
-                "id": genre.id,
-                "name": genre.name,
-                "recommended_beverage": {
-                    "type": genre.beverage.type,  # 큰 범주
-                    "subtype": genre.subtype  # 세부 주류
-                }
-            }
-            for genre in obj.genres.all()
-        ]
+        return [genre.id for genre in obj.genres.all()]  # 장르 ID만 반환
+    # def get_genres(self, obj):
+    #     return [
+    #         {
+    #             "id": genre.id,
+    #             "name": genre.name,
+    #             "recommended_beverage": {
+    #                 "type": genre.beverage.type,  # 큰 범주
+    #                 "subtype": genre.subtype  # 세부 주류
+    #             }
+    #         }
+    #         for genre in obj.genres.all()
+    #     ]
+
+class GenreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MovieGenre
+        fields = ['id', 'name', 'beverage', 'subtype']
+
+
 
 class BeverageSerializer(serializers.ModelSerializer):
     class Meta:

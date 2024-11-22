@@ -4,8 +4,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from django.conf import settings
-from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment
-from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer, WhiskeySerializer, WineSerializer, NonAlcoholSerializer
+from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment, MovieGenre
+from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer, WhiskeySerializer, WineSerializer, NonAlcoholSerializer, GenreSerializer
 import requests
 
 
@@ -25,7 +25,20 @@ def movie_detail(request, movie_pk):
     if request.method == 'GET':
         serializer = MovieSerializer(movie)
         return Response(serializer.data)
-    
+
+@api_view(['GET'])
+def movie_genre_list(request):
+    genres = get_list_or_404(MovieGenre)
+    if request.method == 'GET':
+        serializer = GenreSerializer(genres, many=True)
+        return Response(serializer.data)
+
+@api_view(['GET'])
+def movie_genre_detail(request, genre_id):
+    genre = get_object_or_404(MovieGenre, id=genre_id)
+    if request.method == 'GET':
+        serializer = GenreSerializer(genre)
+        return Response(serializer.data)
 
 @api_view(['GET'])
 def beverage_main(request):
