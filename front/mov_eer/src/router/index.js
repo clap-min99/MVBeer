@@ -4,6 +4,10 @@ import MovieDetailView from '@/views/MovieDetailView.vue'
 import AlcoholView from '@/views/AlcoholView.vue'
 import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
+import BeerView from '@/views/BeerView.vue'
+import WhiskeyView from '@/views/WhiskeyView.vue'
+import WineView from '@/views/WineView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -31,6 +35,21 @@ const router = createRouter({
       path: '/login',
       name: 'LoginView',
       component: LoginView
+    },
+    {
+      path: '/beer/',
+      name: 'BeerView',
+      component: BeerView
+    },
+    {
+      path: '/whiskey/',
+      name: 'WhiskeyView',
+      component: WhiskeyView
+    },
+    {
+      path: '/wine/',
+      name: 'WineView',
+      component: WineView
     }
   ],
 })
