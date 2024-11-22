@@ -13,7 +13,7 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = '__all__'
-    
+
     def get_genres(self, obj):
         return [
             {
@@ -26,6 +26,13 @@ class MovieSerializer(serializers.ModelSerializer):
             }
             for genre in obj.genres.all()
         ]
+
+class GenreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MovieGenre
+        fields = ['id', 'name', 'beverage', 'subtype']
+
+
 
 class BeverageSerializer(serializers.ModelSerializer):
     class Meta:

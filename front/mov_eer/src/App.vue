@@ -9,7 +9,7 @@
       <span> | </span>
       <RouterLink :to="{name:'SignUpView'}">회원가입</RouterLink>
     </nav>
-    
+    <HeaderComponent />
     <RouterView />
   </div>
 </template>
