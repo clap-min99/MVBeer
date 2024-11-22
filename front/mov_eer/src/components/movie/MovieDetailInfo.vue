@@ -43,7 +43,7 @@
     </div>
 
     <div class="comments-container">
-      <Comment />
+      <Comment :movieId="movie.id"/>
     </div>
   </div>
 </template>

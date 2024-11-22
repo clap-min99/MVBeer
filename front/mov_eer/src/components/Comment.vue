@@ -1,14 +1,19 @@
 <template>
-    <div>
+  <div>
     <!-- 댓글 섹션 -->
     <div class="comments-section">
       <h5>댓글</h5>
       <ul class="comments-list">
-        <li v-for="(comment, index) in comments" :key="index" class="comment">
-          {{ comment }}
+        <li v-for="comment in comments" :key="comment.id" class="comment">
+          <p>
+            <strong>{{ comment.user }}</strong>: {{ comment.content }}
+          </p>
+          <small>{{ new Date(comment.created_at).toLocaleString() }}</small>
+          <button v-if="isAuthor(comment)" @click="editComment(comment)">수정</button>
+          <button v-if="isAuthor(comment)" @click="deleteComment(comment.id)">삭제</button>
         </li>
       </ul>
-      <form @submit.prevent="addComment">
+      <form @submit.prevent="submitComment">
         <input
           type="text"
           v-model="newComment"
@@ -18,22 +23,147 @@
         <button type="submit" class="comment-submit">댓글 달기</button>
       </form>
     </div>
-    </div>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-// 댓글 데이터 관리
-const comments = ref([]); // 댓글 목록
-const newComment = ref(""); // 새로 입력된 댓글
+import { ref, onMounted } from "vue";
+import axios from "axios";
+import { useLogStore } from "@/stores/log";
 
-// 댓글 추가 함수
-const addComment = () => {
-  if (newComment.value.trim() !== "") {
-    comments.value.push(newComment.value); // 새 댓글 추가
-    newComment.value = ""; // 입력 필드 초기화
-  }
+const props = defineProps({
+  movieId: {
+    type: Number,
+    required: true,
+  },
+});
+
+const comments = ref([]);
+const newComment = ref("");
+const editingComment = ref(null);
+const store = useLogStore();
+
+console.log(store.API_URL)
+// 댓글 불러오기
+const fetchComments = () => {
+  const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/`;
+  console.log(store.token)
+  console.log("Fetching comments from:", url); // 디버깅용 콘솔 출력
+
+  axios({
+    method: 'get',
+    url:  `${store.API_URL}/api/v1/movies/${props.movieId}/comments/`,
+    headers: {
+      Authorization: `Token ${store.token}`
+    },
+  }).then((response) => {
+      console.log("댓글 API 응답:", response.data); // 응답 데이터 확인
+      comments.value = response.data;
+    })
+    .catch((error) => {
+      console.error("댓글 불러오기 실패:", error);
+    });
 };
+    
+    
+
+// 댓글 작성
+const submitComment = () => {
+  if (newComment.value.trim() === "") {
+    alert("댓글 내용을 입력하세요!");
+    return;
+  }
+
+  const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/`;
+  console.log("Submitting comment to:", url); // 디버깅용 콘솔 출력
+
+  axios
+  ({
+    method: 'post',
+    url:  `${store.API_URL}/api/v1/movies/${props.movieId}/comments/`,
+    headers: {
+      Authorization: `Token ${store.token}`
+    },
+    data:{content: newComment.value}},)
+    .then((response) => {
+      // 댓글 추가 시 중복 방지
+      if (!comments.value.some((comment) => comment.id === response.data.id)) {
+        comments.value.push(response.data);
+      }
+      newComment.value = "";
+      alert("댓글 작성 성공!");
+    })
+    .catch((error) => {
+      console.error("댓글 작성 실패:", error);
+    });
+};
+
+// 댓글 삭제
+const deleteComment = (commentId) => {
+  const url = `${store.API_URL}/api/v1/comments/${commentId}/`;
+  console.log("Deleting comment from:", url); // 디버깅용 콘솔 출력
+
+  axios
+    .delete(url, {
+      headers: {
+        Authorization: `Token ${store.token}`,
+      },
+    })
+    .then(() => {
+      comments.value = comments.value.filter((comment) => comment.id !== commentId);
+      alert("댓글 삭제 성공!");
+    })
+    .catch((error) => {
+      console.error("댓글 삭제 실패:", error);
+    });
+};
+
+// 댓글 수정
+const editComment = (comment) => {
+  editingComment.value = comment;
+  newComment.value = comment.content;
+};
+
+const updateComment = () => {
+  const url = `${store.API_URL}/api/v1/comments/${editingComment.value.id}/`;
+  console.log("Updating comment at:", url); // 디버깅용 콘솔 출력
+
+  axios
+    .put(
+      url,
+      { content: newComment.value },
+      {
+        headers: {
+          Authorization: `Token ${store.token}`,
+        },
+      }
+    )
+    .then((response) => {
+      const index = comments.value.findIndex((c) => c.id === editingComment.value.id);
+      comments.value[index] = response.data;
+      editingComment.value = null;
+      newComment.value = "";
+      alert("댓글 수정 성공!");
+    })
+    .catch((error) => {
+      console.error("댓글 수정 실패:", error);
+    });
+};
+
+// 작성자 확인
+const isAuthor = (comment) => {
+  return store.user?.username === comment.user;
+};
+
+// 컴포넌트 초기 로드
+onMounted(() => {
+  console.log("Movie ID:", props.movieId); // movieId 출력
+  if (!store.token) {
+    alert("로그인이 필요합니다.");
+    return;
+  }
+  fetchComments();
+});
 </script>
 
 <style scoped>
