@@ -19,7 +19,8 @@ const router = createRouter({
     {
       path: '/movies/:moviePk/',
       name: 'MovieDetailView',
-      component: MovieDetailView
+      component: MovieDetailView,
+      props: true
     },
     {
       path: '/AlcoholView/',

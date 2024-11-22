@@ -1,22 +1,21 @@
 <template>
     <div class="beer-view">
-      <h1 class="view-title">Beer Movies</h1>
+      <h1 class="view-title">Beer</h1>
       <div v-if="loading" class="loading">Loading...</div>
       <div v-else-if="!beers.length" class="no-data">
         No beers or associated movies found.
       </div>
-      <div v-else class="movies-container">
+      <div class="movies-container">
         <div v-for="beer in beers" :key="beer.id" class="beer-section">
           <h2 class="beer-title">{{ beer.subtype }}</h2>
           <p class="beer-description">{{ beer.description }}</p>
-          <div class="movies-grid">
+          <div class="movies-scroll">
             <div
               v-for="movie in getBeerMovies(beer.subtype)"
-              :key="movie.pk"
+              :key="movie.id"
               class="movie-card"
             >
-              <!-- 영화 포스터 클릭 시 MovieDetailView로 이동 -->
-              <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.pk } }">
+              <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }">
                 <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="Movie Poster" />
               </RouterLink>
               <p class="movie-title">{{ movie.title }}</p>
@@ -32,37 +31,30 @@
   import { useMovieStore } from "@/stores/movie";
   import { computed, onMounted } from "vue";
   import { RouterLink } from "vue-router";
-  // Pinia stores
+  
   const liquorStore = useLiquorStore();
   const movieStore = useMovieStore();
   
-  // Load data on mount
   onMounted(() => {
     liquorStore.getBeers();
     movieStore.getMovies();
+    movieStore.getGenres();
   });
   
-  // Computed properties
   const beers = computed(() => liquorStore.beers);
   const movies = computed(() => movieStore.movies);
-  const genres = computed(() => movieStore.genres); // Assume genres are loaded in movie store
+  const genres = computed(() => movieStore.genres);
   const loading = computed(() => !liquorStore.beers.length || !movieStore.movies.length);
   
-  // Match movies by beer subtype
   const getBeerMovies = (subtype) => {
-  // 현재 맥주의 subtype에 맞는 영화를 필터링
-  return movies.value.filter((movie) => {
-    return movie.genres.some((genreId) => {
-      const genre = genres.value.find((g) => g.pk === genreId); // 장르 매칭
-      if (genre) {
-        console.log("Matched Genre:", genre.subtype, "Expected Subtype:", subtype); // 디버깅 로그
-        return genre.subtype === subtype; // 맥주의 subtype과 비교
-      }
-      return false;
+    return movies.value.filter((movie) => {
+      return movie.genres.some((genreId) => {
+        const genre = genres.value.find((g) => g.id === genreId);
+        return genre && genre.subtype === subtype;
+      });
     });
-  });
-};
-  // Generate image URL
+  };
+  
   const getImageUrl = (path) => {
     if (!path) {
       return "https://via.placeholder.com/300x450";
@@ -107,15 +99,30 @@
     color: #555;
   }
   
-  .movies-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  .movies-scroll {
+    display: flex; /* Flexbox 사용 */
+    gap: 20px; /* 카드 간격 */
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    padding-bottom: 10px; /* 스크롤바 공간 확보 */
+  }
+  
+  .movies-scroll::-webkit-scrollbar {
+    height: 8px; /* 스크롤바 높이 */
+  }
+  
+  .movies-scroll::-webkit-scrollbar-thumb {
+    background: #888; /* 스크롤바 색상 */
+    border-radius: 4px;
+  }
+  
+  .movies-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 호버 시 색상 */
   }
   
   .movie-card {
+    flex: 0 0 auto; /* 고정 너비 */
+    width: 150px;
     text-align: center;
-    max-width: 150px;
   }
   
   .movie-poster {

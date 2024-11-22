@@ -1,6 +1,5 @@
 <template>
     <div>
-        <HeaderComponent />
         <MovieList />
         <!-- 주류별 영화 추천 -->
         <AlcoholMain />
@@ -11,7 +10,6 @@
 
 <script setup>
 import MovieList from '@/components/movie/MovieList.vue'
-import HeaderComponent from '@/components/shared/HeaderComponent.vue'
 import AlcoholMain from '@/components/alcohol/AlcoholMain.vue'
 import { onMounted } from 'vue'
 import { useMovieStore } from '@/stores/movie'
