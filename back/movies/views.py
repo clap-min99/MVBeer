@@ -104,6 +104,7 @@ def non_alcohol_detail(request, non_alcohol_id):
 def comment_list(request, movie_pk):
     if request.method == 'GET':
         comments = Comment.objects.filter(movie_id=movie_pk)  # 필터링 조건 예시
+        print(comments)
         serializer = CommentSerializer(comments, many=True)
         return Response(serializer.data)
     
