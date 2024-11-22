@@ -4,7 +4,7 @@ import MovieDetailView from '@/views/MovieDetailView.vue'
 import AlcoholView from '@/views/AlcoholView.vue'
 import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
-import BeerView from '@/views/BeerView.vue'
+import BeerView from '@/views/Beer/BeerView.vue'
 import WhiskeyView from '@/views/WhiskeyView.vue'
 import WineView from '@/views/WineView.vue'
 
