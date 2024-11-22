@@ -1,6 +1,5 @@
 <template>
     <div>
-      <h3>Non-Alcoholic Drinks</h3>
       <div v-if="nonalcohols.length">
         <div 
           v-for="nonalcohol in nonalcohols" 

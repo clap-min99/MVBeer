@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h3>Whiskey</h3>
+
       <div v-if="whiskeys.length">
         <div 
           v-for="whiskey in whiskeys" 
