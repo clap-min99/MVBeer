@@ -10,7 +10,7 @@ urlpatterns = [
     path('beverages/', views.beverage_main),
     path('beers/', views.beer_list),
     # login, comment 관련
-    path('movies/<int:comment_pk>/', views.comment_list),
+    path('movies/<int:movie_pk>/comments/', views.comment_list),
     
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
