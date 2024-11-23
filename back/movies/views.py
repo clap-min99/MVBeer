@@ -19,7 +19,7 @@ def movie_all(request):
         return Response(serializer.data)
 
 
-@api_view(['GET'])    
+@api_view(['GET'])  
 def movie_detail(request, movie_pk):
     movie = get_object_or_404(Movie, movie_id = movie_pk)
     if request.method == 'GET':
