@@ -2,7 +2,7 @@
   <div class="header-container">
     <!-- 로고 섹션 -->
     <div class="logo-container">
-      <img src="@/assets/image.png" alt="MVBeer Logo" class="logo-image" />
+      <img src="@/assets/logo.png" alt="MVBeer Logo" class="logo-image" />
     </div>
 
     <!-- 네비게이션 섹션 -->

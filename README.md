@@ -21,7 +21,9 @@
 
         `python -m venv venv`
 
-        `source venv/Scripts/activate`
+        Window: `source venv/Scripts/activate`
+        
+        Mac: `source venv/bin/activate`
 
     3. `pip install -r requirements.txt`
     
@@ -31,6 +33,8 @@
         
         `pip install pillow`    
             
+        `pip install djangorestframework`
+        
 
     4. `python manage.py makemigrations`
 
