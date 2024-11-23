@@ -71,7 +71,7 @@
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #007bff;
+    background-color: #3b3b3b;
     color: white;
     cursor: pointer;
     border-radius: 5px;

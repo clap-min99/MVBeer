@@ -70,7 +70,7 @@ export const useLogStore = defineStore('log', () => {
       .then((res) => {
         console.log(res.data)
         token.value = null
-        router.push({ name: 'ArticleView' })
+        router.push({ name: 'MainView' })
       })
       .catch((err) => {
         console.log(err)
@@ -79,4 +79,4 @@ export const useLogStore = defineStore('log', () => {
   return { signUp, logIn, token, isLogin, logOut, API_URL }
   
 
-})
+}, { persist: true })

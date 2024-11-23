@@ -1,10 +1,6 @@
 <template>
-  <div>
+  <div class="background">
     <nav >
-      <RouterLink :to="{name:'MainView'}">Main</RouterLink>
-      <!-- <span> | </span>
-      <RouterLink :to="{name:'AlcoholView'}">Alcohol</RouterLink> -->
-      <span> | </span>
       <RouterLink :to="{name:'LoginView'}">로그인</RouterLink>
       <span> | </span>
       <RouterLink :to="{name:'SignUpView'}">회원가입</RouterLink>
@@ -30,5 +26,7 @@ const store = useMovieStore()
 </script>
 
 <style scoped>
-
+.background{
+  background-color: #2e2e2e
+}
 </style>
