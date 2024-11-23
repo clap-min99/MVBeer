@@ -1,0 +1,5449 @@
+[
+   {
+      "pk": 912649,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 912649,
+         "title": "베놈: 라스트 댄스",
+         "summary": "환상의 케미스트리의 에디 브록과 그의 심비오트 베놈은 그들을 노리는 정체불명 존재의 추격을 피해 같이 도망을 다니게 된다. 한편 베놈의 창조자 널은 고향 행성에서부터 그들을 찾아내기 위해 지구를 침략하고 에디와 베놈은 그동안 겪어보지 못한 최악의 위기를 맞이하게 되는데…",
+         "release_date": "2024-10-22",
+         "director": "David Michelinie",
+         "actors": [
+            "Tom Hardy",
+            "Chiwetel Ejiofor",
+            "Juno Temple",
+            "Clark Backo",
+            "Rhys Ifans",
+            "Stephen Graham",
+            "Peggy Lu",
+            "Alanna Ubach",
+            "Hala Finley",
+            "Dash McCloud"
+         ],
+         "genres": [
+            878,
+            28,
+            12
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/3flIDcZF3tnR7m5OU2h7lLPQwmr.jpg"
+      }
+   },
+   {
+      "pk": 1034541,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1034541,
+         "title": "테리파이어 3",
+         "summary": "\"아트 더 클라운\"이 크리스마스 이브에 평화롭게 잠든 \"마일스 카운티\"의 주민들을 향해 혼돈을 일으키려 한다",
+         "release_date": "2024-10-09",
+         "director": "Chris McGurk",
+         "actors": [
+            "Lauren LaVera",
+            "David Howard Thornton",
+            "Samantha Scaffidi",
+            "Elliott Fullam",
+            "Margaret Anne Florence",
+            "Bryce Johnson",
+            "Alexa Blair Robertson",
+            "Antonella Rose",
+            "Mason Mecartea",
+            "Krsy Fox"
+         ],
+         "genres": [
+            27,
+            53,
+            9648
+         ],
+         "adult": false,
+         "star_rating": 6.917,
+         "poster_url": "/l1175hgL5DoXnqeZQCcU3eZIdhX.jpg"
+      }
+   },
+   {
+      "pk": 1184918,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1184918,
+         "title": "와일드 로봇",
+         "summary": "우연한 사고로 거대한 야생에 불시착한 로봇 로즈는 주변 동물들의 행동을 배우며 낯선 환경 속에 적응해 가던 중, 사고로 세상에 홀로 남겨진 아기 기러기 브라이트빌의 보호자가 된다. 로즈는 입력되어 있지 않은 새로운 역할과 관계에 낯선 감정을 마주하고 겨울이 오기 전에 남쪽으로 떠나야 하는 브라이트빌을 위해 동물들의 도움을 받아 이주를 위한 생존 기술을 가르쳐준다. 그러나 선천적으로 몸집이 작은 브라이트빌은 짧은 비행도 힘겨워 하는데...",
+         "release_date": "2024-09-12",
+         "director": "Raymond Zibach",
+         "actors": [
+            "Lupita Nyong'o",
+            "Pedro Pascal",
+            "Kit Connor",
+            "Bill Nighy",
+            "Stephanie Hsu",
+            "Matt Berry",
+            "Ving Rhames",
+            "Mark Hamill",
+            "Catherine O'Hara",
+            "Boone Storm"
+         ],
+         "genres": [
+            16,
+            878,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 8.5,
+         "poster_url": "/8dkuf9IuVh0VZjDTk7kAY67lU0U.jpg"
+      }
+   },
+   {
+      "pk": 558449,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 558449,
+         "title": "글래디에이터 II",
+         "summary": "로마의 영웅이자 최고의 검투사였던 막시무스가 콜로세움에서 죽음을 맞이한 뒤 20여 년이 흐른 후. 쌍둥이 황제 게타와 카라칼라의 폭압 아래 시민을 위한 자유로운 나라 로마의 꿈은 잊힌 지 오래다. 한편 아카시우스 장군이 이끄는 로마군에 대패한 후 모든 것을 잃고 노예로 전락한 루시우스는 강한 권력욕을 지닌 마크리누스의 눈에 띄어 검투사로 발탁된다. 로마를 향한 걷잡을 수 없는 분노, 타고난 투사의 기질로 콜로세움에 입성하게 된 루시우스는 결투를 거듭하며 자신이 진짜 누구인지 알게 되고 마침내 로마의 운명을 건 결전을 준비하게 되는데...!",
+         "release_date": "2024-11-13",
+         "director": "John Mathieson",
+         "actors": [
+            "Paul Mescal",
+            "Denzel Washington",
+            "Pedro Pascal",
+            "Connie Nielsen",
+            "Joseph Quinn",
+            "Fred Hechinger",
+            "Lior Raz",
+            "Derek Jacobi",
+            "Peter Mensah",
+            "Matt Lucas"
+         ],
+         "genres": [
+            28,
+            12,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.764,
+         "poster_url": "/b5UXjzW5cLZhprMnlAmsVAA3G4t.jpg"
+      }
+   },
+   {
+      "pk": 1118031,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1118031,
+         "title": "아포칼립스 Z: 종말의 시작",
+         "summary": "광견병과 유사한 질병이 지구 전역에 퍼져 사람들이 공격적인 생명체로 변한다. 마넬은 고양이와 함께 집에 숨어서 재치를 발휘해 살아남는다. 곧 둘은 식량을 구하고 육지와 바다의 안전한 곳을 찾기 위해 떠나야 한다.",
+         "release_date": "2024-10-04",
+         "director": "Adrián Guerra",
+         "actors": [
+            "Francisco Ortiz",
+            "José María Yázpik",
+            "Berta Vázquez",
+            "Iria del Río",
+            "Marta Poveda",
+            "Amalia Gómez",
+            "María Salgueiro",
+            "Yuri Mykhaylychenko",
+            "Ian Monclús",
+            "Yaiza Macías"
+         ],
+         "genres": [
+            18,
+            28,
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.8,
+         "poster_url": "/hofZ9t2zQEYjQWNZ8cPjMByVHci.jpg"
+      }
+   },
+   {
+      "pk": 791042,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 791042,
+         "title": "레벨스",
+         "summary": "",
+         "release_date": "2024-11-01",
+         "director": "Adam Stern",
+         "actors": [
+            "Cara Gee",
+            "Peter Mooney",
+            "Aaron Abrams",
+            "David Hewlett",
+            "Amanda Tapping",
+            "Adam Hurtig",
+            "Sydney Sabiston",
+            "Jade Ma",
+            "BJ Verot",
+            "Kristian Jordan"
+         ],
+         "genres": [
+            28,
+            878,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.4,
+         "poster_url": "/y1xm0jMIlx9Oo2a3jWNyLGm43sJ.jpg"
+      }
+   },
+   {
+      "pk": 533535,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 533535,
+         "title": "데드풀과 울버린",
+         "summary": "히어로 생활에서 은퇴한 후, 평범한 중고차 딜러로 살아가던 ‘데드풀’이 예상치 못한 거대한 위기를 맞아 모든 면에서 상극인 ‘울버린’을 찾아가게 되며 펼쳐지는 도파민 폭발 액션 블록버스터.",
+         "release_date": "2024-07-24",
+         "director": "Shawn Levy",
+         "actors": [
+            "Ryan Reynolds",
+            "Hugh Jackman",
+            "Emma Corrin",
+            "Matthew Macfadyen",
+            "Dafne Keen",
+            "Jon Favreau",
+            "Morena Baccarin",
+            "Rob Delaney",
+            "Leslie Uggams",
+            "Jennifer Garner"
+         ],
+         "genres": [
+            28,
+            35,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.69,
+         "poster_url": "/4Zb4Z2HjX1t5zr1qYOTdVoisJKp.jpg"
+      }
+   },
+   {
+      "pk": 933260,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 933260,
+         "title": "서브스턴스",
+         "summary": "더 나은 버전의 당신을 꿈꿔본 적 있나요? 당신의 인생을 바꿔줄 신제품 ‘서브스턴스’. ‘서브스턴스’는 또 다른 당신을 만들어냅니다. 새롭고, 젊고, 더 아름답고, 더 완벽한 당신을. 단 한가지 규칙, 당신의 시간을 공유하면 됩니다. 당신을 위한 일주일, 새로운 당신을 위한 일주일, 각각 7일간의 완벽한 밸런스. 쉽죠? 균형을 존중한다면… 무엇이 잘못될 수 있을까요?",
+         "release_date": "2024-09-07",
+         "director": "Anne Juin",
+         "actors": [
+            "Demi Moore",
+            "Margaret Qualley",
+            "Dennis Quaid",
+            "Edward Hamilton-Clark",
+            "Gore Abrams",
+            "Oscar Lesage",
+            "Christian Erickson",
+            "Robin Greer",
+            "Tom Morton",
+            "Hugo Diego Garcia"
+         ],
+         "genres": [
+            18,
+            27,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.286,
+         "poster_url": "/pq5Wh3DE0KIBjF2kdGHn98eV1PC.jpg"
+      }
+   },
+   {
+      "pk": 1124641,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1124641,
+         "title": "Classified",
+         "summary": "",
+         "release_date": "2024-09-19",
+         "director": "Jordan Dykstra",
+         "actors": [
+            "Aaron Eckhart",
+            "Tim Roth",
+            "Abigail Breslin",
+            "Matt Hookings",
+            "Lucky Ali",
+            "Joe Azzopardi",
+            "Kirsty Bartolo",
+            "Marc Cabourdin",
+            "Myles Clohessy",
+            "Kim DeLonghi"
+         ],
+         "genres": [
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.6,
+         "poster_url": "/3k8jv1kSAAc0rCfFGtWDDQL4dfK.jpg"
+      }
+   },
+   {
+      "pk": 698687,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 698687,
+         "title": "트랜스포머 ONE",
+         "summary": "사이버트론 행성의 지하 광산에서 일하는 변신 못 하는 하급 로봇 오라이온 팩스와 D-16. 한 번도 가보지 못한 지상 세계를 꿈꾸던 둘은 쾌활한 수다쟁이 B-127, 카리스마 넘치는 엘리타 원과 함께 출입이 금지된 지상에 도달한다. 지상에서 잠들어 있던 알파 트라이온을 만난 넷은 그의 도움으로 잠재되어 있던 변신 능력을 얻게 된다. 막강한 힘과 변신 능력으로 자유를 느낀 것도 잠시, 자신들의 행성을 지배하고 있는 거대한 배후의 존재를 알게 되며 모든 것을 바꿀 전쟁을 시작하는데…",
+         "release_date": "2024-09-11",
+         "director": "Frazer Churchill",
+         "actors": [
+            "Chris Hemsworth",
+            "Brian Tyree Henry",
+            "Scarlett Johansson",
+            "Keegan-Michael Key",
+            "Jon Hamm",
+            "Steve Buscemi",
+            "Laurence Fishburne",
+            "Vanessa Liguori",
+            "Jon Bailey",
+            "Jason Konopisos-Alvarez"
+         ],
+         "genres": [
+            16,
+            878,
+            12,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 8.1,
+         "poster_url": "/c2JXlWzvXegSda8qaATr8I47kMx.jpg"
+      }
+   },
+   {
+      "pk": 402431,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 402431,
+         "title": "위키드",
+         "summary": "자신의 진정한 힘을 아직 발견하지 못한 엘파바와 자신의 진정한 본성을 발견하지 못한 글린다, 전혀 다른 두 인물이 우정을 쌓아가며 맞닥뜨리는 예상치 못한 위기와 모험을 그린 이야기",
+         "release_date": "2024-11-20",
+         "director": "Marc Platt",
+         "actors": [
+            "Cynthia Erivo",
+            "Ariana Grande",
+            "Jonathan Bailey",
+            "Michelle Yeoh",
+            "Jeff Goldblum",
+            "Ethan Slater",
+            "Marissa Bode",
+            "Bowen Yang",
+            "Bronwyn James",
+            "Keala Settle"
+         ],
+         "genres": [
+            18,
+            14,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 7.8,
+         "poster_url": "/4FKnORrMQZtvk96YM4zdJLDwC9E.jpg"
+      }
+   },
+   {
+      "pk": 945961,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 945961,
+         "title": "에이리언: 로물루스",
+         "summary": "2142년, 부모 세대가 맞닥뜨렸던 암울한 미래를 피하려는 청년들이 더 나은 삶을 찾기 위해 식민지를 떠날 계획을 세운다. 하지만 버려진 우주 기지 로물루스에 도착한 이들은 악몽과도 같은 에이리언의 무자비한 공격에 쫓기기 시작한다. 그 누구도 그들의 절규를 들을 수 없는 우주 한가운데, 생존을 위한 치열한 사투를 벌여야 하는데...",
+         "release_date": "2024-08-13",
+         "director": "Fede Álvarez",
+         "actors": [
+            "Cailee Spaeny",
+            "David Jonsson",
+            "Archie Renaux",
+            "Isabela Merced",
+            "Spike Fearn",
+            "Aileen Wu",
+            "Rosie Ede",
+            "Soma Simon",
+            "Bence Okeke",
+            "Viktor Orizu"
+         ],
+         "genres": [
+            27,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.3,
+         "poster_url": "/AmWTYg3RCMv7fbQxwCqrxiaUhkc.jpg"
+      }
+   },
+   {
+      "pk": 845781,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 845781,
+         "title": "레드 원",
+         "summary": "크리스마스 D-1, 철통같은 보안을 뚫고 코드명 '레드 원' 산타클로스가 납치되고 크리스마스가 사라질 위기에 처했다! '레드 원'을 찾기 위해 사령관 '칼럼 드리프트'는 산타클로스 따위는 없다고 믿는 현상금 사냥꾼 '잭 오말리'와 협력하기로 한다. 시작부터 삐그덕 거리는 이들 앞에 크리스마스의 존재를 위협하는 위험천만한 적들이 나타나는데…",
+         "release_date": "2024-10-31",
+         "director": "Riley Flanagan",
+         "actors": [
+            "Dwayne Johnson",
+            "Chris Evans",
+            "J.K. Simmons",
+            "Lucy Liu",
+            "Kiernan Shipka",
+            "Bonnie Hunt",
+            "Kristofer Hivju",
+            "Nick Kroll",
+            "Wesley Kimmel",
+            "Mary Elizabeth Ellis"
+         ],
+         "genres": [
+            28,
+            35,
+            14
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/ryYEpxWiZFmJJZUyvQCBvM5UOCU.jpg"
+      }
+   },
+   {
+      "pk": 179387,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 179387,
+         "title": "Heavenly Touch",
+         "summary": "",
+         "release_date": "2009-05-12",
+         "director": "Joel Lamangan",
+         "actors": [
+            "Paolo Serrano",
+            "Joash Balejado",
+            "Marco Morales",
+            "Gwen Garci",
+            "Paolo Rivero",
+            "Jeffrey Santos",
+            "Jim Pebanco",
+            "Irma Adlawan",
+            "John Apacible",
+            "Raquel Villavicencio"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/ory8WuAqznTE7lfopTSymHpop2t.jpg"
+      }
+   },
+   {
+      "pk": 1051896,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1051896,
+         "title": "아카디안",
+         "summary": "문명의 대부분이 파괴된 지구, 쌍둥이 형제들이 정체를 알 수 없는 괴물들로부터 아버지 ‘폴’과 이웃들을 지키기 위해 나서며 벌어지는 액션 스릴러",
+         "release_date": "2024-04-12",
+         "director": "Michael Nilon",
+         "actors": [
+            "Nicolas Cage",
+            "Jaeden Martell",
+            "Maxwell Jenkins",
+            "Sadie Soverall",
+            "Samantha Coughlan",
+            "Joel Gillman",
+            "Joe Dixon",
+            "Daire McMahon"
+         ],
+         "genres": [
+            28,
+            27,
+            53,
+            878
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/spWV1eRzlDxvai8LbxwAWR0Vst4.jpg"
+      }
+   },
+   {
+      "pk": 1100782,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1100782,
+         "title": "스마일 2",
+         "summary": "월드투어를 앞두고 자신의 눈 앞에서 기괴한 미소와 함께 끔찍한 죽음을 맞은 친구를 목격한 팝스타 ‘스카이’. 그 날 이후 공연 리허설과 팬 미팅 행사 등 그녀의 삶 곳곳에서 끔찍한 일들이 잇따라 발생한다. 화려한 스타의 삶을 뒤덮은 공포에서 벗어나기 위해 몸부림치던 ‘스카이’는 자신이 죽어야만 전염처럼 번지는 저주가 끝난다는 사실을 듣게 되는데…",
+         "release_date": "2024-10-16",
+         "director": "Parker Finn",
+         "actors": [
+            "Naomi Scott",
+            "Rosemarie DeWitt",
+            "Lukas Gage",
+            "Miles Gutierrez-Riley",
+            "Peter Jacobson",
+            "Ray Nicholson",
+            "Dylan Gelula",
+            "Raúl Castillo",
+            "Kyle Gallner",
+            "Drew Barrymore"
+         ],
+         "genres": [
+            27,
+            9648
+         ],
+         "adult": false,
+         "star_rating": 6.923,
+         "poster_url": "/4nQk1OgbtdnKYMEQiOwwMB4yGxn.jpg"
+      }
+   },
+   {
+      "pk": 1014505,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1014505,
+         "title": "극장판 오버로드 성왕국편",
+         "summary": "성왕녀 칼카가 통치하는 로블 성왕국은 길고 거대한 성벽을 쌓고 그 안에서 평화로운 시대를 구가해 왔다. 하지만, 갑자기 나타난 마황 얄다바오트와 아인 연합군의 침공으로 평화는 너무나도 쉽게 붕괴되고 말았다. 성기사 단장 레메디오스, 신관 단장 케랄트를 시작으로 성왕국은 전력을 모아 맞섰지만 얄다바오트와의 압도적인 힘의 차이에 손쓸 도리 없이 국가는 붕괴 위기에 직면하게 됐다. 레메디오스는 얄다바오트에게 대항할 힘을 얻기 위해 직접 성기사단과 종자 네이아를 이끌고 어떤 나라에 도움을 요청하러 갔다. 그 나라의 이름은 아인즈 울 고운 마도국. 성왕국의 사람들이 꺼림칙하게 여기는 언데드가 통치하는 이형의 국가였는데.",
+         "release_date": "2024-09-20",
+         "director": "Kugane Maruyama",
+         "actors": [
+            "Satoshi Hino",
+            "Yumi Hara",
+            "Masayuki Katou",
+            "Yoshino Aoyama",
+            "Hitomi Nabatame",
+            "Saori Hayami",
+            "Haruka Tomatsu"
+         ],
+         "genres": [
+            28,
+            12,
+            16,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.2,
+         "poster_url": "/9tQfPUNd1KA2u55zA81BNXrXuZu.jpg"
+      }
+   },
+   {
+      "pk": 519182,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 519182,
+         "title": "슈퍼배드 4",
+         "summary": "슈트-업 하고 악당 전담 처리반 AVL이 된 에이전트 미니언즈와 미니언즈 만큼 귀여운 그루 주니어가 태어나면서 더욱 완벽해진 그루 패밀리. 이들 앞에 과거 그루의 고등학교 동창이자 그에게 체포당했던 빌런 맥심이 등장하고, 오직 그루를 향한 복수심에 불타올라 탈옥까지 감행한 맥심은 그루 패밀리의 뒤를 바짝 추격하며 위협을 가하기 시작하는데... 과연 에이전트 미니언즈와 그루 패밀리는 맥심을 막아낼 수 있을까?",
+         "release_date": "2024-06-20",
+         "director": "Patrick Delage",
+         "actors": [
+            "Steve Carell",
+            "Kristen Wiig",
+            "Will Ferrell",
+            "Sofía Vergara",
+            "Miranda Cosgrove",
+            "Dana Gaier",
+            "Madison Polan",
+            "Pierre Coffin",
+            "Chris Renaud",
+            "Steve Coogan"
+         ],
+         "genres": [
+            16,
+            10751,
+            35,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.086,
+         "poster_url": "/5hl1PEpAvZ8Ok37kB7woIssHi3X.jpg"
+      }
+   },
+   {
+      "pk": 335983,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 335983,
+         "title": "베놈",
+         "summary": "진실을 위해서라면 몸을 사리지 않고 사회의 부조리를 취재하는 정의로운 열혈 기자 에디 브록. 거대 기업 라이프 파운데이션의 생체실험에 의혹을 품고 뒤를 쫓던 그는 이들의 사무실에 잠입했다가 실험실에서 외계 생물체 심비오트의 기습 공격을 받게 된다. 심비오트가 숙주의 몸과 정신을 지배할 때 능력을 발휘하는 베놈은 에디의 몸에 기생하며 갖가지 소동을 일으킨다. 한편 비밀리에 인간과 심비오트를 결합해 새로운 생명체를 만들려는 시도를 계속하던 라이프 파운데이션의 회장 드레이크 또한 심비오트의 숙주가 된다.",
+         "release_date": "2018-09-28",
+         "director": "Monique Ganderton",
+         "actors": [
+            "Tom Hardy",
+            "Michelle Williams",
+            "Riz Ahmed",
+            "Scott Haze",
+            "Reid Scott",
+            "Jenny Slate",
+            "Melora Walters",
+            "Woody Harrelson",
+            "Peggy Lu",
+            "Malcolm C. Murray"
+         ],
+         "genres": [
+            878,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.835,
+         "poster_url": "/x4ojC59pYfPlAP4mmy2LSkCCuK2.jpg"
+      }
+   },
+   {
+      "pk": 1084736,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1084736,
+         "title": "몬테크리스토 백작",
+         "summary": "에드먼드 단테스는  음모에 빠져 결혼식 날 자신이 저지르지도 않은 범죄로 체포된다. 샤토 디프에서 14년 동안의 수감 생활을 끝으로 탈옥에 성공하고  꿈에 그리던 부자가 된다. 단테스는 몬테크리스토 백작으로 신분을 위장하고 세 남자에게 복수를 실행에 옮긴다.",
+         "release_date": "2024-06-28",
+         "director": "Chloé Van Lierde",
+         "actors": [
+            "Pierre Niney",
+            "Bastien Bouillon",
+            "Anaïs Demoustier",
+            "Anamaria Vartolomei",
+            "Laurent Lafitte",
+            "Pierfrancesco Favino",
+            "Patrick Mille",
+            "Vassili Schneider",
+            "Julien de Saint Jean",
+            "Julie de Bona"
+         ],
+         "genres": [
+            28,
+            12,
+            18,
+            36,
+            10749,
+            53
+         ],
+         "adult": false,
+         "star_rating": 8.2,
+         "poster_url": "/4MlHj9EWOFIDoa4uXwcQhnf66w5.jpg"
+      }
+   },
+   {
+      "pk": 1116490,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1116490,
+         "title": "캐시 아웃",
+         "summary": "전설적인 강도단의 보스 ‘메이슨’(존 트라볼타) 실패로 끝난 작전 이후 은퇴하고 잠적했던 그가 옛 팀원들의 다급한 요청으로 은행 강도 현장에 도착한다.  하지만 현장은 곧 치밀한 작전 따윈 사라지고 예상치 못한 FBI 협상가까지 등장하며 엉망이 되어버린다.  ‘메이슨’은 이제 FBI에 맞서 팀원들을 지키고 인생 마지막 한탕을 성공시키기 위해 완벽한 플랜 B를 설계하기 시작하는데…",
+         "release_date": "2024-04-26",
+         "director": "Joel Cohen",
+         "actors": [
+            "John Travolta",
+            "Kristin Davis",
+            "Lukas Haas",
+            "Quavo",
+            "Joel Cohen",
+            "Noel Gugliemi",
+            "Daniel Louis Rivas",
+            "Natali Yura",
+            "Victorya Brandart",
+            "Jake Ellenz"
+         ],
+         "genres": [
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.284,
+         "poster_url": "/4r77ZO9pKgQuW1GxjMrktyY8eUP.jpg"
+      }
+   },
+   {
+      "pk": 1022789,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1022789,
+         "title": "인사이드 아웃 2",
+         "summary": "13살이 된 라일리의 행복을 위해 매일 바쁘게 머릿속 감정 컨트롤 본부를 운영하는 ‘기쁨’, ‘슬픔’, ‘버럭’, ‘까칠’, ‘소심’. 그러던 어느 날, 낯선 감정인 ‘불안’, ‘당황’, ‘따분’, ‘부럽’이가 본부에 등장하고, 언제나 최악의 상황을 대비하며 제멋대로인 ‘불안’이와 기존 감정들은 계속 충돌한다. 결국 새로운 감정들에 의해 본부에서 쫓겨나게 된 기존 감정들은 다시 본부로 돌아가기 위해 위험천만한 모험을 시작하는데…",
+         "release_date": "2024-06-11",
+         "director": "Kelsey Mann",
+         "actors": [
+            "Amy Poehler",
+            "Maya Hawke",
+            "Kensington Tallman",
+            "Liza Lapira",
+            "Tony Hale",
+            "Lewis Black",
+            "Phyllis Smith",
+            "Ayo Edebiri",
+            "Lilimar",
+            "Grace Lu"
+         ],
+         "genres": [
+            16,
+            10751,
+            12,
+            35,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.588,
+         "poster_url": "/x2BHx02jMbvpKjMvbf8XxJkYwHJ.jpg"
+      }
+   },
+   {
+      "pk": 1041317,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1041317,
+         "title": "웨스턴 프론트: 서부전선",
+         "summary": "세계대전에서 가장 치열한 전투가 이어지는 서부전선. 전쟁 영웅을 동경하며 자원입대한 병사들은 생사의 전투 속에 오직 생존하기 위해 고군분투한다. 세계대전을 끝내기 위한 마지막 작전이 개시되고 지상전과 공중전의 총력전이 시작되는데… 진격하라 그리고 생존하라!",
+         "release_date": "2022-10-06",
+         "director": "Aaron Huggett",
+         "actors": [
+            "Michael Lake",
+            "Christopher Cordell",
+            "Sylvain Plasse",
+            "Somerville Black",
+            "Aaron Huggett",
+            "Corey Chainey",
+            "Sam Biskey",
+            "Julian Seguin",
+            "Adam Daniel Mezel",
+            "Kyle Naylor"
+         ],
+         "genres": [
+            10752
+         ],
+         "adult": false,
+         "star_rating": 2.9,
+         "poster_url": "/b6311UcoaPq1JIuU3sDTVCKybP2.jpg"
+      }
+   },
+   {
+      "pk": 1241982,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1241982,
+         "title": "모아나 2",
+         "summary": "바다를 누볐던 선조들에게서 예기치 못한 부름을 받은 모아나가 마우이와 다시 만나 새로운 선원들과 함께 오랫동안 잊혀진 멀고 위험한 바다 너머로 떠나는 특별한 모험을 담은 이야기",
+         "release_date": "2024-11-27",
+         "director": "David G. Derrick Jr.",
+         "actors": [
+            "Auli'i Cravalho",
+            "Dwayne Johnson",
+            "Alan Tudyk",
+            "Rachel House",
+            "Temuera Morrison",
+            "Nicole Scherzinger",
+            "Hualālai Chung",
+            "David Fane",
+            "Rose Matafeo",
+            "Awhimai Fraser"
+         ],
+         "genres": [
+            16,
+            12,
+            10751,
+            35
+         ],
+         "adult": false,
+         "star_rating": 8.6,
+         "poster_url": "/2WVvPcVRqfjyVzIUVIcszGb6zT4.jpg"
+      }
+   },
+   {
+      "pk": 1142518,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1142518,
+         "title": "자유",
+         "summary": "1980년대 프랑스에서 가장 악명 높았던 비폭력 강도 브루노 술락의 실화를 바탕으로 한 이야기다. 그는 여러 번 강도질을 하고, 경찰에 잡혀도 대담하게 탈출해 대중의 관심을 끌었다. 그가 매번 탈출한 이유는 사랑하는 연인이자 공범인 애니와 다시 만나기 위해서였고, 결국 그는 프랑스의 공공의 적 1호이자 자유의 아이콘이 되었다.",
+         "release_date": "2024-11-01",
+         "director": "Cécile Hannequin",
+         "actors": [
+            "Lucas Bravo",
+            "Yvan Attal",
+            "Léa Luce Busato",
+            "Steve Tientcheu",
+            "David Ayala",
+            "Léo Chalié",
+            "Slimane Dazi",
+            "David Murgia",
+            "Radivoje Bukvić",
+            "Mélanie Laurent"
+         ],
+         "genres": [
+            28,
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/trN0zFcrtcCPLWyqqQEVoToztNk.jpg"
+      }
+   },
+   {
+      "pk": 928480,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 928480,
+         "title": "보이즈 오브 썸머",
+         "summary": "",
+         "release_date": "2024-10-04",
+         "director": "Amanda Devine",
+         "actors": [
+            "Mel Gibson",
+            "Mason Thames",
+            "Julian Lerner",
+            "Abigail James Witherspoon",
+            "Noah Cottrell",
+            "Nora Zehetner",
+            "Lorraine Bracco",
+            "Emma Fasano",
+            "Spencer Fitzgerald",
+            "Patrick Renna"
+         ],
+         "genres": [
+            12,
+            14,
+            9648,
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.485,
+         "poster_url": "/zD2UZkh0DwbDEMuOKIR7jgwgulZ.jpg"
+      }
+   },
+   {
+      "pk": 1196470,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1196470,
+         "title": "Survivre",
+         "summary": "",
+         "release_date": "2024-06-19",
+         "director": "Pierre Quefféléan",
+         "actors": [
+            "Andreas Pietschmann",
+            "Émilie Dequenne",
+            "Lucas Ebel",
+            "Arben Bajraktaraj",
+            "Lisa Delamar",
+            "Olivier Ho Hio Hen"
+         ],
+         "genres": [
+            53,
+            12,
+            28,
+            878
+         ],
+         "adult": false,
+         "star_rating": 5.8,
+         "poster_url": "/901kRttzfLScns7ss7RyKqG6d2A.jpg"
+      }
+   },
+   {
+      "pk": 1100856,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1100856,
+         "title": "Заклятье. Шепот ведьм",
+         "summary": "",
+         "release_date": "2024-06-13",
+         "director": "Serik Beyseu",
+         "actors": [
+            "Arthur Beschastny",
+            "Maryana Spivak",
+            "Sofya Shidlovskaya",
+            "Igor Grabuzov",
+            "Sergey Safronov",
+            "Valeria Kot",
+            "Ilya Vinogorsky",
+            "Kirill Rusin",
+            "Artyom Fadeev",
+            "Marina Grishakova"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.833,
+         "poster_url": "/um3n8rQbr97uaGB2058TsktPtAy.jpg"
+      }
+   },
+   {
+      "pk": 98,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 98,
+         "title": "글래디에이터",
+         "summary": "죽을 날이 머지않은 황제 마르쿠스 아우렐리우스는 막시무스를 총애하여 아들이 아닌 그에게 권력을 넘겨주기로 한다. 황제의 아들 코모두스는 이에 질투와 분노를 느껴 황제를 살해한다. 왕좌를 이어받은 코모두스는 막시무스와 그의 가족을 죽이라고 명령한다. 가족을 모두 잃고 겨우 살아남은 막시무스는 노예로 전락하고, 투기장의 검투사가 된다. 그에게 남은 건 오직 황제 코모두스에 대한 복수 뿐. 검투사로서 매 경기마다 승리로 이끌면서 살아남자 그의 명성은 날로 높아 간다. 그러던 어느 날 오래 전 사랑했던 황제의 누이 루실라를 다시 만나게 되는데...",
+         "release_date": "2000-05-04",
+         "director": "Colin Coull",
+         "actors": [
+            "Russell Crowe",
+            "Joaquin Phoenix",
+            "Connie Nielsen",
+            "Oliver Reed",
+            "Richard Harris",
+            "Derek Jacobi",
+            "Djimon Hounsou",
+            "David Schofield",
+            "John Shrapnel",
+            "Tomas Arana"
+         ],
+         "genres": [
+            28,
+            18,
+            12
+         ],
+         "adult": false,
+         "star_rating": 8.216,
+         "poster_url": "/yemF0xxGU56Pf3JXxVr4C6kuKng.jpg"
+      }
+   },
+   {
+      "pk": 269509,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 269509,
+         "title": "캔터빌의 유령",
+         "summary": "",
+         "release_date": "2023-09-22",
+         "director": "Kim Burdon",
+         "actors": [
+            "Stephen Fry",
+            "Hugh Laurie",
+            "Freddie Highmore",
+            "Emily Carey",
+            "Imelda Staunton",
+            "Meera Syal",
+            "David Harewood",
+            "Miranda Hart",
+            "Toby Jones",
+            "Jakey Schiff"
+         ],
+         "genres": [
+            16,
+            35,
+            10751,
+            14
+         ],
+         "adult": false,
+         "star_rating": 6.318,
+         "poster_url": "/dFu8oHN805ZRzpQZNOjkiLzMbep.jpg"
+      }
+   },
+   {
+      "pk": 1029235,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1029235,
+         "title": "아즈라엘",
+         "summary": "종말이 일어난 지 여러 해가 지난 후, 말을 못 하는 광신도들로 구성된 종교 단체에서 탈출한 젊은 여성 아즈라엘을 추적하는 이야기. 무자비한 지도자들에게 붙잡혀 감금당한 아즈라엘은 주변 황야 깊은 곳에 숨어있는 고대의 악마를 달래기 위한 제물로 바쳐질 예정이었다. 그러나 그녀는 살기 위해 어떤 것도 주저하지 않는다. 그녀의 불타는 복수와 탈출을 위한 맹렬한 질주는 극적으로 치닫는다.",
+         "release_date": "2024-09-27",
+         "director": "E.L. Katz",
+         "actors": [
+            "Samara Weaving",
+            "Vic Carmen Sonne",
+            "Katariina Unt",
+            "Peter Christoffersen",
+            "Nathan Stewart-Jarrett",
+            "Johhan Rosenberg",
+            "Eero Milonoff",
+            "Sebastian Bull Sarning",
+            "Rea Lest",
+            "Phong Giang"
+         ],
+         "genres": [
+            28,
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/qpdFKDvJS7oLKTcBLXOaMwUESbs.jpg"
+      }
+   },
+   {
+      "pk": 592831,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 592831,
+         "title": "메갈로폴리스",
+         "summary": "재난으로 파괴된 뉴욕풍 대도시. 부패한 시장 프랭크 시세로와 이상주의자 건축가 시저는 도시의 재건 방향성을 놓고 대립한다. 사교계 스타인 프랭크의 딸 줄리아는 둘 사이에서 자신만의 길을 찾고자 한다.",
+         "release_date": "2024-09-25",
+         "director": "Robert Mazaraki",
+         "actors": [
+            "Adam Driver",
+            "Giancarlo Esposito",
+            "Nathalie Emmanuel",
+            "Aubrey Plaza",
+            "Shia LaBeouf",
+            "Jon Voight",
+            "Laurence Fishburne",
+            "Talia Shire",
+            "Jason Schwartzman",
+            "Kathryn Hunter"
+         ],
+         "genres": [
+            18,
+            878
+         ],
+         "adult": false,
+         "star_rating": 5.603,
+         "poster_url": "/8Sok3HNA3r1GHnK2lCytHyBz1A.jpg"
+      }
+   },
+   {
+      "pk": 580489,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 580489,
+         "title": "베놈 2: 렛 데어 비 카니지",
+         "summary": "‘베놈'과 완벽한 파트너가 된 ‘에디 브록' 앞에 ‘클리터스 캐서디'가 ‘카니지'로 등장, 앞으로 닥칠 대혼돈의 세상을 예고한다. 대혼돈의 시대가 시작되고, 악을 악으로 처단할 것인가?",
+         "release_date": "2021-09-30",
+         "director": "Kelly Marcel",
+         "actors": [
+            "Tom Hardy",
+            "Woody Harrelson",
+            "Michelle Williams",
+            "Naomie Harris",
+            "Reid Scott",
+            "Stephen Graham",
+            "Peggy Lu",
+            "Sian Webber",
+            "Michelle Greenidge",
+            "Rob Bowen"
+         ],
+         "genres": [
+            878,
+            28,
+            12
+         ],
+         "adult": false,
+         "star_rating": 6.8,
+         "poster_url": "/fHnKlSp28U648O4vm95z86Jw5tT.jpg"
+      }
+   },
+   {
+      "pk": 976734,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 976734,
+         "title": "카나리 블랙",
+         "summary": "CIA 최고 요원 에이버리 그레이브스(케이트 베킨세일)는 납치된 남편을 구하기 위해 조국을 배신하라는 테러리스트의 협박을 받는다. 팀과 단절된 그녀는 납치범들이 원하는 정보를 찾기 위해 지하세계의 인맥에 도움을 청한다. 매번 배신을 당하는 에이버리는 글로벌 위기를 촉발할 수 있는 몸값을 전달하기 위해 치명적인 경쟁에 뛰어들게 되는데...",
+         "release_date": "2024-10-10",
+         "director": "Pierre Morel",
+         "actors": [
+            "Kate Beckinsale",
+            "Rupert Friend",
+            "Saffron Burrows",
+            "Ray Stevenson",
+            "Goran Kostić",
+            "Ben Miles",
+            "Jaz Hutchins",
+            "Romina Tonković",
+            "Ana Cilas",
+            "Emma Gojković"
+         ],
+         "genres": [
+            28,
+            53,
+            80
+         ],
+         "adult": false,
+         "star_rating": 6.31,
+         "poster_url": "/hhiR6uUbTYYvKoACkdAIQPS5c6f.jpg"
+      }
+   },
+   {
+      "pk": 1288998,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1288998,
+         "title": "1978",
+         "summary": "",
+         "release_date": "2024-10-16",
+         "director": "Luciano Onetti",
+         "actors": [
+            "Agustin Olcese",
+            "Carlos Portaluppi",
+            "Mario Alarcón",
+            "Jorge Lorenzo",
+            "Santiago Rios",
+            "Gustavo Pardi",
+            "Agustín Pardella"
+         ],
+         "genres": [
+            27,
+            53,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.0,
+         "poster_url": "/zn7oyy7KTlC01XD3pUn82V9Od0P.jpg"
+      }
+   },
+   {
+      "pk": 889737,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 889737,
+         "title": "조커: 폴리 아 되",
+         "summary": "2년 전, 세상을 뒤흔들며 고담시 아이콘으로 자리한 아서 플렉은 아캄 수용소에 갇혀 최종 재판을 앞둔 무기력한 삶을 살아간다. 그러던 어느 날, 수용소에서 운명적으로 만난 리 퀸젤은 아서의 삶을 다시 뒤바꾸며 그의 마음 속에 잠들어 있던 조커를 깨우고 리 역시 각성하며 자신을 할리 퀸이라 지칭하며 서로에게 깊이 빠져든다. 무고한 시민을 죽인 죄로 재판에 오르게 된 아서. 그는 최후의 심판대에서 할리 퀸과 함께 자신, 조커의 이야기를 시작하는데…",
+         "release_date": "2024-10-01",
+         "director": "Bill Finger",
+         "actors": [
+            "Joaquin Phoenix",
+            "Lady Gaga",
+            "Brendan Gleeson",
+            "Catherine Keener",
+            "Zazie Beetz",
+            "Steve Coogan",
+            "Harry Lawtey",
+            "Leigh Gill",
+            "Ken Leung",
+            "Jacob Lofland"
+         ],
+         "genres": [
+            18,
+            80,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.6,
+         "poster_url": "/dA1TGJPTVjlqPc8PiEE2PfvFBUp.jpg"
+      }
+   },
+   {
+      "pk": 592695,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 592695,
+         "title": "플레저",
+         "summary": "벨라 체리는 포르노 영화 배우의 꿈을 안고 로스앤젤레스에 도착하지만,  그녀는 그녀의 야망과 교활함을 활용하여 이 매혹적이고 독특한 세계의  정상에 오르기 위해 노력하지만 그런 명성이 쉽게 오지 않는다는 것을 곧 알게 된다.",
+         "release_date": "2021-10-08",
+         "director": "Ninja Thyberg",
+         "actors": [
+            "Sofia Kappel",
+            "Zelda Morrison",
+            "Tee Reel",
+            "Evelyn Claire",
+            "Chris Cock",
+            "Dana DeArmond",
+            "Kendra Spade",
+            "Mark Spiegler",
+            "Eva Melander",
+            "Lucy Hart"
+         ],
+         "genres": [
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.2,
+         "poster_url": "/t3SEI2YI81oO3nEgjJ9jMAIKApY.jpg"
+      }
+   },
+   {
+      "pk": 1094974,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1094974,
+         "title": "테이크 커버",
+         "summary": "호텔의 펜트하우스에 갇힌 2명의 사설 부대 용병이 외부의 저격수와 방으로 들어오는 킬러들과의 대결을 그린 이야기",
+         "release_date": "2024-10-04",
+         "director": "Melissa Massey",
+         "actors": [
+            "Scott Adkins",
+            "Alice Eve",
+            "Jack Parr",
+            "Billy Clements",
+            "Mădălina Bellariu Ion",
+            "Renars Latkovskis",
+            "Nik Coleman",
+            "Alba De Torrebruna"
+         ],
+         "genres": [
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.034,
+         "poster_url": "/xNLiMNyFzKTL9PVIEulG55Hei8j.jpg"
+      }
+   },
+   {
+      "pk": 573435,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 573435,
+         "title": "나쁜 녀석들: 라이드 오어 다이",
+         "summary": "마이애미 강력반 최고의 콤비 마이크와 마커스. 가족 같은 하워드 반장이 사망 전 마약 카르텔 조직의 비리에 연루되었다는 뉴스 속보를 접하게 된다. 하지만 아무도 믿지 말라는 하워드 반장의 비밀 메시지를 받은 마이크와 마커스 형사는 사건의 진실을 밝히기 위해 위험한 수사를 시작한다. 서서히 드러나는 거대한 음모와 마주하게 된 나쁜 녀석들. 그러나 이들 역시 함정에 빠져 사건의 용의자로 지목되며 동료 경찰들은 물론 마약 카르텔 조직에게도 쫓기는 신세가 되고 마는데…",
+         "release_date": "2024-06-05",
+         "director": "Chad Oman",
+         "actors": [
+            "Will Smith",
+            "Martin Lawrence",
+            "Vanessa Hudgens",
+            "Alexander Ludwig",
+            "Paola Nuñez",
+            "Eric Dane",
+            "Ioan Gruffudd",
+            "Jacob Scipio",
+            "Melanie Liburd",
+            "Tasha Smith"
+         ],
+         "genres": [
+            28,
+            35
+         ],
+         "adult": false,
+         "star_rating": 7.491,
+         "poster_url": "/wIrhEUBWjRmZuL1Ix41cF2LhJrW.jpg"
+      }
+   },
+   {
+      "pk": 972614,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 972614,
+         "title": "녹스 고즈 어웨이",
+         "summary": "빠르게 진행되는 치매 진단을 받은 청부 살인범에게 소원해진 성인 아들의 생명을 구함으로써 자신을 구원할 수 있는 기회가 주어지지만 이를 위해 자신을 쫓는 경찰과 빠르게 악화되는 정신 상태와 맞서 싸워야 한다.",
+         "release_date": "2024-03-15",
+         "director": "Michael Keaton",
+         "actors": [
+            "Michael Keaton",
+            "Al Pacino",
+            "Marcia Gay Harden",
+            "James Marsden",
+            "Suzy Nakamura",
+            "Joanna Kulig",
+            "Ray McKinnon",
+            "John Hoogenakker",
+            "Lela Loren",
+            "Morgan Bastin"
+         ],
+         "genres": [
+            80,
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.7,
+         "poster_url": "/w39qKYjltCix18BwtoZ1e45usdb.jpg"
+      }
+   },
+   {
+      "pk": 1214484,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1214484,
+         "title": "렛 고",
+         "summary": "가정생활에 지쳐버린 엄마가 가족들의 화합을 위해 마지막 노력을 쏟아 보려 한다. 바로 10대 딸의 폴댄스 대회를 위해 온 가족이 여행을 떠나는 것.",
+         "release_date": "2024-11-01",
+         "director": "Josephine Bornebusch",
+         "actors": [
+            "Josephine Bornebusch",
+            "Pål Sverre Hagen",
+            "Sigrid Johnson",
+            "Olle Tikkakoski Lundström",
+            "Leon Mentori",
+            "Tone Danielsen",
+            "Irma Jämhammar",
+            "Niklas Falk",
+            "Mathias Lithner",
+            "Lola Zackow"
+         ],
+         "genres": [
+            18
+         ],
+         "adult": false,
+         "star_rating": 8.0,
+         "poster_url": "/5QqzteriIBTWlWMLNkshTDKx9Xx.jpg"
+      }
+   },
+   {
+      "pk": 420634,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 420634,
+         "title": "테리파이어",
+         "summary": "할로윈 밤. 술마시고 진탕 놀다 귀가하던 타라와 돈은 광대 복장의 남자와 맞닥뜨린다. 이들은 할로윈 코스프레를 한 찌질남으로 치부하지만, 그는 수년 전 세상을 떠들썩하게 만든 광대 살인마였고 할로윈 밤에 다시 돌아온 것이었다. 두 사람은 광대 살인마의 표적이 되는데...",
+         "release_date": "2018-01-25",
+         "director": "Matheus Gassen",
+         "actors": [
+            "David Howard Thornton",
+            "Jenna Kanell",
+            "Samantha Scaffidi",
+            "Catherine Corcoran",
+            "Pooya Mohseni",
+            "Matt McAllister",
+            "Katie Maguire",
+            "Gino Cafarelli",
+            "Cory DuVal",
+            "Michael Leavy"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.394,
+         "poster_url": "/sFaPj5UyIAsiRuIgVl60pCYUzmR.jpg"
+      }
+   },
+   {
+      "pk": 1371727,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1371727,
+         "title": "씽: Thriller",
+         "summary": "버스터 문이 마이클 잭슨의 'Thriller'에 맞춰 스타들이 총출동하는 화려한 무대를 꿈꾼다. 인기 영화 《씽》의 캐릭터들이 출연하는 단편 애니메이션.",
+         "release_date": "2024-10-16",
+         "director": "Garth Jennings",
+         "actors": [
+            "Matthew McConaughey",
+            "Tori Kelly",
+            "Nick Kroll",
+            "Scarlett Johansson",
+            "Taron Egerton",
+            "Garth Jennings",
+            "Eric Hayes",
+            "Katherine Kelloway",
+            "Joy Poirel",
+            "Fisher Stevens"
+         ],
+         "genres": [
+            16,
+            10751,
+            35,
+            27
+         ],
+         "adult": false,
+         "star_rating": 7.3,
+         "poster_url": "/i77OInTKcrnRlAozFOaB6D5mk15.jpg"
+      }
+   },
+   {
+      "pk": 1331375,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1331375,
+         "title": "도미니크: 불사조",
+         "summary": "킬러의 삶을 버리지만 범죄의 땅에 추락한 천사. 마을은 경찰까지 카르텔에 장악된 무법지대이다. 친절을 보인 가족이 위험에 처하고 운명은 그녀에게 다시 총을 잡게한다. 경찰특공대와 일당백의 전쟁이 시작된다.",
+         "release_date": "2024-10-11",
+         "director": "Michael S. Ojeda",
+         "actors": [
+            "Oksana Orlan",
+            "Sebastián Carvajal",
+            "María del Rosario",
+            "Maurice Compte",
+            "Chase Coleman",
+            "Ski Carr",
+            "Jose Conejo Martin"
+         ],
+         "genres": [
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.4,
+         "poster_url": "/5OTh8Xaoueck7g6qgJNJ6vtHcAP.jpg"
+      }
+   },
+   {
+      "pk": 1328814,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1328814,
+         "title": "Amityville: Where the Echo Lives",
+         "summary": "",
+         "release_date": "2024-10-28",
+         "director": "Carlos Ayala",
+         "actors": [
+            "Sarah McDonald",
+            "Breanna Rossi",
+            "Adela Perez",
+            "Nicholas J. Barelli",
+            "Hector De Alva",
+            "Eugenia Preciado",
+            "Adelina Topleva",
+            "Olya Marynets",
+            "Simona Curkoska"
+         ],
+         "genres": [
+            27,
+            9648
+         ],
+         "adult": false,
+         "star_rating": 6.3,
+         "poster_url": "/jqhAgE9ceTX8f9xTcqBlmXSuMG3.jpg"
+      }
+   },
+   {
+      "pk": 1125510,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1125510,
+         "title": "더 플랫폼 2",
+         "summary": "수직 구조로 된 감방. 정체 모를 리더가 잔혹한 시스템에 자체적인 규범을 도입시키고, 이후 새로운 인물이 나타나 수상한 배급 방식에 대해 반기를 든다.",
+         "release_date": "2024-09-27",
+         "director": "Raquel Perea",
+         "actors": [
+            "Milena Smit",
+            "Hovik Keuchkerian",
+            "Natalia Tena",
+            "Óscar Jaenada",
+            "Ivan Massagué",
+            "Zorion Eguileor",
+            "Bastien Ughetto",
+            "Armando Buika",
+            "Pedro Bachura",
+            "Antonia San Juan"
+         ],
+         "genres": [
+            878,
+            27
+         ],
+         "adult": false,
+         "star_rating": 5.644,
+         "poster_url": "/poELZsrROLJW28gc1V9nB1kJigq.jpg"
+      }
+   },
+   {
+      "pk": 603692,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 603692,
+         "title": "존 윅 4",
+         "summary": "죽을 위기에서 살아난 존 윅은 최고 회의를 쓰러트릴 방법을 찾아낸다. 비로소 완전한 자유의 희망을 보지만, 빌런 그라몽 후작과 전 세계의 최강 연합은 존 윅의 오랜 친구까지 적으로 만들어 버리고, 새로운 위기에 놓인 존 윅은 최후의 반격을 준비하는데...",
+         "release_date": "2023-03-22",
+         "director": "Tyler Bates",
+         "actors": [
+            "Keanu Reeves",
+            "Donnie Yen",
+            "Bill Skarsgård",
+            "Ian McShane",
+            "Laurence Fishburne",
+            "Lance Reddick",
+            "Clancy Brown",
+            "Hiroyuki Sanada",
+            "Rina Sawayama",
+            "Scott Adkins"
+         ],
+         "genres": [
+            28,
+            53,
+            80
+         ],
+         "adult": false,
+         "star_rating": 7.731,
+         "poster_url": "/h3LsdSBzhRnBebz4BTpAhh63PD3.jpg"
+      }
+   },
+   {
+      "pk": 1010581,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1010581,
+         "title": "나의 잘못",
+         "summary": "노아는 남자 친구와 친구들이 있는 동네를 뒤로하고 엄마의 새 부자 남편 저택으로 이사를 가게 된다. 의붓오빠 닉과는 첫 만남부터 삐걱댔지만 곧 서로에게 이끌려 금지된 관계를 맺는다. 반항심과 고뇌로 가득 찬 그들의 인생은 송두리째 흔들리고 둘은 결국 뜨거운 사랑에 빠진다.",
+         "release_date": "2023-06-08",
+         "director": "Domingo González",
+         "actors": [
+            "Nicole Wallace",
+            "Gabriel Guevara",
+            "Marta Hazas",
+            "Iván Sánchez",
+            "Eva Ruiz",
+            "Víctor Varona",
+            "Fran Berenguer",
+            "Adriana Ubani",
+            "Ivan Massagué",
+            "Mariano Venancio"
+         ],
+         "genres": [
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.916,
+         "poster_url": "/duT8Vks5FXwDkpxoR84xb2a6VB6.jpg"
+      }
+   },
+   {
+      "pk": 917496,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 917496,
+         "title": "비틀쥬스 비틀쥬스",
+         "summary": "유령과 대화하는 영매로 유명세를 타게 된 리디아와 그런 엄마가 마음에 들지 않는 10대 딸 아스트리드. 할아버지 찰스의 갑작스러운 죽음으로 가족들은 함께 시골 마을에 내려간다. 유령을 보는 엄마가 마음에 들지 않는 아스트리드는 방황하던 중 함정에 빠져 저세상에 발을 들이게 되고 딸을 구하기 위해 리디아는 인간을 믿지 않는 저세상 슈퍼스타 비틀쥬스를 소환한다. 이루지 못한 리디아와의 결혼을 조건으로 내민 비틀쥬스. 이번엔 아스트리드가 비틀쥬스를 다시 저세상으로 보내야 하는데···",
+         "release_date": "2024-09-04",
+         "director": "Tim Burton",
+         "actors": [
+            "Michael Keaton",
+            "Winona Ryder",
+            "Catherine O'Hara",
+            "Jenna Ortega",
+            "Justin Theroux",
+            "Willem Dafoe",
+            "Monica Bellucci",
+            "Arthur Conti",
+            "Nick Kellington",
+            "Santiago Cabrera"
+         ],
+         "genres": [
+            35,
+            14,
+            27
+         ],
+         "adult": false,
+         "star_rating": 7.143,
+         "poster_url": "/ypWQatJYyESE5PIzdlSdiOyWYja.jpg"
+      }
+   },
+   {
+      "pk": 1159311,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1159311,
+         "title": "나의 히어로 아카데미아 더 무비: 유어 넥스트",
+         "summary": "“다음은 너다” 초자연능력 ‘개성’을 가진 인간이 당연해진 세계에서 옛 ‘평화의 상징’ NO.1 히어로 ‘올마이트’가 악의 제왕 ‘올 포 원’과의 사투 직후 한 말. ‘올마이트’의 의지는 데쿠와 유에이 고등학교 히어로과로 이어져 왔다. 유에이 2년 차 봄, 히어로 VS 빌런의 전면전이 발발하고 황폐해진 사회에 수수께끼의 남자가 나타난다. 스스로를 ‘올마이트를 대신하는 새로운 상징’이라고 말하는 ‘다크마이트’는 자신의 야망을 위해 ‘개성’으로 거대한 요새를 만들어 마을과 사람들을 차례로 삼켜간다! ‘다크마이트’의 등장과 동시에 특별한 ‘개성’을 지닌 ‘안나’라는 소녀, 그리고 그녀를 ‘아가씨’라고 부르는 ‘줄리오’라는 남자가 나타나는데… 데쿠와 바쿠고, 토도로키, 그리고 유에이 고교 1학년 A반은 ‘다크마이트’에 맞서 세계를 지킬 수 있을까? “다음은 우리다!”",
+         "release_date": "2024-08-02",
+         "director": "Yosuke Kuroda",
+         "actors": [
+            "Daiki Yamashita",
+            "Nobuhiko Okamoto",
+            "Yuki Kaji",
+            "Mamoru Miyano",
+            "Meru Nukumi",
+            "Kenta Miyake",
+            "Ayane Sakura",
+            "Kaito Ishikawa",
+            "Uoken",
+            "Yuki Ono"
+         ],
+         "genres": [
+            16,
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 6.882,
+         "poster_url": "/rSJnz7FqxEIe5uzAZbWSzc8bk5f.jpg"
+      }
+   },
+   {
+      "pk": 1287717,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1287717,
+         "title": "출입금지",
+         "summary": "노동자 계급 출신인 두 명의 유튜버가 콘텐츠를 만들던 중 자신들의 농구공 가방을 되찾기 위해서 버려진 저택에 들어가 장난을 치다 길을 잃고 만다. 그들은 핸드폰으로 이 깜짝 어드벤처를 찍기 시작하고, 유튜브 채널의 구독자 수를 늘리려는 욕심에 유령이 나오는 것처럼 동영상을 조작한다. 동영상은 입소문을 타고 이들은 챌린지를 시작한다. 영상 조회수가 일정 수에 도달하면 그 집에 다시 들어가기로 한 것. 밤에, 혼자, 완전히 무방비 상태로 말이다. 팬들이 호응하자 그들은 약속한 대로 다시 그 집에 간다. 그리고 그곳에 사는 이들의 진짜 정체와 함께, 자신들 역시 더 이상 산 사람이 아닐 수 있다는 사실을 깨닫는다.",
+         "release_date": "2024-08-06",
+         "director": "Hugo Cardozo",
+         "actors": [
+            "Pablo Martínez",
+            "Lucas Caballero",
+            "Rafael Alfaro",
+            "Lara Chamorro",
+            "Andy Romero",
+            "Mario González Martí",
+            "Ariel Delgadillo",
+            "Lia Love"
+         ],
+         "genres": [
+            27
+         ],
+         "adult": false,
+         "star_rating": 7.566,
+         "poster_url": "/pi2pkIUeVk0z3iy67YKTxDjeAGr.jpg"
+      }
+   },
+   {
+      "pk": 1063877,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1063877,
+         "title": "돈 무브",
+         "summary": "사랑하는 이를 잃은 슬픔을 달래려 외딴 숲을 찾은 여자. 우연히 마주친 살인마에게 마비성 약물을 주입당하는데. 온몸이 점점 마비되어 가는 가운데, 그녀의 생존을 건 싸움이 시작된다.",
+         "release_date": "2024-10-24",
+         "director": "Adam Schindler",
+         "actors": [
+            "Kelsey Asbille",
+            "Finn Wittrock",
+            "Daniel Francis",
+            "Moray Treadwell",
+            "Dylan Beam",
+            "Kate Nichols",
+            "Skye Little Wing Dimova-Saw",
+            "Denis Kostadinov"
+         ],
+         "genres": [
+            53,
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.4,
+         "poster_url": "/oYWAVAhvpB9CmlJuZD3n23vEgiU.jpg"
+      }
+   },
+   {
+      "pk": 823219,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 823219,
+         "title": "플로우",
+         "summary": "대홍수가 세상을 덮친 뒤, 유일한 피난처가 된 배 한 척을 타고 다양한 동물 친구들과 항해를 시작한 ‘고양이’의 눈부신 모험담",
+         "release_date": "2024-08-29",
+         "director": "Matīss Kaža",
+         "actors": [],
+         "genres": [
+            16,
+            14,
+            12
+         ],
+         "adult": false,
+         "star_rating": 8.5,
+         "poster_url": "/kX9gzHyfwXCkTszBcPekQZxPnzP.jpg"
+      }
+   },
+   {
+      "pk": 482600,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 482600,
+         "title": "일본 엄마",
+         "summary": "얼굴은 청순, 가슴은 D컵, 밤 기술은 퍼펙트! \"\"아들아, 이제부터 네 여친이 아니라 엄마다.\"\r 아들 기호가 결혼하겠다며 일본에서 데려온 그녀, 유키. 그러나 기호는 한국에 오자 전 여친을 만나며 바람을 피우기 시작한다. 처음에는 예비 며느리를 달래는 마음으로 유키를 위로하던 민철은 어느 순간부터 자신이 유키를 여자로 보고 있다는 사실을 깨닫는다. 결국, 기호 몰래 민철과 유키의 뜨거운 정사가 펼쳐지는데...",
+         "release_date": "2017-02-09",
+         "director": "Kim Moo-won",
+         "actors": [
+            "Jeon Ji-hak",
+            "Choi Min-ho",
+            "Saki Mizumi",
+            "Ha Roo",
+            "Ahn So-hee"
+         ],
+         "genres": [
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.179,
+         "poster_url": "/hq1EaYIqUNrPM3QFYAbnH2UHoX8.jpg"
+      }
+   },
+   {
+      "pk": 978796,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 978796,
+         "title": "백맨",
+         "summary": "",
+         "release_date": "2024-09-20",
+         "director": "Colm McCarthy",
+         "actors": [
+            "Sam Claflin",
+            "Antonia Thomas",
+            "Caréll Vincent Rhoden",
+            "Will Davis",
+            "Adelle Leonce",
+            "William Hope",
+            "Steven Cree",
+            "Sharon D. Clarke",
+            "Henry Pettigrew",
+            "Neil Linpow"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.2,
+         "poster_url": "/hzrvol8K2VWm2BsDTwb8YvRMzIH.jpg"
+      }
+   },
+   {
+      "pk": 957452,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 957452,
+         "title": "더 크로우",
+         "summary": "인생에서 가장 어둡고 외로웠던 순간, 자신과 비슷한 영혼을 가진 '셸리'를 만나 영원한 사랑을 약속한 '에릭'.  완벽한 행복을 만끽하던 그때, 두 사람은 의문의 괴한들에게 무참히 살해 당하고 '셸리'는 과거의 끔찍한 실수로 지옥에 끌려가게 된다.  지옥에서 '셸리'를 되찾기 위해 '에릭'은 까마귀의 저주를 받아 불사의 몸이 되고 죽여도 죽지 않는 복수의 화신으로 부활하게 되는데…",
+         "release_date": "2024-08-21",
+         "director": "Rupert Sanders",
+         "actors": [
+            "Bill Skarsgård",
+            "FKA twigs",
+            "Danny Huston",
+            "Josette Simon",
+            "Laura Birn",
+            "Sami Bouajila",
+            "Karel Dobrý",
+            "Jordan Bolger",
+            "Sebastian Orozco",
+            "David Bowles"
+         ],
+         "genres": [
+            28,
+            14,
+            27
+         ],
+         "adult": false,
+         "star_rating": 5.9,
+         "poster_url": "/iQ6IgOGpx7Fzd52PD2tbRx9NMnl.jpg"
+      }
+   },
+   {
+      "pk": 1144962,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1144962,
+         "title": "Transmorphers: Mech Beasts",
+         "summary": "",
+         "release_date": "2023-06-09",
+         "director": "Andrew Fernie",
+         "actors": [
+            "Tom Arnold",
+            "Tania Fox",
+            "Jolene Anderson",
+            "Andrew Rogers",
+            "Mica Javier",
+            "Chad Ridgely",
+            "Anthony Jensen",
+            "Mark Justice",
+            "Jessica DeBonville",
+            "Charlotte Bjornbak"
+         ],
+         "genres": [
+            28,
+            878
+         ],
+         "adult": false,
+         "star_rating": 5.5,
+         "poster_url": "/oqhaffnQqSzdLrYAQA5W4IdAoCX.jpg"
+      }
+   },
+   {
+      "pk": 616446,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 616446,
+         "title": "형제들",
+         "summary": "'형제들'은 새사람이 되어 정직하게 살고자 하는 전과자(조시 브롤린)가 항상 자신을 미치게 만드는 쌍둥이 형제(피터 딘클리지)와 재회하면서 의도치 않게 일생일대의 한탕을 노리고 국토를 횡단하게 되는 이야기다. 두 형제가 서로 죽여버리고 마는 불상사를 막으려면 총알과 법망, 남의 말이라곤 전혀 듣지 않는 어머니를 피해 가며 잃어버린 가족애를 되찾아야 한다.",
+         "release_date": "2024-10-10",
+         "director": "David Ginsberg",
+         "actors": [
+            "Josh Brolin",
+            "Peter Dinklage",
+            "Glenn Close",
+            "Brendan Fraser",
+            "Taylour Paige",
+            "M. Emmet Walsh",
+            "Jennifer Landon",
+            "Joshua Mikel",
+            "Marisa Tomei",
+            "William Tokarsky"
+         ],
+         "genres": [
+            28,
+            35,
+            80
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/Akweo95FGyDpucYVT81h0SbX8Ky.jpg"
+      }
+   },
+   {
+      "pk": 947891,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 947891,
+         "title": "마이 올드 애스",
+         "summary": "18번째 생일에 버섯 환각을 경험한 자유분방한 엘리엇은 농담을 일삼는 39세의 자신과 마주하게 된다. 하지만 나이 든 ‘자기 자신’이 어린 엘리엇에게 무엇을 해야 하고 하지 말아야 할지 경고를 건네기 시작하자, 엘리엇은 가족과 사랑, 그리고 인생이 바뀌어 가는 여름에 대해 모든 것을 다시 생각해봐야 한다는 사실을 깨닫게 된다.",
+         "release_date": "2024-09-13",
+         "director": "Megan Park",
+         "actors": [
+            "Maisy Stella",
+            "Aubrey Plaza",
+            "Percy Hynes White",
+            "Maddie Ziegler",
+            "Kerrice Brooks",
+            "Maria Dizzia",
+            "Alain Goulem",
+            "Seth Isaac Johnson",
+            "Carter Trozzolo",
+            "Alexandria Rivera"
+         ],
+         "genres": [
+            35,
+            18,
+            10749,
+            878
+         ],
+         "adult": false,
+         "star_rating": 6.738,
+         "poster_url": "/yUs4Sw9AyTg2sA1qWBkNpD2mGSj.jpg"
+      }
+   },
+   {
+      "pk": 726139,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 726139,
+         "title": "탈출: 프로젝트 사일런스",
+         "summary": "한치 앞도 구분할 수 없는 짙은 안개 속 붕괴 직전의 공항대교에 고립된 사람들이 그 안에 도사리고 있는 예기치 못한 위협으로부터 살아남기 위해 고군분투하는 이야기.",
+         "release_date": "2024-07-11",
+         "director": "Park Joo-suk",
+         "actors": [
+            "Lee Sun-kyun",
+            "Ju Ji-hoon",
+            "Kim Hee-won",
+            "Moon Sung-keun",
+            "Ye Su-jeong",
+            "Kim Tae-woo",
+            "Park Hee-von",
+            "Park Ju-hyun",
+            "Kim Su-an",
+            "Ha Do-kwon"
+         ],
+         "genres": [
+            28,
+            53,
+            27,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.0,
+         "poster_url": "/rXuSca6qEb4xPrSRT7XRzYCFbZB.jpg"
+      }
+   },
+   {
+      "pk": 1011985,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1011985,
+         "title": "쿵푸팬더 4",
+         "summary": "마침내 내면의 평화… 냉면의 평화…가 찾아왔다고 믿는 용의 전사 ‘포’ 이젠 평화의 계곡의 영적 지도자가 되고, 자신을 대신할 후계자를 찾아야만 한다. “이제 용의 전사는 그만둬야 해요?” 용의 전사로의 모습이 익숙해지고 새로운 성장을 하기보다 지금 이대로가 좋은 ‘포’ 하지만 모든 쿵푸 마스터들의 능력을 그대로 복제하는 강력한 빌런 ‘카멜레온’이 나타나고 그녀를 막기 위해 정체를 알 수 없는 쿵푸 고수 ‘젠’과 함께 모험을 떠나게 되는데… 포는 가장 강력한 빌런과 자기 자신마저 뛰어넘고 진정한 변화를 할 수 있을까?",
+         "release_date": "2024-03-02",
+         "director": "Christopher Knights",
+         "actors": [
+            "Jack Black",
+            "Awkwafina",
+            "Viola Davis",
+            "Dustin Hoffman",
+            "Bryan Cranston",
+            "James Hong",
+            "Ian McShane",
+            "Ke Huy Quan",
+            "Ronny Chieng",
+            "Lori Tan Chinn"
+         ],
+         "genres": [
+            16,
+            10751,
+            14,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.092,
+         "poster_url": "/1ZNOOMmILNUzVYbzG1j7GYb5bEV.jpg"
+      }
+   },
+   {
+      "pk": 1354627,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1354627,
+         "title": "SpongeBob Squarepants: Kreepaway Kamp",
+         "summary": "",
+         "release_date": "2024-10-10",
+         "director": "Ian Vasquez",
+         "actors": [
+            "Tom Kenny",
+            "Bill Fagerbakke",
+            "Rodger Bumpass",
+            "Clancy Brown",
+            "Carolyn Lawrence",
+            "Mr. Lawrence",
+            "Lori Alan",
+            "Carlos Alazraqui",
+            "Dee Bradley Baker",
+            "India de Beaufort"
+         ],
+         "genres": [
+            10770,
+            10751,
+            35,
+            27,
+            16
+         ],
+         "adult": false,
+         "star_rating": 7.132,
+         "poster_url": "/blRsgsexoBqnjcEJkV8beKAVT6J.jpg"
+      }
+   },
+   {
+      "pk": 639720,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 639720,
+         "title": "이프: 상상의 친구",
+         "summary": "상상의 친구 ‘이프’를 볼 수 있는 능력을 지닌 한 소녀가 아이들에게 잊혀졌던 ‘이프’를 다시 되찾아주기 위해 마법 같은 모험을 시작하는 이야기를 그린 영화",
+         "release_date": "2024-05-08",
+         "director": "Andrew Form",
+         "actors": [
+            "Cailey Fleming",
+            "Ryan Reynolds",
+            "John Krasinski",
+            "Fiona Shaw",
+            "Steve Carell",
+            "Phoebe Waller-Bridge",
+            "Louis Gossett Jr.",
+            "Alan Kim",
+            "Liza Colón-Zayas",
+            "Bobby Moynihan"
+         ],
+         "genres": [
+            35,
+            14,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 7.28,
+         "poster_url": "/9GAOhSzXjXJR4AxYCa2AMzMGPVg.jpg"
+      }
+   },
+   {
+      "pk": 637649,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 637649,
+         "title": "캐시트럭",
+         "summary": "캐시트럭을 노리는 무장 강도에 의해 아들을 잃은 H(제이슨 스타뎀). 분노에 휩싸인 그는 아들을 죽인 범인의 단서를 찾기 위해 현금 호송 회사에 위장 취업한다. 첫 임무부터 백발백중 사격 실력을 자랑하며, 단숨에 에이스로 급부상한 H. 캐시트럭을 노리는 자들을 하나 둘 처리하며, 아들을 죽인 범인들과 점점 가까워지는데… 자비는 없다, 분노에 가득 찬 응징만이 남았다.",
+         "release_date": "2021-04-22",
+         "director": "Martyn John",
+         "actors": [
+            "Jason Statham",
+            "Holt McCallany",
+            "Josh Hartnett",
+            "Scott Eastwood",
+            "Darrell D'Silva",
+            "Babs Olusanmokun",
+            "Jeffrey Donovan",
+            "Eddie Marsan",
+            "Andy García",
+            "Niamh Algar"
+         ],
+         "genres": [
+            80,
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.631,
+         "poster_url": "/qEkQy6H83Sz7vPWN9ZQXWl9RiBF.jpg"
+      }
+   },
+   {
+      "pk": 18183,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 18183,
+         "title": "달콤 쌉사름한 초콜릿",
+         "summary": "페드로(Pedro: 마르코 레오나르디 분)와 리타(Tita: 루미 카바조스 분)는 서로 사랑하는 사이이다. 페드로 아버지는 리타 어머니에게 두 사람의 결혼을 청하나 거절당한다. 이유는 멕시코 명문가에서는 막내딸은 결혼은 못하고 어머니를 돌보도록 하는 풍습이 있는데 리타는 막내딸인 것이다. 리타 어머니는 리타보다 두살위인 언니 로사우라(Rosaura: 야렐리 아르즈멘디 분)와 결혼할 것을 제의한다. 페드로는 한집에서 같이 지낼 수 있다는 생각에 언니와의 결혼을 승락한다.  리타는 음식을 만들어 사람의 감정을 전달하는 신통력을 가지고 있다. 페드로와 언니 결혼식날, 케이크를 먹은 하객들은 불행한 결혼을 아는듯 눈물을 흘리고 토하게 된다. 그리고 페드로가 선물한 장미로 만든 장미꽃 소스를 통해 진정한 사랑의 마음을 전달하게 되고 큰 언니 헤루트루디(Gertrudis: 클라우뎃 마일레 분)는 열정을 못참고 집을 뛰쳐나가 혁명가의 아내가 된다. 로사우라의 난산으로 오게 된 브라운 박사(Doctor John Brown: 마리오 아반 마티네즈 분)는 리타를 보고 사랑을 느끼게 된다. 엘레나 부인(Mama Elena: 레지나 토르네 분)은 리타와 페드로 사이가 심상치 않음을 알고 페드로 부부를 삼촌집으로 보낸다. 로사우라의 아들이 전염병으로 죽었다는 소식을 들은 리타는 미치게 되어 브라운 박사 집에서 치료를 받게 된다. 둘은 사랑을 느끼게 되어 리타는 브라운 박사의 청혼을 받아들인다.  한편 엘레나 부인은 반란군이 침입해 저항하다 사망한다. 리타는 비로소 엄마의 비밀을 알게 되는데...",
+         "release_date": "1992-04-16",
+         "director": "Alfonso Arau",
+         "actors": [
+            "Lumi Cavazos",
+            "Regina Torné",
+            "Ada Carrasco",
+            "Marco Leonardi",
+            "Mario Iván Martínez",
+            "Claudette Maillé",
+            "Yareli Arizmendi",
+            "Joaquín Garrido",
+            "Pilar Aranda",
+            "Rodolfo Arias"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 7.2,
+         "poster_url": "/bBToqYouLBaoojtC6AyRNeFcQoV.jpg"
+      }
+   },
+   {
+      "pk": 827931,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 827931,
+         "title": "타임 컷",
+         "summary": "한 십 대 소녀가 시간을 거슬러 2024년에서 2003년으로 돌아간다. 언니가 마스크를 쓴 살인마에게 살해당하기 며칠 전으로 돌아간 소녀. 과연 미래를 파괴하지 않고 과거를 바꿀 수 있을까?",
+         "release_date": "2024-10-29",
+         "director": "Matt Kaplan",
+         "actors": [
+            "Madison Bailey",
+            "Antonia Gentry",
+            "Griffin Gluck",
+            "Megan Best",
+            "Michael Shanks",
+            "Rachael Crawford",
+            "Summer H. Howell",
+            "Sydney Sabiston",
+            "Adam Hurtig",
+            "Gwendolyn Collins"
+         ],
+         "genres": [
+            27,
+            878,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.576,
+         "poster_url": "/59k1QVE0fiDJWqoGGKS8TcTqZPI.jpg"
+      }
+   },
+   {
+      "pk": 748783,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 748783,
+         "title": "가필드 더 무비",
+         "summary": "세상귀찮 집냥이, 바쁘고 험난한 세상에 던져졌다! 집사 ‘존’과 반려견 ‘오디’를 기르며 평화로운 나날을 보내던 집냥이 ‘가필드’. 어느 날, 험악한 길냥이 무리에게 납치당해 냉혹한 거리로 던져진다. 돌봐주는 집사가 없는 집 밖 세상은 너무나도 정신없게 돌아가고 길에서 우연히 다시 만난 아빠 길냥이 ‘빅’은 오히려 ‘가필드’를 위기에 빠지게 하는데… 험난한 세상, 살아남아야 한다!",
+         "release_date": "2024-04-30",
+         "director": "Andrew A. Kosove",
+         "actors": [
+            "Chris Pratt",
+            "Samuel L. Jackson",
+            "Hannah Waddingham",
+            "Ving Rhames",
+            "Nicholas Hoult",
+            "Cecily Strong",
+            "Harvey Guillén",
+            "Brett Goldstein",
+            "Bowen Yang",
+            "Snoop Dogg"
+         ],
+         "genres": [
+            16,
+            35,
+            10751,
+            12,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.1,
+         "poster_url": "/57g3pHYi3p0JNVO1LkcyYbeMDBf.jpg"
+      }
+   },
+   {
+      "pk": 1140648,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1140648,
+         "title": "더블 블라인드",
+         "summary": "이중맹검 임상시험에 참여한 클레어는 다른 참가자들과 함께 통신이 터지지 않는 시설에서 지내게 된다. 정량대로 약을 복용하면서 경과를 지켜보던 참가자들은 순탄할 거라는 버크 박사의 말과는 달리 밤에 잠을 이루지 못하고, 제약사는 참가자들에게 거액의 돈을 제안하며 임상시험의 조건을 변경하는데...",
+         "release_date": "2024-02-09",
+         "director": "Ian Hunt Duffy",
+         "actors": [
+            "Millie Brady",
+            "Pollyanna McIntosh",
+            "Akshay Kumar",
+            "Diarmuid Noyes",
+            "Brenock O'Connor",
+            "Abby Fitz",
+            "Shonagh Marie",
+            "Frank Blake",
+            "Kate Ashfield",
+            "Amy De Bhrún"
+         ],
+         "genres": [
+            878,
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.8,
+         "poster_url": "/5U4wqXmRf2FbwS0NMDlArDr7xq2.jpg"
+      }
+   },
+   {
+      "pk": 259872,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 259872,
+         "title": "Des jours plus belles que la nuit",
+         "summary": "",
+         "release_date": "2010-02-19",
+         "director": "Jennifer Lyon Bell",
+         "actors": [
+            "Wim van Damme",
+            "Floor Wyns"
+         ],
+         "genres": [
+            10749
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/uCkANtG6ezb7hjRKVudY3PUcbvn.jpg"
+      }
+   },
+   {
+      "pk": 663712,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 663712,
+         "title": "테리파이어 2",
+         "summary": "악명 높은 마일즈 카운티 대학살 이후 1년, 연쇄 살인마 ‘아트 더 크라운’이 한 유가족을 해치기 위해 다시 돌아온다. 악령의 환영에 이끌린 채, 살인마는 한 십대 소녀와 그녀의 남동생을 노린다. 악몽과 현실의 경계가 모호해질 수록 살인은 증가한다. 남매는 그들을 구원으로 이끌 한 가족의 비밀을 발견하고 ‘아트 더 크라운’의 학살을 멈추려한다.",
+         "release_date": "2022-10-06",
+         "director": "Phil Falcone",
+         "actors": [
+            "David Howard Thornton",
+            "Lauren LaVera",
+            "Elliott Fullam",
+            "Sarah Voigt",
+            "Kailey Hyman",
+            "Casey Hartnett",
+            "Charlie McElveen",
+            "Amelie McLain",
+            "Johnath Davis",
+            "Samantha Scaffidi"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.76,
+         "poster_url": "/8gLhu8UFPZfH2Hv11JhTZkb9CVl.jpg"
+      }
+   },
+   {
+      "pk": 1079091,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1079091,
+         "title": "우리가 끝이야",
+         "summary": "아버지의 장례식을 멋지게 망치고 아지트로 향한 ‘릴리’는 어딘가 위태롭지만 매력적인 남자 ‘라일’에게 순식간에 마음을 빼앗긴다. 새로운 도시에서 자신의 이름을 건 꽃집을 오픈한 릴리는 운명처럼 라일을 다시 만나게 되고 걷잡을 수 없는 사랑에 빠져든다. 그러던 어느 날, 어린 시절의 모든 상처를 알고 있는 첫사랑 ‘아틀라스’와 우연히 재회한 후 감당하기 벅찬 라일의 위협적인 모습을 목격하게 되고 완벽했던 관계가 순식간에 요동치면서 릴리는 피할 수 없는 선택의 기로에 서게 되는데… 외면하고 싶지만 마주해야 하는 사랑과 선택의 순간 올가을, 모두에게 위로와 용기를 선사하는 특별한 이야기!",
+         "release_date": "2024-08-07",
+         "director": "Justin Baldoni",
+         "actors": [
+            "Blake Lively",
+            "Justin Baldoni",
+            "Jenny Slate",
+            "Brandon Sklenar",
+            "Hasan Minhaj",
+            "Kevin McKidd",
+            "Amy Morton",
+            "Alex Neustaedter",
+            "Isabela Ferrer",
+            "Robert Clohessy"
+         ],
+         "genres": [
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.2,
+         "poster_url": "/287MYoxjfINSyfaaV636Z2ioR36.jpg"
+      }
+   },
+   {
+      "pk": 991610,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 991610,
+         "title": "인베이젼",
+         "summary": "아무런 경고도 없이 이웃 독재 국가 베라과가 퀴라소와 아루바를 공격한다. 네덜란드의 정치인들은 당황한다. 갈등이 급격히 고조되면서 세 명의 젊은 해병대원들이 나서서 행동해야 한다. 아루바의 병영은 공격을 받고 있고, 영공은 폐쇄되었지만, 네덜란드 대사는 여전히 적대 지역에서 대피하지 못한 상태다. 갓 임명된 해병대원들은 자신들의구조 임무가 시간 싸움이 되었다는 것을 깨닫는다.",
+         "release_date": "2024-04-11",
+         "director": "Philip Delmaar",
+         "actors": [
+            "Tarikh Janssen",
+            "Gijs Blom",
+            "Ortál Vriend",
+            "Jasha Rudge",
+            "Fedja van Huêt",
+            "Gijs Scholten van Aschat",
+            "Raymond Thiry",
+            "Uriah Havertong",
+            "Jonas Smulders",
+            "Siawaash Cyrroes"
+         ],
+         "genres": [
+            28,
+            18,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.0,
+         "poster_url": "/osPKnn1Q1BoZ88kLcksR7iPJKVg.jpg"
+      }
+   },
+   {
+      "pk": 882598,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 882598,
+         "title": "스마일",
+         "summary": "기괴한 미소를 지으며 자신의 눈 앞에서 목숨을 끊는 환자를 목격한 정신과 의사 ‘로즈’. 그날 이후로 ‘로즈’의 일상에 설명할 수 없는 끔찍한 일들이 잇따라 발생한다. 일상을 덮친 공포에 발버둥치던 ‘로즈’는 이전에도 자신과 같은 일을 겪은 사람들이 있었고 그들 모두 끔찍한 죽음을 피할 수 없었다는 사실을 알게 된다. 시시각각 다가오는 죽음에서 벗어나기 위해 사투를 벌이던 로즈는 잊고 싶던 과거와 마주하게 되는데…",
+         "release_date": "2022-09-23",
+         "director": "Isaac Klausner",
+         "actors": [
+            "Sosie Bacon",
+            "Kyle Gallner",
+            "Jessie T. Usher",
+            "Robin Weigert",
+            "Caitlin Stasey",
+            "Kal Penn",
+            "Rob Morgan",
+            "Gillian Zinser",
+            "Judy Reyes",
+            "Jack Sochet"
+         ],
+         "genres": [
+            27,
+            9648
+         ],
+         "adult": false,
+         "star_rating": 6.661,
+         "poster_url": "/8ncuVFt4e0M2NTTsoPtbxfWN5dO.jpg"
+      }
+   },
+   {
+      "pk": 940551,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 940551,
+         "title": "인투 더 월드",
+         "summary": "가족을 과잉보호하는 아빠 ‘맥’ 때문에 평생을 작은 연못에서 안전하게 살아온 말러드 가족. 하지만 호기심 가득한 남매 ‘댁스’와 ‘그웬’을 위해 새로운 세상을 모험하고 싶은 엄마 ‘팸’의 설득으로 가족들은 항상 꿈꿔온 자메이카로 생애 첫 가족 모험을 떠나기로 한다! 설렘 넘치는 시작과 달리 태풍을 만나 길을 잃고, 낯선 친구들을 만나고, 위험 가득한 뉴욕에 불시착하게 된다. 인생 처음으로 모든 계획이 틀어지고 위기에 빠진 말러드 가족은 서툴지만 서로를 의지하며 모험을 계속한다. 새로운 세상, 함께라면 두려울 것 없어!",
+         "release_date": "2023-12-06",
+         "director": "Chris Meledandri",
+         "actors": [
+            "Kumail Nanjiani",
+            "Elizabeth Banks",
+            "Caspar Jennings",
+            "Tresi Gazal",
+            "Awkwafina",
+            "Carol Kane",
+            "Keegan-Michael Key",
+            "Danny DeVito",
+            "David Mitchell",
+            "Isabela Merced"
+         ],
+         "genres": [
+            16,
+            28,
+            12,
+            35,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 7.436,
+         "poster_url": "/2xE3NI6zElWhwN9WJ92fqbZKmzZ.jpg"
+      }
+   },
+   {
+      "pk": 157336,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 157336,
+         "title": "인터스텔라",
+         "summary": "세계 각국의 정부와 경제가 완전히 붕괴된 미래가 다가온다. 지난 20세기에 범한 잘못이 전 세계적인 식량 부족을 불러왔고, NASA도 해체되었다. 나사 소속 우주비행사였던 쿠퍼는 지구에 몰아친 식량난으로 옥수수나 키우며 살고 있다. 거센 황사가 몰아친 어느 날 알 수 없는 힘에 이끌려 딸과 함께 도착한 곳은 인류가 이주할 행성을 찾는 나사의 비밀본부. 이 때 시공간에 불가사의한 틈이 열리고, 이 곳을 탐험해 인류를 구해야 하는 임무를 위해 쿠퍼는 만류하는 딸을 뒤로한 채 우주선에 탑승하는데...",
+         "release_date": "2014-11-05",
+         "director": "Lynda Obst",
+         "actors": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Michael Caine",
+            "Jessica Chastain",
+            "Casey Affleck",
+            "Wes Bentley",
+            "Topher Grace",
+            "Mackenzie Foy",
+            "Ellen Burstyn",
+            "John Lithgow"
+         ],
+         "genres": [
+            12,
+            18,
+            878
+         ],
+         "adult": false,
+         "star_rating": 8.4,
+         "poster_url": "/evoEi8SBSvIIEveM3V6nCJ6vKj8.jpg"
+      }
+   },
+   {
+      "pk": 1290287,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1290287,
+         "title": "핫 스노우맨",
+         "summary": "남편을 잃은 젊은 여성이 어느 날 마법의 스카프로 매력적인 눈사람을 살아나게 한다. 눈사람이 녹아 없어지기 전, 그를 통해 로맨스와 웃음, 크리스마스의 즐거움을 되찾을 수 있을까?",
+         "release_date": "2024-11-12",
+         "director": "Russell Hainline",
+         "actors": [
+            "Lacey Chabert",
+            "Dustin Milligan",
+            "Craig Robinson",
+            "Joe Lo Truglio",
+            "Katy Mixon",
+            "Lauren Holly",
+            "Chrishell Stause",
+            "Sherry Miller",
+            "Allan Royal",
+            "Dan Lett"
+         ],
+         "genres": [
+            10749,
+            35
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/61tqb79tEQ4x3RRjP5ycQxHfY2F.jpg"
+      }
+   },
+   {
+      "pk": 177572,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 177572,
+         "title": "빅 히어로",
+         "summary": "천재 공학도 ‘테디’가 개발한 힐링로봇 ‘베이맥스’! ‘테디’의 동생이자 로봇 전문가인 ‘히로’는 도시가 파괴될 위기에 처하자 ‘베이맥스’를 슈퍼히어로로 업그레이드 하는데... 과연 이들은 도시의 위험을 막아낼 수 있을까?",
+         "release_date": "2014-10-24",
+         "director": "John Lasseter",
+         "actors": [
+            "Scott Adsit",
+            "Ryan Potter",
+            "Daniel Henney",
+            "T.J. Miller",
+            "Jamie Chung",
+            "Damon Wayans Jr.",
+            "Genesis Rodriguez",
+            "James Cromwell",
+            "Alan Tudyk",
+            "Maya Rudolph"
+         ],
+         "genres": [
+            12,
+            10751,
+            16,
+            28,
+            35
+         ],
+         "adult": false,
+         "star_rating": 7.733,
+         "poster_url": "/gLabmTVZpNOGa8LEiMvTi9hJPDe.jpg"
+      }
+   },
+   {
+      "pk": 939243,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 939243,
+         "title": "수퍼 소닉 3",
+         "summary": "",
+         "release_date": "2024-12-19",
+         "director": "Neal H. Moritz",
+         "actors": [
+            "Ben Schwartz",
+            "Jim Carrey",
+            "Keanu Reeves",
+            "Idris Elba",
+            "Colleen O'Shaughnessey",
+            "Krysten Ritter",
+            "James Marsden",
+            "Tika Sumpter",
+            "Alyla Browne",
+            "Lee Majdoub"
+         ],
+         "genres": [
+            28,
+            12,
+            35,
+            10751,
+            878
+         ],
+         "adult": false,
+         "star_rating": 0.0,
+         "poster_url": "/ynKEIxoAPTyaK9YaIwsj6htROTu.jpg"
+      }
+   },
+   {
+      "pk": 823464,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 823464,
+         "title": "고질라 X 콩: 뉴 엠파이어",
+         "summary": "두 타이탄의 전설적인 대결 이후 할로우 어스에 남은 콩은 드디어 애타게 찾던 동족을 발견하지만 그 뒤에 도사리고 있는 예상치 못한 위협에 맞닥뜨린다. 한편, 깊은 동면에 빠진 고질라는 알 수 없는 신호로 인해 깨어나고 푸른 눈의 폭군 스카 킹의 지배 아래 위기에 처한 할로우 어스를 마주하게 된다. 할로우 어스는 물론, 지구상에도 출몰해 전세계를 초토화시키는 타이탄들의 도발 속에서 고질라와 콩은 사상 처음으로 한 팀을 이뤄 반격에 나서기로 하는데…",
+         "release_date": "2024-03-27",
+         "director": "Adam Wingard",
+         "actors": [
+            "Rebecca Hall",
+            "Brian Tyree Henry",
+            "Dan Stevens",
+            "Kaylee Hottle",
+            "Alex Ferns",
+            "Fala Chen",
+            "Rachel House",
+            "Ron Smyck",
+            "Chantelle Jamieson",
+            "Greg Hatton"
+         ],
+         "genres": [
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.147,
+         "poster_url": "/4z1VMmlxHrziG45901esjB4dpIa.jpg"
+      }
+   },
+   {
+      "pk": 653346,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 653346,
+         "title": "혹성탈출: 새로운 시대",
+         "summary": "진화한 유인원과 퇴화된 인간들이 살아가는 땅. 유인원 리더 프록시무스는 완전한 군림을 위해 인간들을 사냥하며 자신의 제국을 건설한다. 한편, 또 다른 유인원 노아는 우연히 숨겨진 과거의 이야기와 시저의 가르침을 듣게 되고 인간과 유인원이 함께 할 새로운 세상을 꿈꾼다. 어느 날 그의 앞에 나타난 의문의 한 인간 소녀. 노아는 그녀와 함께 자유를 향한 여정을 시작하게 되는데…",
+         "release_date": "2024-05-08",
+         "director": "Rick Jaffa",
+         "actors": [
+            "Owen Teague",
+            "Freya Allan",
+            "Kevin Durand",
+            "Peter Macon",
+            "William H. Macy",
+            "Eka Darville",
+            "Travis Jeffery",
+            "Lydia Peckham",
+            "Neil Sandilands",
+            "Ras-Samuel Welda'abzgi"
+         ],
+         "genres": [
+            878,
+            12,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.111,
+         "poster_url": "/plNOSbqkSuGEK2i15A5btAXtB7t.jpg"
+      }
+   },
+   {
+      "pk": 1151949,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1151949,
+         "title": "섀도우의 13",
+         "summary": "살인 훈련을 받은 젊은 킬러가 무자비한 범죄 조직으로부터 한 소년을 구출하려 한다. 소년만 구할 수 있다면 멘토를 등지는 것은 물론, 그 길을 가로막는 누구라도 제거할 것이다.",
+         "release_date": "2024-09-10",
+         "director": "Timo Tjahjanto",
+         "actors": [
+            "Aurora Ribero",
+            "Hana Malasan",
+            "Andri Mashadi",
+            "Adipati Dolken",
+            "Kristo Immanuel",
+            "Ali Fikry",
+            "Taskya Namya",
+            "Arswendy Bening Swara",
+            "Chew Kin-Wah",
+            "Agra Piliang"
+         ],
+         "genres": [
+            28,
+            80,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.4,
+         "poster_url": "/mLxunT78TAbvH8Gjv1hlmfIsECd.jpg"
+      }
+   },
+   {
+      "pk": 420818,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 420818,
+         "title": "라이온 킹",
+         "summary": "혈통을 이어받은 사자가 왕국을 다스리는 아프리카의 프라이드 랜드, 무파사의 아들 심바는 왕좌를 물려받기로 예정되어 있다. 하지만 탐욕스런 무파사의 동생 스카가 자신의 형제를 죽이고, 마치 그 원인이 심바에게 있는 것처럼 분위기를 조장해 그를 왕국에서 쫓아낸다. 아버지의 죽음에 대한 죄책감에 시달리던 심바는 의욕 충만한 친구들 품바와 티몬의 도움으로 희망을 되찾는다. 어느 날 우연히 옛 친구 날라를 만난 심바는 과거를 마주할 용기를 얻고, 진정한 자신의 모습을 찾아 위대하고도 험난한 도전을 떠나게 되는데...",
+         "release_date": "2019-07-12",
+         "director": "Hans Zimmer",
+         "actors": [
+            "Chiwetel Ejiofor",
+            "John Oliver",
+            "Donald Glover",
+            "James Earl Jones",
+            "John Kani",
+            "Alfre Woodard",
+            "Beyoncé",
+            "JD McCrary",
+            "Shahadi Wright Joseph",
+            "Penny Johnson Jerald"
+         ],
+         "genres": [
+            12,
+            18,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 7.115,
+         "poster_url": "/mOR24P4tXgcT3cjzPs7Ca0wog7X.jpg"
+      }
+   },
+   {
+      "pk": 588648,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 588648,
+         "title": "Dragonkeeper",
+         "summary": "",
+         "release_date": "2024-04-11",
+         "director": "Jian-Ping Li",
+         "actors": [
+            "Lucía Pérez",
+            "Mario Gas",
+            "Fernando Castro",
+            "Carlos de Luna",
+            "José Gómez Adán",
+            "César Díaz Capilla",
+            "Isabel Gaudí",
+            "Miquel Rodríguez Ros",
+            "Álvaro Navarro",
+            "Jorge Insúa"
+         ],
+         "genres": [
+            28,
+            12,
+            16,
+            10751,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.5,
+         "poster_url": "/hfdmvuLY8vADVthLNyn5EUO1ria.jpg"
+      }
+   },
+   {
+      "pk": 939243,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 939243,
+         "title": "수퍼 소닉 3",
+         "summary": "",
+         "release_date": "2024-12-19",
+         "director": "Neal H. Moritz",
+         "actors": [
+            "Ben Schwartz",
+            "Jim Carrey",
+            "Keanu Reeves",
+            "Idris Elba",
+            "Colleen O'Shaughnessey",
+            "Krysten Ritter",
+            "James Marsden",
+            "Tika Sumpter",
+            "Alyla Browne",
+            "Lee Majdoub"
+         ],
+         "genres": [
+            28,
+            12,
+            35,
+            10751,
+            878
+         ],
+         "adult": false,
+         "star_rating": 0.0,
+         "poster_url": "/ynKEIxoAPTyaK9YaIwsj6htROTu.jpg"
+      }
+   },
+   {
+      "pk": 1145491,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1145491,
+         "title": "Operation Black Ops",
+         "summary": "",
+         "release_date": "2023-07-11",
+         "director": "Jamaal Burden",
+         "actors": [
+            "Tito Ortiz",
+            "Cristiane Justino",
+            "Mike Ferguson",
+            "Kelsey Johnson",
+            "Mike Markoff",
+            "Paul Bikbili",
+            "Joseph Daniel Ellis",
+            "Alicia Gakima",
+            "Rafael Cansino",
+            "J.R. Orva"
+         ],
+         "genres": [
+            28,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.641,
+         "poster_url": "/vMgkjQM2fHirExilsTZWJTqL33G.jpg"
+      }
+   },
+   {
+      "pk": 603,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 603,
+         "title": "매트릭스",
+         "summary": "인간의 기억마저 AI에 의해 입력되고 삭제되는 세상, 진짜보다 더 진짜 같은 가상 현실 매트릭스. 그 속에서 진정한 현실을 인식할 수 없게 재배되는 인간들. 그 매트릭스를 빠져 나오면서 AI에게 가장 위험한 인물이 된 모피어스는 몇 안 되는 동료들과 함께 기계와의 전쟁 전후의의 폐허를 떠돌며 인류를 구할 마지막 영웅을 찾아 헤맨다. 마침내 모피어스는 낮에는 평범한 회사원 앤더슨으로, 밤에는 해커로 활동하는 청년 네오를 그로 지목한다. 모피어스의 지시대로 그를 만나게 된 네오는 두개의 알약 중 하나를 고르는 선택을 하게 되는데...",
+         "release_date": "1999-03-31",
+         "director": "Joel Silver",
+         "actors": [
+            "Keanu Reeves",
+            "Laurence Fishburne",
+            "Carrie-Anne Moss",
+            "Hugo Weaving",
+            "Gloria Foster",
+            "Joe Pantoliano",
+            "Marcus Chong",
+            "Julian Arahanga",
+            "Matt Doran",
+            "Belinda McClory"
+         ],
+         "genres": [
+            28,
+            878
+         ],
+         "adult": false,
+         "star_rating": 8.217,
+         "poster_url": "/yI9r0iz2XvlevxUzxvdoQmv3yce.jpg"
+      }
+   },
+   {
+      "pk": 337167,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 337167,
+         "title": "50가지 그림자: 해방",
+         "summary": "모든 과거를 잊고 서로에게 더 깊게 빠져든 ‘크리스찬 그레이’와 ‘아나스타샤’.  그레이의 독특한 취향으로 시작된 이 비밀스러운 관계는  더 큰 자극을 원하는 아나스타샤로 인해 역전되고,  마침내 그녀의 본능이 지배하는 마지막 절정의 순간을 맞이하게 되는데…",
+         "release_date": "2018-01-17",
+         "director": "Sally Potters",
+         "actors": [
+            "Dakota Johnson",
+            "Jamie Dornan",
+            "Eric Johnson",
+            "Eloise Mumford",
+            "Rita Ora",
+            "Luke Grimes",
+            "Victor Rasuk",
+            "Max Martini",
+            "Jennifer Ehle",
+            "Kim Basinger"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 6.701,
+         "poster_url": "/kdN58uXDV5D0RWdMjdO9jtdFjxg.jpg"
+      }
+   },
+   {
+      "pk": 1120911,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1120911,
+         "title": "새터데이 나이트",
+         "summary": "",
+         "release_date": "2024-09-27",
+         "director": "Peter Rice",
+         "actors": [
+            "Gabriel LaBelle",
+            "Rachel Sennott",
+            "Cory Michael Smith",
+            "Ella Hunt",
+            "Dylan O'Brien",
+            "Emily Fairn",
+            "Matt Wood",
+            "Lamorne Morris",
+            "Kim Matula",
+            "Finn Wolfhard"
+         ],
+         "genres": [
+            35,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.1,
+         "poster_url": "/oCf5O6uxooTvRwKVnLHwGqZUifq.jpg"
+      }
+   },
+   {
+      "pk": 1288575,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1288575,
+         "title": "Bila Esok Ibu Tiada",
+         "summary": "",
+         "release_date": "2024-11-14",
+         "director": "Rudi Soedjarwo",
+         "actors": [
+            "Christine Hakim",
+            "Adinia Wirasti",
+            "Fedi Nuril",
+            "Amanda Manopo",
+            "Yasmin Napper",
+            "Slamet Rahardjo",
+            "Baim Wong",
+            "Hana Saraswati",
+            "Immanuel Caesar Hito",
+            "Nunu Datau"
+         ],
+         "genres": [
+            18,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/bXb1cvokqNvcoQV6Fa5VWp2c7hf.jpg"
+      }
+   },
+   {
+      "pk": 1104171,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1104171,
+         "title": "다음 크리스마스에 만나요",
+         "summary": "낭만에 죽고 사는 골수 로맨티스트. 이상형의 남자를 만나기 위해 뉴욕을 동분서주하는 대장정에 나선다. 그를 만나려면 이미 매진된 펜타토닉스 크리스마스 공연 티켓을 어떻게든 구해야 한다!",
+         "release_date": "2024-11-05",
+         "director": "Jacques Fortier",
+         "actors": [
+            "Christina Milian",
+            "Devale Ellis",
+            "Kofi Siriboe",
+            "Kalen Allen",
+            "Mitch Grassi",
+            "Scott Hoying",
+            "Kirstin Maldonado",
+            "Kevin Olusola",
+            "Matthew Sallee",
+            "Priyanka"
+         ],
+         "genres": [
+            10749,
+            35,
+            10770
+         ],
+         "adult": false,
+         "star_rating": 6.3,
+         "poster_url": "/2CpaK4kzfAB4tIUkMV53PizJkKu.jpg"
+      }
+   },
+   {
+      "pk": 269149,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 269149,
+         "title": "주토피아",
+         "summary": "어릴 적부터 경찰이 꿈이었던 토끼 주디 홉스는 주변의 만류에도 불구하고 경찰학교에 들어가 당당히 수석으로 졸업한다. 온갖 동물들이 모여 살며 교양 있고 세련된 라이프 스타일을 주도하는 대도시 주토피아에 자원한 주디는 의욕을 안고 출근하지만, 상사는 작은 토끼라는 이유로 주차관리 같은 소일거리만 시킨다. 따분하게 업무를 보던 주디는 아이스크림 불법 판매를 일삼는 사기꾼 여우 닉 와일드를 알게 되고, 그와 함께  48시간 안에 주토피아에서 벌어지고 있는 연쇄 실종사건을 추적해야만 하는데...",
+         "release_date": "2016-02-11",
+         "director": "Jin Kim",
+         "actors": [
+            "Jason Bateman",
+            "Ginnifer Goodwin",
+            "Idris Elba",
+            "Jenny Slate",
+            "Nate Torrence",
+            "Bonnie Hunt",
+            "Don Lake",
+            "Tommy Chong",
+            "J.K. Simmons",
+            "Octavia Spencer"
+         ],
+         "genres": [
+            16,
+            12,
+            10751,
+            35
+         ],
+         "adult": false,
+         "star_rating": 7.75,
+         "poster_url": "/fZcab1yiKXsjx3S8D4KRHZsnMGC.jpg"
+      }
+   },
+   {
+      "pk": 1244492,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1244492,
+         "title": "룩백",
+         "summary": "4학년인 '후지노'는 학교 신문에 네컷 만화를 그리며 친구들의 극찬을 받는다. 그림에 대한 자신감으로 만화가를 꿈꾸던 ‘후지노’는 학교에 나오지 않는 동급생 ‘쿄모토’와 함께 네컷 만화를 연재하며 그림을 향한 한결 같은 마음으로 눈부신 우정을 쌓아 간다. 그러던 어느 날, 단 하나의 사건이 그들을 찾아 오는데... 만화만이 세상이 전부였던 두 소녀의 가슴 벅찬 성장 이야기가 시작된다!",
+         "release_date": "2024-06-28",
+         "director": "Kiyotaka Oshiyama",
+         "actors": [
+            "Yuumi Kawai",
+            "Mizuki Yoshida",
+            "Yoichiro Saito",
+            "Kota Oka",
+            "Kureha Maki",
+            "Koya Yoshihashi",
+            "Takeshi Miyajima",
+            "Daisuke Takahashi",
+            "Jun Ito",
+            "Kaori Takeuchi"
+         ],
+         "genres": [
+            16,
+            18
+         ],
+         "adult": false,
+         "star_rating": 8.0,
+         "poster_url": "/ehl2Du38qbg9M2cqfoVPUKgVDTy.jpg"
+      }
+   },
+   {
+      "pk": 324786,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 324786,
+         "title": "핵소 고지",
+         "summary": "비폭력주의자인 도스는 전쟁으로부터 조국과 소중한 사람들을 지키기 위해 총을 들지 않아도 되는 의무병으로 육군에 자진 입대한다. 총을 들 수 없다는 이유로 필수 훈련 중 하나인 총기 훈련 마저 거부한 도스는 동료 병사들과 군 전체의 비난과 조롱을 받게 된다. 결국 군사재판까지 받게 되지만 끝까지 자신의 신념을 굽히지 않은 도스에게 군 상부는 오키나와 전투에 총기 없이 의무병으로 참전할 것을 허락하는데…",
+         "release_date": "2016-10-07",
+         "director": "Kimberly Harris",
+         "actors": [
+            "Andrew Garfield",
+            "Sam Worthington",
+            "Vince Vaughn",
+            "Teresa Palmer",
+            "Luke Bracey",
+            "Hugo Weaving",
+            "Rachel Griffiths",
+            "Ryan Corr",
+            "Richard Roxburgh",
+            "Goran D. Kleut"
+         ],
+         "genres": [
+            18,
+            36,
+            10752
+         ],
+         "adult": false,
+         "star_rating": 8.196,
+         "poster_url": "/nlvcNogJK9R9iIj0YINApQE36FF.jpg"
+      }
+   },
+   {
+      "pk": 1064028,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1064028,
+         "title": "메이드",
+         "summary": "아내 매기의 부재로 인해 AI가 탑재된 메이드를 들이기로 한 닉. 딸이 마음에 들어한 메이드를 집에 입주시키고 ‘앨리스’라는 이름을 붙인다.  청소, 요리, 장보기까지 완벽하게 집안일을 해내는 앨리스. 닉은 편리함을 느끼지만 그것도 잠시, 앨리스는 닉을 위한다는 명목 아래 아슬아슬한 행동을 이어간다.  “마음이 힘들면 능률이 떨어지죠. 제가 도와드릴게요”  아내 매기의 목소리까지 흉내 내는 앨리스와 금단의 선을 넘은 닉. 매기가 집으로 돌아오고 닉은 모든 것을 없었던 일로 하고 싶지만 앨리스는 닉에 대한 집착을 멈추지 않는다. 위험한 일도 서슴지 않으며 그녀는 폭주하기 시작하는데…",
+         "release_date": "2024-08-15",
+         "director": "Will Honley",
+         "actors": [
+            "Megan Fox",
+            "Michele Morrone",
+            "Madeline Zima",
+            "Matilda Firth",
+            "Andrew Whipp",
+            "Atanas Srebrev",
+            "Kate Nichols",
+            "Trevor Van Uden",
+            "Euan Macnaughton",
+            "Max Kraus"
+         ],
+         "genres": [
+            878,
+            53,
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.711,
+         "poster_url": "/p0708UyphVhP7PfmAhf3Ds62VBk.jpg"
+      }
+   },
+   {
+      "pk": 1292359,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1292359,
+         "title": "Hello, Love, Again",
+         "summary": "",
+         "release_date": "2024-11-13",
+         "director": "Cathy Garcia-Sampana",
+         "actors": [
+            "Kathryn Bernardo",
+            "Alden Richards",
+            "Joross Gamboa",
+            "Valerie Concepcion",
+            "Kevin Kreider",
+            "Jennica Garcia",
+            "Ruby Rodriguez",
+            "Jobert Austria",
+            "Mark Labella",
+            "Marvin Aritrangco"
+         ],
+         "genres": [
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 5.7,
+         "poster_url": "/7R940b9RNNKLDrAI1GmCjOd5ta.jpg"
+      }
+   },
+   {
+      "pk": 346698,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 346698,
+         "title": "바비",
+         "summary": "원하는 무엇이든 될 수 있는 바비랜드에서 살아가던 바비가 현실 세계와 이어진 포털의 균열을 발견하게 되고, 이를 해결하기 위해 켄과 예기치 못한 여정을 떠나면서 펼쳐지는 이야기",
+         "release_date": "2023-07-19",
+         "director": "Sarah Greenwood",
+         "actors": [
+            "Margot Robbie",
+            "Ryan Gosling",
+            "America Ferrera",
+            "Ariana Greenblatt",
+            "Issa Rae",
+            "Kate McKinnon",
+            "Alexandra Shipp",
+            "Emma Mackey",
+            "Hari Nef",
+            "Sharon Rooney"
+         ],
+         "genres": [
+            35,
+            12
+         ],
+         "adult": false,
+         "star_rating": 7.005,
+         "poster_url": "/h3mUJ9WEJ8PzA450ad4hrjsaiqG.jpg"
+      }
+   },
+   {
+      "pk": 354912,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 354912,
+         "title": "코코",
+         "summary": "미구엘은 멕시코의 자랑인 에르네스토 델라 크루즈 같은 뮤지션이 되길 꿈꾸지만 미구엘 집안 사람들에게 음악은 금기다. 먼 옛날 조상 중에 음악 때문에 가족을 버린 인물이 있었기 때문. 미구엘은 죽은 자의 날이 되자 실력으로 인정받겠다는 결심을 하고 경연 무대에 오르려 하는데, 우연히 에르네스토의 기타에 손을 댔다가 죽은 자들의 세상에 들어서게 된다. 이승과 저승을 이어주는 마리골드 꽃길을 건너 죽은 자들의 세상에 도착한 미구엘은 거짓말과 위변조가 장기인 헥터를 만난다. 그리고 꿈에 그리던 우상 에르네스토를 만나러 가는 여정에서 가족의 비밀을 알게 된다.",
+         "release_date": "2017-10-27",
+         "director": "Seong-Young Kim",
+         "actors": [
+            "Anthony Gonzalez",
+            "Gael García Bernal",
+            "Benjamin Bratt",
+            "Alanna Ubach",
+            "Renee Victor",
+            "Ana Ofelia Murguía",
+            "Edward James Olmos",
+            "Jaime Camil",
+            "Alfonso Arau",
+            "Herbert Siguenza"
+         ],
+         "genres": [
+            10751,
+            16,
+            10402,
+            12
+         ],
+         "adult": false,
+         "star_rating": 8.209,
+         "poster_url": "/pQu93NuwR90AaCULzglVD5Ge4Ml.jpg"
+      }
+   },
+   {
+      "pk": 1147710,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1147710,
+         "title": "하이재킹",
+         "summary": "1971년 겨울 속초공항 여객기 조종사 태인과 규식은 김포행 비행에 나선다. 승무원 옥순의 안내에 따라 탑승 중인 승객들의 분주함도 잠시, 이륙한지 얼마 되지 않아 사제폭탄이 터지며 기내는 아수라장이 된다. 여객기를 통째로 납치하려는 용대는 조종실을 장악하고 무작정 북으로 기수를 돌리라 협박한다. 폭발 충격으로 규식은 한 쪽 시력을 잃고 이제 여객기를 조종할 수 있는 사람은 태인 뿐. 이들은 여객기를 무사히 착륙시키기 위한 사투를 시작하는데...",
+         "release_date": "2024-06-21",
+         "director": "Kim Byung-han",
+         "actors": [
+            "Ha Jung-woo",
+            "Yeo Jin-goo",
+            "Sung Dong-il",
+            "Chae Soo-bin",
+            "Moon You-kang",
+            "Kim Sun-young",
+            "Lim Se-mi",
+            "Kim Dong-wook",
+            "Choi Gwang-il",
+            "Kim Jong-soo"
+         ],
+         "genres": [
+            28,
+            53,
+            80
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/pLEenJ0I1XqySVezRdETf2n2w7H.jpg"
+      }
+   },
+   {
+      "pk": 820530,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 820530,
+         "title": "안기고 싶은 남자 1위에게 협박당하고 있습니다 - 스페인 편",
+         "summary": "당신은, 오렌지의 한 조각.  플라멩코 요소를 넣은 2인극 '피의 혼례'에 같이 출연하게 된 아즈마야와 타카토.\r 곧바로 타카토는 공연 연습에 들어갔지만, 플라멩코를 연습하던 중 아즈마야와의 재능의 차이를 실감하고 말았다.\r 이에 타카토는 '정열'에 대해 배우기 위해 아즈마야의 고향인 스페인으로 향했다.  한편, 아즈마야는 과거에 타카토에게 일방적으로\r 이별을 통보받은 적이 있는 게 마음에 걸린 상황이었는데.",
+         "release_date": "2021-10-09",
+         "director": "Naoyuki Tatsuwa",
+         "actors": [
+            "Hiroki Takahashi",
+            "Yuki Ono",
+            "Kohsuke Toriumi",
+            "Wataru Hatano",
+            "Takuya Sato",
+            "Yuma Uchida",
+            "Show Hayami",
+            "Fukushi Ochiai"
+         ],
+         "genres": [
+            16,
+            18,
+            35,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 7.6,
+         "poster_url": "/2i4pJnGqpJqxmWTZbUcDWfKw7zB.jpg"
+      }
+   },
+   {
+      "pk": 814889,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 814889,
+         "title": "네버 렛 고",
+         "summary": "악마에 의해 멸망한 세상에서 엄마는 악마를 피하기 위해 쌍둥이 아들을 데리고 악이 침입할 수 없는 태곳적 목재로 지은 오두막으로 왔는데... 유일하게 안전한 숲 속 외딴 오두막에서, 가족을 지키려는 엄마와 인간을 미혹하는 악마와의 투쟁을 그린 작품",
+         "release_date": "2024-09-18",
+         "director": "Shawn Levy",
+         "actors": [
+            "Halle Berry",
+            "Anthony B. Jenkins",
+            "William Catlett",
+            "Percy Daggs IV",
+            "Matthew Kevin Anderson",
+            "Christin Park",
+            "Stephanie Lavigne",
+            "Cadence Compton",
+            "Mila Morgan",
+            "Georges Gracieuse"
+         ],
+         "genres": [
+            27,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.315,
+         "poster_url": "/3EpZ2ksjijmdr8BhISP03PYzNFW.jpg"
+      }
+   },
+   {
+      "pk": 260346,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 260346,
+         "title": "테이큰 3",
+         "summary": "전 부인 레니(팜케 얀센)가 방문한다는 연락을 받고 집으로 돌아온 브라이언 밀스(리암 니슨)를 기다리는 건 살해당한 아내의 싸늘한 시체. 사태를 파악할 겨를도 없이 경찰이 집에 들이닥치고 브라이언은 살인범으로 체포되기 직전 가까스로 탈출한다. 쫓아야 할 대상도, 쫓기는 이유도 알 수 없는 상황에 경찰, FBI, CIA까지 총동원 되어 모두가 그를 쫓는다. 이제 그에게 무엇보다 중요한 것은 마지막 남은 딸 킴(매기 그레이스)을 지켜내는 것. 브라이언은 부인을 죽인 범인을 찾고 딸을 지키기 위해 목숨을 건 추격을 시작하는데...",
+         "release_date": "2014-12-16",
+         "director": "Michael Mandaville",
+         "actors": [
+            "Liam Neeson",
+            "Forest Whitaker",
+            "Maggie Grace",
+            "Dougray Scott",
+            "Famke Janssen",
+            "Sam Spruell",
+            "Don Harvey",
+            "Dylan Bruno",
+            "Leland Orser",
+            "David Warshofsky"
+         ],
+         "genres": [
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.3,
+         "poster_url": "/bwV9BA7EyejT347YI38FmTwl599.jpg"
+      }
+   },
+   {
+      "pk": 786892,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 786892,
+         "title": "퓨리오사: 매드맥스 사가",
+         "summary": "문명 붕괴 45년 후, 황폐해진 세상 속 누구에게도 알려지지 않은 풍요가 가득한 녹색의 땅에서 자란 퓨리오사는 바이커 군단의 폭군 디멘투스의 손에 모든 것을 잃고 만다. 가족도 행복도 모두 빼앗기고 세상에 홀로 내던져진 퓨리오사는 반드시 고향으로 돌아가겠다는 어머니와의 약속을 지키기 위해 인생 전부를 건 복수를 시작하는데...",
+         "release_date": "2024-05-22",
+         "director": "Diego O. Gonzalez",
+         "actors": [
+            "Anya Taylor-Joy",
+            "Chris Hemsworth",
+            "Tom Burke",
+            "Alyla Browne",
+            "George Shevtsov",
+            "Lachy Hulme",
+            "John Howard",
+            "Angus Sampson",
+            "Charlee Fraser",
+            "Elsa Pataky"
+         ],
+         "genres": [
+            28,
+            878,
+            12
+         ],
+         "adult": false,
+         "star_rating": 7.535,
+         "poster_url": "/zaUFDdJidS4Nyyd6jb2Ok3Kq4Vo.jpg"
+      }
+   },
+   {
+      "pk": 1233327,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1233327,
+         "title": "మట్కా",
+         "summary": "",
+         "release_date": "2024-11-14",
+         "director": "Karuna Kumar",
+         "actors": [
+            "Varun Tej",
+            "Meenakshi Chaudhary",
+            "Nora Fatehi",
+            "Naveen Chandra",
+            "Ajay Ghosh",
+            "Mime Gopi",
+            "V. S. Roopa Lakshmi",
+            "Raj Tirandasu",
+            "Jagadeesh Bandari"
+         ],
+         "genres": [
+            28,
+            80
+         ],
+         "adult": false,
+         "star_rating": 0.0,
+         "poster_url": "/jrHIKDq9xvKJhYBDvYwmAfs8qvr.jpg"
+      }
+   },
+   {
+      "pk": 597,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 597,
+         "title": "타이타닉",
+         "summary": "\"내 인생의 가장 큰 행운은 당신을 만난 거야\" 우연한 기회로 티켓을 구해 타이타닉호에 올라탄 자유로운 영혼을 가진 화가 ‘잭’(레오나르도 디카프리오)은 막강한 재력의 약혼자와 함께 1등실에 승선한 ‘로즈’(케이트 윈슬렛)에게 한눈에 반한다. 진실한 사랑을 꿈꾸던 ‘로즈’ 또한 생애 처음 황홀한 감정에 휩싸이고, 둘은 운명 같은 사랑에 빠지는데… 가장 차가운 곳에서 피어난 뜨거운 사랑! 영원히 가라앉지 않는 세기의 사랑이 펼쳐진다!",
+         "release_date": "1997-11-18",
+         "director": "James Cameron",
+         "actors": [
+            "Leonardo DiCaprio",
+            "Kate Winslet",
+            "Billy Zane",
+            "Kathy Bates",
+            "Frances Fisher",
+            "Gloria Stuart",
+            "Victor Garber",
+            "Bill Paxton",
+            "Bernard Hill",
+            "David Warner"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 7.9,
+         "poster_url": "/132KjhVrWUqKFVfMAKKNkherytA.jpg"
+      }
+   },
+   {
+      "pk": 718821,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 718821,
+         "title": "트위스터스",
+         "summary": "뉴욕 기상청 직원 케이트는 대학 시절 토네이도에 맞서다 소중한 사람들을 잃고 죄책감에 살고 있다. 그런 그녀 앞에 옛 친구 하비가 찾아와 토네이도를 소멸시킬 수 있는 획기적인 방법을 제안한다.  고민 끝에 합류하게 된 케이트는 하비와 오클라호마로 향하고, 일명 토네이도 카우보이라 불리는 유명 인플루언서 타일러를 만난다. 마치 자연을 정복한 듯이 자신감 넘치는 타일러와 매사 부딪히게 되는 케이트. 어느 날, 모든 것을 집어삼킬 거대한 토네이도가 휘몰아칠 것을 감지하게 되는데…",
+         "release_date": "2024-07-10",
+         "director": "Ashley Nicole Hudson",
+         "actors": [
+            "Daisy Edgar-Jones",
+            "Glen Powell",
+            "Anthony Ramos",
+            "Brandon Perea",
+            "Maura Tierney",
+            "Harry Hadden-Paton",
+            "Sasha Lane",
+            "Daryl McCormack",
+            "Kiernan Shipka",
+            "Nik Dodani"
+         ],
+         "genres": [
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.9,
+         "poster_url": "/w5mXdM9AIf7urUtoUVYjABdp3g8.jpg"
+      }
+   },
+   {
+      "pk": 330457,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 330457,
+         "title": "겨울왕국 2",
+         "summary": "평화를 되찾은 아렌델 왕국에 새로운 위기가 찾아온다. 어느 날부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다. 트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다. 위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 숨겨진 과거의 진실을 찾아 크리스토프, 올라프, 그리고 스벤과 함께 위험천만한 놀라운 모험을 떠나게 된다. 자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데...",
+         "release_date": "2019-11-20",
+         "director": "Allison Schroeder",
+         "actors": [
+            "Kristen Bell",
+            "Idina Menzel",
+            "Josh Gad",
+            "Jonathan Groff",
+            "Evan Rachel Wood",
+            "Sterling K. Brown",
+            "Alfred Molina",
+            "Rachel Matthews",
+            "Jason Ritter",
+            "Martha Plimpton"
+         ],
+         "genres": [
+            10751,
+            16,
+            12,
+            35,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.259,
+         "poster_url": "/lVcwSnzhSMWYXUQzyMilCztSE6I.jpg"
+      }
+   },
+   {
+      "pk": 335984,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 335984,
+         "title": "블레이드 러너 2049",
+         "summary": "인간과 리플리컨트가 혼재된 2049년. 인간의 통제를 벗어난 리플리컨트를 쫓는 블레이드 러너 K는 임무 수행 도중 약 30년 전 여자 리플리컨트의 유골을 발견하고 충격적으로 출산의 흔적까지 찾아낸다. 리플리컨트가 출산까지 가능하다는 사실이 알려지면사회에 큰 혼란이 야기되므로 이를 덮으려는 경찰 조직과, 그 비밀의 단서를 찾아내 더욱 완벽한 리플리컨트를 거느리고 세상을 장악하기 위해 K를 쫓는 니안더 월레스. 리플리컨트의 숨겨진 진실에 접근할수록 점차 정체성의 혼란을 겪게 되는 K는 과거 블레이드 러너였던 릭 데커드를 만나 전혀 상상치 못한 진실을 마주하게 되는데...",
+         "release_date": "2017-10-04",
+         "director": "Hampton Fancher",
+         "actors": [
+            "Ryan Gosling",
+            "Harrison Ford",
+            "Ana de Armas",
+            "Dave Bautista",
+            "Robin Wright",
+            "Sylvia Hoeks",
+            "Mackenzie Davis",
+            "Jared Leto",
+            "Carla Juri",
+            "Hiam Abbass"
+         ],
+         "genres": [
+            878,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.568,
+         "poster_url": "/jSIih1du6oqWEfO9dL6vZMxFGMh.jpg"
+      }
+   },
+   {
+      "pk": 824003,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 824003,
+         "title": "Diabolik chi sei?",
+         "summary": "",
+         "release_date": "2023-11-30",
+         "director": "Antonio Manetti",
+         "actors": [
+            "Giacomo Gianniotti",
+            "Miriam Leone",
+            "Valerio Mastandrea",
+            "Monica Bellucci",
+            "Pier Giorgio Bellocchio",
+            "Chiara Martegiani",
+            "Massimiliano Rossi",
+            "Mario Sgueglia",
+            "Francesco Turbanti",
+            "Emanuele Linfatti"
+         ],
+         "genres": [
+            80,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.3,
+         "poster_url": "/1DAXwi4y941ryPoGbzUlFEEiPAo.jpg"
+      }
+   },
+   {
+      "pk": 1144911,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1144911,
+         "title": "스킨케어",
+         "summary": "저명한 미용 전문가 ‘호프 골드먼’은 자신의 노하우를 녹아낸 스킨케어 라인을 출시하고 한 단계 성장하려는 참이다. 아메리칸드림을 꿈꾸는 사람들의 우상은 그러나 길 건너 라이벌 부티크가 오픈되며 새로운 도전에 직면한다.",
+         "release_date": "2024-08-15",
+         "director": "Fatima Al Qadiri",
+         "actors": [
+            "Elizabeth Banks",
+            "Lewis Pullman",
+            "Michaela Jaé Rodriguez",
+            "Luis Gerardo Méndez",
+            "Nathan Fillion",
+            "Erik Palladino",
+            "John Billingsley",
+            "Jason Manuel Olazabal",
+            "Jesse Saler",
+            "Ella Balinska"
+         ],
+         "genres": [
+            53,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.0,
+         "poster_url": "/ikPzv7el0RcBhtXj3ElCoH54icd.jpg"
+      }
+   },
+   {
+      "pk": 385687,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 385687,
+         "title": "분노의 질주: 라이드 오어 다이",
+         "summary": "돔과 그의 패밀리 앞에 나타난 운명의 적 단테. 과거의 그림자는 돔의 모든 것을 파괴하기 위해 달려온다. 단테에 의해 산산히 흩어진 패밀리들은 모두 목숨을 걸고 맞서야 하는 함정에 빠지고 마는데...",
+         "release_date": "2023-05-17",
+         "director": "Justin Lin",
+         "actors": [
+            "Vin Diesel",
+            "Michelle Rodriguez",
+            "Tyrese Gibson",
+            "Ludacris",
+            "John Cena",
+            "Nathalie Emmanuel",
+            "Jordana Brewster",
+            "Sung Kang",
+            "Jason Momoa",
+            "Scott Eastwood"
+         ],
+         "genres": [
+            28,
+            80,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.082,
+         "poster_url": "/wXNihLltMCGR7XepN39syIlCt5X.jpg"
+      }
+   },
+   {
+      "pk": 1079485,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1079485,
+         "title": "곰돌이 푸: 피와 꿀 2",
+         "summary": "",
+         "release_date": "2024-03-26",
+         "director": "Rhys Frake-Waterfield",
+         "actors": [
+            "Scott Chambers",
+            "Ryan Oliva",
+            "Marcus Massey",
+            "Tallulah Evans",
+            "Lewis Santer",
+            "Simon Callow",
+            "Eddy MacKenzie",
+            "Thea Evans",
+            "Alec Newman",
+            "Nicola Wright"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.2,
+         "poster_url": "/2sADrLwMQof6yYmrJRSa04tFZuS.jpg"
+      }
+   },
+   {
+      "pk": 1329336,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1329336,
+         "title": "배드 가이즈: 오싹한 핼러윈",
+         "summary": "훔치는 솜씨라면 알아주는 배드 가이즈 일당이 위험한 핼러윈 한탕에 나서기로 한다. 으스스한 저택에 들어가 값비싼 펜던트를 슬쩍할 계획인데. 뭐 잘못되기야 하겠어?",
+         "release_date": "2024-10-02",
+         "director": "Aaron Blabey",
+         "actors": [
+            "Michael Godere",
+            "Ezekiel Ajeigbe",
+            "Raul Ceballos",
+            "Chris Diamantopoulos",
+            "Mallory Low"
+         ],
+         "genres": [
+            16,
+            35
+         ],
+         "adult": false,
+         "star_rating": 7.2,
+         "poster_url": "/oEJC05CqPugMxC4rFu9r6r6vg6m.jpg"
+      }
+   },
+   {
+      "pk": 1129598,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1129598,
+         "title": "더 라이언: 사막의 생존자들",
+         "summary": "극단주의 무장 단체의 위협을 받은 한 젊은 부부는 칼라하리 사막의 선교 기지를 떠나야 한다. 부패한 밀수업자가 조종하는 허술한 비행기에 겨우 탑승하여 탈출을 시도하지만,비행기가 추락하며 더 큰 위협에 직면하게 된다. 그들이 불시착한 곳은 사자, 표범, 하이에나 같은 맹수들이 서식하는 칼라하리 사막 한가운데…무장 단체에게 추적당하는 승객들은 인간과 야생 동물 모두와 싸워야만 한다. 과연 누가 이 치열한 생존 싸움에서 살아남을 것인가?",
+         "release_date": "2024-03-15",
+         "director": "Neely Eisenstein",
+         "actors": [
+            "Ryan Phillippe",
+            "Emile Hirsch",
+            "Mena Suvari",
+            "Dylan Flashner",
+            "Tristan Thompson",
+            "Michaela Sasner",
+            "Jeremy Tardy",
+            "Mohamed Hakeemshady",
+            "Alpha Miknas",
+            "Godwin Asamoah Obeng"
+         ],
+         "genres": [
+            28,
+            53,
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.3,
+         "poster_url": "/dcUmzoiHChYmtef2yEe06QcML5o.jpg"
+      }
+   },
+   {
+      "pk": 1087822,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1087822,
+         "title": "헬보이: 크룩드 맨",
+         "summary": "불가사의한 심령 현상을 해결하는 B.R.P.D의 베테랑 해결사 '헬보이'. 유령 거미를 퇴치하는 임무 중, 기차 탈선 사고로 애팔레치아 산맥 깊숙이 위치한 음산한 마을에 도착한다. 그곳은 흑마법사 ‘크룩드 맨’이 지배하고 있다. 마녀와 저주, 그리고 죽음이 들끓는 마을을 구하기 위해 '헬보이'는 신입 요원 '조'와 함께 죽은 자들을 불러오는 '크룩드 맨'에 맞서는데…",
+         "release_date": "2024-08-29",
+         "director": "Brian Taylor",
+         "actors": [
+            "Jack Kesy",
+            "Jefferson White",
+            "Adeline Rudolph",
+            "Martin Bassindale",
+            "Leah McNamara",
+            "Hannah Margetson",
+            "Joseph Marcell",
+            "Suzanne Bertish",
+            "Bodgan Haralambov",
+            "Carola Colombo"
+         ],
+         "genres": [
+            14,
+            27,
+            28
+         ],
+         "adult": false,
+         "star_rating": 5.4,
+         "poster_url": "/90upwAQ60ENSHLcT8uF7IhveuT1.jpg"
+      }
+   },
+   {
+      "pk": 762441,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 762441,
+         "title": "콰이어트 플레이스: 첫째 날",
+         "summary": "평균 소음 90 데시벨을 자랑하는 미국 최대도시 뉴욕, 고양이 프로도와 함께 간만에 외출을 나온 사미라는 공연을 보고 돌아가던 중 하늘에서 떨어져 내리는 섬광을 목격하고 곧 사람들을 닥치는 대로 공격하는 정체불명 괴생명체의 출현에 충격에 휩싸인다. 아수라장이 된 뉴욕 도심에 ‘절대 소리 내지 말라’는 안내방송이 울려퍼지는 가운데 맨해튼의 모든 다리가 폭격으로 끊어지고, 사람들은 온갖 위협이 도사리는 도시에 고립되고 만다. 살아남기 위해 홀로 사투를 벌이던 '사미라'는 우연히 또 다른 생존자 에릭을 만나고 두 사람은 괴생명체를 피해 지하철역부터 시가지, 할렘까지 숨죽인 여정을 이어 나가는데…",
+         "release_date": "2024-06-26",
+         "director": "Michael Bay",
+         "actors": [
+            "Lupita Nyong'o",
+            "Joseph Quinn",
+            "Alex Wolff",
+            "Djimon Hounsou",
+            "Eliane Umuhire",
+            "Takunda Khumalo",
+            "Alfie Todd",
+            "Avy-Berry Worrall",
+            "Ronnie Le Drew",
+            "Benjamin Wong"
+         ],
+         "genres": [
+            27,
+            878,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.8,
+         "poster_url": "/eufjDFIHtFSmcblWpvw5BiNzmO6.jpg"
+      }
+   },
+   {
+      "pk": 1373893,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1373893,
+         "title": "Joni pata de conejo",
+         "summary": "",
+         "release_date": "2024-10-11",
+         "director": "Ismael Vazquez Nervión",
+         "actors": [
+            "Jose Valero",
+            "Gregor Acuña-Pohl"
+         ],
+         "genres": [
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/a3nKPtKs7SRB6bdlaxPbD7f7eKJ.jpg"
+      }
+   },
+   {
+      "pk": 365177,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 365177,
+         "title": "보더랜드",
+         "summary": "베일에 쌓인 과거를 가진 악명 높은 현상금 사냥꾼 릴리스는 갑작스럽게 그녀의 고향인 은하계에서 가장 혼란스러운 행성 '판도라'로 돌아간다.\r 그 내역은 우주에서 매우 강대한 권력을 지닌 아틀라스 회장의 잃어버린 딸을 찾기 위해서였다.\r 릴리스는 예상치 못한 나사빠진 연합을 만들었다.\r 임무를 위해 온 용병 롤랜드, 흉포한 10살 배기 폭파전문가 타이니 티나, 티나의 근육질 보디가드 크리그, 보이는 게 전부인 괴짜 과학자 태니스, 그리고 허풍쟁이 클랩트랩이 판도라의 가장 뜨거운 비밀을 파헤치기 위해 외계 종족과 위험천만한 도적떼와 맞짱을 떠야하는 우주의 운명이 그들 손에 달려 있지만\r 그보다 더한 것과 싸울 것이다.\r 보더랜드에 어서오세요.",
+         "release_date": "2024-08-07",
+         "director": "Kristof Pataricza",
+         "actors": [
+            "Cate Blanchett",
+            "Kevin Hart",
+            "Edgar Ramírez",
+            "Jamie Lee Curtis",
+            "Ariana Greenblatt",
+            "Florian Munteanu",
+            "Janina Gavankar",
+            "Jack Black",
+            "Benjamin Byron Davis",
+            "Olivier Richters"
+         ],
+         "genres": [
+            28,
+            878,
+            35
+         ],
+         "adult": false,
+         "star_rating": 5.8,
+         "poster_url": "/3NPUQ6Ywayb5ES2IP1HWrDRt1Gc.jpg"
+      }
+   },
+   {
+      "pk": 671,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 671,
+         "title": "해리 포터와 마법사의 돌",
+         "summary": "해리 포터는 위압적인 버논 숙부와 냉담한 이모 페투니아, 욕심 많고 버릇없는 사촌 더즐리 밑에서 갖은 구박을 견디며 계단 밑 벽장에서 생활한다. 이모네 식구들 역시 해리와의 동거가 불편하기는 마찬가지. 이모 페투니아에겐 해리가 이상한 언니 부부에 관한 기억을 떠올리게 만드는 달갑지 않은 존재다. 11살 생일이 며칠 앞으로 다가왔지만 한번도 생일파티를 치르거나 제대로 된 생일선물을 받아 본 적이 없는 해리로서는 특별히 신날 것도 기대 할 것도 없다. 11살 생일을 며칠 앞둔 어느 날 해리에게 초록색 잉크로 쓰여진 한 통의 편지가 배달된다. 그 편지의 내용은 다름 아닌 해리의 11살 생일을 맞이하여 호그와트에서 보낸 입학 초대장이었다. 그리고 해리의 생일을 축하하러 온 거인 해그리드는 해리가 모르고 있었던 해리의 진정한 정체를 알려주는데...",
+         "release_date": "2001-11-16",
+         "director": "Chris Columbus",
+         "actors": [
+            "Daniel Radcliffe",
+            "Rupert Grint",
+            "Emma Watson",
+            "Richard Harris",
+            "Tom Felton",
+            "Alan Rickman",
+            "Robbie Coltrane",
+            "Maggie Smith",
+            "Richard Griffiths",
+            "Ian Hart"
+         ],
+         "genres": [
+            12,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.913,
+         "poster_url": "/unEtC8uWn2lcQLnwKG9PZJX0h0c.jpg"
+      }
+   },
+   {
+      "pk": 929590,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 929590,
+         "title": "시빌 워: 분열의 시대",
+         "summary": "극단적 분열로 나눠진 세상, 역사상 최악의 미국 내전 한복판에서 숨막히는 전쟁의 순간들을 생생하게 담아낸 영화",
+         "release_date": "2024-04-10",
+         "director": "Rob Hardy",
+         "actors": [
+            "Kirsten Dunst",
+            "Wagner Moura",
+            "Cailee Spaeny",
+            "Stephen McKinley Henderson",
+            "Nelson Lee",
+            "Nick Offerman",
+            "Jefferson White",
+            "Evan Lai",
+            "Vince Pisani",
+            "Justin James Boykin"
+         ],
+         "genres": [
+            10752,
+            28,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.907,
+         "poster_url": "/t2RpGQOvemrV7NtbEyRWiy9tYA0.jpg"
+      }
+   },
+   {
+      "pk": 423108,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 423108,
+         "title": "컨저링 3: 악마가 시켰다",
+         "summary": "1981년, 미국 역사상 최초로 잔혹한 살인사건의 용의자가 악마가 살해하도록 시켰다고 주장하는 초유의 사태가 일어난다. 그리고 사건의 배후에는 악마에게 빙의된 소년이 있다. 살인사건의 범인은 인간인가 악마인가…",
+         "release_date": "2021-05-25",
+         "director": "David Leslie Johnson-McGoldrick",
+         "actors": [
+            "Patrick Wilson",
+            "Vera Farmiga",
+            "Ruairí O'Connor",
+            "Sarah Catherine Hook",
+            "Julian Hilliard",
+            "John Noble",
+            "Eugenie Bondurant",
+            "Shannon Kook",
+            "Ronnie Gene Blevins",
+            "Keith Arthur Bolden"
+         ],
+         "genres": [
+            27,
+            9648,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.429,
+         "poster_url": "/yxPlLa5p54Wk1o2koiW4hqn4wfG.jpg"
+      }
+   },
+   {
+      "pk": 587727,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 587727,
+         "title": "가슴 큰 여자친구",
+         "summary": "민철과 수희는 결혼을 앞두고 민철 아버지(대식)에게 인사를 드리러 간다. 대식은 예비 며느리인 수희를 반갑게 맞이하고 수희 또한 인자한 대식을 좋은 사람이라 여긴다.  하지만 결혼 전 성격차이로 민철과 수희는 파혼 되고… 결혼준비만 하던 수희는 곧 생활고를 격어….. 수희의 오랜 친구이자 벗인 민주가 일하는 키스방에서 일하게 된다.  어느 날과 마찬가지로 수희는 키스방에서 손님을 기다리는데…. 키스방 문으로 들어오는 손님인 대식과 마주치게 되는데…",
+         "release_date": "2019-03-08",
+         "director": "Junsei",
+         "actors": [
+            "Yoo Jung",
+            "Kang Min-sik",
+            "Kim Wan- jin",
+            "Lee Ji- su"
+         ],
+         "genres": [
+            10749
+         ],
+         "adult": false,
+         "star_rating": 7.0,
+         "poster_url": "/f6PfAXtFEkJRcBtOjbzOgz8qqSK.jpg"
+      }
+   },
+   {
+      "pk": 173705,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 173705,
+         "title": "여교사: 학생의 눈앞에서",
+         "summary": "사랑스러운 레이코는 소름 끼치는 오래된 고등학교에서 새로운 교직을 얻었습니다. 그녀는 매우 매력적인 여성이며 같은 반의 어린 학생들은 그녀에게 반했습니다. 어느 날 밤, 테니스 연습을 마친 그녀는 탈의실 샤워실에서 얼굴에 스타킹을 가린 남자에게 잔인하게 폭행을 당합니다. 알몸으로 충격에 빠진 채 바닥에 남겨진 그녀는 미친 남자가 남긴 퍼즐 조각 하나를 발견합니다. 며칠 후, 한 쌍의 학생이 테니스 팀에서 누군가를 쫓아낸 레이코에게 변태적인 성적 복수를 합니다. 이 학생들 중 한 명이 탈의실에서 그녀를 잔인하게 만든 남자일까요? 이상한 퍼즐 조각의 주인은 누구입니까? 수수께끼가 풀리면서 레이코는 자신의 성적 충동과 운명을 받아들여야 합니다.",
+         "release_date": "1982-04-09",
+         "director": "Akira Miura",
+         "actors": [
+            "Rushia Santô",
+            "Rina Oka",
+            "Kyôko Sagami",
+            "Toshiyuki Kitami",
+            "Toru Nakane",
+            "Hiromichi Hori",
+            "Masaaki Kishi",
+            "Toshio Yoshikawa"
+         ],
+         "genres": [
+            18,
+            9648,
+            27
+         ],
+         "adult": false,
+         "star_rating": 7.0,
+         "poster_url": "/rwGW7zhFKaojtJiSMnoLyVkKZnx.jpg"
+      }
+   },
+   {
+      "pk": 324857,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 324857,
+         "title": "스파이더맨: 뉴 유니버스",
+         "summary": "평범한 10대 마일스 모랄레스는 우연히 방사능 거미에 물려 스파이더맨 능력을 가지게 된다. 혼란스러워하던 마일스는 악당과 싸우고 있는 피터 파커를 마주치게 되고 피터 파커는 마일스가 자신과 같은 능력을 가지고 있음을 직감한다. 여러 개의 평행세계가 존재한다는 것을 알게 된 마일스와 피터 파커는 이후 스파이더우먼 스파이더 그웬, 스파이더맨 누아르, 스파이더햄 등 평행세계 속 공존하는 모든 스파이더맨들을 만나게 되는데... 하나의 유니버스에서 만나 팀을 결성한 스파이더맨들은 과연 세계를 구할 수 있을까?",
+         "release_date": "2018-12-06",
+         "director": "Lisa Bechard",
+         "actors": [
+            "Shameik Moore",
+            "Jake Johnson",
+            "Hailee Steinfeld",
+            "Mahershala Ali",
+            "Brian Tyree Henry",
+            "Lily Tomlin",
+            "Luna Lauren Velez",
+            "Zoë Kravitz",
+            "John Mulaney",
+            "Kimiko Glenn"
+         ],
+         "genres": [
+            16,
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 8.399,
+         "poster_url": "/d9V6Q9vpVpmaca7vwSUbCajtDb3.jpg"
+      }
+   },
+   {
+      "pk": 278,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 278,
+         "title": "쇼생크 탈출",
+         "summary": "촉망받는 은행 간부 앤디 듀프레인은 아내와 그녀의 정부를 살해했다는 누명을 쓴다. 주변의 증언과 살해 현장의 그럴듯한 증거들로 그는 종신형을 선고받고 악질범들만 수용한다는 지옥같은 교도소 쇼생크로 향한다. 인간 말종 쓰레기들만 모인 그곳에서 그는 이루 말할 수 없는 억압과 짐승보다 못한 취급을 당한다. 그러던 어느 날, 간수의 세금을 면제받게 해 준 덕분에 그는 일약 교도소의 비공식 회계사로 일하게 된다. 그 와중에 교도소 소장은 죄수들을 이리저리 부리면서 검은 돈을 긁어 모으고 앤디는 이 돈을 세탁하여 불려주면서 그의 돈을 관리하는데...",
+         "release_date": "1994-09-23",
+         "director": "Richard Francis-Bruce",
+         "actors": [
+            "Tim Robbins",
+            "Morgan Freeman",
+            "Bob Gunton",
+            "William Sadler",
+            "Clancy Brown",
+            "Gil Bellows",
+            "James Whitmore",
+            "Mark Rolston",
+            "Jeffrey DeMunn",
+            "Larry Brandenburg"
+         ],
+         "genres": [
+            18,
+            80
+         ],
+         "adult": false,
+         "star_rating": 8.707,
+         "poster_url": "/oAt6OtpwYCdJI76AVtVKW1eorYx.jpg"
+      }
+   },
+   {
+      "pk": 155,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 155,
+         "title": "다크 나이트",
+         "summary": "범죄와 부정부패를 제거하여 고담시를 지키려는 배트맨. 그는 짐 고든 형사와 패기 넘치는 고담시 지방 검사 하비 덴트와 함께 도시를 범죄 조직으로부터 영원히 구원하고자 한다. 세 명의 의기투합으로 위기에 처한 악당들이 모인 자리에 보라색 양복을 입고 얼굴에 짙게 화장을 한 괴이한 존재가 나타나 배트맨을 죽이자는 사상 초유의 제안을 한다. 그는 바로 어떠한 룰도, 목적도 없는 사상 최악의 악당 미치광이 살인광대 조커. 배트맨을 죽이고 고담시를 끝장내버리기 위한 조커의 광기 어린 행각에 도시는 혼란에 빠지는데...",
+         "release_date": "2008-07-16",
+         "director": "Jonathan Nolan",
+         "actors": [
+            "Christian Bale",
+            "Heath Ledger",
+            "Aaron Eckhart",
+            "Michael Caine",
+            "Maggie Gyllenhaal",
+            "Gary Oldman",
+            "Morgan Freeman",
+            "Monique Gabriela Curnen",
+            "Ron Dean",
+            "Cillian Murphy"
+         ],
+         "genres": [
+            18,
+            28,
+            80,
+            53
+         ],
+         "adult": false,
+         "star_rating": 8.516,
+         "poster_url": "/f6dNinWX8rBM79JXKcShkfSh2oA.jpg"
+      }
+   },
+   {
+      "pk": 4232,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 4232,
+         "title": "스크림",
+         "summary": "작은 소도시 우즈버러에 사는 케이시에게 이상한 남자로부터 전화가 걸려온다. 비디오를 보려는 케이시에게 그 남자는 케이시의 남자 친구인 스티브의 목숨을 걸고 게임을 하자고 한다. 케이시가 문제를 맞추면 살고, 틀리면 남자친구가 죽는다. 문제는 '13일의 금요일'에 나오는 살인마의 이름을 맞추는 것. 케이시는 문제를 풀지 못하고, 스티브는 처참하게 죽임을 당한다. 이튿날, 혼자 집에 있는 시드니에게도 이상한 전화가 걸려온다. 시드니는 케이시와는 달리 힘들게 괴전화의 마수에서 빠져 나온다. 그러나 시드니의 남자 친구 빌리가 살인 용의자로 체포되는데, 조사 후 무혐의로 풀려난다.",
+         "release_date": "1996-12-20",
+         "director": "Wes Craven",
+         "actors": [
+            "David Arquette",
+            "Neve Campbell",
+            "Courteney Cox",
+            "Matthew Lillard",
+            "Rose McGowan",
+            "Skeet Ulrich",
+            "Jamie Kennedy",
+            "W. Earl Brown",
+            "Joseph Whipp",
+            "Liev Schreiber"
+         ],
+         "genres": [
+            80,
+            27,
+            9648
+         ],
+         "adult": false,
+         "star_rating": 7.424,
+         "poster_url": "/fvprcRjlvrgok1rvOJN4NY8Uqba.jpg"
+      }
+   },
+   {
+      "pk": 1066262,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1066262,
+         "title": "더 컨버트",
+         "summary": "병사에서 평신도 설교자로 변신한 먼로는 첫 번째 영국 이주민들에게 설교하기 위해 뉴질랜드로 오지만, 강력한 추장 마이아누이에 의해 다른 목적을 섬기도록 변화된다.",
+         "release_date": "2024-03-14",
+         "director": "Samuel McKay",
+         "actors": [
+            "Guy Pearce",
+            "Tioreore Ngatai-Melbourne",
+            "Antonio Te Maioha",
+            "Jacqueline McKenzie",
+            "Te Kohe Tuhaka",
+            "Lawrence Makoare",
+            "Dean O'Gorman",
+            "Jared Turner",
+            "Kelly Vivian",
+            "Jack Barry"
+         ],
+         "genres": [
+            28,
+            18
+         ],
+         "adult": false,
+         "star_rating": 6.214,
+         "poster_url": "/mR8sjStC6M4kQRC7cPrCfv4XzgD.jpg"
+      }
+   },
+   {
+      "pk": 10191,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 10191,
+         "title": "드래곤 길들이기",
+         "summary": "바이킹의 세계, 절대 친구가 될 수 없는 둘이 만났다?  용맹한 바이킹과 사나운 드래곤들의 싸움이 끊이지 않는 버크섬.  바이킹 족장의 아들 ‘히컵’은 드래곤 사냥에 소질 없는 마을의 사고뭉치. 어느날 그는 부상 당한 드래곤 ‘투슬리스’를 구하게 되고, 아무도 몰래 그를 돌본다. 서로를 알아가며, 드래곤들의 친구가 된 ‘히컵’. 그들과의 새로운 생활을 만끽하던 ‘히컵’은 드래곤들의 위험한 비밀을 알게 되는데…  불멸의 드래곤과 바이킹족 이단아의 만남!  2010년 5월, 그들의 스펙터클한 모험이 시작된다!",
+         "release_date": "2010-03-18",
+         "director": "Randy Thom",
+         "actors": [
+            "Jay Baruchel",
+            "Gerard Butler",
+            "Craig Ferguson",
+            "America Ferrera",
+            "Jonah Hill",
+            "Christopher Mintz-Plasse",
+            "T.J. Miller",
+            "Kristen Wiig",
+            "David Tennant",
+            "Ashley Jensen"
+         ],
+         "genres": [
+            14,
+            12,
+            16,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 7.83,
+         "poster_url": "/5JtTkNwOeztwfCPv965e9bZi6G3.jpg"
+      }
+   },
+   {
+      "pk": 1047373,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1047373,
+         "title": "The Silent Hour",
+         "summary": "",
+         "release_date": "2024-10-03",
+         "director": "Brad Anderson",
+         "actors": [
+            "Joel Kinnaman",
+            "Sandra Mae Frank",
+            "Mekhi Phifer",
+            "Mark Strong",
+            "Michael Eklund",
+            "Anthony Grant",
+            "Jonathan Koensgen",
+            "Mike Parish",
+            "Seán James Sutton",
+            "Djinda Kane"
+         ],
+         "genres": [
+            80,
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.5,
+         "poster_url": "/j736cRzBtEPCm0nHnpRN1prqiqj.jpg"
+      }
+   },
+   {
+      "pk": 411,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 411,
+         "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
+         "summary": "제2차 세계대전 중의 영국. 공습을 피해 디고리 교수의 시골 별장으로 간 페번시가의 네 남매인 피터, 수잔, 에드먼드, 루시는 마법의 옷장을 통해 신비로운 나라 나니아로 들어선다. 말하는 동물들과 켄타우로스, 거인들이 평화롭게 어울려 사는 땅이었던 나니아는 사악한 하얀 마녀 제이디스에 의해 긴 겨울에 감금되어 있다. 게다가 이 겨울에는 크리스마스도 없다. 호기심 많은 루시, 퉁명스러운 에드먼드, 신중한 수잔, 분별 있는 맏이 피터는 고귀한 사자 아슬란의 인도로 제이디스의 싸늘한 주문을 깨는 싸움에 가담한다.",
+         "release_date": "2005-12-07",
+         "director": "Andrew Adamson",
+         "actors": [
+            "William Moseley",
+            "Anna Popplewell",
+            "Skandar Keynes",
+            "Georgie Henley",
+            "Liam Neeson",
+            "Tilda Swinton",
+            "James McAvoy",
+            "Jim Broadbent",
+            "Ray Winstone",
+            "Dawn French"
+         ],
+         "genres": [
+            12,
+            10751,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.133,
+         "poster_url": "/vSY6MgDWD5Ch5I87X8BaxZyydCI.jpg"
+      }
+   },
+   {
+      "pk": 299536,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 299536,
+         "title": "어벤져스: 인피니티 워",
+         "summary": "타노스는 6개의 인피니티 스톤을 획득해 신으로 군림하려 한다. 그것은 곧 인류의 절반을 학살해 우주의 균형을 맞추겠다는 뜻. 타노스는 닥터 스트레인지가 소유한 타임 스톤, 비전의 이마에 박혀 있는 마인드 스톤을 차지하기 위해 지구를 침략한다. 아이언맨과 스파이더맨은 가디언즈 오브 갤럭시의 멤버들과 타노스를 상대한다. 지구에선 캡틴 아메리카, 완다, 블랙 위도우, 블랙 팬서 등이 비전을 지키기 위해 뭉친다.",
+         "release_date": "2018-04-25",
+         "director": "Paul Schneider",
+         "actors": [
+            "Robert Downey Jr.",
+            "Chris Evans",
+            "Chris Hemsworth",
+            "Josh Brolin",
+            "Mark Ruffalo",
+            "Scarlett Johansson",
+            "Don Cheadle",
+            "Benedict Cumberbatch",
+            "Tom Holland",
+            "Chadwick Boseman"
+         ],
+         "genres": [
+            12,
+            28,
+            878
+         ],
+         "adult": false,
+         "star_rating": 8.243,
+         "poster_url": "/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg"
+      }
+   },
+   {
+      "pk": 693134,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 693134,
+         "title": "듄: 파트 2",
+         "summary": "황제의 모략으로 멸문한 가문의 유일한 후계자 폴. 어머니 레이디 제시카와 간신히 목숨만 부지한 채 사막으로 도망친다. 그곳에서 만난 반란군들과 숨어 지내다 그들과 함께 황제의 모든 것을 파괴할 전투를 준비한다. 한편 반란군들의 기세가 높아질수록 불안해진 황제와 귀족 가문은 잔혹한 암살자 페이드 로타를 보내 반란군을 몰살하려 하는데…",
+         "release_date": "2024-02-27",
+         "director": "Adorjan Portik",
+         "actors": [
+            "Timothée Chalamet",
+            "Zendaya",
+            "Rebecca Ferguson",
+            "Javier Bardem",
+            "Josh Brolin",
+            "Austin Butler",
+            "Florence Pugh",
+            "Dave Bautista",
+            "Christopher Walken",
+            "Léa Seydoux"
+         ],
+         "genres": [
+            878,
+            12
+         ],
+         "adult": false,
+         "star_rating": 8.154,
+         "poster_url": "/8uUU2pxm6IYZw8UgnKJyx7Dqwu9.jpg"
+      }
+   },
+   {
+      "pk": 1357459,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1357459,
+         "title": "Tatsulok: Tatlo Magkasalo",
+         "summary": "",
+         "release_date": "2024-10-11",
+         "director": "Jojo Nadela",
+         "actors": [
+            "Mariane Saint",
+            "Marlon Marcia",
+            "Skye Gonzaga",
+            "Daniela Carolino",
+            "Mianne Agualada",
+            "Byuti Veloso",
+            "Jeffrey Carl Baltazar"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 6.2,
+         "poster_url": "/zcmPxGIBxxsGVyYuzNWPCWjlQ8X.jpg"
+      }
+   },
+   {
+      "pk": 872585,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 872585,
+         "title": "오펜하이머",
+         "summary": "제2차 세계대전 당시 핵무기 개발을 위해 진행되었던 비밀 프로젝트 ‘맨해튼 프로젝트’를 주도한 미국의 물리학자 ‘로버트 오펜하이머’의 이야기",
+         "release_date": "2023-07-19",
+         "director": "Andrew W. Bofinger",
+         "actors": [
+            "Cillian Murphy",
+            "Emily Blunt",
+            "Matt Damon",
+            "Robert Downey Jr.",
+            "Florence Pugh",
+            "Josh Hartnett",
+            "Casey Affleck",
+            "Rami Malek",
+            "Kenneth Branagh",
+            "Benny Safdie"
+         ],
+         "genres": [
+            18,
+            36
+         ],
+         "adult": false,
+         "star_rating": 8.082,
+         "poster_url": "/jpD6z9fgNe7OqsHoDeAWQWoULde.jpg"
+      }
+   },
+   {
+      "pk": 508947,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 508947,
+         "title": "메이의 새빨간 비밀",
+         "summary": "엄마의 착한 딸, 아니면 미운 13살? 성적도 우수하고 친구들과 사이도 좋은 데다 부모와도 친밀한 관계를 유지하고 있는, 똑 부러지면서도 엉뚱한 매력의 소유자 메이는 요즘 질풍노도의 시기를 겪느라 고민이 많다. 이 나이에 엄마의 과잉보호를 받자니 스트레스가 이만저만이 아닌 데다, 관심사, 인간관계, 신체 등 그녀의 모든 것이 변하고 있기 때문. 그런데 이 와중에 흥분하면 거대한 레서판다로 변신하는 비밀까지 떠안게 되다니! 아침도 먹어야 하고 학교도 가야 하는데, 이 엄청난 비밀을 어떻게 숨겨야 할까?",
+         "release_date": "2022-03-10",
+         "director": "Dovi Anderson",
+         "actors": [
+            "Rosalie Chiang",
+            "Sandra Oh",
+            "Ava Morse",
+            "Hyein Park",
+            "Maitreyi Ramakrishnan",
+            "Orion Lee",
+            "Wai Ching Ho",
+            "Tristan Allerick Chen",
+            "James Hong",
+            "Lori Tan Chinn"
+         ],
+         "genres": [
+            16,
+            10751,
+            35,
+            14
+         ],
+         "adult": false,
+         "star_rating": 7.367,
+         "poster_url": "/hsOhOcX7qDy7bPwbrt1OoITngrf.jpg"
+      }
+   },
+   {
+      "pk": 634649,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 634649,
+         "title": "스파이더맨: 노 웨이 홈",
+         "summary": "미스테리오의 계략으로 세상에 정체가 탄로난 스파이더맨 피터 파커는 하루 아침에 평범한 일상을 잃게 된다. 문제를 해결하기 위해 닥터 스트레인지를 찾아가 도움을 청하지만 뜻하지 않게 멀티버스가 열리면서 각기 다른 차원의 불청객들이 나타난다. 닥터 옥토퍼스를 비롯해 스파이더맨에게 깊은 원한을 가진 숙적들의 강력한 공격에 피터 파커는 사상 최악의 위기를 맞게 되는데…",
+         "release_date": "2021-12-15",
+         "director": "Bridgit Crider",
+         "actors": [
+            "Tom Holland",
+            "Zendaya",
+            "Benedict Cumberbatch",
+            "Jacob Batalon",
+            "Jamie Foxx",
+            "Willem Dafoe",
+            "Alfred Molina",
+            "Rhys Ifans",
+            "Thomas Haden Church",
+            "Andrew Garfield"
+         ],
+         "genres": [
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.956,
+         "poster_url": "/fvqoI9r1GU2EFkc0xjZ6dKCuDVR.jpg"
+      }
+   },
+   {
+      "pk": 335977,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 335977,
+         "title": "인디아나 존스: 운명의 다이얼",
+         "summary": "1969년 뉴욕, 전설적인 모험가이자 고고학자 인디아나 존스 앞에 대녀 헬레나와 오랜 숙적 위르겐 폴러의 세력이 등장한다. 그들의 목표는 단 하나, 운명의 다이얼. 역사의 흐름을 바꿀 수 있는 다이얼을 차지하려는 쫓고 쫓기는 위협 속에 인디아나 존스는 전 세계를 무대로 하는 새로운 모험에 뛰어드는데…",
+         "release_date": "2023-06-25",
+         "director": "Phedon Papamichael",
+         "actors": [
+            "Harrison Ford",
+            "Phoebe Waller-Bridge",
+            "Mads Mikkelsen",
+            "Boyd Holbrook",
+            "Olivier Richters",
+            "Ethann Isidore",
+            "Toby Jones",
+            "Antonio Banderas",
+            "Karen Allen",
+            "John Rhys-Davies"
+         ],
+         "genres": [
+            12,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.582,
+         "poster_url": "/8ifAx8GS5AHL7xOTMJDMaza84RQ.jpg"
+      }
+   },
+   {
+      "pk": 826510,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 826510,
+         "title": "해럴드와 보라색 크레용",
+         "summary": "모험심이 강한 해롤드는 책 속에서는 무엇이든 그리기만 하면 현실로 만들 수 있어요. 해롤드는 성장하여 책 속 페이지에서 벗어나 현실 세계로 나온 후 현실 생활에 대해 배울 것이 많다는 것을 알게 됩니다.",
+         "release_date": "2024-07-31",
+         "director": "Crockett Johnson",
+         "actors": [
+            "Zachary Levi",
+            "Lil Rel Howery",
+            "Zooey Deschanel",
+            "Benjamin Bottani",
+            "Tanya Reynolds",
+            "Jemaine Clement",
+            "Alfred Molina",
+            "Pete Gardner",
+            "Camille Guaty",
+            "Ravi Patel"
+         ],
+         "genres": [
+            10751,
+            12,
+            14,
+            35
+         ],
+         "adult": false,
+         "star_rating": 6.959,
+         "poster_url": "/qtW6bWUEqfPLaD6KnetIlSG4adf.jpg"
+      }
+   },
+   {
+      "pk": 783110,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 783110,
+         "title": "밀수",
+         "summary": "1970년대, 바닷가에 인접한 작은 마을 군천엔 절친인 두 해녀 춘자와 진숙, 그리고 진숙의 동생이 살고 있다. 그들은 생계를 위해 항상 물 속에서 해산물들을 채집하는 일을 한다. 하지만 해변 근처에 공장들이 하나 둘 지어지면서, 해녀들의 생계에 곤란이 생기고 선원들은 생계를 위해서 밀수 일에 뛰어들게 된다. 그렇게 시작된 밀수업은 진숙의 가족이 감당하기 벅찰만큼 규모가 커지고 마을의 평화도 점차 깨지기 시작한다.",
+         "release_date": "2023-07-26",
+         "director": "Kim Jung-youn",
+         "actors": [
+            "Kim Hye-soo",
+            "Yum Jung-ah",
+            "Zo In-sung",
+            "Park Jeong-min",
+            "Kim Jong-soo",
+            "Go Min-si",
+            "Kim Jae-hwa",
+            "Park Jun-myun",
+            "Park Kyung-hye",
+            "Joo Bo-bi"
+         ],
+         "genres": [
+            80,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/ayLXqPZCu3uaLLhXiqvw5NBb7Lw.jpg"
+      }
+   },
+   {
+      "pk": 1114513,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1114513,
+         "title": "스픽 노 이블",
+         "summary": "휴양지에서 처음 만나 우연히 함께 휴가를 보내게 된 두 가족. 패트릭(제임스 맥어보이)은 자신의 집으로 루이스(맥켄지 데이비스)의 가족을 초대한다. 다시 만나 즐거운 시간을 보낼 것이라 예상한 것도 잠시, 거절할 수 없는 호의와 불편한 상황들이 계속되며 불길한 두려움을 느끼고 집에 돌아가려 하던 중 숨겨진 진실을 마주하게 되는데…",
+         "release_date": "2024-09-11",
+         "director": "Andrew Bonner",
+         "actors": [
+            "James McAvoy",
+            "Mackenzie Davis",
+            "Scoot McNairy",
+            "Aisling Franciosi",
+            "Alix West Lefler",
+            "Dan Hough",
+            "Kris Hitchen",
+            "Motaz Malhees",
+            "Jakob Højlev Jørgensen"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.354,
+         "poster_url": "/mXGlp8K10JhiY5ZNY7zMldm2lss.jpg"
+      }
+   },
+   {
+      "pk": 27205,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 27205,
+         "title": "인셉션",
+         "summary": "타인의 꿈에 들어가 생각을 훔치는 특수 보안요원 코브. 그를 이용해 라이벌 기업의 정보를 빼내고자 하는 사이토는 코브에게 생각을 훔치는 것이 아닌, 생각을 심는 ‘인셉션’ 작전을 제안한다. 성공 조건으로 국제적인 수배자가 되어있는 코브의 신분을 바꿔주겠다는 거부할 수 없는 제안을 하고, 사랑하는 아이들에게 돌아가기 위해 그 제안을 받아들인다. 최강의 팀을 구성, 표적인 피셔에게 접근해서 ‘인셉션’ 작전을 실행하지만 예기치 못한 사건들과 마주하게 되는데… 꿈 VS 현실! 시간, 규칙, 타이밍 모든 것이 완벽해야만 하는, 단 한 번도 성공한 적 없는 ‘인셉션’ 작전이 시작된다!",
+         "release_date": "2010-07-15",
+         "director": "Christopher Nolan",
+         "actors": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Ken Watanabe",
+            "Tom Hardy",
+            "Elliot Page",
+            "Dileep Rao",
+            "Cillian Murphy",
+            "Tom Berenger",
+            "Marion Cotillard",
+            "Pete Postlethwaite"
+         ],
+         "genres": [
+            28,
+            878,
+            12
+         ],
+         "adult": false,
+         "star_rating": 8.369,
+         "poster_url": "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+      }
+   },
+   {
+      "pk": 263472,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 263472,
+         "title": "노크 노크",
+         "summary": "가족에게 헌신적이고 누구보다 아내와 아이들을 사랑하는 성공한 건축가 에반(키아누 리브스)은 휴일을 맞아 여행을 떠난 가족들을 뒤로 하고 홀로 집에 남아 오랜만의 한적함에 젖어 든다. 작업에 열중하고 있던 에반은 폭우 속에 똑똑 문을 두들기는 소리를 듣고 낯선 두 여자와 처음 마주하게 된다. 비에 온몸이 젖은 육감적인 모습의 두 여자, 제네시스(로렌자 이조)와 벨(아나 드 아르마스)은 에반의 호의에 집으로 들어와 젖은 몸을 녹이게 되고 에반의 계속되는 호의 속에 서서히 끈적한 눈빛을 건네기 시작하는데...",
+         "release_date": "2015-06-26",
+         "director": "Eli Roth",
+         "actors": [
+            "Keanu Reeves",
+            "Lorenza Izzo",
+            "Ana de Armas",
+            "Aaron Burns",
+            "Colleen Camp",
+            "Ignacia Allamand",
+            "Antonio Quercia",
+            "Dan Baily",
+            "Megan Baily"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 5.363,
+         "poster_url": "/8hjIz6BkZiBSeuHYs1e8eO0w489.jpg"
+      }
+   },
+   {
+      "pk": 1361292,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1361292,
+         "title": "Cellar Door",
+         "summary": "",
+         "release_date": "2024-10-31",
+         "director": "Vaughn Stein",
+         "actors": [
+            "Jordana Brewster",
+            "Scott Speedman",
+            "Laurence Fishburne",
+            "Addison Timlin",
+            "Chris Conner",
+            "Randy Schulman",
+            "Katie O’Grady",
+            "Zach Feiner"
+         ],
+         "genres": [
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/9vasnPh69RoUg9oUpzXoErMVDB7.jpg"
+      }
+   },
+   {
+      "pk": 1104844,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1104844,
+         "title": "극장판 블루 록 -에피소드 나기-",
+         "summary": "“귀찮아”가 말버릇인 고등학교 2학년, ‘나기 세이시로’는 하루하루를 무기력하게 살고 있었다. 축구로 전 세계 제패를 꿈꾸는 동급생 ‘미카게 레오’가 그의 재능을 찾아내기 전까지는. ‘레오’의 권유로 축구를 시작하게 된 ‘나기’는 압도적인 축구 센스를 발휘하고 어느 날, 그들에게 ‘블루 록’ 프로젝트 초대장이 도착한다. 그곳에서 ‘이사기 요이치’, ‘바치라 메구루’, ‘이토시 린’ 등, 전국에서 선별된 스트라이커들이 기다리고 있는데…",
+         "release_date": "2024-04-19",
+         "director": "Shunsuke Ishikawa",
+         "actors": [
+            "Nobunaga Shimazaki",
+            "Yuma Uchida",
+            "Kazuyuki Okitsu",
+            "Kazuki Ura",
+            "Tasuku Kaito",
+            "Yuki Ono",
+            "Soma Saito",
+            "Koki Uchiyama",
+            "Hiroshi Kamiya"
+         ],
+         "genres": [
+            16,
+            28,
+            18
+         ],
+         "adult": false,
+         "star_rating": 7.289,
+         "poster_url": "/yN773yRQjwG6KPjUGqBsmiLfKom.jpg"
+      }
+   },
+   {
+      "pk": 3933,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 3933,
+         "title": "유령 신부",
+         "summary": "생선 통조림 공장을 하며 벼락부자가 된 반 도르트 일가와 세습귀족이지만 가난한 에버글롯 일가는 각기 서로의 신분과 재산 때문에 사돈으로서의 연을 맺기로 결정한다. 결혼식 전날, 예행연습을 위해 처음 만나게 된 빅터와 빅토리아. 두 사람은 쑥스럽고 어색한 분위기 속에서도 사랑의 가능성을 발견하게 된다. 하지만 빅터는 결혼 리허설에서 계속해서 실수를 저지르고 급기야 연습을 더 하고 오라며 갤스웰 목사에게 쫓겨난다. 숲 속에서 홀로 연습하던 도중, 땅 위로 튀어나온 손가락 뼈에 반지를 끼웠다가 유령 신부의 오해로 지하세계에 끌려가게 되는 색다른 경험을 하게 된다.",
+         "release_date": "2005-09-12",
+         "director": "Tim Burton",
+         "actors": [
+            "Johnny Depp",
+            "Helena Bonham Carter",
+            "Emily Watson",
+            "Tracey Ullman",
+            "Paul Whitehouse",
+            "Joanna Lumley",
+            "Albert Finney",
+            "Richard E. Grant",
+            "Christopher Lee",
+            "Michael Gough"
+         ],
+         "genres": [
+            10749,
+            14,
+            16
+         ],
+         "adult": false,
+         "star_rating": 7.581,
+         "poster_url": "/AinoobwUR3mDspc1O9exQHgUAyv.jpg"
+      }
+   },
+   {
+      "pk": 1255208,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1255208,
+         "title": "Bag of Lies",
+         "summary": "",
+         "release_date": "2024-03-29",
+         "director": "Jacob P. Heineke",
+         "actors": [
+            "John Wells",
+            "Madison Pullins",
+            "Patrick Taft",
+            "Brandi Botkin",
+            "Terry Tocantins",
+            "Aja Nicole",
+            "Kayla Theis",
+            "Judy McQueen Bauer"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/pPElE8npavUirQWmscJUGZyPiP6.jpg"
+      }
+   },
+   {
+      "pk": 464026,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 464026,
+         "title": "가자! 장미여관으로",
+         "summary": "사귄 지 6개월 된 여자친구 민애와 아직까지 육체적인 관계를 가져본 적 없는 성수는 그녀와의 만남이 늘 흥분된다. 그러던 어느 날, 민애를 설득해 장미여관으로 끌어들이는데 성공한 성수. 샤워를 하기 위해 들어간 욕실에서 작은 구멍을 발견하게 되고 그 구멍을 통해 옆방을 우연히 엿보게 되고, 거기서 남녀의 성행위 장면을 목격하게 된다. 호기심이 발동한 성수는 더욱 숨죽여 그 장면을 엿보던 중 여자 연예인 사라가 거물급 정치인에게 성 상납을 하는 현장임을 알고 충격을 받게 되는데...",
+         "release_date": "2013-08-14",
+         "director": "Sin Jeong-gyoon",
+         "actors": [
+            "Sung Eun-chae",
+            "Jang Sung-won",
+            "Woo Do-hwan",
+            "Yeo Min-jeong"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 4.0,
+         "poster_url": "/8ogCczLG6EhQEnSWoqs6092bGm3.jpg"
+      }
+   },
+   {
+      "pk": 667538,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 667538,
+         "title": "트랜스포머: 비스트의 서막",
+         "summary": "전 우주의 행성을 집어삼키는 절대자, ‘유니크론’의 부하 ‘스커지’는 ‘테러콘’들을 이끌고 지구에 당도한다. 그에 맞서기 위해 지구에 정체를 숨기고 있던 트랜스포머 ‘오토봇’ 군단이 모습을 드러내고 또 다른 트랜스포머 진영인 ‘맥시멀’과 힘을 합친다. 옵티머스 프라임이 이끄는 ‘오토봇’과 옵티머스 프라이멀을 중심으로 한 ‘맥시멀’. 모두의 운명을 건 그들의 압도적 전투가 시작된다!",
+         "release_date": "2023-06-06",
+         "director": "Enrique Chediak",
+         "actors": [
+            "Anthony Ramos",
+            "Dominique Fishback",
+            "Peter Cullen",
+            "Ron Perlman",
+            "Peter Dinklage",
+            "Michelle Yeoh",
+            "Pete Davidson",
+            "Liza Koshy",
+            "Cristo Fernández",
+            "Luna Lauren Velez"
+         ],
+         "genres": [
+            878,
+            12,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.293,
+         "poster_url": "/chUZNPNd7EiETSB4xBGykXhuXRr.jpg"
+      }
+   },
+   {
+      "pk": 166428,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 166428,
+         "title": "드래곤 길들이기 3",
+         "summary": "영원한 친구 히컵과 투슬리스의 활약으로 사람과 드래곤이 공존하며 평화롭게 살아가는 버크섬. 새로운 드래곤 ‘라이트 퓨어리’를 쫓아간 투슬리스를 찾다가 히컵은 누구도 찾지 못했던 드래곤의 파라다이스 ‘히든월드’를 우연히 발견하게 된다. 하지만 평화도 잠시, 역대 최악의 드래곤 헌터 그리멜의 등장으로 드래곤들의 안전과 버크섬의 평화까지 위협받기 시작하는데…",
+         "release_date": "2019-01-03",
+         "director": "Carter Goodrich",
+         "actors": [
+            "Jay Baruchel",
+            "America Ferrera",
+            "F. Murray Abraham",
+            "Cate Blanchett",
+            "Gerard Butler",
+            "Craig Ferguson",
+            "Jonah Hill",
+            "Christopher Mintz-Plasse",
+            "Kristen Wiig",
+            "Kit Harington"
+         ],
+         "genres": [
+            16,
+            10751,
+            12
+         ],
+         "adult": false,
+         "star_rating": 7.751,
+         "poster_url": "/51HTWy1h5a2cbXC9gKYGOt2YQBV.jpg"
+      }
+   },
+   {
+      "pk": 438631,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 438631,
+         "title": "듄",
+         "summary": "10191년, 아트레이데스 가문의 후계자인 폴은 시간과 공간을 초월해 과거와 미래를 모두 볼 수 있고, 더 나은 미래를 만들 유일한 구원자인 예지된 자의 운명을 타고났다. 그리고 어떤 계시처럼 매일 꿈에서 아라키스의 행성에 있는 한 여인을 만난다. 귀족들이 지지하는 아트레이데스 가문에 대한 황제의 질투는 폴과 그 일족들을 죽음이 기다리는 아라키스로 이끄는데...",
+         "release_date": "2021-09-15",
+         "director": "Máté Papucsek",
+         "actors": [
+            "Timothée Chalamet",
+            "Rebecca Ferguson",
+            "Oscar Isaac",
+            "Jason Momoa",
+            "Stellan Skarsgård",
+            "Stephen McKinley Henderson",
+            "Josh Brolin",
+            "Javier Bardem",
+            "Sharon Duncan-Brewster",
+            "Chang Chen"
+         ],
+         "genres": [
+            878,
+            12
+         ],
+         "adult": false,
+         "star_rating": 7.783,
+         "poster_url": "/7zV8FTYofAORGm0Umgh1mNNCym8.jpg"
+      }
+   },
+   {
+      "pk": 1139095,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1139095,
+         "title": "Little Bites",
+         "summary": "",
+         "release_date": "2024-10-04",
+         "director": "Spider One",
+         "actors": [
+            "Krsy Fox",
+            "Jon Sklaroff",
+            "Barbara Crampton",
+            "Chaz Bono",
+            "Heather Langenkamp",
+            "Bonnie Aarons",
+            "Elizabeth Phoenix Caro",
+            "James A. Janisse",
+            "Chelsea Rebecca"
+         ],
+         "genres": [
+            27
+         ],
+         "adult": false,
+         "star_rating": 6.4,
+         "poster_url": "/11WUy1jqjk2ZMj5UjvfmBAIYDvr.jpg"
+      }
+   },
+   {
+      "pk": 1153291,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1153291,
+         "title": "Llamada privada",
+         "summary": "",
+         "release_date": "2023-07-11",
+         "director": "Alex Bries",
+         "actors": [
+            "Gabriel Ng",
+            "Carolina Herrera",
+            "Santiago Rodríguez",
+            "Christian Cosse"
+         ],
+         "genres": [
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 7.0,
+         "poster_url": "/tUjSG0q3NghJ1UT9KzDUq3EyjJk.jpg"
+      }
+   },
+   {
+      "pk": 414906,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 414906,
+         "title": "더 배트맨",
+         "summary": "지난 2년 간 고담시의 어둠 속에서 범법자들을 응징하며 배트맨으로 살아온 브루스 웨인. 알프레드와 제임스 고든 경위의 도움 아래 그는 도시의 부패한 공직자들과 고위 관료들 사이에서 복수의 화신으로 활약한다. 고담의 시장 선거를 앞두고 고담의 엘리트 집단을 목표로 잔악한 연쇄살인을 저지르는 수수께끼 킬러 리들러가 나타나자, 최고의 탐정 브루스 웨인이 수사에 나서고 남겨진 단서를 풀어가며 캣우먼, 펭귄, 카마인 팔코네, 리들러를 차례대로 만난다. 사이코 범인의 미스터리를 수사하면서 그 모든 증거가 자신을 향한 의도적인 메시지였음을 깨닫고,  리들러에게 농락 당한 배트맨은 광기에 사로잡힌다. 범인의 무자비한 계획을 막고 오랫동안 고담시를 썩게 만든 권력 부패의 고리를 끊어야 하지만, 부모님의 죽음에 얽힌 진실이 밝혀지자 복수와 정의 사이에서 갈등하는데...",
+         "release_date": "2022-03-01",
+         "director": "Robert Alonzo",
+         "actors": [
+            "Robert Pattinson",
+            "Zoë Kravitz",
+            "Jeffrey Wright",
+            "Colin Farrell",
+            "Paul Dano",
+            "John Turturro",
+            "Andy Serkis",
+            "Peter Sarsgaard",
+            "Barry Keoghan",
+            "Jayme Lawson"
+         ],
+         "genres": [
+            80,
+            9648,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.669,
+         "poster_url": "/jicHGaOX5pHs7RKjfexMxvLkwjf.jpg"
+      }
+   },
+   {
+      "pk": 259693,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 259693,
+         "title": "컨저링 2",
+         "summary": "1977년 영국 엔필드. 엄마 페기와 네 남매가 살고 있는 가족의 집에 정체를 알 수 없는 존재가 나타난다. 일명 폴터가이스트 유령. 벽을 두드리는 소리, 사악한 목소리, 유령은 밤마다 가구와 물건들, 심지어 아이들까지 공중에 띄우는 등 기이한 일들을 일으킨다. 결국 교회의 요청을 받은 워렌 부부가 영국 엔필드의 집을 찾아가 사건을 조사한다. 그러나 워렌 부부는 그 집에서 예상보다 더욱 엄청난 상대를 만나게 되고, 워렌 부부의 목숨까지 위협받는데…",
+         "release_date": "2016-06-08",
+         "director": "Chad Hayes",
+         "actors": [
+            "Patrick Wilson",
+            "Vera Farmiga",
+            "Madison Wolfe",
+            "Frances O'Connor",
+            "Simon McBurney",
+            "Lauren Esposito",
+            "Benjamin Haigh",
+            "Sterling Jerins",
+            "Maria Doyle Kennedy",
+            "Patrick McAuley"
+         ],
+         "genres": [
+            27
+         ],
+         "adult": false,
+         "star_rating": 7.294,
+         "poster_url": "/RTmoz2DYYOPDnTKGqkJDWKdcd6.jpg"
+      }
+   },
+   {
+      "pk": 335988,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 335988,
+         "title": "트랜스포머: 최후의 기사",
+         "summary": "옵티머스 프라임은 더 이상 인간의 편이 아니다. 트랜스포머의 고향 사이버트론의 재건을 위해 지구에 있는 고대 유물을 찾아나선 옵티머스 프라임은 인류와 피할 수 없는 갈등을 빚고, 오랜 동료 범블비와도 치명적인 대결을 해야만 하는데…  영원한 영웅은 없다!  하나의 세상이 존재하기 위해선 다른 세상이 멸망해야 한다!",
+         "release_date": "2017-06-16",
+         "director": "Christopher Ferguson",
+         "actors": [
+            "Mark Wahlberg",
+            "Laura Haddock",
+            "Peter Cullen",
+            "Anthony Hopkins",
+            "Erik Aadahl",
+            "Josh Duhamel",
+            "Gemma Chan",
+            "Jim Carter",
+            "Santiago Cabrera",
+            "Isabela Merced"
+         ],
+         "genres": [
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/bLmjP7lUSrwcaID8VnZmrKLETyn.jpg"
+      }
+   },
+   {
+      "pk": 877817,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 877817,
+         "title": "'울프스' - Wolfs",
+         "summary": "유명 뉴욕 공직자의 실수를 무마해 달라는 요청을 받은 두 라이벌 해결사가 맞닥뜨린다. 일촉즉발의 긴장감이 감도는 하룻밤 동안 두 사람은 각자의 불만과 자존심을 내려놓고 함께 일을 마쳐야 한다.",
+         "release_date": "2024-09-20",
+         "director": "Jon Watts",
+         "actors": [
+            "George Clooney",
+            "Brad Pitt",
+            "Austin Abrams",
+            "Amy Ryan",
+            "Poorna Jagannathan",
+            "Zlatko Burić",
+            "Richard Kind",
+            "Frances McDormand",
+            "Sergio Cota Jr.",
+            "Alfred Chou"
+         ],
+         "genres": [
+            35,
+            28,
+            80
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/isf7Z8Ze3dvmaOuJG1hfF2LTtUh.jpg"
+      }
+   },
+   {
+      "pk": 238,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 238,
+         "title": "대부",
+         "summary": "시실리에서 이민온 뒤, 정치권까지 영향력을 미치는 거물로 자리잡은 돈 꼴레오네는 갖가지 고민을 호소하는 사람들의 문제를 해결해주며 대부라 불리운다. 한편 솔로소라는 인물은 꼴레오네가와 라이벌인 탓타리아 패밀리와 손잡고 새로운 마약 사업을 제안한다. 돈 꼴레오네가 마약 사업에 참여하지 않기로 하자, 돈 꼴레오네를 저격해 그는 중상을 입고 사경을 헤매게 된다. 그 뒤, 돈 꼴레오네의 아들 소니는 조직력을 총 동원해 다른 패밀리들과 피를 부르는 전쟁을 시작하는데... 가족의 사업과 상관없이 대학에 진학한 뒤 인텔리로 지내왔던 막내 아들 마이클은 아버지가 총격을 당한 뒤, 아버지를 구하기 위해 위험천만한 협상 자리에 나선다.",
+         "release_date": "1972-03-14",
+         "director": "Mario Puzo",
+         "actors": [
+            "Marlon Brando",
+            "Al Pacino",
+            "James Caan",
+            "Robert Duvall",
+            "Richard S. Castellano",
+            "Diane Keaton",
+            "Talia Shire",
+            "Gianni Russo",
+            "Sterling Hayden",
+            "John Marley"
+         ],
+         "genres": [
+            18,
+            80
+         ],
+         "adult": false,
+         "star_rating": 8.689,
+         "poster_url": "/I1fkNd5CeJGv56mhrTDoOeMc2r.jpg"
+      }
+   },
+   {
+      "pk": 829557,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 829557,
+         "title": "365일: 오늘",
+         "summary": "재결합하여 그 어느 때보다도 열렬한 관계를 이어가는 라우라와 마시모. 하지만 마시모의 가족 관계, 그리고 라우라의 마음을 얻으려는 수수께끼의 남자로 인해 삶이 복잡해진다.",
+         "release_date": "2022-04-26",
+         "director": "Tomasz Mandes",
+         "actors": [
+            "Anna-Maria Sieklucka",
+            "Michele Morrone",
+            "Simone Susinna",
+            "Magdalena Lamparska",
+            "Otar Saralidze",
+            "Natasza Urbańska",
+            "Ramón Langa",
+            "Ewa Kasprzyk",
+            "Dariusz Jakubowski",
+            "Tomasz Mandes"
+         ],
+         "genres": [
+            10749,
+            18
+         ],
+         "adult": false,
+         "star_rating": 5.874,
+         "poster_url": "/ee7qhbFyw4adAHgDTAELuiskkht.jpg"
+      }
+   },
+   {
+      "pk": 974262,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 974262,
+         "title": "디센던츠: 레드의 반항",
+         "summary": "하트 여왕이 오라돈을 차지하려고 하자 그의 반항아 딸 레드는 신데렐라의 완벽주의자 딸 클로이와 힘을 합쳐 과거로 돌아가 엄마가 악당의 길로 가지 못하게 막으려 애쓴다.",
+         "release_date": "2024-07-11",
+         "director": "Jennifer Phang",
+         "actors": [
+            "Kylie Cantrall",
+            "Malia Baker",
+            "Ruby Rose Turner",
+            "Morgan Dudley",
+            "Dara Reneé",
+            "Rita Ora",
+            "Brandy Norwood",
+            "China Anne McClain",
+            "Joshua Colley",
+            "Peder Lindell"
+         ],
+         "genres": [
+            14,
+            12,
+            10751,
+            35
+         ],
+         "adult": false,
+         "star_rating": 6.9,
+         "poster_url": "/lapab2EdLTL6srTus5ktgr64bqF.jpg"
+      }
+   },
+   {
+      "pk": 974950,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 974950,
+         "title": "에밀리아 페레스",
+         "summary": "범죄자를 법정에 세우는 것보다 감옥에서 빼내는 데 더 관심이 많은 대형 로펌에서 일하는 저평가된 변호사 리타가 범죄 조직의 리더에게 고용됩니다.",
+         "release_date": "2024-08-21",
+         "director": "Jacques Audiard",
+         "actors": [
+            "Zoe Saldaña",
+            "Karla Sofía Gascón",
+            "Selena Gomez",
+            "Adriana Paz",
+            "Edgar Ramírez",
+            "Mark Ivanir",
+            "Eduardo Aladro",
+            "Emiliano Hasan",
+            "Gaël Murgia-Fur",
+            "Tirso Pietriga"
+         ],
+         "genres": [
+            18,
+            53
+         ],
+         "adult": false,
+         "star_rating": 7.835,
+         "poster_url": "/r5sYdlJFys6YETQb63lvRR4fKEL.jpg"
+      }
+   },
+   {
+      "pk": 424,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 424,
+         "title": "쉰들러 리스트",
+         "summary": "2차 세계대전 당시 독일군이 점령한 폴란드. 시류에 맞춰 자신의 성공을 추구하는 기회주의자 쉰들러는 유태인이 경영하는 그릇 공장을 인수한다. 그는 공장을 인수하기 위해 나찌 당원이 되고 독일군에게 뇌물을 바치는 등 갖은 방법을 동원한다. 그러나 냉혹한 기회주의자였던 쉰들러는 유태인 회계사인 스턴과 친분을 맺으면서 냉혹한 유태인 학살에 대한 양심의 소리를 듣기 시작한다. 마침내 그는 강제 수용소로 끌려가 죽음을 맞게될 유태인들을 구해내기로 결심하고, 독일군 장교에게 빼내는 사람 숫자대로 뇌물을 주는 방법으로 유태인들을 구해내려는 계획을 세우는데...",
+         "release_date": "1993-12-15",
+         "director": "Steven Spielberg",
+         "actors": [
+            "Liam Neeson",
+            "Ben Kingsley",
+            "Ralph Fiennes",
+            "Caroline Goodall",
+            "Jonathan Sagall",
+            "Embeth Davidtz",
+            "Malgorzata Gebel",
+            "Shmuel Levy",
+            "Mark Ivanir",
+            "Béatrice Macola"
+         ],
+         "genres": [
+            18,
+            36,
+            10752
+         ],
+         "adult": false,
+         "star_rating": 8.6,
+         "poster_url": "/oyyUcGwLX7LTFS1pQbLrQpyzIyt.jpg"
+      }
+   },
+   {
+      "pk": 762509,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 762509,
+         "title": "무파사: 라이온 킹",
+         "summary": "길을 잃고 혼자가 된 새끼 사자 ‘무파사’는 광활한 야생을 떠돌던 중 왕의 혈통이자 예정된 후계자 ‘타카(스카)’와 우연히 만나게 된다. 마치 친형제처럼 끈끈한 우애를 나누며 함께 자란 ‘무파사’와 ‘타카’는 운명을 개척하기 위해 거대한 여정을 함께 떠난다. 한 치 앞을 알 수 없는 적들의 위협 속에서 두 형제의 끈끈했던 유대에 금이 가기 시작하고 예상치 못한 위기까지 맞닥뜨리게 되는데…",
+         "release_date": "2024-12-18",
+         "director": "Joi McMillon",
+         "actors": [
+            "Aaron Pierre",
+            "Kelvin Harrison Jr.",
+            "Tiffany Boone",
+            "Kagiso Lediga",
+            "Preston Nyman",
+            "Mads Mikkelsen",
+            "Thandiwe Newton",
+            "Lennie James",
+            "Anika Noni Rose",
+            "Keith David"
+         ],
+         "genres": [
+            12,
+            10751,
+            18
+         ],
+         "adult": false,
+         "star_rating": 0.0,
+         "poster_url": "/1VUExee8iFohFTwYVi4IOArYyaM.jpg"
+      }
+   },
+   {
+      "pk": 27066,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 27066,
+         "title": "훔쳐보기",
+         "summary": "불문학 교수인 도도는 어렸을 때부터 침실과 욕실, 부엌과 서재등에서 돈 많고 높은 신분의 아버지가 벌이는 성행각을 훔쳐보며 자랐다. 그래서인지 도도는 자신의 아내 실비아를 훔쳐보면서 즐거움을 느끼곤 한다. 실비아 역시 도도를 훔쳐보는 것을 내심 즐기곤 한다.  그런데 어느날 갑자기 실비아가 별거를 선언하고 가출한다. 도도는 아내인 실비아가 왜 가출했는지, 무엇때문에 별거를 선언했는지, 도무지 알지 못한다.  한편, 그의 의붓아버지는 실비아가 가출하기 며칠 전 엘리베이터 사고를 당해 집에서 치료를 받고 있었다. 그는 치료를 받는 와중에도 자신의 담당 간호사인 빠우스따에게 성적인 유희를 요구하고 그 대가로 돈을 지불한다. 이를 목격한 도도는 빠우스따를 훔쳐보며 그를 탐하고 싶은 충동을 느끼게 되는데...",
+         "release_date": "1994-01-27",
+         "director": "Tinto Brass",
+         "actors": [
+            "Katarina Vasilissa",
+            "Francesco Casale",
+            "Cristina Garavaglia",
+            "Raffaella Offidani",
+            "Antonio Salines",
+            "Franco Branciaroli",
+            "Martine Brochard",
+            "Eleonora De Grassi",
+            "Erika Savastani",
+            "Ted Rusoff"
+         ],
+         "genres": [
+            18,
+            10749
+         ],
+         "adult": false,
+         "star_rating": 5.5,
+         "poster_url": "/eJeQzXZStjafjypE2ZRLV2ON5r3.jpg"
+      }
+   },
+   {
+      "pk": 260514,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 260514,
+         "title": "카 3: 새로운 도전",
+         "summary": "한때 최고의 스피드를 자랑하던 레이싱계의 전설 라이트닝 맥퀸은 어느덧 날렵한 디자인과 파워풀한 엔진을 장착한 신예들에 밀려 퇴물 소리를 듣게 된다. 경쟁하던 동료들 역시 하나둘 은퇴를 선언하고, 외롭게 스피드 경쟁을 펼치던 맥퀸도 떠오르는 슈퍼스타 스톰에게 망신을 당하며 1위 자리를 내준다. 급기야 치명적 부상을 입고 은둔생활을 하게 된다. 그러던 중 맥퀸은 젊은 트레이너 크루즈를 만나 재기를 도모한다. 하지만 안 맞아도 너무 안 맞는 크루즈와의 훈련은 맥퀸을 또 다시 어려움에 빠트리는데...",
+         "release_date": "2017-06-15",
+         "director": "Christian Roman",
+         "actors": [
+            "Owen Wilson",
+            "Cristela Alonzo",
+            "Chris Cooper",
+            "Nathan Fillion",
+            "Armie Hammer",
+            "Larry the Cable Guy",
+            "Bonnie Hunt",
+            "Lea DeLaria",
+            "Kerry Washington",
+            "Tony Shalhoub"
+         ],
+         "genres": [
+            10751,
+            16,
+            12,
+            35
+         ],
+         "adult": false,
+         "star_rating": 6.9,
+         "poster_url": "/3joH7aixEEJeQIov9AB2k04UQkW.jpg"
+      }
+   },
+   {
+      "pk": 975022,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 975022,
+         "title": "유아 킬링 미",
+         "summary": "꿈에 그리던 아이비리그 대학교 대기자 명단에 올라와 있는 이든은 고등학교 졸업을 앞두고 친구 자라와 함께 대학교에 입학하기 위해 계획을 세운다. 부유하고 인기 있는 동급생 슈로더에게 접근하여 그의 국회의원 아버지에게 추천서를 받는 것이다. 하지만 이든의 요청에도 '슈로더의 반응은 시큰둥하고 이든은 마지못해  슈로더의 저택에서 열리는 파티에 참석하기로 한다. 파티에서 슈로더의 친구 구치가 기괴한 행동을 하는 것을 목격하고, 그의 휴대폰을 손에 넣게 된다. 하지만 이 휴대폰에서 실종된 동급생의 흔적을 발견하면서 예상치 못한 상황에 휘말리게 되는데...",
+         "release_date": "2023-04-07",
+         "director": "Jerren Lauder",
+         "actors": [
+            "McKaley Miller",
+            "Dermot Mulroney",
+            "Anne Heche",
+            "Wil Deusner",
+            "Brice Anthony Heller",
+            "Morgana Van Peebles",
+            "Keyara Milliner",
+            "Jayson Warner Smith",
+            "Jordan Blair Mangold Brown"
+         ],
+         "genres": [
+            27,
+            53,
+            28
+         ],
+         "adult": false,
+         "star_rating": 5.7,
+         "poster_url": "/tAnwQKYkRlXS6Lgaq5XQ7JqS58x.jpg"
+      }
+   },
+   {
+      "pk": 1215162,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1215162,
+         "title": "죽음의 암살자 2",
+         "summary": "총격 사건 후, 간호사 수잔은 심한 상처를 입은 의문의 남자 필립을 정성껏 돌본다. 어느 날, 필립을 죽이기 위해 무장한 갱들이 병원에 들이닥치고, 필립은 살아남기 위해 그들과 맞선다.",
+         "release_date": "2024-09-24",
+         "director": "Jim Agnew",
+         "actors": [
+            "Jean-Claude Van Damme",
+            "Jacqueline Fernandez",
+            "Andrei Lenart",
+            "Peter Stormare",
+            "Talia Asseraf",
+            "María Conchita Alonso",
+            "Antonino Iuorio",
+            "Dimitar Doychinov",
+            "David Sebasti",
+            "Nicolas Van Varenberg"
+         ],
+         "genres": [
+            28,
+            80,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.7,
+         "poster_url": "/hgA5hN3NjNNSTXYOmAI6KNKOzbp.jpg"
+      }
+   },
+   {
+      "pk": 323260,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 323260,
+         "title": "쾌락지구X",
+         "summary": "호궈펑은 꽃미남 외모에 남다른 신체 사이즈로 여학생들에겐 우상이자 남학생들에겐 시기 어린 질투의 대상이다. 시비를 걸어온 남학생과 싸움에 휘말려 퇴학을 당하자 병으로 몸져누운 어머니를 대신해 돈을 벌기로 결심한 펑은 사촌 누나의 클럽에서 청소부로 일하다 뜻밖의 제안을 받는다. 바로 클럽을 찾는 부잣집 사모님들을 기쁘게 해주는 것. 짧은 시간에 큰 돈을 벌 수 있는 달콤한 유혹을 뿌리치지 못하고 호스트의 길로 들어서게 된 펑은 전설의 호스트 ‘앱슨’을 만나 비법을 전수받고 한층 매력적인 남자로 거듭나면서 천명의 여자를 쥐락펴락 하게 되는데…",
+         "release_date": "2015-01-29",
+         "director": "Amen Au Cheuk-Man",
+         "actors": [
+            "Dominic Ho",
+            "Candy Yuen",
+            "Jeana Ho Pui-Yu",
+            "Hazel Tong",
+            "Winnie Leung",
+            "Pal Sinn Lap-man",
+            "Angelina Lo Yuen-Yan",
+            "Elena Kong Mei-Yee",
+            "Tony Ho",
+            "Ricky Wong Chun-Tong"
+         ],
+         "genres": [
+            10749,
+            18,
+            35
+         ],
+         "adult": false,
+         "star_rating": 5.0,
+         "poster_url": "/rtacqLGZaj0FNzTTwo31hgWNR6B.jpg"
+      }
+   },
+   {
+      "pk": 24428,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 24428,
+         "title": "어벤져스",
+         "summary": "에너지원 큐브를 이용한 적의 등장으로 인류가 위험에 처하자 국제평화유지기구인 쉴드의 국장 닉 퓨리는 어벤져스 작전을 위해 전 세계에 흩어져 있던 슈퍼히어로들을 찾아나선다. 아이언맨부터 토르, 헐크, 캡틴 아메리카는 물론, 쉴드의 요원인 블랙 위도우, 호크 아이까지, 최고의 슈퍼히어로들이 어벤져스의 멤버로 모이게 되지만, 각기 개성이 강한 이들의 만남은 예상치 못한 방향으로 흘러가는데...",
+         "release_date": "2012-04-25",
+         "director": "Joss Whedon",
+         "actors": [
+            "Robert Downey Jr.",
+            "Chris Evans",
+            "Mark Ruffalo",
+            "Chris Hemsworth",
+            "Scarlett Johansson",
+            "Jeremy Renner",
+            "Tom Hiddleston",
+            "Clark Gregg",
+            "Cobie Smulders",
+            "Stellan Skarsgård"
+         ],
+         "genres": [
+            878,
+            28,
+            12
+         ],
+         "adult": false,
+         "star_rating": 7.7,
+         "poster_url": "/krgjV3rJtBcEpQehODKXNCt6uFL.jpg"
+      }
+   },
+   {
+      "pk": 1075676,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1075676,
+         "title": "전,란",
+         "summary": "조선 최고 무신 집안의 아들 종려와 그의 몸종 천영. 함께 자란 두 남자가 왜란의 시대에 적이 되어 다시 만난다. 한 사람은 선조의 최측근 무관으로, 다른 사람은 의병으로, 파란의 세월을 헤쳐간다.",
+         "release_date": "2024-10-02",
+         "director": "Kim Sang-man",
+         "actors": [
+            "Gang Dong-won",
+            "Park Jeong-min",
+            "Cha Seung-won",
+            "Kim Shin-rock",
+            "Jin Sun-kyu",
+            "Jung Sung-il",
+            "Jeon Bae-soo",
+            "Jo Han-chul",
+            "Jeon Jin-oh",
+            "Kang Gil-woo"
+         ],
+         "genres": [
+            28,
+            18,
+            36
+         ],
+         "adult": false,
+         "star_rating": 7.3,
+         "poster_url": "/gnfNGXdW7J9HGNeHyaDpkAFJkHK.jpg"
+      }
+   },
+   {
+      "pk": 271110,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 271110,
+         "title": "캡틴 아메리카: 시빌 워",
+         "summary": "어벤져스가 벌인 전투로 많은 사람들이 불의의 사고를 당하는 등 부수적인 피해가 일어나자 정부는 슈퍼히어로 등록제를 추진하려 한다. 어벤져스의 독자적인 판단에 맡기기보다 직접 관리, 감독하겠다는 게 정부의 속내. 아이언맨은 정부의 방침을 따라야 한다는 입장인 반면, 캡틴 아메리카는 정부의 감시 없이 자유롭게 지구를 지켜야 한다고 주장한다. 어벤져스 내부는 캡틴 아메리카(윈터 솔져, 팔콘, 호크아이, 스칼렛 위치, 앤트맨)와 아이언맨(블랙위도우, 워머신, 블랙 팬서, 비전, 스파이더맨) 두 입장으로 나뉘어 대립하게 되는데...",
+         "release_date": "2016-04-27",
+         "director": "Eckart Friz",
+         "actors": [
+            "Chris Evans",
+            "Robert Downey Jr.",
+            "Scarlett Johansson",
+            "Sebastian Stan",
+            "Anthony Mackie",
+            "Don Cheadle",
+            "Jeremy Renner",
+            "Chadwick Boseman",
+            "Paul Bettany",
+            "Elizabeth Olsen"
+         ],
+         "genres": [
+            12,
+            28,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.444,
+         "poster_url": "/vaMRzME3Dt73robEjOtDw4SPJGA.jpg"
+      }
+   },
+   {
+      "pk": 1865,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1865,
+         "title": "캐리비안의 해적: 낯선 조류",
+         "summary": "부두교의 주술을 부리던  검은 수염은 다리가 한쪽인 남자에게 죽게 된다는 예언을 듣게 된다. 자신의 수명을 늘리기 위해 검은 수염은 젊음의 샘을 찾으러 떠나고, 바르보사 또한 검은수염에게 복수를 하기 위해 그를 뒤쫒는다. 한편 영국에서 블랙펄의 선장이 선원을 모집한다는 소문을 듣게 된 잭 스패로우는 자신을 사칭하는 사기꾼을 잡으려다 영국 왕실에 체포되고, 영국의 국왕은 잭 스패로우에게 젊음의 샘으로 가는 길을 안내하라고 명령하고, 이에 필요한 선장과 배, 선원을 모두 내 주겠다고 하는데...",
+         "release_date": "2011-05-15",
+         "director": "Hans Zimmer",
+         "actors": [
+            "Johnny Depp",
+            "Penélope Cruz",
+            "Geoffrey Rush",
+            "Ian McShane",
+            "Kevin McNally",
+            "Sam Claflin",
+            "Astrid Bergès-Frisbey",
+            "Stephen Graham",
+            "Keith Richards",
+            "Richard Griffiths"
+         ],
+         "genres": [
+            12,
+            28,
+            14
+         ],
+         "adult": false,
+         "star_rating": 6.6,
+         "poster_url": "/osJVVjkHmoO5WoJfbBsImYrKWIb.jpg"
+      }
+   },
+   {
+      "pk": 263115,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 263115,
+         "title": "로건",
+         "summary": "2029년 알 수 없는 이유로 돌연변이들이 태어나지 않는 미래, 더이상 엑스맨은 없다. 갈수록 재생력이 약해져 늙고 수척해진 로건은 멕시코 국경지대 은신처에 찰스 교수를 보호 중이다. 뇌에 심각한 손상을 입은 찰스 교수는 과거를 제대로 기억하지 못하는 데다 간헐적으로 주변을 위협하는 발작까지 일으킨다. 찰스 교수와 함께 떠날 배를 사기 위해 리무진 기사로 일하며 돈을 모으는 로건. 어느 날 낯선 여인이 찾아와 돌연변이 소녀 로라를 캐나다 국경까지 데려다 달라고 부탁한다. 로건은 로라를 쫓는 기업의 경호집단을 피해 험난한 여정을 떠난다.",
+         "release_date": "2017-02-28",
+         "director": "Jesse Michael Owen",
+         "actors": [
+            "Hugh Jackman",
+            "Dafne Keen",
+            "Patrick Stewart",
+            "Elizabeth Rodriguez",
+            "Boyd Holbrook",
+            "Stephen Merchant",
+            "Richard E. Grant",
+            "Stephen Dunlevy",
+            "Eriq La Salle",
+            "Elise Neal"
+         ],
+         "genres": [
+            28,
+            18,
+            878
+         ],
+         "adult": false,
+         "star_rating": 7.822,
+         "poster_url": "/tE6tvHXlAZ8hqM4k9ZvtWtBk4pc.jpg"
+      }
+   },
+   {
+      "pk": 1147400,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1147400,
+         "title": "Miraculous World : Paris, Les Aventures de Toxinelle et Griffe Noire",
+         "summary": "",
+         "release_date": "2023-10-21",
+         "director": "Manon Desveaux",
+         "actors": [
+            "Annouck Hautbois",
+            "Benjamin Bollen",
+            "Marie Nonnenmacher",
+            "Thierry Kazazian",
+            "Fanny Bloc",
+            "Antoine Tomé",
+            "Alexandre N'Guyen",
+            "Martial Le Minoux",
+            "Jessie Lambotte",
+            "Céline Melloul"
+         ],
+         "genres": [
+            16,
+            12,
+            28,
+            14,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 7.191,
+         "poster_url": "/4wHrXw9zB4wsibWaAPDkvjNGPnQ.jpg"
+      }
+   },
+   {
+      "pk": 569094,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 569094,
+         "title": "스파이더맨: 어크로스 더 유니버스",
+         "summary": "여러 성장통을 겪으며 새로운 스파이더맨이 된 마일스 모랄레스. 그 앞에 다른 평행세계의 스파이더우먼 그웬이 다시 나타난다. 모든 차원의 멀티버스 속 스파이더맨들을 만나게 되지만, 질서에 대한 신념이 부딪히며 예상치 못한 균열이 생기는데… 상상 그 이상을 넘어서는 멀티버스의 세계가 열린다!",
+         "release_date": "2023-05-31",
+         "director": "Kemp Powers",
+         "actors": [
+            "Shameik Moore",
+            "Hailee Steinfeld",
+            "Brian Tyree Henry",
+            "Luna Lauren Velez",
+            "Jake Johnson",
+            "Oscar Isaac",
+            "Jason Schwartzman",
+            "Issa Rae",
+            "Daniel Kaluuya",
+            "Karan Soni"
+         ],
+         "genres": [
+            16,
+            28,
+            12,
+            878
+         ],
+         "adult": false,
+         "star_rating": 8.356,
+         "poster_url": "/lMWTlGr9jVUC18T515hPRKym5QQ.jpg"
+      }
+   },
+   {
+      "pk": 1306764,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1306764,
+         "title": "아웃사이드",
+         "summary": "좀비 바이러스 사태에서 살아남기 위해 버려진 농가로 피신한 가족. 하지만 황량한 세상을 헤쳐 나가는 과정에서 수년간 감춰온 고통스러운 비밀이 드러나면서 큰 충격에 빠진다.",
+         "release_date": "2024-10-17",
+         "director": "Carlo Ledesma",
+         "actors": [
+            "Sid Lucero",
+            "Beauty Gonzalez",
+            "Marco Masa",
+            "Aiden Patdu",
+            "James Blanco",
+            "Enchong Dee",
+            "Joel Torre",
+            "Bing Pimentel",
+            "Krystal Brimner",
+            "Felizardo Ausan"
+         ],
+         "genres": [
+            27,
+            53
+         ],
+         "adult": false,
+         "star_rating": 6.0,
+         "poster_url": "/pghYvzRA9BgeXguO1ndB9qpoqmx.jpg"
+      }
+   },
+   {
+      "pk": 1059264,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 1059264,
+         "title": "The Inseparables",
+         "summary": "",
+         "release_date": "2023-09-01",
+         "director": "Joel Cohen",
+         "actors": [
+            "Monica Young",
+            "Danny Fehsenfeld",
+            "Olivier Paris",
+            "Dakota West",
+            "Jordan Baird",
+            "Art Brown",
+            "Donte Paris"
+         ],
+         "genres": [
+            16,
+            12,
+            35,
+            10751
+         ],
+         "adult": false,
+         "star_rating": 6.4,
+         "poster_url": "/dmftU2Rnmv9KTteMUwjalOuZHke.jpg"
+      }
+   },
+   {
+      "pk": 17979,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 17979,
+         "title": "크리스마스 캐롤",
+         "summary": "천하의 구두쇠 에비니저 스크루지 (짐 캐리 분)는 올해도 여느 때와 다름 없이 자신의 충직한 직원 밥 (게리 올드먼 분)과 쾌활한 조카 프레드 (콜린 퍼스 분)에게 독설을 퍼부으며 크리스마스 이브를 맞는다. 그날 밤, 그의 앞에 7년 전에 죽은 동업자 말리의 유령이 나타난다. 생전에 스크루지 만큼 인색하게 살았던 벌로 유령이 되어 끔찍한 형벌을 받고 있는 말리는 스크루지가 자신과 같은 운명에 처하는 것을 막고 싶었던 것. 그는 스크루지에게 세 명의 혼령이 찾아올 것이라고 알려준다. 그 이후 말리의 이야기대로 과거, 현재, 미래의 세 혼령이 찾아와 스크루지에게 결코 보고 싶지 않은 진실을 보여준다. 그가 과거에 어떻게 살았었고, 현재에는 어떻게 살고 있고 또 미래엔 어떻게 죽게 될 것인지를…",
+         "release_date": "2009-11-04",
+         "director": "Robert Zemeckis",
+         "actors": [
+            "Jim Carrey",
+            "Gary Oldman",
+            "Colin Firth",
+            "Robin Wright",
+            "Cary Elwes",
+            "Bob Hoskins",
+            "Daryl Sabara",
+            "Steve Valentine",
+            "Sage Ryan",
+            "Amber Gainey Meade"
+         ],
+         "genres": [
+            16,
+            10751,
+            14
+         ],
+         "adult": false,
+         "star_rating": 6.878,
+         "poster_url": "/cHfsKWd8UMIWQaTeFaKCGfmytkD.jpg"
+      }
+   },
+   {
+      "pk": 5255,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 5255,
+         "title": "폴라 익스프레스",
+         "summary": "환상과 모험, 꿈과 희망을 싣고 떠난다!  북극행 크리스마스 특급열차 폴라 익스프레스!!  “기차가 어디로 가는지는 중요하지 않아.  중요한 건 그 기차에 올라 타겠다고 결심하는 거지!”  눈 오는 크리스마스 이브, 한 소년이 잠에서 깨어 뭔가를 기다리고 있다.  그것은 바로 산타의 썰매소리!!  '과연 내가 그 소리를 들을 수 있을까?'  자정을 5분 남겨둔 시각, 갑자기 들리는 굉음에 소년은 화들짝 놀라 유리창의 성에를 닦고 밖을 내다보니 눈 앞에서 펼쳐진 건 너무나 놀라운 광경!  검은색 기차가 거친 엔진소리를 내뿜으며 그의 집 앞에 멈춰서는 것이 아닌가?  소년은 잠옷 차림에 슬리퍼를 신고 뛰어나간다.  기차의 차장은 소년을 기다리고 있었다는 듯 말을 건넨다.  '탈 거니?'  '어디로 가는 거죠?'  소년이 묻자 차장은 대답한다.  '물론 북극으로 가는 거지. 이건 북극행 특급열차 폴라 익스프레스야!'  소년은 폴라 익스프레스를 타고 기나긴 여행길에 오른다.  그리고 그 여행길에서 소년은 인생의 놀라운 신비를 발견하면서 차츰 자아를 찾게 되는데…",
+         "release_date": "2004-11-10",
+         "director": "William Broyles Jr.",
+         "actors": [
+            "Tom Hanks",
+            "Leslie Zemeckis",
+            "Eddie Deezen",
+            "Nona Gaye",
+            "Peter Scolari",
+            "Michael Jeter",
+            "Josh Hutcherson",
+            "Daryl Sabara",
+            "Jimmy Bennett",
+            "Brendan King"
+         ],
+         "genres": [
+            16,
+            12,
+            10751,
+            14
+         ],
+         "adult": false,
+         "star_rating": 6.719,
+         "poster_url": "/kw8SOKnbQQSwMAgsZa1G5rSNBR2.jpg"
+      }
+   },
+   {
+      "pk": 329505,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 329505,
+         "title": "Il peccato di Lola",
+         "summary": "",
+         "release_date": "1984-05-04",
+         "director": "Bruno Gaburro",
+         "actors": [
+            "Donatella Damiani",
+            "Scott Coffey",
+            "Gabriele Tinti",
+            "Peter Boom",
+            "Jacques Stany",
+            "Maurice Poli",
+            "Sandra Mantegna"
+         ],
+         "genres": [
+            18,
+            35
+         ],
+         "adult": false,
+         "star_rating": 7.2,
+         "poster_url": "/aSiY96aHJLGWtftHLWvxlImKHGN.jpg"
+      }
+   },
+   {
+      "pk": 609681,
+      "model": "movies.movie",
+      "fields": {
+         "movie_id": 609681,
+         "title": "더 마블스",
+         "summary": "강력한 힘으로 은하계를 수호하는 최강 히어로 캡틴 마블 캐럴 댄버스. 캡틴 마블의 오랜 친구의 딸이자, 빛의 파장을 조작하는 히어로 모니카 램보. 최애 히어로 캡틴 마블의 열렬한 팬인 미즈 마블 카말라 칸. 캡틴 마블에 대한 복수를 꿈꾸는 냉혹한 크리족 리더 다르-벤의 영향으로 세 명의 히어로는 능력을 사용할 때마다 서로의 위치가 뒤바뀌게 된다. 뜻하지 않게 우주와 지구를 넘나들게 되는 예측 불가하고 통제 불가한 상황 속, 다르-벤은 지구를 포함해 캡틴 마블이 고향이라고 부르는 수많은 행성을 모두 파멸시키려 하고, 이를 저지하기 위해 모인 팀 마블스는 하나로 힘을 모으는데…",
+         "release_date": "2023-11-08",
+         "director": "Sean Bobbitt",
+         "actors": [
+            "Brie Larson",
+            "Teyonah Parris",
+            "Iman Vellani",
+            "Samuel L. Jackson",
+            "Zawe Ashton",
+            "Gary Lewis",
+            "Park Seo-jun",
+            "Zenobia Shroff",
+            "Mohan Kapur",
+            "Saagar Shaikh"
+         ],
+         "genres": [
+            878,
+            12,
+            28
+         ],
+         "adult": false,
+         "star_rating": 6.1,
+         "poster_url": "/qApkjVJzZ2nkFUcFhcYkTBaRnNj.jpg"
+      }
+   }
+]
