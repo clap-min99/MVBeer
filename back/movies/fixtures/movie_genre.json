@@ -68,7 +68,7 @@
         "fields": {
             "name": "Family",
             "beverage": 4,
-            "subtype": "NonAlcohol"
+            "subtype": "nonalcohol"
         }
     },
     {
@@ -77,7 +77,7 @@
         "fields": {
             "name": "Fantasy",
             "beverage": 3,
-            "subtype": "Sparkling Wine"
+            "subtype": "Sparkling"
         }
     },
     {

@@ -10,6 +10,7 @@ export const useMovieStore = defineStore('movie', () => {
   
   const movies = ref([ ]) // 전체영화목록 
   const movie_detail = ref(null) // 단일 영화 상세
+  const genres = ref([])
   const API_URL = 'http://127.0.0.1:8000'
 
   const router = useRouter()
@@ -42,6 +43,18 @@ export const useMovieStore = defineStore('movie', () => {
     })
   }
 
+  const getGenres = function() {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/genres/` // 장르 데이터를 가져오는 API 엔드포인트
+    })
+    .then((res) => {
+      genres.value = res.data;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  };
 
-  return { movies, getMovies, API_URL, getMovie, movie_detail}
+  return { movies, getMovies, API_URL, getMovie, movie_detail, getGenres, genres}
 },{ persist: true })

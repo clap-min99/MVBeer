@@ -3,7 +3,10 @@ import { defineStore } from 'pinia'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
 
+
 export const useLogStore = defineStore('log', () => {
+    const API_URL = 'http://127.0.0.1:8000'
+    const router = useRouter()
     const token = ref(null)
     const isLogin = computed(() => {
         if (token.value === null) {
@@ -14,7 +17,7 @@ export const useLogStore = defineStore('log', () => {
     })
     // 회원가입 요청 액션
     const signUp = function (payload) {
-
+    
     const { username, password1, password2 } = payload
 
     axios({
@@ -49,9 +52,9 @@ export const useLogStore = defineStore('log', () => {
     })
       .then((res) => {
         token.value = res.data.key
-        router.push({ name: 'ArticleView' })
-        // console.log(res.data)
-        // console.log('로그인 성공')
+        router.push({ name: 'MainView' })
+        console.log(token)
+        console.log('로그인 성공')
       })
       .catch((err) => {
         console.log(err)
@@ -73,6 +76,7 @@ export const useLogStore = defineStore('log', () => {
         console.log(err)
       })
   }
-  return { signUp, logIn, token, isLogin, logOut }
+  return { signUp, logIn, token, isLogin, logOut, API_URL }
+  
 
 })
