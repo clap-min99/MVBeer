@@ -5,14 +5,19 @@
       <h5>댓글</h5>
       <ul class="comments-list">
         <li v-for="comment in comments" :key="comment.id" class="comment">
-          <p>
+          <p v-if="editingComment !== comment">
             <strong>{{ comment.user }}</strong>: {{ comment.content }}
-            {{ comment }}
           </p>
+          <div v-if="editingComment === comment">
+            <input type="text" v-model="newComment" class="comment-input" />
+            <button @click="updateComment(comment.id)" class="comment-submit">수정 완료</button>
+            <button @click="editingComment = null" class="comment-submit">취소</button>
+          </div>
           <small>{{ new Date(comment.created_at).toLocaleString() }}</small>
-          <button v-if="isAuthor(comment)" @click="editComment(comment)">수정</button>
+          <button v-if="isAuthor(comment) && editingComment !== comment" @click="editComment(comment)">수정</button>
           <button v-if="isAuthor(comment)" @click="deleteComment(comment.id)">삭제</button>
         </li>
+
       </ul>
       <form @submit.prevent="submitComment">
         <input
@@ -147,12 +152,42 @@ const deleteComment = (commentId) => {
 
 // 댓글 수정
 const editComment = (comment) => {
+  console.log("Editing comment:", comment);
   editingComment.value = comment;
   newComment.value = comment.content;
 };
 
-const updateComment = (moviePk, commentId) => {
+// const updateComment = (moviePk, commentId) => {
+//   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/update/`;
+//   axios({
+//     method: 'put',
+//     url: url,
+//     headers: {
+//       Authorization: `Token ${store.token}`,
+//     },
+//     data: { content: newComment.value },
+//   })
+//     .then((response) => {
+//       const index = comments.value.findIndex((c) => c.id === commentId);
+//       comments.value[index] = response.data;
+//       editingComment.value = null;
+//       newComment.value = "";
+//       alert("댓글 수정 성공!");
+//     })
+//     .catch((error) => {
+//       console.error("댓글 수정 실패:", error);
+//     });
+// };
+
+const updateComment = (commentId) => {
+  if (!commentId) {
+    console.error("Invalid commentId:", commentId); // commentId가 없는 경우 로그 출력
+    return;
+  }
+  console.log("Updating comment with ID:", commentId); // 유효한 commentId 확인
   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/update/`;
+  console.log("Update URL:", url); // 생성된 URL 확인
+
   axios({
     method: 'put',
     url: url,
@@ -164,14 +199,15 @@ const updateComment = (moviePk, commentId) => {
     .then((response) => {
       const index = comments.value.findIndex((c) => c.id === commentId);
       comments.value[index] = response.data;
-      editingComment.value = null;
-      newComment.value = "";
+      editingComment.value = null; // 수정 모드 종료
+      newComment.value = ""; // 입력 필드 초기화
       alert("댓글 수정 성공!");
     })
     .catch((error) => {
-      console.error("댓글 수정 실패:", error);
+      console.error("댓글 수정 실패:", error); // 에러 발생 시 로그 출력
     });
 };
+
 
 // 작성자 확인
 const isAuthor = (comment) => {
