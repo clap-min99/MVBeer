@@ -59,5 +59,21 @@ export const useMovieStore = defineStore('movie', () => {
     });
   };
 
-  return { movies, getMovies, API_URL, getMovie, movie_detail, getGenres, genres}
+  const searchMovies = function(query) {
+    axios({
+      method: 'get',
+      url: `${API_URL}/api/v1/movies/search/`,
+      params: { q: query }, // 검색어를 쿼리 파라미터로 전달
+    })
+    .then((res) => {
+      // 검색 결과를 처리
+      movies.value = res.data; // movies는 Vue에서 사용하는 상태 변수
+    })
+    .catch((err) => {
+      console.error("영화 검색 실패:", err);
+    });
+  };
+  
+
+  return { movies, getMovies, API_URL, getMovie, movie_detail, getGenres, genres, searchMovies}
 },{ persist: true })
