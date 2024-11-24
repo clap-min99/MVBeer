@@ -39,36 +39,44 @@
   </script>
   
   <style scoped>
-  h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .tabs {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  
-  button {
-    margin-right: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    background: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  button.active {
-    font-weight: bold;
-    background: #007bff;
-    color: white;
-  }
-  
-  button:hover {
-    background: #f0f0f0;
-  }
-  
-  .tabs + .component {
-    margin-top: 1rem;
-  }
-  </style>
-  
+h2 {
+  margin-bottom: 1rem;
+  color: #f8f8f8; /* 헤더 텍스트 색상 */
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: #2e2e2e; /* 다크그레이 배경 */
+  padding: 10px;
+  border-radius: 8px; /* 부드러운 모서리 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #444; /* 어두운 테두리 */
+  background: #3b3b3b; /* 버튼 배경 어둡게 */
+  color: #f8f8f8; /* 텍스트 색상 밝게 */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button.active {
+  font-weight: bold;
+  background: #3b3b3b; /* 활성 버튼: 파란색 */
+  color: white;
+  border-color: #e67e22; /* 활성 버튼 테두리 */
+}
+
+button:hover {
+  background: #555555; /* 버튼 호버 시 밝아짐 */
+  color: #ffffff;
+}
+
+.tabs + .component {
+  margin-top: 1rem;
+}
+</style>

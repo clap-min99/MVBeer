@@ -99,16 +99,16 @@ const submitComment = () => {
 };
 
 // 댓글 삭제
-const deleteComment = (commentId) => {
-  const url = `${store.API_URL}/api/v1/comments/${commentId}/`;
-  console.log("Deleting comment from:", url); // 디버깅용 콘솔 출력
-
-  axios
-    .delete(url, {
-      headers: {
-        Authorization: `Token ${store.token}`,
-      },
-    })
+const deleteComment = (moviePk, commentId) => {
+  console.log("Deleting comment with ID:", commentId)
+  const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/`;
+  axios({
+    method: 'delete',
+    url: url,
+    headers: {
+      Authorization: `Token ${store.token}`,
+    },
+  })
     .then(() => {
       comments.value = comments.value.filter((comment) => comment.id !== commentId);
       alert("댓글 삭제 성공!");
@@ -124,22 +124,18 @@ const editComment = (comment) => {
   newComment.value = comment.content;
 };
 
-const updateComment = () => {
-  const url = `${store.API_URL}/api/v1/comments/${editingComment.value.id}/`;
-  console.log("Updating comment at:", url); // 디버깅용 콘솔 출력
-
-  axios
-    .put(
-      url,
-      { content: newComment.value },
-      {
-        headers: {
-          Authorization: `Token ${store.token}`,
-        },
-      }
-    )
+const updateComment = (moviePk, commentId) => {
+  const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/update/`;
+  axios({
+    method: 'put',
+    url: url,
+    headers: {
+      Authorization: `Token ${store.token}`,
+    },
+    data: { content: newComment.value },
+  })
     .then((response) => {
-      const index = comments.value.findIndex((c) => c.id === editingComment.value.id);
+      const index = comments.value.findIndex((c) => c.id === commentId);
       comments.value[index] = response.data;
       editingComment.value = null;
       newComment.value = "";
@@ -152,6 +148,9 @@ const updateComment = () => {
 
 // 작성자 확인
 const isAuthor = (comment) => {
+  console.log('현재 사용자:', store.user?.username); // 현재 로그인한 사용자 확인
+  console.log('댓글 작성자:', comment.user); // 댓글 작성자 확인
+  console.log(store.user)
   return store.user?.username === comment.user;
 };
 

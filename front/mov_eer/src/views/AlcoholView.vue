@@ -51,31 +51,35 @@ watch(
 
 <style scoped>
 .recommendation {
-  border: 1px solid #ddd;
+  border: 1px solid #444; /* 테두리를 어둡게 */
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #2e2e2e; /* 다크그레이 배경 */
   border-radius: 5px;
+  color: #f8f8f8; /* 텍스트를 밝게 */
 }
 
 .alcohol-image {
   max-width: 100%;
   height: auto;
   margin-top: 1rem;
+  border-radius: 5px; /* 이미지를 부드럽게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 이미지 그림자 효과 */
 }
 
 button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
-  background-color: #007bff;
-  color: white;
+  background-color: #f39c12; /* 따뜻한 오렌지 */
+  color: white; /* 버튼 텍스트 색상 */
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e67e22; /* 호버 시 더 짙은 오렌지색 */
 }
 </style>
