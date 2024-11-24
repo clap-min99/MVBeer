@@ -7,6 +7,9 @@ from django.conf import settings
 from .models import Movie, Beverage, Whiskey, Beer, Wine, NonAlcohol, Comment, MovieGenre
 from .serializers import MovieSerializer, MovieListSerializer, BeverageSerializer, BeerSerializer, CommentSerializer, WhiskeySerializer, WineSerializer, NonAlcoholSerializer, GenreSerializer
 import requests
+# 검색관련 import
+from django.db.models import Q
+
 
 
 # Create your views here.
@@ -142,3 +145,21 @@ def comment_delete(request, movie_pk, comment_id):
         return Response({"detail": "댓글이 삭제되었습니다."}, status=status.HTTP_204_NO_CONTENT)
     except Comment.DoesNotExist:
         return Response({"detail": "댓글을 찾을 수 없습니다."}, status=status.HTTP_404_NOT_FOUND)
+
+# 영화 검색
+
+@api_view(['GET'])
+def search_movies(request):
+    query = request.GET.get('q', '')  # 쿼리 파라미터에서 검색어 가져오기
+    if query:
+        # 검색 조건: 제목, 줄거리, 배우, 감독에서 키워드가 포함된 경우
+        movies = Movie.objects.filter(
+            Q(title__icontains=query) | 
+            Q(summary__icontains=query) | 
+            Q(actors__icontains=query) | 
+            Q(director__icontains=query)
+        )
+    else:
+        movies = Movie.objects.all()  # 검색어가 없으면 전체 영화 반환
+    serializer = MovieListSerializer(movies, many=True)  # 직렬화
+    return Response(serializer.data)

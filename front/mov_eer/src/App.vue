@@ -1,16 +1,14 @@
 <template>
   <div class="background">
     <nav >
-      <RouterLink :to="{name:'MainView'}">Main</RouterLink>
-      <span> | </span>
-      <template v-if="!isLogin">
+      <!-- <template v-if="!isLogin">
         <RouterLink :to="{ name: 'LoginView' }">로그인</RouterLink>
         <span> | </span>
         <RouterLink :to="{ name: 'SignUpView' }">회원가입</RouterLink>
       </template>
       <template v-else>
         <button @click="logOut">로그아웃</button>
-      </template>
+      </template> -->
     </nav>
     <HeaderComponent />
     <RouterView />
@@ -26,16 +24,16 @@ import { useRoute } from 'vue-router';
 import LoginView from './views/LoginView.vue';
 import { useLogStore } from './stores/log'
 
-const route = useRoute()
-const store = useMovieStore()
-const logStore = useLogStore()
+// const route = useRoute()
+// const store = useMovieStore()
+// const logStore = useLogStore()
 
-const isLogin = computed(() => logStore.isLogin)
+// const isLogin = computed(() => logStore.isLogin)
 
-const logOut = () => {
-  logStore.logOut()
-  router.push({name:'MainView'})
-}
+// const logOut = () => {
+//   logStore.logOut()
+//   router.push({name:'MainView'})
+// }
 
 </script>
 
