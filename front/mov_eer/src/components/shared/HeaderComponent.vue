@@ -2,7 +2,9 @@
   <div class="header-container">
     <!-- 로고 섹션 -->
     <div class="logo-container">
-      <img src="@/assets/logo.png" alt="MVBeer Logo" class="logo-image" />
+      <RouterLink :to="{name:'MainView'}">
+      <img src="@/assets/logo_white.png" alt="MVBeer Logo" class="logo-image" />
+      </RouterLink>
     </div>
 
     <!-- 네비게이션 섹션 -->
@@ -10,6 +12,7 @@
       <RouterLink to="/beer" class="nav-link">Beer</RouterLink>
       <RouterLink to="/whiskey" class="nav-link">Whiskey</RouterLink>
       <RouterLink to="/wine" class="nav-link">Wine</RouterLink>
+      
     </div>
 
     <!-- 검색창 섹션 -->
@@ -32,8 +35,8 @@ export default {
   justify-content: space-between; /* 로고, 네비게이션, 검색창을 양쪽 끝으로 배치 */
   align-items: center;
   padding: 10px 20px; /* 내부 여백 */
-  background-color: #f8f8f8; /* 배경색 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 효과 */
+  background-color: #2e2e2e; /* 다크그레이 배경색 */
+  
 }
 
 /* 로고 섹션 */
@@ -58,14 +61,15 @@ export default {
 /* 네비게이션 링크 */
 .nav-link {
   text-decoration: none;
-  color: #333;
-  font-size: 1rem;
+  color: #ee9191; /* 밝은 색상으로 링크 표시 */
+ 
+  font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #007bff; /* 링크 호버 효과 */
+  color: #f1c40f; /* 링크 호버 효과: 따뜻한 노란색 */
 }
 
 /* 검색창 */
@@ -74,8 +78,13 @@ export default {
   max-width: 300px; /* 검색창 최대 너비 */
   padding: 8px 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #444; /* 테두리를 어둡게 */
   border-radius: 4px;
+  background-color: #3b3b3b; /* 검색창 배경 */
+  color: #f8f8f8; /* 텍스트 색상 */
+}
 
+.search-bar::placeholder {
+  color: #bfbfbf; /* 플레이스홀더 텍스트 색상 */
 }
 </style>

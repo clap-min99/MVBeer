@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background">
     <nav >
       <RouterLink :to="{name:'MainView'}">Main</RouterLink>
       <span> | </span>

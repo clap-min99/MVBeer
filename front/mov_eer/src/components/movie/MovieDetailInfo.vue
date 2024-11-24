@@ -98,10 +98,11 @@ onMounted(() => {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #e8e8e8; /* 라이트그레이 배경 */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 더 부드러운 그림자 */
   font-family: "Arial", sans-serif;
+  color: #333333; /* 텍스트를 중간톤으로 */
 }
 
 .movie-header {
@@ -114,12 +115,12 @@ onMounted(() => {
 .movie-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #2c3e50; /* 짙은 블루톤 */
 }
 
 .movie-rating {
   font-size: 1.2rem;
-  color: #ffcc00;
+  color: #e67e22; /* 평점 강조: 따뜻한 오렌지 */
 }
 
 .movie-content {
@@ -136,7 +137,7 @@ onMounted(() => {
 .movie-info {
   flex: 1;
   font-size: 1rem;
-  color: #555;
+  color: #555555; /* 텍스트를 약간 어둡게 */
 }
 
 .movie-summary {
@@ -153,13 +154,14 @@ onMounted(() => {
 .movie-genres li {
   margin-bottom: 8px;
   font-weight: bold;
+  color: #2c3e50; /* 장르 텍스트: 짙은 블루톤 */
 }
 
 .section-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
+  color: #2c3e50; /* 섹션 제목 */
 }
 
 /* 추천 음료 섹션 */
@@ -171,6 +173,7 @@ onMounted(() => {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #2c3e50;
 }
 
 .beverages-container {
@@ -183,6 +186,11 @@ onMounted(() => {
 .beverage-card {
   flex: 0 0 auto;
   text-align: center;
+  background-color: #f4f4f4; /* 카드 배경: 아주 밝은 그레이 */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  color: #333333;
 }
 
 .beverage-images {
