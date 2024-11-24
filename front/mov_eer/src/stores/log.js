@@ -2,6 +2,7 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
 
 export const useLogStore = defineStore('log', () => {
@@ -49,30 +50,24 @@ export const useLogStore = defineStore('log', () => {
       url: `${API_URL}/accounts/login/`,
       data: { username, password },
     })
-      .then((res) => {
-        token.value = res.data.key;
-
-        // 사용자 정보 가져오기
-        axios({
-          method: 'get',
-          url: `${API_URL}/accounts/user/`, // 사용자 정보 API 엔드포인트
-          headers: { Authorization: `Token ${token.value}` },
-        })
-          .then((userRes) => {
-            user.value = userRes.data; // 사용자 정보 저장
-            router.push({ name: 'MainView' });
-            console.log('로그인 성공:', user.value)
-          })
-          .catch((err) => {
-            console.error('사용자 정보 가져오기 실패:', err)
-          })
-      })
-      .catch((err) => {
-        console.error('로그인 실패:', err);
-      })
-  }
+    .then((res) => {
+      token.value = res.data.key;
+      return axios.get(`${API_URL}/accounts/user/`, {
+        headers: { Authorization: `Token ${res.data.key}` },
+      });
+    })
+    .then((res) => {
+      console.log('사용자 정보 응답:', res.data); // 데이터 구조 확인
+      user.value = res.data; // 사용자 정보 저장
+      router.push({ name: 'MainView' });
+      console.log('로그인 성공');
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
   
-  // [추가기능] 로그아웃
+
   const logOut = function () {
     axios({
       method: 'post',
@@ -81,12 +76,13 @@ export const useLogStore = defineStore('log', () => {
       .then((res) => {
         console.log(res.data)
         token.value = null
+        user.value = null // 사용자 정보 초기화
         router.push({ name: 'MainView' })
       })
       .catch((err) => {
         console.log(err)
       })
   }
-  return { signUp, logIn, token, isLogin, logOut, API_URL }
+  return { signUp, logIn, token, isLogin, logOut, API_URL, user }
   
 },{persist: true})

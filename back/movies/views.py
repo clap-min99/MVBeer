@@ -115,3 +115,30 @@ def comment_list(request, movie_pk):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+    
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def comment_update(request, movie_pk, comment_id):
+    try:
+        comment = Comment.objects.get(id=comment_id, movie_id=movie_pk)
+        if request.user != comment.user:
+            return Response({"detail": "권한이 없습니다."}, status=status.HTTP_403_FORBIDDEN)
+        serializer = CommentSerializer(comment, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    except Comment.DoesNotExist:
+        return Response({"detail": "댓글을 찾을 수 없습니다."}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['DELETE'])
+@permission_classes([IsAuthenticated])
+def comment_delete(request, movie_pk, comment_id):
+    try:
+        comment = Comment.objects.get(id=comment_id, movie_id=movie_pk)
+        if request.user != comment.user:
+            return Response({"detail": "권한이 없습니다."}, status=status.HTTP_403_FORBIDDEN)
+        comment.delete()
+        return Response({"detail": "댓글이 삭제되었습니다."}, status=status.HTTP_204_NO_CONTENT)
+    except Comment.DoesNotExist:
+        return Response({"detail": "댓글을 찾을 수 없습니다."}, status=status.HTTP_404_NOT_FOUND)
