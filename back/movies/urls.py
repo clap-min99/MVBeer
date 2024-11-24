@@ -12,7 +12,7 @@ urlpatterns = [
     # login, comment 관련
     path('movies/<int:movie_pk>/comments/', views.comment_list),
     path('movies/<int:movie_pk>/comments/<int:comment_id>/', views.comment_delete),
-    # path('movies/<int:movie_pk>/comments/<int:comment_id>/update', views.comment_update),
+    path('movies/<int:movie_pk>/comments/<int:comment_id>/update/', views.comment_update),
 
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
