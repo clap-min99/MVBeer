@@ -7,6 +7,7 @@
         <li v-for="comment in comments" :key="comment.id" class="comment">
           <p>
             <strong>{{ comment.user }}</strong>: {{ comment.content }}
+            {{ comment }}
           </p>
           <small>{{ new Date(comment.created_at).toLocaleString() }}</small>
           <button v-if="isAuthor(comment)" @click="editComment(comment)">수정</button>
@@ -99,8 +100,33 @@ const submitComment = () => {
 };
 
 // 댓글 삭제
-const deleteComment = (moviePk, commentId) => {
-  console.log("Deleting comment with ID:", commentId)
+// const deleteComment = (moviePk, commentId, comment) => {
+//   console.log("Deleting comment with ID:", commentId)
+//   console.log("Comment Object:", comment); // comment 데이터 확인
+//   console.log("Comment ID:", comment.id);  // comment.id 확인
+//   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/delete`;
+//   axios({
+//     method: 'delete',
+//     url: url,
+//     headers: {
+//       Authorization: `Token ${store.token}`,
+//     },
+//   })
+//     .then(() => {
+//       comments.value = comments.value.filter((comment) => comment.id !== commentId);
+//       alert("댓글 삭제 성공!");
+//     })
+//     .catch((error) => {
+//       console.error("댓글 삭제 실패:", error);
+//     });
+// };
+
+const deleteComment = (commentId) => {
+  if (!commentId) {
+    console.error("Invalid commentId:", commentId); // 로그로 잘못된 ID 출력
+    return;
+  }
+  console.log("Deleting comment with ID:", commentId); // 유효한 ID 확인
   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/`;
   axios({
     method: 'delete',
@@ -117,6 +143,7 @@ const deleteComment = (moviePk, commentId) => {
       console.error("댓글 삭제 실패:", error);
     });
 };
+
 
 // 댓글 수정
 const editComment = (comment) => {
