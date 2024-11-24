@@ -1,45 +1,71 @@
 <template>
     <div class="ale-view">
-      <h1>🍺 Ale 이란?</h1>
+      <h1>🍺에일(Ale)</h1>
       <div class="ale-intro">
         <img
-          src="@/assets/IPA.png" 
+          src="@/assets/IPA.png"
           alt="Ale Beer"
           class="ale-image"
         />
         <div class="ale-description">
           <p>
-            에일(Ale)은 상면 발효 방식으로 만들어지는 맥주로, 발효 온도가 높아 
-            과일향과 풍부한 풍미를 느낄 수 있는 것이 특징입니다. 
-            에일은 역사적으로 가장 오래된 맥주 스타일 중 하나로, 
-            IPA, 페일 에일, 포터, 벨지안 에일 등 다양한 종류를 가지고 있습니다. 
+            <strong>에일(Ale)</strong>은 상면 발효 방식으로 만들어지는 맥주로, 발효 온도가 높아
+            과일향과 풍부한 풍미를 느낄 수 있는 것이 특징입니다.
+            에일은 역사적으로 가장 오래된 맥주 스타일 중 하나로,
+            IPA, 페일 에일, 포터, 벨지안 에일 등 다양한 종류를 가지고 있습니다.
             특히, 독특한 향과 맛 덕분에 전 세계에서 사랑받고 있습니다.
           </p>
+          <p> 현대에 와서는 전 세계적으로 라거가 점유율에서 우위를 차지하고 있지만, 영국과 벨기에 같은 국가에서는 여전히 에일이 대중적인 주종으로 자리 잡고 있습니다. 
+            특히 영국에서는 맥주를 의미하는 단어로 "Beer" 대신 "Ale"이라는 표현이 사용될 정도로 에일이 친숙합니다. 
+            <strong>중세 시대를 배경으로 한 영화나 만화에서 나무잔에 담긴 맥주를 벌컥벌컥 마시는 장면은 대부분 에일을 묘사</strong>한 것입니다.</p>
           <p class="ale-action-pairing">
-            🍿 에일은 액션 영화와 환상적인 조합을 이룹니다.  
-            입안 가득 퍼지는 에일의 과일향과 톡 쏘는 홉의 쓴맛은 영화 속 화려한 액션 장면의 짜릿함을 더해줍니다.  
+            🍿 에일은 액션 영화와 환상적인 조합을 이룹니다.
+            입안 가득 퍼지는 에일의 과일향과 톡 쏘는 홉의 쓴맛은 영화 속 화려한 액션 장면의 짜릿함을 더해줍니다.
             시원한 한 모금과 함께 스펙터클한 순간들을 즐겨보세요!
           </p>
         </div>
       </div>
-      
+  
       <div class="beer-list">
-        <h2>에일 맥주</h2>
-        <div v-for="beer in beers" :key="beer.id" class="beer-card">
-          <h3>{{ beer.name }}</h3>
-          <p>{{ beer.description }}</p>
-          <p><strong>대표 브랜드:</strong> {{ beer.representativeBrands }}</p>
-          <p><strong>스타일:</strong> {{ beer.style }}</p>
-          <p>
-            <strong>추천 안주:</strong> {{ beer.foodPairing }}
-            <span>{{ beer.foodEmoji }}</span>
-          </p>
+        <h2></h2>
+        <div class="beer-card-container">
+          <div v-for="beer in beers" :key="beer.id" class="beer-card">
+            <h3>{{ beer.name }}</h3>
+            <p>{{ beer.description }}</p>
+            <p><strong>대표 브랜드:</strong> {{ beer.representativeBrands }}</p>
+            <p><strong>스타일:</strong> {{ beer.style }}</p>
+            <p>
+              <strong>추천 안주:</strong> {{ beer.foodPairing }}
+              <span>{{ beer.foodEmoji }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="movies-scroll">
+        <h2>페어링 with 에일🍺</h2>
+        <div class="movie-card-container">
+          <div
+            v-for="movie in getBeerMovies('Ale')" 
+            :key="movie.id"
+            class="movie-card"
+          >
+            <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }">
+              <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="Movie Poster" />
+            </RouterLink>
+            <p class="movie-title">{{ movie.title }}</p>
+          </div>
         </div>
       </div>
     </div>
   </template>
   
   <script setup>
+  import { useLiquorStore } from "@/stores/liquor";
+  import { useMovieStore } from "@/stores/movie";
+  import { onMounted } from "vue";
+  import { RouterLink } from "vue-router";
+  
   const beers = [
     {
       id: 1,
@@ -78,9 +104,35 @@
       foodEmoji: "🧀🦪"
     }
   ];
+  
+  const liquorStore = useLiquorStore();
+  const movieStore = useMovieStore();
+  
+  onMounted(() => {
+    liquorStore.getBeers();
+    movieStore.getMovies();
+    movieStore.getGenres();
+  });
+  
+  const getBeerMovies = (subtype) => {
+    return movieStore.movies.filter((movie) => {
+      return movie.genres.some((genreId) => {
+        const genre = movieStore.genres.find((g) => g.id === genreId);
+        return genre && genre.subtype === subtype;
+      });
+    });
+  };
+  
+  const getImageUrl = (path) => {
+    if (!path) {
+      return "https://via.placeholder.com/300x450";
+    }
+    return `https://image.tmdb.org/t/p/w300${path}`;
+  };
   </script>
   
   <style scoped>
+  /* 기존 에일 스타일 */
   .ale-view {
     padding: 20px;
     background-color: #f9f9f9;
@@ -126,11 +178,18 @@
     margin-bottom: 20px;
   }
   
+  .beer-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
   .beer-card {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    width: 20%;
+    min-width: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
   }
@@ -150,4 +209,34 @@
     margin: 5px 0;
     line-height: 1.6;
   }
+  
+  /* 영화 스타일 */
+  .movies-scroll {
+    margin-top: 40px;
+  }
+  
+  .movie-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
   </style>
+  
