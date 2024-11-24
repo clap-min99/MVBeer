@@ -14,6 +14,9 @@ urlpatterns = [
     path('movies/<int:movie_pk>/comments/<int:comment_id>/', views.comment_delete),
     path('movies/<int:movie_pk>/comments/<int:comment_id>/update/', views.comment_update),
 
+    # search 관련
+    path('movies/search/', views.search_movies),
+    
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
     path('movies/<int:movie_pk>/', views.movie_detail, name='movie_detail'),

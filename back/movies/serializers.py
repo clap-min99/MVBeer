@@ -4,7 +4,7 @@ from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ('id','title', 'summary', 'poster_url', 'genres')
+        fields = ('id','title', 'summary', 'poster_url', 'genres', 'release_date', 'star_rating', 'poster_url')
 
 
 class MovieSerializer(serializers.ModelSerializer):

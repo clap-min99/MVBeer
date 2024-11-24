@@ -25,16 +25,38 @@
 
     <!-- 검색창 섹션 -->
     <input type="text" placeholder="영화를 검색하세요" class="search-bar" />
+    <!-- 로그인 섹션 -->
+    <template v-if="!isLogin">
+      <RouterLink :to="{ name: 'LoginView' }">로그인</RouterLink>
+      <span> | </span>
+      <RouterLink :to="{ name: 'SignUpView' }">회원가입</RouterLink>
+    </template>
+    <template v-else>
+      <button @click="logOut">로그아웃</button>
+    </template>
   </div>
 </template>
 
-<script>
-import { RouterLink } from 'vue-router';
+<script setup>
+import { computed } from 'vue';
+import { useLogStore } from '@/stores/log';
+import { useRouter } from 'vue-router';
 
-export default {
-  name: "Header",
+// Pinia와 라우터 연결
+const logStore = useLogStore();
+const router = useRouter();
+
+// 로그인 상태 계산
+const isLogin = computed(() => logStore.isLogin);
+
+// 로그아웃 함수
+const logOut = () => {
+  logStore.logOut();
+  alert("로그아웃 되었습니다.");
+  router.push({ name: 'MainView' });
 };
 </script>
+
 
 <style scoped>
 /* 헤더 전체 컨테이너 */
