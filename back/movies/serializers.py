@@ -95,7 +95,7 @@ class CommentSerializer(serializers.ModelSerializer):
     user = serializers.CharField(source='user.username', read_only=True)  # user를 username으로 반환
     class Meta:
         model = Comment
-        fields = '__all__'
+        fields = ['id', 'user', 'content', 'created_at']
         read_only_fields = ('user', 'movie')
 
         
