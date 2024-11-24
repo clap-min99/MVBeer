@@ -114,3 +114,4 @@ def comment_list(request, movie_pk):
             serializer.save(user=request.user, movie_id=movie_pk)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
