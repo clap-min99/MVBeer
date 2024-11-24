@@ -41,7 +41,7 @@
   <style scoped>
 h2 {
   margin-bottom: 1rem;
-  color: #f8f8f8; /* 헤더 텍스트 색상 */
+  color: #2e2e2e; /* 헤더 텍스트 색상 */
 }
 
 .tabs {
