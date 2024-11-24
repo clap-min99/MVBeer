@@ -7,14 +7,16 @@ import { useRouter } from 'vue-router'
 export const useLogStore = defineStore('log', () => {
     const API_URL = 'http://127.0.0.1:8000'
     const router = useRouter()
+    const user = ref(null)
     const token = ref(null)
-    const isLogin = computed(() => {
-        if (token.value === null) {
-        return false
-        } else {
-        return true
-        }
-    })
+    const isLogin = computed(() => !!token.value);
+    // const isLogin = computed(() => {
+    //     if (token.value === null) {
+    //     return false
+    //     } else {
+    //     return true
+    //     }
+    // })
     // 회원가입 요청 액션
     const signUp = function (payload) {
     
@@ -40,24 +42,33 @@ export const useLogStore = defineStore('log', () => {
 
   // 로그인 요청 액션
   const logIn = function (payload) {
-
-    const { username, password } = payload
+    const { username, password } = payload;
 
     axios({
       method: 'post',
       url: `${API_URL}/accounts/login/`,
-      data: {
-        username, password
-      }
+      data: { username, password },
     })
       .then((res) => {
-        token.value = res.data.key
-        router.push({ name: 'MainView' })
-        console.log(token)
-        console.log('로그인 성공')
+        token.value = res.data.key;
+
+        // 사용자 정보 가져오기
+        axios({
+          method: 'get',
+          url: `${API_URL}/accounts/user/`, // 사용자 정보 API 엔드포인트
+          headers: { Authorization: `Token ${token.value}` },
+        })
+          .then((userRes) => {
+            user.value = userRes.data; // 사용자 정보 저장
+            router.push({ name: 'MainView' });
+            console.log('로그인 성공:', user.value)
+          })
+          .catch((err) => {
+            console.error('사용자 정보 가져오기 실패:', err)
+          })
       })
       .catch((err) => {
-        console.log(err)
+        console.error('로그인 실패:', err);
       })
   }
   
