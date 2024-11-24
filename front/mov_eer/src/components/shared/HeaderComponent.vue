@@ -2,17 +2,25 @@
   <div class="header-container">
     <!-- 로고 섹션 -->
     <div class="logo-container">
-      <RouterLink :to="{name:'MainView'}">
-      <img src="@/assets/logo_white.png" alt="MVBeer Logo" class="logo-image" />
+      <RouterLink :to="{ name: 'MainView' }">
+        <img src="@/assets/logo_white.png" alt="MVBeer Logo" class="logo-image" />
       </RouterLink>
     </div>
 
     <!-- 네비게이션 섹션 -->
     <div class="nav-container">
-      <RouterLink to="/beer" class="nav-link">Beer</RouterLink>
+      <div class="dropdown">
+        <RouterLink to="/beer" class="nav-link">Beer</RouterLink>
+        <ul class="dropdown-menu">
+          <li><RouterLink to="/ale" class="dropdown-item">Ale</RouterLink></li>
+          <li><RouterLink to="/lager" class="dropdown-item">Lager</RouterLink></li>
+          <li><RouterLink to="/pilsner" class="dropdown-item">Pilsner</RouterLink></li>
+          <li><RouterLink to="/stout" class="dropdown-item">Stout</RouterLink></li>
+          <li><RouterLink to="/wheat" class="dropdown-item">Wheat</RouterLink></li>
+        </ul>
+      </div>
       <RouterLink to="/whiskey" class="nav-link">Whiskey</RouterLink>
       <RouterLink to="/wine" class="nav-link">Wine</RouterLink>
-      
     </div>
 
     <!-- 검색창 섹션 -->
@@ -36,7 +44,6 @@ export default {
   align-items: center;
   padding: 10px 20px; /* 내부 여백 */
   background-color: #2e2e2e; /* 다크그레이 배경색 */
-  
 }
 
 /* 로고 섹션 */
@@ -62,7 +69,6 @@ export default {
 .nav-link {
   text-decoration: none;
   color: #ee9191; /* 밝은 색상으로 링크 표시 */
- 
   font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s;
@@ -70,6 +76,40 @@ export default {
 
 .nav-link:hover {
   color: #f1c40f; /* 링크 호버 효과: 따뜻한 노란색 */
+}
+
+/* 드롭다운 메뉴 */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3b3b3b; /* 드롭다운 배경색 */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #f8f8f8;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #555; /* 호버 시 배경색 변경 */
+  color: #f1c40f;
 }
 
 /* 검색창 */

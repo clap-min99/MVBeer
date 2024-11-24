@@ -1,6 +1,6 @@
 <template>
     <div class="ale-view">
-      <h1>Wheat Beers</h1>
+      <h1>Pilsner</h1>
       <div v-for="beer in filteredBeers" :key="beer.id" class="beer-card">
         <h2>{{ beer.name }}</h2>
         <p>{{ beer.description }}</p>
@@ -15,7 +15,7 @@
   const liquorStore = useLiquorStore();
   
   const filteredBeers = computed(() =>
-    liquorStore.beers.filter((beer) => beer.subtype === "Wheat")
+    liquorStore.beers.filter((beer) => beer.subtype === "Pilsner")
   );
   </script>
   

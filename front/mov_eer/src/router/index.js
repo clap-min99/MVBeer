@@ -5,9 +5,16 @@ import AlcoholView from '@/views/AlcoholView.vue'
 import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
 import BeerView from '@/views/Beer/BeerView.vue'
+import AleView from '@/views/Beer/AleView.vue'
+import LagerView from '@/views/Beer/LagerView.vue'
+import PilsnerView from '@/views/Beer/PilsnerView.vue'
+import WheatView from '@/views/Beer/WheatView.vue'
+import StoutView from '@/views/Beer/StoutView.vue'
 import WhiskeyView from '@/views/WhiskeyView.vue'
 import WineView from '@/views/WineView.vue'
 import { useLogStore } from '@/stores/log'
+
+
 
 
 const router = createRouter({
@@ -53,7 +60,32 @@ const router = createRouter({
       path: '/wine/',
       name: 'WineView',
       component: WineView
-    }
+    },
+    {
+      path: "/ale",
+      name: "AleView",
+      component: AleView,
+    },
+    {
+      path: "/lager",
+      name: "LagerView",
+      component: LagerView,
+    },
+    {
+      path: "/pilsner",
+      name: "PilsnerView",
+      component: PilsnerView,
+    },
+    {
+      path: "/wheat",
+      name: "WheatView",
+      component: WheatView,
+    },
+    {
+      path: "/stout",
+      name: "StoutView",
+      component: StoutView,
+    },
   ],
 })
 
