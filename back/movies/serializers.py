@@ -4,7 +4,7 @@ from .models import Movie, MovieGenre, Beverage, Whiskey, Beer, Wine, NonAlcohol
 class MovieListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ('id','title', 'summary', 'poster_url', 'genres')
+        fields = ('id','title', 'summary', 'poster_url', 'genres', 'release_date', 'star_rating', 'poster_url')
 
 
 class MovieSerializer(serializers.ModelSerializer):
@@ -13,7 +13,7 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = '__all__'
-    
+
     def get_genres(self, obj):
         return [
             {
@@ -26,6 +26,13 @@ class MovieSerializer(serializers.ModelSerializer):
             }
             for genre in obj.genres.all()
         ]
+
+class GenreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MovieGenre
+        fields = ['id', 'name', 'beverage', 'subtype']
+
+
 
 class BeverageSerializer(serializers.ModelSerializer):
     class Meta:
@@ -85,7 +92,10 @@ class NonAlcoholSerializer(serializers.ModelSerializer):
 
 
 class CommentSerializer(serializers.ModelSerializer):
+    user = serializers.CharField(source='user.username', read_only=True)  # user를 username으로 반환
     class Meta:
         model = Comment
-        fields = '__all__'
-        read_only_freids = ('user', 'movie')
+        fields = ['id', 'user', 'content', 'created_at']
+        read_only_fields = ('user', 'movie')
+
+        

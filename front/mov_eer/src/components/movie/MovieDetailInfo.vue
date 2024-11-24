@@ -1,142 +1,207 @@
 <template>
-    <div class="movie-detail">
-      <div class="movie-header">
-        <h1 class="movie-title">{{ movie.title }}</h1>
-        <p class="movie-rating">평점: {{ movie.star_rating }}</p>
+  <div class="movie-detail">
+    <div class="movie-header">
+      <h1 class="movie-title">{{ movie.title }}</h1>
+      <p class="movie-rating">평점: {{ movie.star_rating }}</p>
+    </div>
+    <div class="movie-content">
+      <img :src="getImageUrl(movie.poster_url)" alt="movie poster" class="movie-poster" />
+      <div class="movie-info">
+        <p class="movie-summary">{{ movie.summary }}</p>
+        <ul class="movie-genres">
+          <p class="section-title">장르:</p>
+          <li v-for="genre in movie.genres" :key="genre.id">
+            {{ genre.name }}
+          </li>
+        </ul>
+        <p><strong>출시일:</strong> {{ movie.release_date }}</p>
+        <p><strong>감독:</strong> {{ movie.director }}</p>
       </div>
-      <div class="movie-content">
-        <img :src="getImageUrl(movie.poster_url)" alt="movie poster" class="movie-poster" />
-        <div class="movie-info">
-          <p class="movie-summary">{{ movie.summary }}</p>
-          <ul class="movie-genres">
-            <p class="section-title">장르:</p>
-            <li v-for="genre in movie.genres" :key="genre.id">
-              {{ genre.name }}
-            </li>
-            <p class="section-title">추천 음료:</p>
-            <li v-for="genre in movie.genres" :key="genre.id">
-                {{ genre.recommended_beverage.type }} ({{ genre.recommended_beverage.subtype }})
-            </li>
-          </ul>
-          <p><strong>출시일:</strong> {{ movie.release_date }}</p>
-          <p><strong>감독:</strong> {{ movie.director }}</p>
-          
+    </div>
+
+    <!-- 추천 음료 섹션 -->
+    <div class="recommended-beverages">
+      <h3>추천 주류</h3>
+      <div class="beverages-container">
+        <div
+          v-for="genre in movie.genres"
+          :key="genre.id"
+          class="beverage-card"
+        >
+          <h3>{{ genre.recommended_beverage.type }} ({{ genre.recommended_beverage.subtype }})</h3>
+          <div class="beverage-images">
+            <img
+              v-for="image in getBeverageImages(genre.recommended_beverage.subtype)"
+              :key="image.image"
+              :src="`http://127.0.0.1:8000${image.image}`"
+              :alt="image.description"
+              class="beverage-image"
+            />
+          </div>
         </div>
       </div>
     </div>
+
     <div class="comments-container">
       <Comment :movieId="movie.id"/>
     </div>
-  </template>
-  
-  <script setup>
+  </div>
+</template>
 
-  import Comment from '@/components/Comment.vue';
+<script setup>
+import { ref, computed, onMounted } from "vue";
+import { useLiquorStore } from "@/stores/liquor"; // 주류 스토어
+import Comment from "@/components/Comment.vue";
 
-  defineProps({
-    movie: {
-      type: Object,
-      required: true,
-    },
-  });
-  
-  // 이미지 URL을 처리하는 함수
-  const getImageUrl = (path) => {
-    if (!path) {
-      return 'https://via.placeholder.com/500'; // 기본 이미지
-    }
-    return `https://image.tmdb.org/t/p/w500${path}`;
-  };
-  
-  
-  </script>
+defineProps({
+  movie: {
+    type: Object,
+    required: true,
+  },
+});
 
-  <style scoped>
-  /* 전체 레이아웃 */
-  .movie-detail {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
+// 주류 데이터 관리
+const liquorStore = useLiquorStore();
+
+// 영화 디테일용 함수
+const getImageUrl = (path) => {
+  if (!path) {
+    return "https://via.placeholder.com/500"; // 기본 이미지
   }
-  
-  /* 헤더 스타일 */
-  .movie-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .movie-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .movie-rating {
-    font-size: 1.2rem;
-    color: #ffcc00;
-  }
-  
-  /* 콘텐츠 레이아웃 */
-  .movie-content {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .movie-poster {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .movie-info {
-    flex: 1;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* 요약 스타일 */
-  .movie-summary {
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  /* 장르 스타일 */
-  .movie-genres {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .movie-genres li {
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .section-title {
+  return `https://image.tmdb.org/t/p/w500${path}`;
+};
+
+// 음료 이미지 가져오기
+const getBeverageImages = (subtype) => {
+  const allBeers = liquorStore.beers;
+  const allWhiskeys = liquorStore.whiskeys;
+  const allWines = liquorStore.wines;
+
+  const beverages = [...allBeers, ...allWhiskeys, ...allWines];
+
+  // 주류 subtype과 일치하는 이미지 반환
+  const beverage = beverages.find((b) => b.subtype === subtype);
+  return beverage ? beverage.images : [];
+};
+
+// 주류 데이터 불러오기
+onMounted(() => {
+  liquorStore.getBeers();
+  liquorStore.getWhiskeys();
+  liquorStore.getWines();
+});
+</script>
+
+<style scoped>
+/* 기존 영화 디테일 스타일 */
+.movie-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e8e8e8; /* 라이트그레이 배경 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 더 부드러운 그림자 */
+  font-family: "Arial", sans-serif;
+  color: #333333; /* 텍스트를 중간톤으로 */
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50; /* 짙은 블루톤 */
+}
+
+.movie-rating {
+  font-size: 1.2rem;
+  color: #e67e22; /* 평점 강조: 따뜻한 오렌지 */
+}
+
+.movie-content {
+  display: flex;
+  gap: 20px;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info {
+  flex: 1;
+  font-size: 1rem;
+  color: #555555; /* 텍스트를 약간 어둡게 */
+}
+
+.movie-summary {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.movie-genres {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-genres li {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50; /* 장르 텍스트: 짙은 블루톤 */
+}
+
+.section-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
-
+  color: #2c3e50; /* 섹션 제목 */
 }
 
+/* 추천 음료 섹션 */
+.recommended-beverages {
+  margin-top: 30px;
+}
 
-  /* 배우 리스트 스타일 */
-  .movie-actors {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .movie-actors li {
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #333;
-  }
-  </style>
-  
+.recommended-beverages h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.beverages-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.beverage-card {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: #f4f4f4; /* 카드 배경: 아주 밝은 그레이 */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  color: #333333;
+}
+
+.beverage-images {
+  display: flex;
+  gap: 10px;
+}
+
+.beverage-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+</style>

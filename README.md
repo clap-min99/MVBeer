@@ -21,10 +21,20 @@
 
         `python -m venv venv`
 
-        `source venv/Scripts/activate`
+        Window: `source venv/Scripts/activate`
+        
+        Mac: `source venv/bin/activate`
 
     3. `pip install -r requirements.txt`
-    (전역에 `django-cors-headers`, `pillow` 설치 안되어 있으면 실행 안되는게 있을 수도 있다. 전역에도 설치하고 가상환경에도 install 하자! )
+    
+        (전역에 `django-cors-headers`, `pillow` 설치 안되어 있으면 실행 안되는게 있을 수도 있다. 전역에도 설치하고 가상환경에도 install 하자!)
+
+        `pip install django-cors-headers`
+        
+        `pip install pillow`    
+            
+        `pip install djangorestframework`
+        
 
     4. `python manage.py makemigrations`
 
@@ -89,8 +99,13 @@
   `pip install 'dj-rest-auth[with-social]'`
 
 ## 20241123
+* 로고 디자인 완료
+* comment 생성 기능 구현
 
 ## 20241124
+* comment 수정, 삭제 안되는 부분 수정 완료
+* 주류 상세페이지 작성
+* 검색 기능 구현중
 
 ## 20241125
 

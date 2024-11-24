@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 
+# 알콜 모델들
+
 class Beverage(models.Model):
     type = models.CharField(max_length=50)  # 주류 유형 (Beer, Whiskey 등)
 
@@ -84,6 +86,7 @@ class NonAlcoholImage(models.Model):
         return f"Image for {self.nonalcohol.subtype}"
 
 
+# 영화 모델들
 
 class MovieGenre(models.Model):
     name = models.CharField(max_length=100)  # 영화 장르 이름
