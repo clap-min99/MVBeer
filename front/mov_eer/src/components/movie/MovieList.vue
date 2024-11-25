@@ -84,7 +84,7 @@ h2 {
   perspective: 1500px; /* 3D 효과를 위한 원근감 추가 */
   height: 400px; /* 화면 비율 증가 */
   margin-top: 160px; /* 캐러셀 자체를 아래로 이동 */
-  transform: translateX(-160px); /* 캐러셀을 왼쪽으로 50px 이동 */
+  transform: translateX(-200px); /* 캐러셀을 왼쪽으로 50px 이동 */
 }
 
 /* 캐러셀 */
@@ -120,7 +120,7 @@ h2 {
 }
 
 .arrow.left {
-  left: -330px; /* 왼쪽 화살표 간격 */
+  left: -70px; /* 왼쪽 화살표 간격 */
 }
 
 .arrow.right {
