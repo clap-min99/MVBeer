@@ -16,7 +16,7 @@
               :src="`http://127.0.0.1:8000${image.image}`" 
               :alt="image.description" 
               class="nonalcohol-image"
-            />
+            /> 
           </div>
         </div>
       </div>

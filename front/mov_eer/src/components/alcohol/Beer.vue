@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="beers.length" class="subtypes-container">
-      <!-- 각 맥주 유형에 대한 카드 -->
+      <!-- 각 맥주 유형에 대한 카드! -->
       <RouterLink
         v-for="beer in beers"
         :key="beer.subtype"
