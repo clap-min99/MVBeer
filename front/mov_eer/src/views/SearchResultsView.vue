@@ -21,8 +21,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import axios from 'axios';
 
 // API URL 정의
@@ -30,6 +30,7 @@ const API_URL = 'http://127.0.0.1:8000'; // API 기본 URL
 
 // 상태 정의
 const route = useRoute();
+const router = useRouter();
 const searchQuery = ref(route.query.q || '');
 const searchResults = ref([]);
 const loading = ref(false);
@@ -45,6 +46,7 @@ const getImageUrl = (path) => {
 // 검색 API 호출 함수
 const fetchSearchResults = async () => {
   if (!searchQuery.value.trim()) {
+    searchResults.value = [];
     return;
   }
 
@@ -66,8 +68,30 @@ const fetchSearchResults = async () => {
   }
 };
 
+// 검색 버튼 클릭 시 검색 실행 함수
+const handleSearch = () => {
+  if (!searchQuery.value.trim()) {
+    alert('검색어를 입력해주세요.');
+    return;
+  }
+
+  // 검색어와 함께 현재 URL 업데이트 및 검색 실행
+  router.push({
+    name: 'SearchResultsView',
+    query: { q: searchQuery.value }
+  });
+
+  fetchSearchResults();
+};
+
 // 컴포넌트가 마운트되었을 때 검색 API 호출
 onMounted(() => {
+  fetchSearchResults();
+});
+
+// URL 쿼리 변경 감지
+watch(() => route.query.q, (newQuery) => {
+  searchQuery.value = newQuery || '';
   fetchSearchResults();
 });
 </script>
@@ -75,6 +99,35 @@ onMounted(() => {
 <style scoped>
 .search-results-page {
   padding: 20px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #3b3b3b;
+  color: #f8f8f8;
+}
+
+.search-bar::placeholder {
+  color: #bfbfbf;
+}
+
+.wine-image {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
 }
 
 h2 {
