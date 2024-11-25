@@ -47,7 +47,7 @@ h2 {
 .tabs {
   display: flex;
   margin-bottom: 1rem;
-  background-color: #2e2e2e; /* 다크그레이 배경 */
+  background-color: #080808; /* 다크그레이 배경 */
   padding: 10px;
   border-radius: 8px; /* 부드러운 모서리 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -68,7 +68,7 @@ button.active {
   font-weight: bold;
   background: #3b3b3b; /* 활성 버튼: 파란색 */
   color: white;
-  border-color: #e67e22; /* 활성 버튼 테두리 */
+  border-color: #ee9191; /* 활성 버튼 테두리 */
 }
 
 button:hover {

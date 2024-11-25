@@ -45,7 +45,7 @@
     padding: 1rem;
     margin-top: 1rem;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #111111;
     border-radius: 5px;
   }
   
@@ -77,13 +77,13 @@
     padding: 0.5rem 1rem;
     border: none;
     background-color: #3b3b3b;
-    color: white;
+    color: #e8e8e8;
     cursor: pointer;
     border-radius: 5px;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #ee9191;
   }
   </style>
   
