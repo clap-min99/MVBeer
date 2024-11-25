@@ -97,7 +97,7 @@
   const movieStore = useMovieStore();
   
   onMounted(() => {
-    liquorStore.getNonAlcohols(); // Nonalcohol 데이터 호출
+    liquorStore.getNonalcohols(); // Nonalcohol 데이터 호출
     movieStore.getMovies();
     movieStore.getGenres();
   });

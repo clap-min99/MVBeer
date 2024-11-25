@@ -210,7 +210,7 @@
             "beverages": [
                 3
             ],
-            "subtype": "NaturalWine",
+            "subtype": "Natural",
             "description": "화학 첨가물 없이 유기농 재배된 포도로 전통적인 방식으로 양조된 와인으로, 자연스러운 맛과 향이 특징입니다.",
             "examples": "domaine_lapierre_morgon_beaujolais_france, radikon_ribolla_gialla_italy, gut_oggau_josephine_austria"
         }
