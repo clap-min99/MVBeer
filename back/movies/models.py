@@ -1,4 +1,7 @@
 from django.db import models
+from django.conf import settings
+
+# 알콜 모델들
 
 class Beverage(models.Model):
     type = models.CharField(max_length=50)  # 주류 유형 (Beer, Whiskey 등)
@@ -83,6 +86,7 @@ class NonAlcoholImage(models.Model):
         return f"Image for {self.nonalcohol.subtype}"
 
 
+# 영화 모델들
 
 class MovieGenre(models.Model):
     name = models.CharField(max_length=100)  # 영화 장르 이름
@@ -112,7 +116,12 @@ class Movie(models.Model):
     
 
 class Comment(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE
+    )
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+
