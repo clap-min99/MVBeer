@@ -49,6 +49,11 @@
     border-radius: 5px;
   }
   
+  h2 {
+  margin-bottom: 1rem;
+  color: #ccb4b4; /* 헤더 텍스트 색상 */
+  }
+
   .alcohol-image {
     max-width: 100%;
     height: auto;
