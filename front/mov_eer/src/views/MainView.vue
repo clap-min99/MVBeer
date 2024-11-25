@@ -28,7 +28,7 @@ onMounted(() => {
 <style scoped>
 /* 메인 컨테이너 */
 .main-container {
-    position: relative;
+  position: relative;
   width: 100%;
   min-height: 100vh; /* 화면의 최소 높이 */
   overflow-x: hidden; /* 가로 스크롤 제거 */
