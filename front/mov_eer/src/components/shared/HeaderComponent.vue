@@ -81,14 +81,14 @@
       <template v-if="!isLogin">
         <!-- 로그인 이미지 -->
         <img
-          src="@/assets/login.png"
+          src="@/assets/login_white.png"
           alt="Login"
           class="auth-image"
           @click="navigateTo('LoginView')"
         />
         <!-- 회원가입 이미지 -->
         <!-- <img
-          src="@/assets/signup_image.png"
+          src="@/assets/Rye.png"
           alt="Sign Up"
           class="auth-image"
           @click="navigateTo('SignUpView')"
@@ -97,7 +97,7 @@
       <template v-else>
         <!-- 로그아웃 이미지 -->
         <img
-          src="@/assets/logout.png"
+          src="@/assets/logout_white.png"
           alt="Logout"
           class="auth-image"
           @click="logOut"
@@ -143,6 +143,8 @@ const handleSearch = () => {
     name: 'SearchResultsView', 
     query: { q: searchQuery.value } // 검색어를 쿼리로 전달
   });
+
+  searchQuery.value = '';
 };
 
 // 로그인/회원가입 페이지로 이동하는 함수
@@ -150,30 +152,7 @@ const navigateTo = (viewName) => {
   router.push({ name: viewName });
 };
 
-// 검색 API 호출 함수
-// const handleSearch = () => {
-//   // 검색어가 비어있으면 결과 초기화
-//   if (!searchQuery.value.trim()) {
-//     searchResults.value = [];
-//     return;
-//   }
 
-//   // Axios를 사용하여 영화 검색 API 호출
-//   axios({
-//     method: 'get',
-//     url: `${API_URL}/api/v1/movies/search/`, // API 엔드포인트
-//     params: { q: searchQuery.value } // 검색어를 쿼리 파라미터로 전달
-//   })
-//   .then((res) => {
-//     searchResults.value = res.data || []; // 검색 결과 저장
-//     console.log("Search Query:", searchQuery.value);
-//     console.log("Search Results:", searchResults.value);
-//   })
-//   .catch((err) => {
-//     console.log("검색 실패:", err); // 에러 처리
-//     searchResults.value = []; // 에러 발생 시 결과 초기화
-//   });
-// };
 </script>
 
 <style scoped>
@@ -208,14 +187,14 @@ const navigateTo = (viewName) => {
 /* 네비게이션 링크 */
 .nav-link {
   text-decoration: none;
-  color: #ee9191; /* 밝은 색상으로 링크 표시 */
+  color: #fffdfd; /* 밝은 색상으로 링크 표시 */
   font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #f1c40f; /* 링크 호버 효과: 따뜻한 노란색 */
+  color: #ee9191; /* 링크 호버 효과: 따뜻한 노란색 */
 }
 
 /* 드롭다운 메뉴 */
