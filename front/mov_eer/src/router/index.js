@@ -31,6 +31,7 @@ import SparklingWineView from '@/views/Wine/SparklingWineView.vue';
 import NaturalWineView from '@/views/Wine/NaturalWineView.vue';
 
 import { useLogStore } from '@/stores/log'
+import SearchResultsView from '@/views/SearchResultsView.vue'
 
 
 
@@ -170,6 +171,11 @@ const router = createRouter({
       name: 'NaturalWineView',
       component: NaturalWineView,
     },
+    {
+      path: '/search',
+      name: 'SearchResultsView',
+      component: SearchResultsView
+    }
   ],
 })
 
