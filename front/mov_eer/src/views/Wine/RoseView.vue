@@ -43,7 +43,7 @@
         <h2>페어링 with Rosé Wine 💕</h2>
         <div class="movie-card-container">
           <div
-            v-for="movie in getWineMovies('Rosé')" 
+            v-for="movie in getWineMovies('Rose')" 
             :key="movie.id"
             class="movie-card"
           >

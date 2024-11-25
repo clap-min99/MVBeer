@@ -43,7 +43,7 @@
         <h2>페어링 with 논알콜🥤</h2>
         <div class="movie-card-container">
           <div
-            v-for="movie in getNonAlcoholMovies('Non-Alcoholic')"
+            v-for="movie in getNonAlcoholMovies('nonalcohol')"
             :key="movie.id"
             class="movie-card"
           >
