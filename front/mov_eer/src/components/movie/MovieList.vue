@@ -1,8 +1,6 @@
 <template>
-  <div class="movie-list-container">
-    <div class="header-container">
-      <h2 class="header-text">현재 인기작</h2>
-    </div>
+  <div class="background-container">
+    <h2>현재 인기작</h2>
     <div class="carousel-container">
       <div class="carousel">
         <div
@@ -28,12 +26,13 @@ import MovieMainInfo from "./MovieMainInfo.vue";
 const store = useMovieStore();
 const currentIndex = ref(0);
 
-const radius = 300;
+const radius = 350; // 원형 배치의 반지름 (화면 비율 확대에 맞춰 증가)
 
 // 영화 슬라이드의 스타일을 동적으로 계산
 const getItemStyle = (index) => {
   const total = store.movies.slice(0, 10).length;
   const angle = ((index - currentIndex.value + total) % total) * (360 / total);
+  const radian = (angle * Math.PI) / 180;
   return {
     transform: `rotateY(${angle}deg) translateZ(${radius}px)`,
     opacity: index === currentIndex.value ? 1 : 0.5,
@@ -42,12 +41,14 @@ const getItemStyle = (index) => {
   };
 };
 
+// 이전 슬라이드로 이동
 const prevSlide = () => {
   currentIndex.value =
     (currentIndex.value - 1 + store.movies.slice(0, 10).length) %
     store.movies.slice(0, 10).length;
 };
 
+// 다음 슬라이드로 이동
 const nextSlide = () => {
   currentIndex.value =
     (currentIndex.value + 1) % store.movies.slice(0, 10).length;
@@ -55,31 +56,22 @@ const nextSlide = () => {
 </script>
 
 <style scoped>
-.movie-list-container {
+/* 전체 배경 컨테이너 */
+.background-container {
   position: relative;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  background-image: url('@/assets/back.'); /* Vue의 assets 폴더 경로 */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
 }
 
-/* 헤더 텍스트 컨테이너 */
-.header-container {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  text-align: center;
-}
 
 /* 헤더 텍스트 */
-.header-text {
-  font-size: 2.5rem;
+h2 {
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  z-index: 2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 /* 캐러셀 컨테이너 */
@@ -88,25 +80,24 @@ const nextSlide = () => {
   align-items: center;
   justify-content: center;
   position: relative;
-  perspective: 1200px;
-  height: 350px;
-  width: 100%;
+  perspective: 1200px; /* 3D 효과를 위한 원근감 추가 */
+  height: 400px; /* 화면 비율 증가 */
 }
 
 /* 캐러셀 */
 .carousel {
   display: flex;
   position: relative;
-  transform-style: preserve-3d;
-  width: 80%;
-  height: 100%;
+  transform-style: preserve-3d; /* 3D 효과 유지 */
+  width: 100%; /* 중앙 콘텐츠의 너비 */
+  height: 100%; /* 높이 비율 */
 }
 
 /* 캐러셀 아이템 */
 .carousel-item {
   position: absolute;
-  width: 250px;
-  height: 350px;
+  width: 250px; /* 카드 크기 증가 */
+  height: 350px; /* 카드 크기 증가 */
   border-radius: 8px;
   overflow: hidden;
   transform-origin: center;
@@ -118,22 +109,22 @@ const nextSlide = () => {
   border: none;
   font-size: 2.5rem;
   cursor: pointer;
-  color: white;
+  color: #ccc;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3;
+  z-index: 10;
 }
 
 .arrow.left {
-  left: -150px;
+  left: -300px; /* 왼쪽 화살표 간격 */
 }
 
 .arrow.right {
-  right: -150px;
+  right: -420px; /* 오른쪽 화살표 간격 */
 }
 
 .arrow:hover {
-  color: #ff9900;
+  color: #fff;
 }
 </style>
