@@ -93,16 +93,24 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* 기존 영화 디테일 스타일 */
+/* 전체 어두운 배경 설정 */
+bod y {
+  background-color: #121212; /* 전체 페이지 배경을 어두운 색으로 */
+  color: #ffffff; /* 기본 텍스트 색상 흰색 */
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* 어두운 테마 스타일 */
 .movie-detail {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto; /* 중앙 정렬 및 위아래 여백 추가 */
   padding: 20px;
-  background-color: #e8e8e8; /* 라이트그레이 배경 */
+  background-color: #1a1a1a; /* 컨텐츠 영역의 어두운 배경 */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 더 부드러운 그림자 */
-  font-family: "Arial", sans-serif;
-  color: #333333; /* 텍스트를 중간톤으로 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* 더 깊은 그림자 */
+  color: #ffffff; /* 흰색 텍스트 */
 }
 
 .movie-header {
@@ -115,12 +123,12 @@ onMounted(() => {
 .movie-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2c3e50; /* 짙은 블루톤 */
+  color: #ffffff; /* 흰색 텍스트 */
 }
 
 .movie-rating {
   font-size: 1.2rem;
-  color: #e67e22; /* 평점 강조: 따뜻한 오렌지 */
+  color: #f39c12; /* 평점 강조: 따뜻한 오렌지 */
 }
 
 .movie-content {
@@ -131,13 +139,13 @@ onMounted(() => {
 .movie-poster {
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .movie-info {
   flex: 1;
   font-size: 1rem;
-  color: #555555; /* 텍스트를 약간 어둡게 */
+  color: #cccccc; /* 연한 회색 텍스트 */
 }
 
 .movie-summary {
@@ -154,14 +162,14 @@ onMounted(() => {
 .movie-genres li {
   margin-bottom: 8px;
   font-weight: bold;
-  color: #2c3e50; /* 장르 텍스트: 짙은 블루톤 */
+  color: #ffffff; /* 장르 텍스트: 흰색 */
 }
 
 .section-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #2c3e50; /* 섹션 제목 */
+  color: #ffffff; /* 섹션 제목 */
 }
 
 /* 추천 음료 섹션 */
@@ -169,11 +177,11 @@ onMounted(() => {
   margin-top: 30px;
 }
 
-.recommended-beverages h2 {
+.recommended-beverages h3 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #ffffff; /* 흰색 텍스트 */
 }
 
 .beverages-container {
@@ -186,11 +194,11 @@ onMounted(() => {
 .beverage-card {
   flex: 0 0 auto;
   text-align: center;
-  background-color: #f4f4f4; /* 카드 배경: 아주 밝은 그레이 */
+  background-color: #333333; /* 카드 배경: 어두운 그레이 */
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
-  color: #333333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* 깊은 그림자 */
+  color: #ffffff; /* 흰색 텍스트 */
 }
 
 .beverage-images {
@@ -202,6 +210,6 @@ onMounted(() => {
   width: 100px;
   height: 100px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* 이미지 그림자 */
 }
 </style>

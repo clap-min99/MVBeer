@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div class="background-image">
     <nav >
       <!-- <template v-if="!isLogin">
         <RouterLink :to="{ name: 'LoginView' }">로그인</RouterLink>
@@ -60,4 +60,16 @@ button:hover {
   background-color: black
 } */
 
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('@/assets/back.png'); /* 배경 이미지 경로 */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* 배경이 콘텐츠 뒤로 */
+  /* filter: brightness(0.4); 약간 어둡게 처리 */
+}
 </style>
