@@ -24,10 +24,10 @@ import BlendedView from '@/views/Whiskey/BlendedView.vue';
 import SingleMaltView from '@/views/Whiskey/SingleMaltView.vue'
 
 import WineView from '@/views/WineView.vue'
-import RedWineView from '@/views/Wine/RedWineView.vue';
-import WhiteWineView from '@/views/Wine/WhiteWineView.vue';
-import RoseWineView from '@/views/Wine/RoseWineView.vue';
-import SparklingWineView from '@/views/Wine/SparklingWineView.vue';
+import RedView from '@/views/Wine/RedView.vue';
+import WhiteView from '@/views/Wine/WhiteView.vue';
+import RoseView from '@/views/Wine/RoseView.vue';
+import SparklingView from '@/views/Wine/SparklingView.vue';
 import NaturalWineView from '@/views/Wine/NaturalWineView.vue';
 
 import { useLogStore } from '@/stores/log'
@@ -149,22 +149,22 @@ const router = createRouter({
     {
       path: '/red',
       name: 'RedWineView',
-      component: RedWineView,
+      component: RedView,
     },
     {
       path: '/white',
-      name: 'WhiteWineView',
-      component: WhiteWineView,
+      name: 'WhiteView',
+      component: WhiteView,
     },
     {
       path: '/rose',
-      name: 'RoseWineView',
-      component: RoseWineView,
+      name: 'RoseView',
+      component: RoseView,
     },
     {
       path: '/sparkling',
-      name: 'SparklingWineView',
-      component: SparklingWineView,
+      name: 'SparklingView',
+      component: SparklingView,
     },
     {
       path: '/natural',

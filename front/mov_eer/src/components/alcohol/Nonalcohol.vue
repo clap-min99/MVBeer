@@ -8,7 +8,7 @@
         >
           <h4>{{ nonalcohol.subtype }}</h4>
           <p>{{ nonalcohol.description }}</p>
-          <p><strong>Examples:</strong> {{ nonalcohol.examples }}</p>
+         
           <div class="nonalcohol-images">
             <img 
               v-for="image in nonalcohol.images" 
@@ -16,7 +16,7 @@
               :src="`http://127.0.0.1:8000${image.image}`" 
               :alt="image.description" 
               class="nonalcohol-image"
-            />
+            /> 
           </div>
         </div>
       </div>

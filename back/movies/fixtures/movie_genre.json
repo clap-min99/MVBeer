@@ -50,7 +50,7 @@
         "fields": {
             "name": "Documentary",
             "beverage": 3,
-            "subtype": "Natural Wine"
+            "subtype": "NaturalWine"
         }
     },
     {
@@ -122,7 +122,7 @@
         "fields": {
             "name": "Romance",
             "beverage": 3,
-            "subtype": "Rosé"
+            "subtype": "Rose"
         }
     },
     {
@@ -149,7 +149,7 @@
         "fields": {
             "name": "Thriller",
             "beverage": 2,
-            "subtype": "Single Malt"
+            "subtype": "SingleMalt"
         }
     },
     {
