@@ -50,16 +50,22 @@
     </div>
 
     <!-- 검색창 섹션 -->
-    <input type="text" placeholder="영화를 검색하세요" class="search-bar" />
 
     <div class="search-container">
-      <input
-        type="text"
-        v-model="searchQuery"
-        placeholder="검색어를 입력하세요"
-        class="search-bar"
+    <input
+      type="text"
+      v-model="searchQuery"
+      placeholder="검색어를 입력하세요"
+      class="search-bar"
+    />
+    <div>
+      <!-- 검색 이미지 -->
+      <img
+        src="@/assets/wine_image.png"
+        alt="MVBeer Logo"
+        class="wine-image"
+        @click="handleSearch" 
       />
-      <button @click="handleSearch">검색</button>
       <div v-if="searchResults.length" class="search-results">
         <ul>
           <li v-for="(result, index) in searchResults" :key="index" class="search-result-item">
@@ -68,16 +74,36 @@
         </ul>
       </div>
     </div>
+  </div>
 
     <!-- 로그인 섹션 -->
-    <template v-if="!isLogin">
-      <RouterLink :to="{ name: 'LoginView' }">로그인</RouterLink>
-      <span> | </span>
-      <RouterLink :to="{ name: 'SignUpView' }">회원가입</RouterLink>
-    </template>
-    <template v-else>
-      <button @click="logOut">로그아웃</button>
-    </template>
+    <div class="auth-container">
+      <template v-if="!isLogin">
+        <!-- 로그인 이미지 -->
+        <img
+          src="@/assets/login.png"
+          alt="Login"
+          class="auth-image"
+          @click="navigateTo('LoginView')"
+        />
+        <!-- 회원가입 이미지 -->
+        <!-- <img
+          src="@/assets/signup_image.png"
+          alt="Sign Up"
+          class="auth-image"
+          @click="navigateTo('SignUpView')"
+        /> -->
+      </template>
+      <template v-else>
+        <!-- 로그아웃 이미지 -->
+        <img
+          src="@/assets/logout.png"
+          alt="Logout"
+          class="auth-image"
+          @click="logOut"
+        />
+      </template>
+    </div>
   </div>
 </template>
 
@@ -117,6 +143,11 @@ const handleSearch = () => {
     name: 'SearchResultsView', 
     query: { q: searchQuery.value } // 검색어를 쿼리로 전달
   });
+};
+
+// 로그인/회원가입 페이지로 이동하는 함수
+const navigateTo = (viewName) => {
+  router.push({ name: viewName });
 };
 
 // 검색 API 호출 함수
@@ -283,6 +314,17 @@ button:hover {
 
 .search-result-item:hover {
   background-color: #444;
+  cursor: pointer;
+}
+
+.wine-image {
+  width: 30px; /* 로고 크기 */
+  height: auto;
+}
+
+.auth-image {
+  width: 40px; /* 로그인/회원가입/로그아웃 이미지 크기 */
+  height: auto;
   cursor: pointer;
 }
 </style>
