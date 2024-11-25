@@ -111,27 +111,7 @@ watch(() => props.movieId, (newMovieId, oldMovieId) => {
   fetchComments(); // 새 영화 댓글 불러오기
 });
 
-// 댓글 삭제
-// const deleteComment = (moviePk, commentId, comment) => {
-//   console.log("Deleting comment with ID:", commentId)
-//   console.log("Comment Object:", comment); // comment 데이터 확인
-//   console.log("Comment ID:", comment.id);  // comment.id 확인
-//   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/delete`;
-//   axios({
-//     method: 'delete',
-//     url: url,
-//     headers: {
-//       Authorization: `Token ${store.token}`,
-//     },
-//   })
-//     .then(() => {
-//       comments.value = comments.value.filter((comment) => comment.id !== commentId);
-//       alert("댓글 삭제 성공!");
-//     })
-//     .catch((error) => {
-//       console.error("댓글 삭제 실패:", error);
-//     });
-// };
+
 
 const deleteComment = (commentId) => {
   if (!commentId) {
