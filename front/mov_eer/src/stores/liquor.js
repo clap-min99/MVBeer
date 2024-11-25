@@ -102,7 +102,7 @@ export const useLiquorStore = defineStore('liquor', () => {
   };
 
   // Nonalcohol API functions
-  const getNonalcohols = function () {
+  const getNonalcohols = () => {
     axios({
       method: 'get',
       url: `${API_URL}/api/v1/nonalcohols/`,
