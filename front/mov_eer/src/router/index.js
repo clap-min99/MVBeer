@@ -13,6 +13,7 @@ import StoutView from '@/views/Beer/StoutView.vue'
 import WhiskeyView from '@/views/WhiskeyView.vue'
 import WineView from '@/views/WineView.vue'
 import { useLogStore } from '@/stores/log'
+import SearchResultsView from '@/views/SearchResultsView.vue'
 
 
 
@@ -86,6 +87,11 @@ const router = createRouter({
       name: "StoutView",
       component: StoutView,
     },
+    {
+      path: '/search',
+      name: 'SearchResultsView',
+      component: SearchResultsView
+    }
   ],
 })
 

@@ -23,27 +23,23 @@
       <RouterLink to="/wine" class="nav-link">Wine</RouterLink>
     </div>
 
-  <!-- 검색창 섹션 -->
-  <div class="search-container">
-    <input
-      type="text"
-      v-model="searchQuery"
-      placeholder="영화를 검색하세요"
-      @input="searchMovies"
-      class="search-bar"
-    />
-    <!-- 검색 결과 -->
-    <div v-if="searchResults && searchResults.length > 0" class="search-results">
-      <ul>
-        <li v-for="movie in searchResults" :key="movie.id" class="search-result-item">
-          <RouterLink :to="{ name: 'MovieDetailView', params: { movieId: movie.id } }">
-            {{ movie.title }}
-          </RouterLink>
-        </li>
-      </ul>
+    <!-- 검색창 섹션 -->
+    <div class="search-container">
+      <input
+        type="text"
+        v-model="searchQuery"
+        placeholder="검색어를 입력하세요"
+        class="search-bar"
+      />
+      <button @click="handleSearch">검색</button>
+      <div v-if="searchResults.length" class="search-results">
+        <ul>
+          <li v-for="(result, index) in searchResults" :key="index" class="search-result-item">
+            {{ result.title }}
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-
 
     <!-- 로그인 섹션 -->
     <template v-if="!isLogin">
@@ -63,8 +59,6 @@ import { useLogStore } from '@/stores/log';
 import { useRouter } from 'vue-router';
 import axios from 'axios';
 
-
-
 // Pinia와 라우터 연결
 const logStore = useLogStore();
 const router = useRouter();
@@ -80,38 +74,48 @@ const logOut = () => {
 };
 
 // 상태 정의
-const searchQuery = ref('')
-const searchResults = ref([])
-const API_URL = 'http://127.0.0.1:8000'; // API 기본 URL
+const searchQuery = ref('');
+const searchResults = ref([]);
 
-// 검색 API 호출 함수
-const searchMovies = function() {
-  // 검색어가 비어있으면 결과 초기화
+// 검색 버튼 클릭 시 결과 페이지로 이동하는 함수
+const handleSearch = () => {
   if (!searchQuery.value.trim()) {
-    searchResults.value = [];
+    alert('검색어를 입력해주세요.');
     return;
   }
 
-  // Axios를 사용하여 영화 검색 API 호출
-  axios({
-    method: 'get',
-    url: `${API_URL}/api/v1/movies/search/`, // API 엔드포인트
-    params: { q: searchQuery.value } // 검색어를 쿼리 파라미터로 전달
-  })
-  .then((res) => {
-    searchResults.value = res.data || []; // 검색 결과 저장
-  })
-  .catch((err) => {
-    console.log("검색 실패:", err); // 에러 처리
-    searchResults.value = []; // 에러 발생 시 결과 초기화
+  // 검색어와 함께 SearchResultsView로 이동
+  router.push({ 
+    name: 'SearchResultsView', 
+    query: { q: searchQuery.value } // 검색어를 쿼리로 전달
   });
-  console.log("Search Query:", searchQuery.value);
-  console.log("Search Results:", searchResults.value);
-
 };
 
-</script>
+// 검색 API 호출 함수
+// const handleSearch = () => {
+//   // 검색어가 비어있으면 결과 초기화
+//   if (!searchQuery.value.trim()) {
+//     searchResults.value = [];
+//     return;
+//   }
 
+//   // Axios를 사용하여 영화 검색 API 호출
+//   axios({
+//     method: 'get',
+//     url: `${API_URL}/api/v1/movies/search/`, // API 엔드포인트
+//     params: { q: searchQuery.value } // 검색어를 쿼리 파라미터로 전달
+//   })
+//   .then((res) => {
+//     searchResults.value = res.data || []; // 검색 결과 저장
+//     console.log("Search Query:", searchQuery.value);
+//     console.log("Search Results:", searchResults.value);
+//   })
+//   .catch((err) => {
+//     console.log("검색 실패:", err); // 에러 처리
+//     searchResults.value = []; // 에러 발생 시 결과 초기화
+//   });
+// };
+</script>
 
 <style scoped>
 /* 헤더 전체 컨테이너 */
@@ -194,6 +198,8 @@ const searchMovies = function() {
   position: relative;
   flex-grow: 1;
   max-width: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar {
@@ -204,10 +210,26 @@ const searchMovies = function() {
   border-radius: 4px;
   background-color: #3b3b3b;
   color: #f8f8f8;
+  margin-right: 10px;
 }
 
 .search-bar::placeholder {
   color: #bfbfbf;
+}
+
+button {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ee9191;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f1c40f;
 }
 
 /* 검색 결과 */

@@ -77,3 +77,4 @@ export const useMovieStore = defineStore('movie', () => {
 
   return { movies, getMovies, API_URL, getMovie, movie_detail, getGenres, genres, searchMovies}
 },{ persist: true })
+
