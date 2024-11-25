@@ -4,7 +4,7 @@
     <div class="carousel-container">
       <div class="carousel">
         <div
-          v-for="(movie, index) in store.movies.slice(0, 10)"
+          v-for="(movie, index) in store.movies.slice(111,121)"
           :key="movie.id"
           class="carousel-item"
           :style="getItemStyle(index)"

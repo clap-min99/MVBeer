@@ -110,7 +110,7 @@ class Movie(models.Model):
     )  # 장르 (N:1 관계)
     adult = models.BooleanField()  # 성인 or not
     star_rating = models.DecimalField(max_digits=3, decimal_places=1)  # 별점 (예: 4.5)
-    poster_url = models.TextField()
+    poster_url = models.URLField(max_length=500, null=True, blank=True)
     def __str__(self):
         return self.title
     

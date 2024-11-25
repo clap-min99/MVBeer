@@ -2,7 +2,7 @@
   <div>
     <!-- 댓글 섹션 -->
     <div class="comments-section">
-      <h5>댓글</h5>
+      <h5>페어링 리뷰🍷</h5>
       <ul class="comments-list">
         <li v-for="comment in comments" :key="comment.id" class="comment">
           <p v-if="editingComment !== comment">
@@ -98,7 +98,7 @@ const submitComment = () => {
         comments.value.push(response.data);
       }
       newComment.value = "";
-      alert("댓글 작성 성공!");
+      
     })
     .catch((error) => {
       console.error("댓글 작성 실패:", error);
@@ -129,7 +129,7 @@ const deleteComment = (commentId) => {
   })
     .then(() => {
       comments.value = comments.value.filter((comment) => comment.id !== commentId);
-      alert("댓글 삭제 성공!");
+      alert("댓글이 삭제되었습니다.");
     })
     .catch((error) => {
       console.error("댓글 삭제 실패:", error);
