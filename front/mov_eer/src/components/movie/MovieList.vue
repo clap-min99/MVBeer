@@ -1,6 +1,6 @@
 <template>
   <div class="background-container">
-    <h2>현재 인기작</h2>
+    <!-- <h2>현재 인기작</h2> -->
     <div class="carousel-container">
       <div class="carousel">
         <div
@@ -26,7 +26,7 @@ import MovieMainInfo from "./MovieMainInfo.vue";
 const store = useMovieStore();
 const currentIndex = ref(0);
 
-const radius = 350; // 원형 배치의 반지름 (화면 비율 확대에 맞춰 증가)
+const radius = 600; // 원형 배치의 반지름 (화면 비율 확대에 맞춰 증가)
 
 // 영화 슬라이드의 스타일을 동적으로 계산
 const getItemStyle = (index) => {
@@ -63,6 +63,7 @@ const nextSlide = () => {
   background-size: cover;
   background-position: center;
   padding: 50px 0;
+  margin-bottom: 60px;
 }
 
 
@@ -80,10 +81,10 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  perspective: 1200px; /* 3D 효과를 위한 원근감 추가 */
+  perspective: 1500px; /* 3D 효과를 위한 원근감 추가 */
   height: 400px; /* 화면 비율 증가 */
   margin-top: 160px; /* 캐러셀 자체를 아래로 이동 */
-  transform: translateX(-50px); /* 캐러셀을 왼쪽으로 50px 이동 */
+  transform: translateX(-160px); /* 캐러셀을 왼쪽으로 50px 이동 */
 }
 
 /* 캐러셀 */
@@ -91,7 +92,7 @@ h2 {
   display: flex;
   position: relative;
   transform-style: preserve-3d; /* 3D 효과 유지 */
-  width: 100%; /* 중앙 콘텐츠의 너비 */
+  width: 500%; /* 중앙 콘텐츠의 너비 */
   height: 100%; /* 높이 비율 */
 }
 
@@ -123,7 +124,7 @@ h2 {
 }
 
 .arrow.right {
-  right: -420px; /* 오른쪽 화살표 간격 */
+  right: -500px; /* 오른쪽 화살표 간격 */
 }
 
 .arrow:hover {
