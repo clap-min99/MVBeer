@@ -49,8 +49,11 @@
       </div>
     </div>
 
-    <!-- 검색창 섹션 -->
+    <div class="dropdown">
+      <RouterLink to="/nonalcohol" class="nav-link">Nonalcohol</RouterLink>
+      </div>
 
+    <!-- 검색창 섹션 -->
     <div class="search-container">
     <input
       type="text"

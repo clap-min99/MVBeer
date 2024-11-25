@@ -1,49 +1,49 @@
 <template>
-    <div class="lager-view">
-      <h1>🍺 Lager</h1>
-      <div class="lager-intro">
+    <div class="nonalcohol-view">
+      <h1>🥤논알콜(Non-Alcoholic)</h1>
+      <div class="nonalcohol-intro">
         <img
-          src="@/assets/Lager.png"
-          alt="Lager Beer"
-          class="lager-image"
+          src="@/assets/nonalcohol.png"
+          alt="Non-Alcoholic Drinks"
+          class="nonalcohol-image"
         />
-        <div class="lager-description">
+        <div class="nonalcohol-description">
           <p>
-            <strong>라거(Lager)</strong>는 하부 발효 방식을 통해 만들어지는 맥주로, 낮은 온도에서 발효되어 깨끗하고 청량한 맛이 특징입니다.
-            라거는 세계적으로 가장 대중적인 맥주 스타일로, 필스너, 둔켈, 헬레스 등 다양한 하위 유형이 있습니다.
+            <strong>논알콜(Non-Alcoholic)</strong>은 알코올을 포함하지 않는 음료로, 맥주와 칵테일의 대안으로 많은 사람들에게 사랑받고 있습니다.
+            논알콜 음료는 건강을 생각하는 사람들 또는 운전을 해야 하는 사람들에게 적합한 선택입니다.
           </p>
           <p>
-            부드럽고 깔끔한 맛 덕분에 누구나 즐길 수 있는 맥주로, 전 세계 축제나 일상적인 모임에서 사랑받고 있습니다.
-            더운 여름날의 갈증 해소부터 가벼운 식사와의 조화까지, 라거는 늘 좋은 선택입니다.
+            논알콜 음료는 탄산음료, 무알콜 맥주, 무알콜 칵테일(Mocktail) 등 다양한 종류로 제공됩니다.
+            또한, 다양한 상황에서 즐길 수 있도록 여러 맛과 스타일이 존재합니다.
           </p>
-          <p class="lager-adventure-pairing">
-            🎥 라거는 Adventure(모험) 장르와 잘 어울립니다.
-            라거 한 잔의 시원한 청량감은 모험 영화 속 흥미진진한 장면과 함께 완벽한 조화를 이룹니다.
+          <p class="nonalcohol-action-pairing">
+            🥤 논알콜 음료는 가족 영화와 완벽한 조화를 이룹니다.
+            편안한 분위기에서 온 가족이 함께 즐길 수 있는 최고의 선택입니다.
           </p>
         </div>
       </div>
   
-      <div class="beer-list">
-        <h2>추천 Lager 리스트</h2>
-        <div class="beer-card-container">
-          <div v-for="beer in beers" :key="beer.id" class="beer-card">
-            <h3>{{ beer.name }}</h3>
-            <p>{{ beer.description }}</p>
-            <p><strong>대표 브랜드:</strong> {{ beer.representativeBrands }}</p>
-            <p><strong>스타일:</strong> {{ beer.style }}</p>
+      <div class="nonalcohol-list">
+        <h2>추천 논알콜 음료</h2>
+        <div class="nonalcohol-card-container">
+          <div v-for="drink in drinks" :key="drink.id" class="nonalcohol-card">
+            <h3>{{ drink.name }}</h3>
+            <p>{{ drink.description }}</p>
+            <p><strong>브랜드:</strong> {{ drink.representativeBrands }}</p>
+            <p><strong>종류:</strong> {{ drink.style }}</p>
             <p>
-              <strong>추천 안주:</strong> {{ beer.foodPairing }}
-              <span>{{ beer.foodEmoji }}</span>
+              <strong>추천 음식:</strong> {{ drink.foodPairing }}
+              <span>{{ drink.foodEmoji }}</span>
             </p>
           </div>
         </div>
       </div>
   
       <div class="movies-scroll">
-        <h2>페어링 with Lager 🎥</h2>
+        <h2>페어링 with 논알콜🥤</h2>
         <div class="movie-card-container">
           <div
-            v-for="movie in getBeerMovies('Lager')" 
+            v-for="movie in getNonAlcoholMovies('Non-Alcoholic')"
             :key="movie.id"
             class="movie-card"
           >
@@ -63,42 +63,33 @@
   import { onMounted } from "vue";
   import { RouterLink } from "vue-router";
   
-  const beers = [
+  const drinks = [
     {
       id: 1,
-      name: "필스너 (Pilsner)",
-      description: "가볍고 청량한 맛이 특징인 라거 스타일.",
-      representativeBrands: "Pilsner Urquell, Heineken",
-      style: "Pilsner",
-      foodPairing: "샐러드, 가벼운 해산물 요리",
-      foodEmoji: "🥗🦐"
+      name: "탄산음료",
+      description: "청량감 넘치는 무알콜 탄산음료.",
+      representativeBrands: "코카콜라, 스프라이트",
+      style: "Soda",
+      foodPairing: "팝콘, 핫도그",
+      foodEmoji: "🍿🌭"
     },
     {
       id: 2,
-      name: "헬레스 (Helles)",
-      description: "부드럽고 약간의 단맛이 느껴지는 독일 스타일 라거.",
-      representativeBrands: "Augustiner Helles, Paulaner Original Münchner",
-      style: "Helles",
-      foodPairing: "치킨, 감자 요리",
-      foodEmoji: "🍗🥔"
+      name: "무알콜 맥주",
+      description: "맥주의 풍미를 그대로 살린 무알콜 맥주.",
+      representativeBrands: "하이네켄 0.0, 칼스버그 알콜프리",
+      style: "Non-Alcoholic Beer",
+      foodPairing: "피자, 감자튀김",
+      foodEmoji: "🍕🍟"
     },
     {
       id: 3,
-      name: "둔켈 (Dunkel)",
-      description: "깊고 진한 몰트 풍미가 특징인 어두운 라거.",
-      representativeBrands: "Ayinger Altbairisch Dunkel, Warsteiner Dunkel",
-      style: "Dunkel",
-      foodPairing: "구운 고기, 치즈 플래터",
-      foodEmoji: "🍖🧀"
-    },
-    {
-      id: 4,
-      name: "복 (Bock)",
-      description: "묵직하고 강렬한 맛을 자랑하는 독일 라거 스타일.",
-      representativeBrands: "Spaten Optimator, Celebrator Doppelbock",
-      style: "Bock",
-      foodPairing: "스테이크, 초콜릿 디저트",
-      foodEmoji: "🥩🍫"
+      name: "무알콜 칵테일(Mocktail)",
+      description: "칵테일의 맛을 즐길 수 있는 무알콜 버전.",
+      representativeBrands: "바텐더의 창작 음료",
+      style: "Mocktail",
+      foodPairing: "샐러드, 치즈 플래터",
+      foodEmoji: "🥗🧀"
     }
   ];
   
@@ -106,12 +97,12 @@
   const movieStore = useMovieStore();
   
   onMounted(() => {
-    liquorStore.getBeers();
+    liquorStore.getNonAlcohols(); // Nonalcohol 데이터 호출
     movieStore.getMovies();
     movieStore.getGenres();
   });
   
-  const getBeerMovies = (subtype) => {
+  const getNonAlcoholMovies = (subtype) => {
     return movieStore.movies.filter((movie) => {
       return movie.genres.some((genreId) => {
         const genre = movieStore.genres.find((g) => g.id === genreId);
@@ -129,8 +120,7 @@
   </script>
   
   <style scoped>
-  /* Lager 스타일 */
-  .lager-view {
+  .nonalcohol-view {
     padding: 20px;
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
@@ -142,13 +132,13 @@
     margin-bottom: 30px;
   }
   
-  .lager-intro {
+  .nonalcohol-intro {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
   }
   
-  .lager-image {
+  .nonalcohol-image {
     width: 300px;
     height: auto;
     margin-right: 20px;
@@ -156,32 +146,32 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .lager-description {
+  .nonalcohol-description {
     color: #555;
     font-size: 16px;
     line-height: 1.8;
     flex: 1;
   }
   
-  .lager-adventure-pairing {
+  .nonalcohol-action-pairing {
     margin-top: 20px;
     font-style: italic;
     color: #444;
     font-size: 15px;
   }
   
-  .beer-list h2 {
+  .nonalcohol-list h2 {
     color: #444;
     margin-bottom: 20px;
   }
   
-  .beer-card-container {
+  .nonalcohol-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
   
-  .beer-card {
+  .nonalcohol-card {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
@@ -191,7 +181,7 @@
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
-  .beer-card:hover {
+  .nonalcohol-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   }
@@ -207,7 +197,6 @@
     line-height: 1.6;
   }
   
-  /* 영화 스타일 */
   .movies-scroll {
     margin-top: 40px;
   }
