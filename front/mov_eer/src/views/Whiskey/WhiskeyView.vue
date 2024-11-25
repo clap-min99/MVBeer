@@ -7,8 +7,12 @@
     </div>
     <div class="movies-container">
       <div v-for="whiskey in whiskeys" :key="whiskey.id" class="whiskey-section">
-        <h2 class="whiskey-title">{{ whiskey.subtype }}</h2>
-        <p class="whiskey-description">{{ whiskey.description }}</p>
+        <!-- RouterLink를 사용하여 View로 이동 -->
+        <h2 class="whiskey-title">
+          <RouterLink class="subtype-button" :to="`/${whiskey.subtype.toLowerCase()}`">
+            {{ whiskey.subtype }}
+          </RouterLink>
+        </h2>
         <div class="movies-scroll">
           <div
             v-for="movie in getWhiskeyMovies(whiskey.subtype)"
@@ -18,7 +22,6 @@
             <RouterLink :to="{ name: 'MovieDetailView', params: { moviePk: movie.id } }">
               <img :src="getImageUrl(movie.poster_url)" class="movie-poster" alt="Movie Poster" />
             </RouterLink>
-            <p class="movie-title">{{ movie.title }}</p>
           </div>
         </div>
       </div>
@@ -67,12 +70,14 @@ const getImageUrl = (path) => {
 .whiskey-view {
   padding: 20px;
   font-family: "Arial", sans-serif;
+  background-color: rgb(22, 22, 22);
 }
 
 .view-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #ccb4b4;
 }
 
 .loading,
@@ -89,14 +94,8 @@ const getImageUrl = (path) => {
 .whiskey-title {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.whiskey-description {
-  font-size: 1rem;
   margin-bottom: 20px;
-  color: #555;
+  color: #fcfbf7;
 }
 
 .movies-scroll {
@@ -139,7 +138,28 @@ const getImageUrl = (path) => {
 .movie-title {
   font-size: 1rem;
   margin-top: 10px;
-  color: #333;
+  color: #f7f5f5;
   font-weight: bold;
+}
+
+/* 서브타입 버튼 */
+.subtype-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.subtype-button:hover {
+  transform: scale(1.05);
+  background-color: #ee9191;
+  color: #fff;
 }
 </style>
