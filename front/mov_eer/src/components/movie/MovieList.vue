@@ -68,10 +68,10 @@ const nextSlide = () => {
 
 /* 헤더 텍스트 */
 h2 {
-  color: white;
+  color: #f5f5f5;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 /* 캐러셀 컨테이너 */

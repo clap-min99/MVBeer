@@ -3,7 +3,7 @@
     <!-- 로고 섹션 -->
     <div class="logo-container">
       <RouterLink :to="{ name: 'MainView' }">
-        <img src="@/assets/logo_white.png" alt="MVBeer Logo" class="logo-image" />
+        <img src="@/assets/logo_final_white.png" alt="MVBeer Logo" class="logo-image" />
       </RouterLink>
     </div>
 
@@ -175,6 +175,7 @@ const navigateTo = (viewName) => {
 .logo-image {
   width: 120px; /* 로고 크기 */
   height: auto;
+  margin-top: 10px;
 }
 
 /* 네비게이션 섹션 */

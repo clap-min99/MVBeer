@@ -67,12 +67,14 @@
   .beer-view {
     padding: 20px;
     font-family: "Arial", sans-serif;
+    background-color: rgb(22, 22, 22);
   }
   
   .view-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #ccb4b4;
   }
   
   .loading,
