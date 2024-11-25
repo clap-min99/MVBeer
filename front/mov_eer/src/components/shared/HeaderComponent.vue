@@ -171,6 +171,8 @@ const navigateTo = (viewName) => {
   align-items: center;
   padding: 10px 20px; /* 내부 여백 */
   background-color: #070707; /* 다크그레이 배경색 */
+  z-index: 1000; /* 헤더가 항상 위에 표시되도록 설정 */
+  position: relative; /* z-index가 적용되려면 position이 필요 */
 }
 
 /* 로고 섹션 */
@@ -222,6 +224,7 @@ const navigateTo = (viewName) => {
   margin: 0;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1010
 }
 
 .dropdown:hover .dropdown-menu {
