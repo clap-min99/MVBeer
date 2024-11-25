@@ -162,7 +162,7 @@ const navigateTo = (viewName) => {
   justify-content: space-between; /* 로고, 네비게이션, 검색창을 양쪽 끝으로 배치 */
   align-items: center;
   padding: 10px 20px; /* 내부 여백 */
-  background-color: #2e2e2e; /* 다크그레이 배경색 */
+  background-color: #070707; /* 다크그레이 배경색 */
 }
 
 /* 로고 섹션 */
@@ -228,7 +228,7 @@ const navigateTo = (viewName) => {
 
 .dropdown-item:hover {
   background-color: #555; /* 호버 시 배경색 변경 */
-  color: #f1c40f;
+  color: #ee9191;
 }
 
 /* 검색창 */
@@ -267,7 +267,7 @@ button {
 }
 
 button:hover {
-  background-color: #f1c40f;
+  background-color: #ee9191;
 }
 
 /* 검색 결과 */
