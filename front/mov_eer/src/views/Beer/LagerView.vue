@@ -1,6 +1,6 @@
 <template>
   <div class="lager-view">
-    <h1>🍺 Lager</h1>
+    <h1>🍺 라거(Lager)</h1>
     <div class="lager-intro">
       <img
         src="@/assets/Lager.png"
@@ -132,13 +132,14 @@ const getImageUrl = (path) => {
 /* Lager 스타일 */
 .lager-view {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e; /* 어두운 배경색 */
+  color: #e8e8e8; /* 기본 텍스트 색상 */
   font-family: Arial, sans-serif;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -153,11 +154,10 @@ h1 {
   height: auto;
   margin-right: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 그림자 어둡게 */
 }
 
 .lager-description {
-  color: #555;
   font-size: 16px;
   line-height: 1.8;
   flex: 1;
@@ -165,13 +165,13 @@ h1 {
 
 .lager-adventure-pairing {
   margin-top: 20px;
-  font-style: italic;
-  color: #444;
+  color: #dddddd; /* 밝은 회색 텍스트 */
   font-size: 15px;
 }
 
+/* 맥주 리스트 섹션 */
 .beer-list h2 {
-  color: #444;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -182,32 +182,22 @@ h1 {
 }
 
 .beer-card {
-  background-color: #ffffff;
+  background-color: #333333; /* 어두운 카드 배경색 */
+  color: #ffffff; /* 밝은 텍스트 색상 */
   border-radius: 8px;
   padding: 20px;
   width: 20%;
   min-width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .beer-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
 }
 
-h3 {
-  color: #444;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #555;
-  margin: 5px 0;
-  line-height: 1.6;
-}
-
-/* 영화 스타일 */
+/* 영화 페어링 섹션 */
 .movies-scroll {
   margin-top: 40px;
 }
@@ -227,12 +217,12 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* 어두운 그림자 */
 }
 
 .movie-title {
   margin-top: 10px;
   font-size: 14px;
-  color: #333;
+  color: #ffffff; /* 밝은 텍스트 색상 */
 }
 </style>
