@@ -1,6 +1,6 @@
 <template>
     <div class="japanese-whiskey-view">
-      <h1>🇯🇵 Japanese 위스키</h1>
+      <h1>🥃 Japanese 위스키</h1>
       <div class="whiskey-intro">
         <img
           src="@/assets/JapaneseWhiskey.png"
@@ -26,7 +26,7 @@
       </div>
   
       <div class="whiskey-list">
-        <h2>추천 Japanese 위스키 리스트</h2>
+        <h2>추천 Japanese 위스키</h2>
         <div class="whiskey-card-container">
           <div v-for="whiskey in whiskeys" :key="whiskey.id" class="whiskey-card">
             <h3>{{ whiskey.name }}</h3>
