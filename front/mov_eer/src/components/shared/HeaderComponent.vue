@@ -9,6 +9,7 @@
 
     <!-- 네비게이션 섹션 -->
     <div class="nav-container">
+      <!-- Beer 드롭다운 -->
       <div class="dropdown">
         <RouterLink to="/beer" class="nav-link">Beer</RouterLink>
         <ul class="dropdown-menu">
@@ -19,11 +20,38 @@
           <li><RouterLink to="/wheat" class="dropdown-item">Wheat</RouterLink></li>
         </ul>
       </div>
-      <RouterLink to="/whiskey" class="nav-link">Whiskey</RouterLink>
-      <RouterLink to="/wine" class="nav-link">Wine</RouterLink>
+
+      <!-- Whiskey 드롭다운 -->
+      <div class="dropdown">
+        <RouterLink to="/whiskey" class="nav-link">Whiskey</RouterLink>
+        <ul class="dropdown-menu">
+          <li><RouterLink to="/blended" class="dropdown-item">Blended</RouterLink></li>
+          <li><RouterLink to="/scotch" class="dropdown-item">Scotch</RouterLink></li>
+          <li><RouterLink to="/irish" class="dropdown-item">Irish</RouterLink></li>
+          <li><RouterLink to="/bourbon" class="dropdown-item">Bourbon</RouterLink></li>
+          <li><RouterLink to="/rye" class="dropdown-item">Rye</RouterLink></li>
+          <li><RouterLink to="/tennessee" class="dropdown-item">Tennessee</RouterLink></li>
+          <li><RouterLink to="/japanese" class="dropdown-item">Japanese</RouterLink></li>
+          <li><RouterLink to="/singlemalt" class="dropdown-item">SingleMalt</RouterLink></li>
+        </ul>
+      </div>
+
+      <!-- Wine 드롭다운 -->
+      <div class="dropdown">
+        <RouterLink to="/wine" class="nav-link">Wine</RouterLink>
+        <ul class="dropdown-menu horizontal">
+          <li><RouterLink to="/red" class="dropdown-item">Red</RouterLink></li>
+          <li><RouterLink to="/white" class="dropdown-item">White</RouterLink></li>
+          <li><RouterLink to="/rose" class="dropdown-item">Rosé</RouterLink></li>
+          <li><RouterLink to="/sparkling" class="dropdown-item">Sparkling</RouterLink></li>
+          <li><RouterLink to="/natural" class="dropdown-item">Natural</RouterLink></li>
+        </ul>
+      </div>
     </div>
 
     <!-- 검색창 섹션 -->
+    <input type="text" placeholder="영화를 검색하세요" class="search-bar" />
+
     <div class="search-container">
       <input
         type="text"

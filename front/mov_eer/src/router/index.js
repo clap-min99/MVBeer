@@ -2,16 +2,34 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '@/views/MainView.vue'
 import MovieDetailView from '@/views/MovieDetailView.vue'
 import AlcoholView from '@/views/AlcoholView.vue'
+
 import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
+
 import BeerView from '@/views/Beer/BeerView.vue'
 import AleView from '@/views/Beer/AleView.vue'
 import LagerView from '@/views/Beer/LagerView.vue'
 import PilsnerView from '@/views/Beer/PilsnerView.vue'
 import WheatView from '@/views/Beer/WheatView.vue'
 import StoutView from '@/views/Beer/StoutView.vue'
-import WhiskeyView from '@/views/WhiskeyView.vue'
+
+import WhiskeyView from '@/views/Whiskey/WhiskeyView.vue'
+import ScotchView from '@/views/Whiskey/ScotchView.vue';
+import IrishView from '@/views/Whiskey/IrishView.vue';
+import BourbonView from '@/views/Whiskey/BourbonView.vue';
+import RyeView from '@/views/Whiskey/RyeView.vue';
+import TennesseeView from '@/views/Whiskey/TennesseeView.vue';
+import JapaneseView from '@/views/Whiskey/JapaneseView.vue';
+import BlendedView from '@/views/Whiskey/BlendedView.vue';
+import SingleMaltView from '@/views/Whiskey/SingleMaltView.vue'
+
 import WineView from '@/views/WineView.vue'
+import RedWineView from '@/views/Wine/RedWineView.vue';
+import WhiteWineView from '@/views/Wine/WhiteWineView.vue';
+import RoseWineView from '@/views/Wine/RoseWineView.vue';
+import SparklingWineView from '@/views/Wine/SparklingWineView.vue';
+import NaturalWineView from '@/views/Wine/NaturalWineView.vue';
+
 import { useLogStore } from '@/stores/log'
 import SearchResultsView from '@/views/SearchResultsView.vue'
 
@@ -58,6 +76,47 @@ const router = createRouter({
       component: WhiskeyView
     },
     {
+      path: '/scotch',
+      name: 'ScotchView',
+      component: ScotchView,
+    },
+    {
+      path: '/singlemalt',
+      name: 'SingleMaltView',
+      component: SingleMaltView,
+    },
+    {
+      path: '/irish',
+      name: 'IrishView',
+      component: IrishView,
+    },
+    {
+      path: '/bourbon',
+      name: 'BourbonView',
+      component: BourbonView,
+    },
+    {
+      path: '/blended',
+      name: 'BlendedView',
+      component: BlendedView,
+    },
+    {
+      path: '/rye',
+      name: 'RyeView',
+      component: RyeView,
+    },
+    {
+      path: '/tennessee',
+      name: 'TennesseeView',
+      component: TennesseeView,
+    },
+    {
+      path: '/japanese',
+      name: 'JapaneseView',
+      component: JapaneseView,
+    },
+
+    {
       path: '/wine/',
       name: 'WineView',
       component: WineView
@@ -86,6 +145,31 @@ const router = createRouter({
       path: "/stout",
       name: "StoutView",
       component: StoutView,
+    },
+    {
+      path: '/red',
+      name: 'RedWineView',
+      component: RedWineView,
+    },
+    {
+      path: '/white',
+      name: 'WhiteWineView',
+      component: WhiteWineView,
+    },
+    {
+      path: '/rose',
+      name: 'RoseWineView',
+      component: RoseWineView,
+    },
+    {
+      path: '/sparkling',
+      name: 'SparklingWineView',
+      component: SparklingWineView,
+    },
+    {
+      path: '/natural',
+      name: 'NaturalWineView',
+      component: NaturalWineView,
     },
     {
       path: '/search',

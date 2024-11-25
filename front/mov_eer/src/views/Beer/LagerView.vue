@@ -1,6 +1,6 @@
 <template>
   <div class="lager-view">
-    <h1>🍺 라거(Lager)</h1>
+    <h1>🍺 Lager</h1>
     <div class="lager-intro">
       <img
         src="@/assets/Lager.png"
@@ -8,31 +8,23 @@
         class="lager-image"
       />
       <div class="lager-description">
-  <p>
-    <strong>라거(Lager)</strong>는 하부 발효 방식으로 만들어지는 맥주로, 비교적 낮은 온도에서 발효되어
-    깨끗하고 청량한 맛이 특징입니다. 
-    라거는 전 세계적으로 가장 소비되는 맥주 스타일로, 부드럽고 깔끔한 맛 덕분에 많은 사람들이 즐길 수 있는 맥주입니다.
-  </p>
-  <p>
-    라거는 단순히 청량함뿐만 아니라 각 지역에서 독특한 스타일로 변주되었습니다.
-    예를 들어, 독일의 헬레스(Helles)는 부드러운 몰트 맛과 은은한 홉 향으로 사랑받으며,
-    미국의 아메리칸 라거(American Lager)는 깔끔하고 가벼운 바디감으로 일상적인 음료로 즐겨집니다.
-  </p>
-  <p>
-    라거는 다양한 상황에 어울립니다. 스포츠 경기 관람, 여유로운 바비큐 파티, 혹은 긴 하루를 마무리하며
-    가볍게 즐기기에 완벽한 동반자입니다. 
-    또한, 치킨, 버거, 감자튀김과 같은 대중적인 음식과 훌륭한 페어링을 자랑합니다.
-  </p>
-  <p class="lager-comedy-pairing">
-    🍿 라거는 코미디 영화와 잘 어울립니다.
-    상쾌한 라거 한 모금은 가벼운 웃음과 함께 여유로운 순간을 더해줍니다.
-    친구들과 라거를 즐기며 영화 속 웃음 가득한 장면을 감상해보세요!
-  </p>
-</div>
+        <p>
+          <strong>라거(Lager)</strong>는 하부 발효 방식을 통해 만들어지는 맥주로, 낮은 온도에서 발효되어 깨끗하고 청량한 맛이 특징입니다.
+          라거는 세계적으로 가장 대중적인 맥주 스타일로, 필스너, 둔켈, 헬레스 등 다양한 하위 유형이 있습니다.
+        </p>
+        <p>
+          부드럽고 깔끔한 맛 덕분에 누구나 즐길 수 있는 맥주로, 전 세계 축제나 일상적인 모임에서 사랑받고 있습니다.
+          더운 여름날의 갈증 해소부터 가벼운 식사와의 조화까지, 라거는 늘 좋은 선택입니다.
+        </p>
+        <p class="lager-adventure-pairing">
+          🎥 라거는 Adventure(모험) 장르와 잘 어울립니다.
+          라거 한 잔의 시원한 청량감은 모험 영화 속 흥미진진한 장면과 함께 완벽한 조화를 이룹니다.
+        </p>
+      </div>
     </div>
 
     <div class="beer-list">
-      <!-- <h2>라거 맥주 리스트</h2> -->
+      <h2>추천 Lager 리스트</h2>
       <div class="beer-card-container">
         <div v-for="beer in beers" :key="beer.id" class="beer-card">
           <h3>{{ beer.name }}</h3>
@@ -48,7 +40,7 @@
     </div>
 
     <div class="movies-scroll">
-      <h2>페어링 with 라거🍺</h2>
+      <h2>페어링 with Lager 🎥</h2>
       <div class="movie-card-container">
         <div
           v-for="movie in getBeerMovies('Lager')" 
@@ -72,41 +64,41 @@ import { onMounted } from "vue";
 import { RouterLink } from "vue-router";
 
 const beers = [
-{
-  id: 1,
-  name: "엠버 라거 (Amber Lager)",
-  description: "풍부한 몰트 맛과 은은한 카라멜 향이 특징인 라거 스타일.",
-  representativeBrands: "Samuel Adams Boston Lager, Yuengling Traditional Lager",
-  style: "Amber Lager",
-  foodPairing: "바비큐, 구운 고기 요리",
-  foodEmoji: "🍖🍗"
-},
+  {
+    id: 1,
+    name: "필스너 (Pilsner)",
+    description: "가볍고 청량한 맛이 특징인 라거 스타일.",
+    representativeBrands: "Pilsner Urquell, Heineken",
+    style: "Pilsner",
+    foodPairing: "샐러드, 가벼운 해산물 요리",
+    foodEmoji: "🥗🦐"
+  },
   {
     id: 2,
-    name: "둔켈 (Dunkel)",
-    description: "깊은 몰트 풍미와 부드러운 맛이 특징인 독일 라거.",
-    representativeBrands: "Paulaner Dunkel, Ayinger Altbairisch Dunkel",
-    style: "Dunkel",
-    foodPairing: "소시지, 브렛첼",
-    foodEmoji: "🌭🥨"
+    name: "헬레스 (Helles)",
+    description: "부드럽고 약간의 단맛이 느껴지는 독일 스타일 라거.",
+    representativeBrands: "Augustiner Helles, Paulaner Original Münchner",
+    style: "Helles",
+    foodPairing: "치킨, 감자 요리",
+    foodEmoji: "🍗🥔"
   },
   {
     id: 3,
-    name: "헬레스 (Helles)",
-    description: "밝고 부드러운 맛을 가진 독일식 라거.",
-    representativeBrands: "Augustiner Helles, Hofbräu Original",
-    style: "Helles",
-    foodPairing: "치킨, 감자튀김",
-    foodEmoji: "🍗🍟"
+    name: "둔켈 (Dunkel)",
+    description: "깊고 진한 몰트 풍미가 특징인 어두운 라거.",
+    representativeBrands: "Ayinger Altbairisch Dunkel, Warsteiner Dunkel",
+    style: "Dunkel",
+    foodPairing: "구운 고기, 치즈 플래터",
+    foodEmoji: "🍖🧀"
   },
   {
     id: 4,
-    name: "보크 (Bock)",
-    description: "진한 몰트 풍미와 약간의 단맛이 느껴지는 강한 라거.",
-    representativeBrands: "Weihenstephaner Vitus, Einbecker Ur-Bock",
+    name: "복 (Bock)",
+    description: "묵직하고 강렬한 맛을 자랑하는 독일 라거 스타일.",
+    representativeBrands: "Spaten Optimator, Celebrator Doppelbock",
     style: "Bock",
-    foodPairing: "스튜, 치즈 플래터",
-    foodEmoji: "🍲🧀"
+    foodPairing: "스테이크, 초콜릿 디저트",
+    foodEmoji: "🥩🍫"
   }
 ];
 
@@ -137,7 +129,7 @@ const getImageUrl = (path) => {
 </script>
 
 <style scoped>
-/* 기존 에일 스타일을 라거에 적용 */
+/* Lager 스타일 */
 .lager-view {
   padding: 20px;
   background-color: #f9f9f9;
@@ -171,7 +163,7 @@ h1 {
   flex: 1;
 }
 
-.lager-comedy-pairing {
+.lager-adventure-pairing {
   margin-top: 20px;
   font-style: italic;
   color: #444;
