@@ -56,7 +56,7 @@
       <!-- 페이지 네비게이션 -->
       <div class="pagination">
         <button @click="prevPage" :disabled="currentPage === 1">이전</button>
-        <span>페이지 {{ currentPage }} / {{ totalPages }}</span>
+        <span> {{ currentPage }} / {{ totalPages }}</span>
         <button @click="nextPage" :disabled="currentPage === totalPages">다음</button>
       </div>
     </div>
@@ -173,7 +173,7 @@ const getImageUrl = (path) => {
 }
 
 .pagination button:hover {
-  background-color: #555555;
+  background-color: #ee9191;
 }
 
 .pagination button:disabled {
