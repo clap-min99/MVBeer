@@ -78,8 +78,8 @@ const getBeverageImages = (subtype) => {
   const allBeers = liquorStore.beers;
   const allWhiskeys = liquorStore.whiskeys;
   const allWines = liquorStore.wines;
-
-  const beverages = [...allBeers, ...allWhiskeys, ...allWines];
+  const allNonalcoholes = liquorStore.nonalcohols;
+  const beverages = [...allBeers, ...allWhiskeys, ...allWines, ...allNonalcoholes];
 
   // 주류 subtype과 일치하는 이미지 반환
   const beverage = beverages.find((b) => b.subtype === subtype);
@@ -91,6 +91,7 @@ onMounted(() => {
   liquorStore.getBeers();
   liquorStore.getWhiskeys();
   liquorStore.getWines();
+  liquorStore.getNonalcohols();
 });
 </script>
 
