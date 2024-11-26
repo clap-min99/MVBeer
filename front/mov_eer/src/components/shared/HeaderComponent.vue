@@ -84,6 +84,11 @@
     </div>
   </div>
 
+    <!-- 유저 정보 표시 섹션 -->
+    <div class="user-info">
+    <span v-if="isLogin">{{ user?.username }}님</span>
+    <!-- <span v-else>비회원</span> -->
+    </div>
     <!-- 로그인 섹션 -->
     <div class="auth-container">
       <template v-if="!isLogin">
@@ -127,6 +132,7 @@ const router = useRouter();
 
 // 로그인 상태 계산
 const isLogin = computed(() => logStore.isLogin);
+const user = computed(() => logStore.user);
 
 // 로그아웃 함수
 const logOut = () => {
@@ -171,6 +177,16 @@ const navigateTo = (viewName) => {
   align-items: center;
   padding: 10px 20px; /* 내부 여백 */
   background-color: #070707; /* 다크그레이 배경색 */
+  z-index: 1000; /* 헤더가 항상 위에 표시되도록 설정 */
+  position: relative; /* z-index가 적용되려면 position이 필요 */
+}
+
+/* 유저 정보 표시 섹션 */
+.user-info {
+  color: #fffdfd; /* 밝은 색상으로 유저 이름 표시 */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 20px; /* 로그인 섹션과의 간격 */
 }
 
 /* 로고 섹션 */
@@ -222,6 +238,7 @@ const navigateTo = (viewName) => {
   margin: 0;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1010
 }
 
 .dropdown:hover .dropdown-menu {

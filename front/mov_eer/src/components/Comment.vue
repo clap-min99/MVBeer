@@ -2,7 +2,7 @@
   <div>
     <!-- 댓글 섹션 -->
     <div class="comments-section">
-      <h5>댓글</h5>
+      <h5>페어링 리뷰🍷</h5>
       <ul class="comments-list">
         <li v-for="comment in comments" :key="comment.id" class="comment">
           <p v-if="editingComment !== comment">
@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 import { useLogStore } from "@/stores/log";
 
@@ -92,39 +92,26 @@ const submitComment = () => {
     },
     data:{content: newComment.value}},)
     .then((response) => {
+      console.log("작성된 댓글:", response.data);
       // 댓글 추가 시 중복 방지
       if (!comments.value.some((comment) => comment.id === response.data.id)) {
         comments.value.push(response.data);
       }
       newComment.value = "";
-      alert("댓글 작성 성공!");
+      
     })
     .catch((error) => {
       console.error("댓글 작성 실패:", error);
     });
 };
 
-// 댓글 삭제
-// const deleteComment = (moviePk, commentId, comment) => {
-//   console.log("Deleting comment with ID:", commentId)
-//   console.log("Comment Object:", comment); // comment 데이터 확인
-//   console.log("Comment ID:", comment.id);  // comment.id 확인
-//   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/delete`;
-//   axios({
-//     method: 'delete',
-//     url: url,
-//     headers: {
-//       Authorization: `Token ${store.token}`,
-//     },
-//   })
-//     .then(() => {
-//       comments.value = comments.value.filter((comment) => comment.id !== commentId);
-//       alert("댓글 삭제 성공!");
-//     })
-//     .catch((error) => {
-//       console.error("댓글 삭제 실패:", error);
-//     });
-// };
+watch(() => props.movieId, (newMovieId, oldMovieId) => {
+  console.log("영화 ID 변경:", oldMovieId, "->", newMovieId);
+  comments.value = []; // 상태 초기화
+  fetchComments(); // 새 영화 댓글 불러오기
+});
+
+
 
 const deleteComment = (commentId) => {
   if (!commentId) {
@@ -142,7 +129,7 @@ const deleteComment = (commentId) => {
   })
     .then(() => {
       comments.value = comments.value.filter((comment) => comment.id !== commentId);
-      alert("댓글 삭제 성공!");
+      alert("댓글이 삭제되었습니다.");
     })
     .catch((error) => {
       console.error("댓글 삭제 실패:", error);
@@ -220,6 +207,7 @@ const isAuthor = (comment) => {
 // 컴포넌트 초기 로드
 onMounted(() => {
   console.log("Movie ID:", props.movieId); // movieId 출력
+  comments.value = []
   if (!store.token) {
     alert("로그인이 필요합니다.");
     return;
