@@ -49,18 +49,17 @@ onMounted(() => {
 }
 
 .subtype-card {
-  background: #f7f4ef;
-  border: 1px solid #ccc;
+  background: #dac5c5;
+  background-color: rgba(187, 160, 160, 0.24);
   border-radius: 8px;
   padding: 20px;
   text-align: center;
   width: 150px;
   cursor: pointer;
   text-decoration: none;
-  color: #3e3e3e;
+  color: #f8f8f7;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .subtype-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -81,6 +80,6 @@ onMounted(() => {
   width: 80px;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="recommendation-container">
-    <h2 class="recommendation-header">오늘의 추천 주류</h2>
+    <h2 class="recommendation-header">MVBeer 추천 페어링🥂</h2>
     <div class="recommendation-card">
       <img :src="randomAlcohol.imageUrl" alt="Alcohol Image" class="alcohol-image" />
       <div class="recommendation-content">
