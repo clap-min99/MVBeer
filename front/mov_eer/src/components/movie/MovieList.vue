@@ -1,10 +1,9 @@
 <template>
   <div class="background-container">
-    <!-- <h2>현재 인기작</h2> -->
     <div class="carousel-container">
       <div class="carousel">
         <div
-          v-for="(movie, index) in store.movies.slice(111,121)"
+          v-for="(movie, index) in filteredMovies"
           :key="movie.id"
           class="carousel-item"
           :style="getItemStyle(index)"
@@ -19,20 +18,33 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useMovieStore } from "@/stores/movie";
 import MovieMainInfo from "./MovieMainInfo.vue";
 
 const store = useMovieStore();
 const currentIndex = ref(0);
+const radius = 600; // 캐러셀 반지름
 
-const radius = 600; // 원형 배치의 반지름 (화면 비율 확대에 맞춰 증가)
+// 원하는 movie_id 배열
+const desiredMovieIds = [912649, 672, 557, 76, 615777, 313369, 475557, 402431, 1022789 ]; // 원하는 영화 ID
 
-// 영화 슬라이드의 스타일을 동적으로 계산
+// store에서 movies를 가져오고 desiredMovieIds로 필터링
+const filteredMovies = computed(() => {
+  return store.movies.filter((movie) => desiredMovieIds.includes(movie.id));
+});
+
+// 데이터 로드 (movies가 비어있을 경우 로드)
+onMounted(() => {
+  if (!store.movies.length) {
+    store.getMovies(); // Pinia 스토어에서 movies를 가져옴
+  }
+});
+
+// 영화 슬라이드 스타일 계산
 const getItemStyle = (index) => {
-  const total = store.movies.slice(0, 10).length;
+  const total = filteredMovies.value.length;
   const angle = ((index - currentIndex.value + total) % total) * (360 / total);
-  const radian = (angle * Math.PI) / 180;
   return {
     transform: `rotateY(${angle}deg) translateZ(${radius}px)`,
     opacity: index === currentIndex.value ? 1 : 0.5,
@@ -41,72 +53,59 @@ const getItemStyle = (index) => {
   };
 };
 
-// 이전 슬라이드로 이동
+// 이전 슬라이드
 const prevSlide = () => {
   currentIndex.value =
-    (currentIndex.value - 1 + store.movies.slice(0, 10).length) %
-    store.movies.slice(0, 10).length;
+    (currentIndex.value - 1 + filteredMovies.value.length) %
+    filteredMovies.value.length;
 };
 
-// 다음 슬라이드로 이동
+// 다음 슬라이드
 const nextSlide = () => {
   currentIndex.value =
-    (currentIndex.value + 1) % store.movies.slice(0, 10).length;
+    (currentIndex.value + 1) % filteredMovies.value.length;
 };
 </script>
 
 <style scoped>
-/* 전체 배경 컨테이너 */
+/* 기존 스타일 그대로 유지 */
 .background-container {
   position: relative;
-  background-image: url('@/assets/back.'); /* Vue의 assets 폴더 경로 */
+  background-image: url('@/assets/back.'); /* 배경 이미지 경로 */
   background-size: cover;
   background-position: center;
   padding: 50px 0;
   margin-bottom: 60px;
 }
 
-
-/* 헤더 텍스트 */
-h2 {
-  color: #f5f5f5;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.3rem;
-}
-
-/* 캐러셀 컨테이너 */
 .carousel-container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  perspective: 1500px; /* 3D 효과를 위한 원근감 추가 */
-  height: 400px; /* 화면 비율 증가 */
-  margin-top: 160px; /* 캐러셀 자체를 아래로 이동 */
-  transform: translateX(-200px); /* 캐러셀을 왼쪽으로 50px 이동 */
+  perspective: 1500px;
+  height: 400px;
+  margin-top: 160px;
+  transform: translateX(-200px);
 }
 
-/* 캐러셀 */
 .carousel {
   display: flex;
   position: relative;
-  transform-style: preserve-3d; /* 3D 효과 유지 */
-  width: 500%; /* 중앙 콘텐츠의 너비 */
-  height: 100%; /* 높이 비율 */
+  transform-style: preserve-3d;
+  width: 500%;
+  height: 100%;
 }
 
-/* 캐러셀 아이템 */
 .carousel-item {
   position: absolute;
-  width: 250px; /* 카드 크기 증가 */
-  height: 350px; /* 카드 크기 증가 */
+  width: 250px;
+  height: 350px;
   border-radius: 8px;
   overflow: hidden;
   transform-origin: center;
 }
 
-/* 화살표 */
 .arrow {
   background: none;
   border: none;
@@ -120,11 +119,11 @@ h2 {
 }
 
 .arrow.left {
-  left: -70px; /* 왼쪽 화살표 간격 */
+  left: -70px;
 }
 
 .arrow.right {
-  right: -500px; /* 오른쪽 화살표 간격 */
+  right: -500px;
 }
 
 .arrow:hover {

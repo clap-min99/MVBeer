@@ -42,7 +42,7 @@
       <h2>페어링 with Natural Wine 📽️</h2>
       <div class="movie-card-container">
         <div
-          v-for="movie in getWineMovies('Natural Wine')" 
+          v-for="movie in getWineMovies('Natural')" 
           :key="movie.id"
           class="movie-card"
         >
