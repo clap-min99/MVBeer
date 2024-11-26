@@ -296,4 +296,8 @@ p {
   font-size: 14px;
   color: #ffffff; /* 흰색 텍스트 */
 }
+
+h2{
+  color:  #ffffff
+}
 </style>
