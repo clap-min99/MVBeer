@@ -44,7 +44,7 @@
       <h2>페어링 with Single Malt 🥃</h2>
       <div class="movie-card-container">
         <div
-          v-for="movie in getWhiskeyMovies('Single Malt')" 
+          v-for="movie in getWhiskeyMovies('SingleMalt')" 
           :key="movie.id"
           class="movie-card"
         >
