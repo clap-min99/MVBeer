@@ -13,13 +13,6 @@ export const useAlcoholStore = defineStore(
         taste: "Crisp, Dry",
       },
       {
-        name: "Beer Oharas Stout",
-        imageUrl: "http://127.0.0.1:8000/media/beer_images/oharas_irish_stout.png",
-        description: "오하라스 스타우트는 전통적인 아일랜드 흑맥주 스타일로, 깊고 고소한 커피와 초콜릿의 풍미가 인상적입니다. 크리미한 질감과 부드러운 마무리가 특징입니다.",
-        region: "Ireland",
-        taste: "Rich, Roasted, Coffee-like",
-      },
-      {
         name: "Blanc",
         imageUrl: "http://127.0.0.1:8000/media/beer_images/kronenbourg_1664_blanc.png",
         description: "프랑스의 밀맥주로, 상큼한 감귤 향과 부드러운 바디감이 특징입니다. 특히 여름철에 청량감을 제공하며, 과일 맥주 애호가들에게 사랑받는 제품입니다.",
