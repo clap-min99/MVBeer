@@ -8,8 +8,8 @@
 
     <!-- 스크롤 버튼 -->
     <div class="scroll-buttons">
-      <button @click="scrollToTop"> ⬆️ </button>
-      <button @click="scrollToBottom"> ⬇️ </button>
+      <button @click="scrollToTop"> ⬆ </button>
+      <button @click="scrollToBottom"> ⬇ </button>
     </div>
   </div>
 </template>
