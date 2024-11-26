@@ -67,6 +67,7 @@ const getImageUrl = (path) => {
 </script>
 
 <style scoped>
+
 .whiskey-view {
   padding: 20px;
   font-family: "Arial", sans-serif;

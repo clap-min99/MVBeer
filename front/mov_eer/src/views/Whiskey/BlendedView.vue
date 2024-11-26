@@ -44,7 +44,7 @@
       <h2>페어링 with Blended 위스키 🥃</h2>
       <div class="movie-card-container">
         <div
-          v-for="movie in getWhiskeyMovies('Blended')" 
+          v-for="movie in paginatedMovies"
           :key="movie.id"
           class="movie-card"
         >
@@ -54,7 +54,15 @@
           <p class="movie-title">{{ movie.title }}</p>
         </div>
       </div>
+
+      <!-- 페이지 네비게이션 -->
+      <div class="pagination">
+        <button @click="prevPage" :disabled="currentPage === 1">이전</button>
+        <span>페이지 {{ currentPage }} / {{ totalPages }}</span>
+        <button @click="nextPage" :disabled="currentPage === totalPages">다음</button>
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -63,6 +71,36 @@ import { useLiquorStore } from "@/stores/liquor";
 import { useMovieStore } from "@/stores/movie";
 import { onMounted } from "vue";
 import { RouterLink } from "vue-router";
+import { ref, computed } from "vue";
+
+const currentPage = ref(1);
+const itemsPerPage = 30; // 한 페이지에 표시할 영화 개수
+
+// 페이징된 영화 목록
+const paginatedMovies = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return getWhiskeyMovies('Blended').slice(start, end); // Blended 기준으로 변경
+});
+
+// 총 페이지 수 계산
+const totalPages = computed(() => {
+  return Math.ceil(getWhiskeyMovies('Blended').length / itemsPerPage);
+});
+
+// 페이지 네비게이션 함수
+const prevPage = () => {
+  if (currentPage.value > 1) {
+    currentPage.value -= 1;
+  }
+};
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value) {
+    currentPage.value += 1;
+  }
+};
+
 
 const whiskeys = [
   {
@@ -121,6 +159,39 @@ const getImageUrl = (path) => {
 </script>
 
 <style scoped>
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #555555;
+}
+
+.pagination button:disabled {
+  background-color: #777777;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
 /* Blended 위스키 스타일 */
 .blended-whiskey-view {
   padding: 20px;
