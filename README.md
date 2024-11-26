@@ -1,4 +1,4 @@
-# final_pjt MVBeer
+# final_pjt 'MVBeer'
 
 📚 프로젝트 정리
 #### 프로젝트 개요
@@ -216,10 +216,13 @@ const filteredMovies = computed(() => {
 
 
 ## 20241118
+* ERD 설계
 
 ## 20241119
 
+
 ## 20241120
+* Vue Router를 활용한 SPA 라우팅 구현
 
 ## 20241121
 
@@ -315,11 +318,12 @@ const filteredMovies = computed(() => {
 ## 20241123
 * 로고 디자인 완료
 * comment 생성 기능 구현
+* 주류 상세 페이지 초기 설계 및 API 연결
 
 ## 20241124
 * comment 수정, 삭제 안되는 부분 수정 완료
 * 주류 상세페이지 작성
-* 검색 기능 구현중
+* 검색 기능 Vue 컴포넌트 설계
 
 ## 20241125
 * 검색 기능 구현 완료
