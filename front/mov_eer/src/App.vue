@@ -1,19 +1,13 @@
 <template>
-  <div class="background-image">
-    <nav >
-      <!-- <template v-if="!isLogin">
-        <RouterLink :to="{ name: 'LoginView' }">로그인</RouterLink>
-        <span> | </span>
-        <RouterLink :to="{ name: 'SignUpView' }">회원가입</RouterLink>
-      </template>
-      <template v-else>
-        <button @click="logOut">로그아웃</button>
-      </template> -->
-    </nav>
-    <HeaderComponent />
-    <RouterView />
+  <div class="container">
+    <div class="background-image"></div> <!-- 배경 -->
+    <div class="content">
+      <HeaderComponent />
+      <RouterView />
+    </div>
   </div>
 </template>
+
 
 <script setup>
 import { RouterView, RouterLink } from 'vue-router'
@@ -24,16 +18,7 @@ import { useRoute } from 'vue-router';
 import LoginView from './views/LoginView.vue';
 import { useLogStore } from './stores/log'
 
-// const route = useRoute()
-// const store = useMovieStore()
-// const logStore = useLogStore()
 
-// const isLogin = computed(() => logStore.isLogin)
-
-// const logOut = () => {
-//   logStore.logOut()
-//   router.push({name:'MainView'})
-// }
 
 </script>
 
@@ -60,8 +45,14 @@ button:hover {
   background-color: black
 } */
 
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .background-image {
-  position: absolute;
+  position: fixed; /* 스크롤에도 고정 */
   top: 0;
   left: 0;
   width: 100%;
@@ -69,7 +60,15 @@ button:hover {
   background-image: url('@/assets/back.png'); /* 배경 이미지 경로 */
   background-size: cover;
   background-position: center;
-  z-index: -1; /* 배경이 콘텐츠 뒤로 */
-  /* filter: brightness(0.4); 약간 어둡게 처리 */
+  z-index: -1; /* 배경을 콘텐츠 뒤로 */
+  filter: brightness(0.4); /* 약간 어둡게 처리 */
+  opacity: 0.8; /* 투명도 조정 */
 }
+
+.content {
+  position: relative;
+  z-index: 1; /* 콘텐츠를 배경 위로 배치 */
+}
+
+
 </style>
