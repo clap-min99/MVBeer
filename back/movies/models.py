@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 
+# 알콜 모델들
+
 class Beverage(models.Model):
     type = models.CharField(max_length=50)  # 주류 유형 (Beer, Whiskey 등)
 
@@ -84,6 +86,7 @@ class NonAlcoholImage(models.Model):
         return f"Image for {self.nonalcohol.subtype}"
 
 
+# 영화 모델들
 
 class MovieGenre(models.Model):
     name = models.CharField(max_length=100)  # 영화 장르 이름
@@ -107,7 +110,7 @@ class Movie(models.Model):
     )  # 장르 (N:1 관계)
     adult = models.BooleanField()  # 성인 or not
     star_rating = models.DecimalField(max_digits=3, decimal_places=1)  # 별점 (예: 4.5)
-    poster_url = models.TextField()
+    poster_url = models.URLField(max_length=500, null=True, blank=True)
     def __str__(self):
         return self.title
     

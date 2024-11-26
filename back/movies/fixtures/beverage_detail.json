@@ -138,7 +138,7 @@
             "beverages": [
                 2
             ],
-            "subtype": "Single Malt",
+            "subtype": "SingleMalt",
             "description": "단일 증류소에서 생산된 보리 몰트만으로 만든 위스키로, 각 증류소의 독특한 풍미를 느낄 수 있습니다.",
             "examples": "glenlivet_12_year_old, ardbeg_10_year_old, balvenie_doublewood_12_year_old"
         }
@@ -186,7 +186,7 @@
             "beverages": [
                 3
             ],
-            "subtype": "Rosé",
+            "subtype": "Rose",
             "description": "적포도를 짧게 발효하여 핑크색을 띠며, 레드와인과 화이트와인의 특성을 모두 가집니다. 가볍고 신선하며 과일 향이 돋보입니다.",
             "examples": "whispering_angel_rose_cotes_de_provence, chateau_desclans_garrus_rose, miraval_rose_provence"
         }
@@ -210,7 +210,7 @@
             "beverages": [
                 3
             ],
-            "subtype": "Natural Wine",
+            "subtype": "Natural",
             "description": "화학 첨가물 없이 유기농 재배된 포도로 전통적인 방식으로 양조된 와인으로, 자연스러운 맛과 향이 특징입니다.",
             "examples": "domaine_lapierre_morgon_beaujolais_france, radikon_ribolla_gialla_italy, gut_oggau_josephine_austria"
         }
@@ -224,7 +224,7 @@
             ],
             "subtype": "nonalcohol",
             "description": "애들은 가라",
-            "examples": "coke, sprite, pororo, qoo, americano"
+            "examples": "coke, sprite, pororo, qoo, americano, tsingtao"
         }
     }
 ]

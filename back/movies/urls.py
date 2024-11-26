@@ -11,6 +11,11 @@ urlpatterns = [
     path('beers/', views.beer_list),
     # login, comment 관련
     path('movies/<int:movie_pk>/comments/', views.comment_list),
+    path('movies/<int:movie_pk>/comments/<int:comment_id>/', views.comment_delete),
+    path('movies/<int:movie_pk>/comments/<int:comment_id>/update/', views.comment_update),
+
+    # search 관련
+    path('movies/search/', views.search_movies),
     
     # Movie 관련
     path('movies/', views.movie_all, name='movie_all'),
