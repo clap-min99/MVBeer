@@ -90,13 +90,6 @@ export const useAlcoholStore = defineStore(
         taste: "Crisp, Citrusy, Elegant",
       },
       {
-        name: "Chardonnay (Louis Latour Pouilly Fuisse)",
-        imageUrl: "http://127.0.0.1:8000/media/wine_images/chardonnay_louis_latour_pouillyfuisse.png",
-        description: "프랑스 부르고뉴 지방의 샤르도네로, 풍부한 바닐라 향과 부드러운 질감이 특징입니다. 크리미한 질감과 과일 맛의 조화가 인상적입니다.",
-        region: "France",
-        taste: "Creamy, Buttery, Fruity",
-      },
-      {
         name: "Miraval Rose (Provence)",
         imageUrl: "http://127.0.0.1:8000/media/wine_images/miraval_rose_provence.png",
         description: "핑크빛 색상이 아름다운 로제 와인으로, 신선한 과일 향과 부드러운 질감이 어우러집니다. 여름철에 특히 잘 어울립니다.",

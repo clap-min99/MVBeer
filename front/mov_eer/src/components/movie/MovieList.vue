@@ -27,7 +27,7 @@ const currentIndex = ref(0);
 const radius = 600; // 캐러셀 반지름
 
 // 원하는 movie_id 배열
-const desiredMovieIds = [ 207703, 64682, 912649, 672, 557, 76, 615777, 313369, 475557, 402431, 1022789 ]; // 원하는 영화 ID
+const desiredMovieIds = [ 912649, 1100782, 1184918, 558449, 1034541, 791042, 1118031, 402431, 533535 ]; // 원하는 영화 ID
 
 // store에서 movies를 가져오고 desiredMovieIds로 필터링
 const filteredMovies = computed(() => {
