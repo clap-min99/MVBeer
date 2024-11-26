@@ -36,6 +36,7 @@ const components = {
   Nonalcohol,
 };
 const currentComponent = computed(() => components[currentTab.value]);
+
 </script>
 
 <style scoped>

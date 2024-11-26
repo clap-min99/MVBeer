@@ -4,6 +4,7 @@
       <h1 class="movie-title">{{ movie.title }}</h1>
       <p class="movie-rating">평점: {{ movie.star_rating }}</p>
     </div>
+
     <div class="movie-content">
       <img :src="getImageUrl(movie.poster_url)" alt="movie poster" class="movie-poster" />
       <div class="movie-info">
@@ -45,6 +46,7 @@
     <div class="comments-container">
       <Comment :movieId="movie.id"/>
     </div>
+    
   </div>
 </template>
 
@@ -212,4 +214,53 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* 이미지 그림자 */
 }
+
+/* 스크롤바 스타일 (모든 스크롤바에 적용) */
+body ::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+  height: 8px; /* 가로 스크롤바 높이 */
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #555; /* 스크롤바 색상 */
+  border-radius: 10px; /* 둥근 스크롤바 */
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #888; /* 스크롤바 호버 색상 */
+}
+
+body ::-webkit-scrollbar-track {
+  background: #1a1a1a; /* 스크롤 트랙 색상 */
+  border-radius: 10px; /* 둥근 트랙 */
+}
+
+/* 음료 섹션 스크롤 컨테이너 */
+.beverages-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* 모질라 스크롤바 너비 */
+  scrollbar-color: #555 #1a1a1a; /* 스크롤바와 트랙 색상 (모질라) */
+}
+
+.beverages-container::-webkit-scrollbar {
+  height: 8px; /* 가로 스크롤바 높이 */
+}
+
+.beverages-container::-webkit-scrollbar-thumb {
+  background: #555; /* 스크롤바 색상 */
+  border-radius: 10px; /* 둥근 스크롤바 */
+}
+
+.beverages-container::-webkit-scrollbar-thumb:hover {
+  background: #888; /* 스크롤바 호버 색상 */
+}
+
+.beverages-container::-webkit-scrollbar-track {
+  background: #1a1a1a; /* 스크롤 트랙 색상 */
+  border-radius: 10px; /* 둥근 트랙 */
+}
+
 </style>
