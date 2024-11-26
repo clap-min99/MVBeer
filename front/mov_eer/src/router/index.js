@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '@/views/MainView.vue'
 import MovieDetailView from '@/views/MovieDetailView.vue'
-import AlcoholView from '@/views/AlcoholView.vue'
 
 import SignUpView from '@/views/SignUpView.vue'
 import LoginView from '@/views/LoginView.vue'
@@ -32,6 +31,8 @@ import NaturalWineView from '@/views/Wine/NaturalWineView.vue';
 
 import NonalcoholView from '@/views/NonalcoholView.vue'
 
+import BestView from '@/views/BestView.vue'
+
 import { useLogStore } from '@/stores/log'
 import SearchResultsView from '@/views/SearchResultsView.vue'
 
@@ -51,11 +52,6 @@ const router = createRouter({
       name: 'MovieDetailView',
       component: MovieDetailView,
       props: true
-    },
-    {
-      path: '/AlcoholView/',
-      name: 'AlcoholView',
-      component: AlcoholView
     },
     {
       path: '/signup',
@@ -182,6 +178,11 @@ const router = createRouter({
       path: '/search',
       name: 'SearchResultsView',
       component: SearchResultsView
+    },
+    {
+      path: '/best',
+      name: 'BestView',
+      component: BestView
     }
   ],
 })
