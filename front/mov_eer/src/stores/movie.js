@@ -12,7 +12,6 @@ export const useMovieStore = defineStore('movie', () => {
   const movie_detail = ref(null) // 단일 영화 상세
   const genres = ref([])
   const API_URL = 'http://127.0.0.1:8000'
-  const token = ref(null)
   const router = useRouter()
 
   // 전체 영화 목록
