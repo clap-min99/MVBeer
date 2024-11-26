@@ -62,9 +62,6 @@ button:hover {
   color: darkblue;
 }
 
-/* .background {
-  background-color: black
-} */
 
 .container {
   position: relative;
