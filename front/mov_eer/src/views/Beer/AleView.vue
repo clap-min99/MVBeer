@@ -168,6 +168,7 @@ const getImageUrl = (path) => {
 </script>
 
 <style scoped>
+
 .pagination {
   display: flex;
   justify-content: center;
