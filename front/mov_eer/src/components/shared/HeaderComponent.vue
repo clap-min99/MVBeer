@@ -138,18 +138,18 @@ const searchResults = ref([]);
 
 // 검색 버튼 클릭 시 결과 페이지로 이동하는 함수
 const handleSearch = () => {
-  if (!searchQuery.value.trim()) {
-    alert('검색어를 입력해주세요.');
-    return;
+  const trimmedQuery = searchQuery.value.trim(); // 공백 제거
+  if (!trimmedQuery) {
+    return; // 검색어가 비어 있으면 함수 종료
   }
 
   // 검색어와 함께 SearchResultsView로 이동
-  router.push({ 
-    name: 'SearchResultsView', 
-    query: { q: searchQuery.value } // 검색어를 쿼리로 전달
+  router.push({
+    name: 'SearchResultsView',
+    query: { q: trimmedQuery }, // 검색어를 쿼리로 전달
   });
 
-  searchQuery.value = '';
+  searchQuery.value = ''; // 검색어 초기화
 };
 
 // 로그인/회원가입 페이지로 이동하는 함수
