@@ -50,18 +50,6 @@ nav {
   margin: 10px 0;
 }
 
-button {
-  background: none;
-  border: none;
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-button:hover {
-  color: darkblue;
-}
-
 
 .container {
   position: relative;
