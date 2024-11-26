@@ -49,15 +49,15 @@ onMounted(() => {
 }
 
 .subtype-card {
-  background: #fdf6f0;
-  border: 1px solid #ccc;
+  background: #dac5c5;
+  background-color: rgba(187, 160, 160, 0.24);
   border-radius: 8px;
   padding: 20px;
   text-align: center;
   width: 150px;
   cursor: pointer;
   text-decoration: none;
-  color: #4b4b4b;
+  color: #f8f8f7;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -81,6 +81,6 @@ onMounted(() => {
   width: 80px;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 </style>
