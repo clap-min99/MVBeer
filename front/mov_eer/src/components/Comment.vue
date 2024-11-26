@@ -23,10 +23,10 @@
         <input
           type="text"
           v-model="newComment"
-          placeholder="댓글을 입력하세요"
+          placeholder="리뷰를 작성해주세요"
           class="comment-input"
         />
-        <button type="submit" class="comment-submit">댓글 달기</button>
+        <button type="submit" class="comment-submit">리뷰 작성</button>
       </form>
     </div>
   </div>
@@ -144,27 +144,6 @@ const editComment = (comment) => {
   newComment.value = comment.content;
 };
 
-// const updateComment = (moviePk, commentId) => {
-//   const url = `${store.API_URL}/api/v1/movies/${props.movieId}/comments/${commentId}/update/`;
-//   axios({
-//     method: 'put',
-//     url: url,
-//     headers: {
-//       Authorization: `Token ${store.token}`,
-//     },
-//     data: { content: newComment.value },
-//   })
-//     .then((response) => {
-//       const index = comments.value.findIndex((c) => c.id === commentId);
-//       comments.value[index] = response.data;
-//       editingComment.value = null;
-//       newComment.value = "";
-//       alert("댓글 수정 성공!");
-//     })
-//     .catch((error) => {
-//       console.error("댓글 수정 실패:", error);
-//     });
-// };
 
 const updateComment = (commentId) => {
   if (!commentId) {
@@ -221,8 +200,9 @@ onMounted(() => {
 .comments-section {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #2c2c2c; /* 어두운 배경 */
   border-radius: 8px;
+  color: #f1f1f1; /* 밝은 텍스트 */
 }
 
 .comments-list {
@@ -239,21 +219,50 @@ onMounted(() => {
 .comment-input {
   width: calc(100% - 100px);
   padding: 0.5rem;
-  margin-right: 8px;
-  border: 1px solid #ddd;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* 어두운 테두리 */
   border-radius: 4px;
+  background-color: #3c3c3c; /* 어두운 입력 배경 */
+  color: #f1f1f1; /* 밝은 텍스트 */
+}
+
+.comment-input::placeholder {
+  color: #b1b1b1; /* 입력 필드 플레이스홀더 색상 */
 }
 
 .comment-submit {
-  padding: 0.5rem 1rem;
-  background-color: hsl(49, 93%, 73%);
-  color: white;
-  border: none;
+  padding: rem 1rem;
+  background-color: #444; /* 어두운 버튼 배경 */
+  color: #f1f1f1; /* 밝은 버튼 텍스트 */
+  border: 1px solid #555; /* 버튼 테두리 */
   border-radius: 4px;
   cursor: pointer;
 }
 
 .comment-submit:hover {
-  background-color: #f3d38c;
+  background-color: #ee9191; /* 버튼 호버 상태 */
 }
+
+.comment p {
+  color: #f1f1f1; /* 댓글 텍스트 색상 */
+}
+
+small {
+  color: #a1a1a1; /* 시간 표시 텍스트 색상 */
+}
+
+button {
+  background-color: #444;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ee9191;
+}
+
 </style>
