@@ -94,7 +94,7 @@ onMounted(() => {
 
 <style scoped>
 /* 전체 어두운 배경 설정 */
-bod y {
+body {
   background-color: #121212; /* 전체 페이지 배경을 어두운 색으로 */
   color: #ffffff; /* 기본 텍스트 색상 흰색 */
   margin: 0;

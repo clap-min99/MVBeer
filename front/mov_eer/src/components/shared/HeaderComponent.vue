@@ -55,34 +55,32 @@
     
     </div>
 
-    
- 
-
     <!-- 검색창 섹션 -->
     <div class="search-container">
-    <input
-      type="text"
-      v-model="searchQuery"
-      placeholder="검색어를 입력하세요"
-      class="search-bar"
-    />
-    <div>
-      <!-- 검색 이미지 -->
-      <img
-        src="@/assets/wine_image.png"
-        alt="MVBeer Logo"
-        class="wine-image"
-        @click="handleSearch" 
+      <input
+        type="text"
+        v-model="searchQuery"
+        placeholder="검색어를 입력하세요"
+        class="search-bar"
+        @keyup.enter="handleSearch" 
       />
-      <div v-if="searchResults.length" class="search-results">
-        <ul>
-          <li v-for="(result, index) in searchResults" :key="index" class="search-result-item">
-            {{ result.title }}
-          </li>
-        </ul>
+      <div>
+        <!-- 검색 이미지 -->
+        <img
+          src="@/assets/wine_image.png"
+          alt="MVBeer Logo"
+          class="wine-image"
+          @click="handleSearch" 
+        />
+        <div v-if="searchResults.length" class="search-results">
+          <ul>
+            <li v-for="(result, index) in searchResults" :key="index" class="search-result-item">
+              {{ result.title }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
     <!-- 유저 정보 표시 섹션 -->
     <div class="user-info">
@@ -91,32 +89,21 @@
     </div>
     <!-- 로그인 섹션 -->
     <div class="auth-container">
-      <template v-if="!isLogin">
-        <!-- 로그인 이미지 -->
-        <img
-          src="@/assets/login_white.png"
-          alt="Login"
-          class="auth-image"
-          @click="navigateTo('LoginView')"
-        />
-        <!-- 회원가입 이미지 -->
-        <!-- <img
-          src="@/assets/Rye.png"
-          alt="Sign Up"
-          class="auth-image"
-          @click="navigateTo('SignUpView')"
-        /> -->
-      </template>
-      <template v-else>
-        <!-- 로그아웃 이미지 -->
-        <img
-          src="@/assets/logout_white.png"
-          alt="Logout"
-          class="auth-image"
-          @click="logOut"
-        />
-      </template>
-    </div>
+  <template v-if="!isLogin">
+    <!-- 로그인 텍스트 -->
+    <span class="auth-text" @click="navigateTo('LoginView')">
+      Login
+      <img src="@/assets/login_white.png" alt="Login" class="auth-hover-image" />
+    </span>
+  </template>
+  <template v-else>
+    <!-- 로그아웃 텍스트 -->
+    <span class="auth-text" @click="logOut">
+      Logout
+      <img src="@/assets/logout_white.png" alt="Logout" class="auth-hover-image" />
+    </span>
+  </template>
+</div>
   </div>
 </template>
 
@@ -296,6 +283,18 @@ button:hover {
   background-color: #ee9191;
 }
 
+/* 검색 이미지 */
+.wine-image {
+  width: 30px; /* 로고 크기 */
+  height: auto;
+  cursor: pointer; /* 마우스 커서가 클릭 가능한 상태로 변경 */
+  transition: transform 0.2s ease; /* 부드러운 애니메이션 추가 (선택 사항) */
+}
+
+.wine-image:hover {
+  transform: scale(1.1); /* 호버 시 약간 커지는 효과 (선택 사항) */
+}
+
 /* 검색 결과 */
 .search-results {
   position: absolute;
@@ -332,4 +331,35 @@ button:hover {
   height: auto;
   cursor: pointer;
 }
+
+/* 로그인/로그아웃 텍스트 스타일 */
+.auth-text {
+  position: relative; /* 이미지 위치를 위한 기준점 설정 */
+  font-size: 1.2rem; /* 텍스트 크기 */
+  color: #f8f8f8; /* 텍스트 색상 */
+  cursor: pointer; /* 클릭 가능한 요소임을 표시 */
+  font-weight: bold;
+  margin-left: 10px; /* 여백 추가 */
+  transition: color 0.3s; /* 색상 변경 애니메이션 */
+}
+
+.auth-text:hover {
+  color: transparent; /* 텍스트 숨김 효과 */
+}
+
+.auth-hover-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px; /* 이미지 크기 */
+  height: auto;
+  display: none; /* 기본적으로 이미지를 숨김 */
+  pointer-events: none; /* 이미지는 클릭 불가능 */
+}
+
+.auth-text:hover .auth-hover-image {
+  display: block; /* 호버 시 이미지 표시 */
+}
+
 </style>
